@@ -1,0 +1,441 @@
+[
+  {
+    "id": "filesystem",
+    "name": "Filesystem Server",
+    "description": "Read and write files with configurable access controls. Supports reading, writing, searching, and directory listing.",
+    "author": "Anthropic",
+    "version": "2025.1.0",
+    "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
+    "verified": true,
+    "verified_at": "2025-01-15",
+    "tools_count": 11,
+    "rating": 4.8,
+    "install_count": 45200,
+    "permissions": {
+      "filesystem": ["read:~/", "write:~/"],
+      "network": false
+    },
+    "tools": ["read_file", "read_multiple_files", "write_file", "edit_file", "create_directory", "list_directory", "directory_tree", "move_file", "search_files", "get_file_info", "list_allowed_directories"],
+    "scan_summary": "No issues found. Local filesystem access only within configured allowed directories."
+  },
+  {
+    "id": "fetch",
+    "name": "Fetch Server",
+    "description": "Retrieve web content by fetching URLs and converting HTML to markdown for easy consumption by LLMs.",
+    "author": "Anthropic",
+    "version": "2025.1.0",
+    "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
+    "verified": true,
+    "verified_at": "2025-01-15",
+    "tools_count": 1,
+    "rating": 4.7,
+    "install_count": 38100,
+    "permissions": {
+      "filesystem": false,
+      "network": ["https://*", "http://*"]
+    },
+    "tools": ["fetch"],
+    "scan_summary": "No issues found. Outbound network access only. Converts fetched content to markdown."
+  },
+  {
+    "id": "git",
+    "name": "Git Server",
+    "description": "Interact with Git repositories including cloning, committing, branching, diffing, and viewing history.",
+    "author": "Anthropic",
+    "version": "2025.1.0",
+    "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/git",
+    "verified": true,
+    "verified_at": "2025-01-20",
+    "tools_count": 12,
+    "rating": 4.9,
+    "install_count": 41500,
+    "permissions": {
+      "filesystem": ["read:~/", "write:~/"],
+      "network": ["https://*.github.com", "ssh://*.github.com"]
+    },
+    "tools": ["git_status", "git_diff_unstaged", "git_diff_staged", "git_commit", "git_add", "git_reset", "git_log", "git_create_branch", "git_checkout", "git_show", "git_init", "git_clone"],
+    "scan_summary": "No issues found. Requires filesystem and network access for remote operations."
+  },
+  {
+    "id": "github",
+    "name": "GitHub Server",
+    "description": "Interact with GitHub repositories, issues, pull requests, branches, and search via the GitHub API.",
+    "author": "Anthropic",
+    "version": "2025.1.0",
+    "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/github",
+    "verified": true,
+    "verified_at": "2025-02-05",
+    "tools_count": 24,
+    "rating": 4.9,
+    "install_count": 52300,
+    "permissions": {
+      "filesystem": false,
+      "network": ["https://api.github.com"]
+    },
+    "tools": ["create_or_update_file", "search_repositories", "create_repository", "get_file_contents", "push_files", "create_issue", "create_pull_request", "fork_repository", "create_branch", "list_commits", "list_issues", "update_issue", "add_issue_comment", "search_code", "search_issues", "search_users", "get_issue", "get_pull_request", "list_pull_requests", "create_pull_request_review", "merge_pull_request", "get_pull_request_files", "get_pull_request_status", "update_pull_request_branch"],
+    "scan_summary": "No issues found. Personal access token required. Network access limited to GitHub API."
+  },
+  {
+    "id": "slack",
+    "name": "Slack Server",
+    "description": "Interact with Slack workspaces to read messages, post updates, manage channels, and search conversations.",
+    "author": "Anthropic",
+    "version": "2025.1.0",
+    "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/slack",
+    "verified": true,
+    "verified_at": "2025-02-05",
+    "tools_count": 10,
+    "rating": 4.5,
+    "install_count": 18900,
+    "permissions": {
+      "filesystem": false,
+      "network": ["https://slack.com/api/*"]
+    },
+    "tools": ["slack_list_channels", "slack_post_message", "slack_reply_to_thread", "slack_add_reaction", "slack_get_channel_history", "slack_get_thread_replies", "slack_search_messages", "slack_get_users", "slack_get_user_profile", "slack_list_members"],
+    "scan_summary": "No issues found. Bot token required. Network access limited to Slack API."
+  },
+  {
+    "id": "sqlite",
+    "name": "SQLite Server",
+    "description": "Query and manage SQLite databases with read/write support, schema introspection, and business intelligence memo generation.",
+    "author": "Anthropic",
+    "version": "2025.1.0",
+    "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
+    "verified": true,
+    "verified_at": "2025-01-22",
+    "tools_count": 5,
+    "rating": 4.7,
+    "install_count": 24300,
+    "permissions": {
+      "filesystem": ["read:~/", "write:~/"],
+      "network": false
+    },
+    "tools": ["read_query", "write_query", "create_table", "list_tables", "describe_table"],
+    "scan_summary": "No issues found. Local database access only."
+  },
+  {
+    "id": "postgres",
+    "name": "PostgreSQL Server",
+    "description": "Connect to PostgreSQL databases for querying, schema inspection, and data manipulation.",
+    "author": "Anthropic",
+    "version": "2025.1.0",
+    "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres",
+    "verified": true,
+    "verified_at": "2025-01-22",
+    "tools_count": 1,
+    "rating": 4.6,
+    "install_count": 21800,
+    "permissions": {
+      "filesystem": false,
+      "network": ["tcp://*:5432"]
+    },
+    "tools": ["query"],
+    "scan_summary": "No issues found. Network access limited to PostgreSQL wire protocol."
+  },
+  {
+    "id": "puppeteer",
+    "name": "Puppeteer Server",
+    "description": "Control a headless Chrome browser for web scraping, screenshots, form filling, and automated testing.",
+    "author": "Anthropic",
+    "version": "2025.1.0",
+    "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer",
+    "verified": true,
+    "verified_at": "2025-02-01",
+    "tools_count": 7,
+    "rating": 4.6,
+    "install_count": 19400,
+    "permissions": {
+      "filesystem": ["write:/tmp/screenshots"],
+      "network": ["https://*", "http://*"],
+      "processes": true
+    },
+    "tools": ["puppeteer_navigate", "puppeteer_screenshot", "puppeteer_click", "puppeteer_fill", "puppeteer_select", "puppeteer_hover", "puppeteer_evaluate"],
+    "scan_summary": "No issues found. Launches headless Chrome subprocess. Network access for page navigation."
+  },
+  {
+    "id": "brave-search",
+    "name": "Brave Search Server",
+    "description": "Perform web and local searches using the Brave Search API with support for pagination and filtering.",
+    "author": "Anthropic",
+    "version": "2025.1.0",
+    "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search",
+    "verified": true,
+    "verified_at": "2025-02-01",
+    "tools_count": 2,
+    "rating": 4.7,
+    "install_count": 31200,
+    "permissions": {
+      "filesystem": false,
+      "network": ["https://api.search.brave.com"]
+    },
+    "tools": ["brave_web_search", "brave_local_search"],
+    "scan_summary": "No issues found. API key required. Network access limited to Brave Search API."
+  },
+  {
+    "id": "google-maps",
+    "name": "Google Maps Server",
+    "description": "Access Google Maps API for geocoding, directions, place search, and distance calculations.",
+    "author": "Anthropic",
+    "version": "2025.1.0",
+    "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/google-maps",
+    "verified": true,
+    "verified_at": "2025-02-10",
+    "tools_count": 6,
+    "rating": 4.5,
+    "install_count": 12100,
+    "permissions": {
+      "filesystem": false,
+      "network": ["https://maps.googleapis.com"]
+    },
+    "tools": ["maps_geocode", "maps_reverse_geocode", "maps_search_places", "maps_place_details", "maps_distance_matrix", "maps_directions"],
+    "scan_summary": "No issues found. Google Maps API key required. Network access limited to Google Maps API."
+  },
+  {
+    "id": "memory",
+    "name": "Memory Server",
+    "description": "Knowledge graph-based persistent memory system that stores entities, relations, and observations across conversations.",
+    "author": "Anthropic",
+    "version": "2025.1.0",
+    "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
+    "verified": true,
+    "verified_at": "2025-02-10",
+    "tools_count": 7,
+    "rating": 4.8,
+    "install_count": 28700,
+    "permissions": {
+      "filesystem": ["read:~/", "write:~/"],
+      "network": false
+    },
+    "tools": ["create_entities", "create_relations", "add_observations", "delete_entities", "delete_observations", "delete_relations", "search_nodes"],
+    "scan_summary": "No issues found. Local file-based knowledge graph. No network access."
+  },
+  {
+    "id": "sequential-thinking",
+    "name": "Sequential Thinking Server",
+    "description": "Dynamic problem-solving through sequential thought steps with branching, revision, and hypothesis tracking.",
+    "author": "Anthropic",
+    "version": "2025.1.0",
+    "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking",
+    "verified": true,
+    "verified_at": "2025-02-10",
+    "tools_count": 1,
+    "rating": 4.4,
+    "install_count": 15600,
+    "permissions": {
+      "filesystem": false,
+      "network": false
+    },
+    "tools": ["sequentialthinking"],
+    "scan_summary": "No issues found. Pure computation, no filesystem or network access."
+  },
+  {
+    "id": "time",
+    "name": "Time Server",
+    "description": "Get current time in various timezones and convert between timezones with IANA timezone support.",
+    "author": "Anthropic",
+    "version": "2025.1.0",
+    "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/time",
+    "verified": true,
+    "verified_at": "2025-02-10",
+    "tools_count": 2,
+    "rating": 4.3,
+    "install_count": 9800,
+    "permissions": {
+      "filesystem": false,
+      "network": false
+    },
+    "tools": ["get_current_time", "convert_time"],
+    "scan_summary": "No issues found. Pure computation, no filesystem or network access."
+  },
+  {
+    "id": "playwright",
+    "name": "Playwright MCP Server",
+    "description": "Browser automation using Playwright for web scraping, testing, and interaction. Supports Chrome, Firefox, and WebKit.",
+    "author": "Microsoft",
+    "version": "0.0.19",
+    "homepage": "https://github.com/microsoft/playwright-mcp",
+    "verified": true,
+    "verified_at": "2025-03-01",
+    "tools_count": 16,
+    "rating": 4.8,
+    "install_count": 47200,
+    "permissions": {
+      "filesystem": ["write:/tmp/screenshots"],
+      "network": ["https://*", "http://*"],
+      "processes": true
+    },
+    "tools": ["browser_navigate", "browser_screenshot", "browser_click", "browser_hover", "browser_type", "browser_select_option", "browser_tab_list", "browser_tab_new", "browser_tab_select", "browser_tab_close", "browser_press_key", "browser_console_messages", "browser_file_upload", "browser_handle_dialog", "browser_resize", "browser_snapshot"],
+    "scan_summary": "No issues found. Official Microsoft project. Launches browser subprocess. Network for page navigation."
+  },
+  {
+    "id": "stripe",
+    "name": "Stripe MCP Server",
+    "description": "Integrate with Stripe for managing customers, products, payments, invoices, and subscriptions via the Stripe API.",
+    "author": "Stripe",
+    "version": "0.3.1",
+    "homepage": "https://github.com/stripe/agent-toolkit",
+    "verified": true,
+    "verified_at": "2025-03-15",
+    "tools_count": 20,
+    "rating": 4.7,
+    "install_count": 18400,
+    "permissions": {
+      "filesystem": false,
+      "network": ["https://mcp.stripe.com"]
+    },
+    "tools": ["create_customer", "list_customers", "create_product", "list_products", "create_price", "list_prices", "create_payment_link", "create_invoice", "list_invoices", "create_invoice_item", "finalize_invoice", "create_subscription", "list_subscriptions", "update_subscription", "cancel_subscription", "create_refund", "list_payment_intents", "list_balance_transactions", "create_checkout_session", "search_documentation"],
+    "scan_summary": "No issues found. Official Stripe product. Remote MCP proxy to mcp.stripe.com. API key required."
+  },
+  {
+    "id": "sentry",
+    "name": "Sentry MCP Server",
+    "description": "Query and analyze Sentry error tracking data including issues, events, releases, and project configurations.",
+    "author": "Sentry",
+    "version": "0.7.0",
+    "homepage": "https://github.com/getsentry/sentry-mcp",
+    "verified": true,
+    "verified_at": "2025-03-20",
+    "tools_count": 8,
+    "rating": 4.5,
+    "install_count": 11200,
+    "permissions": {
+      "filesystem": false,
+      "network": ["https://sentry.io/api/"]
+    },
+    "tools": ["list_organizations", "list_projects", "list_issues", "get_issue_details", "list_issue_events", "get_event_details", "list_releases", "create_release"],
+    "scan_summary": "No issues found. Official Sentry product. Auth token required. Network limited to Sentry API."
+  },
+  {
+    "id": "grafana",
+    "name": "Grafana MCP Server",
+    "description": "Query Grafana dashboards, data sources, and alerts. Execute Prometheus, Loki, and other data source queries.",
+    "author": "Grafana Labs",
+    "version": "0.3.0",
+    "homepage": "https://github.com/grafana/mcp-grafana",
+    "verified": true,
+    "verified_at": "2025-03-20",
+    "tools_count": 10,
+    "rating": 4.4,
+    "install_count": 8700,
+    "permissions": {
+      "filesystem": false,
+      "network": ["https://*grafana*"]
+    },
+    "tools": ["search_dashboards", "get_dashboard_by_uid", "list_datasources", "get_datasource_by_uid", "query_prometheus", "query_loki", "list_alert_rules", "get_alert_rule_by_uid", "list_incidents", "list_contact_points"],
+    "scan_summary": "No issues found. Official Grafana product. API key required. Network limited to Grafana instance."
+  },
+  {
+    "id": "neo4j",
+    "name": "Neo4j MCP Server",
+    "description": "Query and manage Neo4j graph databases using Cypher. Browse nodes, relationships, and run graph analytics.",
+    "author": "Neo4j",
+    "version": "0.2.0",
+    "homepage": "https://github.com/neo4j-contrib/mcp-neo4j",
+    "verified": true,
+    "verified_at": "2025-03-25",
+    "tools_count": 5,
+    "rating": 4.3,
+    "install_count": 5400,
+    "permissions": {
+      "filesystem": false,
+      "network": ["bolt://*:7687", "neo4j://*:7687"]
+    },
+    "tools": ["read_neo4j_cypher", "write_neo4j_cypher", "get_neo4j_schema", "get_neo4j_labels", "get_neo4j_relationship_types"],
+    "scan_summary": "No issues found. Official Neo4j project. Network limited to Neo4j bolt protocol."
+  },
+  {
+    "id": "supabase",
+    "name": "Supabase MCP Server",
+    "description": "Manage Supabase projects, databases, edge functions, and storage. Execute SQL and manage schemas.",
+    "author": "Supabase",
+    "version": "1.0.0",
+    "homepage": "https://github.com/supabase-community/supabase-mcp",
+    "verified": true,
+    "verified_at": "2025-04-01",
+    "tools_count": 12,
+    "rating": 4.6,
+    "install_count": 14200,
+    "permissions": {
+      "filesystem": false,
+      "network": ["https://*.supabase.co", "https://api.supabase.com"]
+    },
+    "tools": ["list_projects", "get_project", "execute_sql", "list_tables", "list_extensions", "list_migrations", "apply_migration", "list_edge_functions", "deploy_edge_function", "list_storage_buckets", "get_logs", "get_project_url"],
+    "scan_summary": "No issues found. Official Supabase community project. Access token required. Network limited to Supabase API."
+  },
+  {
+    "id": "neon",
+    "name": "Neon MCP Server",
+    "description": "Manage Neon serverless Postgres databases, branches, and run SQL queries with natural language support.",
+    "author": "Neon",
+    "version": "0.3.0",
+    "homepage": "https://github.com/neondatabase/mcp-server-neon",
+    "verified": true,
+    "verified_at": "2025-04-01",
+    "tools_count": 14,
+    "rating": 4.5,
+    "install_count": 9800,
+    "permissions": {
+      "filesystem": false,
+      "network": ["https://console.neon.tech/api/", "https://*.neon.tech"]
+    },
+    "tools": ["list_projects", "create_project", "delete_project", "describe_project", "run_sql", "run_sql_transaction", "get_connection_string", "list_branches", "create_branch", "delete_branch", "describe_branch", "list_databases", "create_database", "describe_table_schema"],
+    "scan_summary": "No issues found. Official Neon product. API key required. Network limited to Neon API."
+  },
+  {
+    "id": "cloudflare",
+    "name": "Cloudflare MCP Server",
+    "description": "Manage Cloudflare Workers, KV, R2, D1 databases, DNS, and other Cloudflare services from your agent.",
+    "author": "Cloudflare",
+    "version": "0.5.0",
+    "homepage": "https://github.com/cloudflare/mcp-server-cloudflare",
+    "verified": true,
+    "verified_at": "2025-04-05",
+    "tools_count": 18,
+    "rating": 4.6,
+    "install_count": 16300,
+    "permissions": {
+      "filesystem": false,
+      "network": ["https://api.cloudflare.com"]
+    },
+    "tools": ["workers_list", "workers_get", "workers_deploy", "workers_delete", "kv_list_namespaces", "kv_get", "kv_put", "kv_delete", "r2_list_buckets", "r2_get_object", "r2_put_object", "d1_list_databases", "d1_query", "dns_list_records", "dns_create_record", "dns_update_record", "dns_delete_record", "analytics_get"],
+    "scan_summary": "No issues found. Official Cloudflare product. API token required. Network limited to Cloudflare API."
+  },
+  {
+    "id": "upstash",
+    "name": "Upstash MCP Server",
+    "description": "Manage Upstash Redis and QStash message queues. Execute Redis commands and manage serverless data stores.",
+    "author": "Upstash",
+    "version": "0.2.0",
+    "homepage": "https://github.com/upstash/mcp-server",
+    "verified": true,
+    "verified_at": "2025-04-10",
+    "tools_count": 10,
+    "rating": 4.3,
+    "install_count": 6100,
+    "permissions": {
+      "filesystem": false,
+      "network": ["https://*.upstash.io", "https://qstash.upstash.io"]
+    },
+    "tools": ["redis_get", "redis_set", "redis_del", "redis_list_databases", "redis_create_database", "redis_execute", "qstash_publish", "qstash_list_queues", "qstash_create_queue", "vector_query"],
+    "scan_summary": "No issues found. Official Upstash product. API key required. Network limited to Upstash services."
+  },
+  {
+    "id": "everything",
+    "name": "Everything Server",
+    "description": "MCP protocol test and demo server exercising all MCP features including tools, resources, prompts, and sampling.",
+    "author": "Anthropic",
+    "version": "2025.1.0",
+    "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/everything",
+    "verified": true,
+    "verified_at": "2025-02-10",
+    "tools_count": 18,
+    "rating": 4.2,
+    "install_count": 7600,
+    "permissions": {
+      "filesystem": false,
+      "network": false
+    },
+    "tools": ["echo", "get_sum", "get_env", "get_annotated_message", "get_resource_links", "get_resource_reference", "get_roots_list", "get_structured_content", "get_tiny_image", "gzip_file_as_resource", "simulate_research_query", "toggle_simulated_logging", "toggle_subscriber_updates", "trigger_elicitation_request", "trigger_elicitation_request_async", "trigger_long_running_operation", "trigger_sampling_request", "trigger_sampling_request_async"],
+    "scan_summary": "No issues found. Test/demo server for MCP protocol features. No filesystem or network access."
+  }
+]

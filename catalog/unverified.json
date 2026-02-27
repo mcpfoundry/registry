@@ -1,0 +1,1258 @@
+[
+  {
+    "id": "notion",
+    "name": "Notion MCP Server",
+    "description": "Official Notion MCP server for interacting with pages, databases, search, and content management with optimized token consumption.",
+    "author": "Notion (makenotion)",
+    "version": "1.0.0",
+    "homepage": "https://github.com/makenotion/notion-mcp-server",
+    "verified": false,
+    "tools_count": 22,
+    "rating": 4.5,
+    "install_count": 28400,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://api.notion.com"
+      ]
+    },
+    "tools": [
+      "query-data-source",
+      "retrieve-a-data-source",
+      "update-a-data-source",
+      "create-a-data-source",
+      "list-data-source-templates",
+      "retrieve-a-database",
+      "move-page",
+      "search",
+      "create-page",
+      "update-page",
+      "get-page",
+      "archive-page",
+      "list-pages",
+      "get-block-children",
+      "append-blocks",
+      "update-block",
+      "delete-block",
+      "list-users",
+      "get-user",
+      "list-comments",
+      "create-comment",
+      "get-me"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "linear",
+    "name": "Linear MCP Server",
+    "description": "Official Linear remote MCP server for searching, creating, and updating issues, projects, comments, and teams in Linear's project management system.",
+    "author": "Linear",
+    "version": "1.0.0",
+    "homepage": "https://linear.app/docs/mcp",
+    "verified": false,
+    "tools_count": 9,
+    "rating": 4.4,
+    "install_count": 16200,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://mcp.linear.app"
+      ]
+    },
+    "tools": [
+      "linear_create_issue",
+      "linear_update_issue",
+      "linear_search_issues",
+      "linear_get_user_issues",
+      "linear_add_comment",
+      "linear_get_teams",
+      "linear_get_workflow_states",
+      "linear_list_projects",
+      "linear_health_check"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "todoist",
+    "name": "Todoist MCP Server",
+    "description": "Official Doist MCP server enabling AI agents to manage Todoist tasks, projects, sections, labels, and comments on a user's behalf.",
+    "author": "Doist",
+    "version": "1.0.0",
+    "homepage": "https://github.com/Doist/todoist-ai",
+    "verified": false,
+    "tools_count": 15,
+    "rating": 4.2,
+    "install_count": 8700,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://ai.todoist.net",
+        "https://api.todoist.com"
+      ]
+    },
+    "tools": [
+      "findTasksByDate",
+      "addTasks",
+      "updateTask",
+      "completeTask",
+      "deleteTask",
+      "listProjects",
+      "createProject",
+      "listSections",
+      "createSection",
+      "listLabels",
+      "createLabel",
+      "listComments",
+      "addComment",
+      "search",
+      "fetch"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB MCP Server",
+    "description": "Official MongoDB MCP server for querying, aggregation, CRUD operations, index management, and Atlas cluster management.",
+    "author": "MongoDB",
+    "version": "0.3.0",
+    "homepage": "https://github.com/mongodb-js/mongodb-mcp-server",
+    "verified": false,
+    "tools_count": 40,
+    "rating": 4.5,
+    "install_count": 14200,
+    "permissions": {
+      "filesystem": [
+        "write:/tmp/mongodb-exports"
+      ],
+      "network": [
+        "mongodb://*",
+        "mongodb+srv://*"
+      ]
+    },
+    "tools": [
+      "connect",
+      "find",
+      "aggregate",
+      "count",
+      "insert-many",
+      "update-many",
+      "delete-many",
+      "list-databases",
+      "list-collections",
+      "create-collection",
+      "drop-collection",
+      "collection-schema",
+      "collection-indexes",
+      "create-index",
+      "drop-index",
+      "db-stats",
+      "explain",
+      "export",
+      "mongodb-logs",
+      "atlas-list-clusters",
+      "atlas-list-projects",
+      "atlas-create-free-cluster",
+      "atlas-inspect-cluster"
+    ],
+    "scan_summary": "REVIEW: Wildcard mongodb://* network access allows connection to any MongoDB instance. Consider restricting to specific hosts for production use."
+  },
+  {
+    "id": "firecrawl",
+    "name": "Firecrawl MCP Server",
+    "description": "Official Firecrawl MCP server for powerful web scraping, crawling, search, and browser automation with JS rendering support.",
+    "author": "Firecrawl (mendableai)",
+    "version": "1.0.0",
+    "homepage": "https://github.com/mendableai/firecrawl-mcp-server",
+    "verified": false,
+    "tools_count": 7,
+    "rating": 4.6,
+    "install_count": 22100,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://api.firecrawl.dev"
+      ]
+    },
+    "tools": [
+      "firecrawl_scrape",
+      "firecrawl_batch_scrape",
+      "firecrawl_map",
+      "firecrawl_crawl",
+      "firecrawl_search",
+      "firecrawl_agent",
+      "firecrawl_browser"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "exa",
+    "name": "Exa MCP Server",
+    "description": "AI-powered web search, code search, company research, and deep research with clean content from billions of indexed pages.",
+    "author": "Exa Labs",
+    "version": "1.0.0",
+    "homepage": "https://github.com/exa-labs/exa-mcp-server",
+    "verified": false,
+    "tools_count": 8,
+    "rating": 4.5,
+    "install_count": 15800,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://api.exa.ai"
+      ]
+    },
+    "tools": [
+      "web_search_exa",
+      "get_code_context_exa",
+      "company_research_exa",
+      "web_search_advanced_exa",
+      "crawling_exa",
+      "people_search_exa",
+      "deep_researcher_start",
+      "deep_researcher_check"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity MCP Server",
+    "description": "Official Perplexity MCP server providing real-time web search, deep research, and advanced reasoning through Sonar models.",
+    "author": "Perplexity AI",
+    "version": "1.0.0",
+    "homepage": "https://github.com/perplexityai/modelcontextprotocol",
+    "verified": false,
+    "tools_count": 4,
+    "rating": 4.6,
+    "install_count": 19300,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://api.perplexity.ai"
+      ]
+    },
+    "tools": [
+      "perplexity_search",
+      "perplexity_ask",
+      "perplexity_research",
+      "perplexity_reason"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "tavily",
+    "name": "Tavily MCP Server",
+    "description": "Real-time web search, content extraction, site mapping, and crawling optimized for LLM consumption.",
+    "author": "Tavily AI",
+    "version": "0.3.0",
+    "homepage": "https://github.com/tavily-ai/tavily-mcp",
+    "verified": false,
+    "tools_count": 4,
+    "rating": 4.4,
+    "install_count": 12600,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://api.tavily.com"
+      ]
+    },
+    "tools": [
+      "tavily-search",
+      "tavily-extract",
+      "tavily-map",
+      "tavily-crawl"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "docker-hub",
+    "name": "Docker Hub MCP Server",
+    "description": "Official Docker MCP server for searching repositories, managing tags, querying namespaces, and working with Docker Hardened Images.",
+    "author": "Docker",
+    "version": "0.1.0",
+    "homepage": "https://github.com/docker/hub-mcp",
+    "verified": false,
+    "tools_count": 11,
+    "rating": 4.3,
+    "install_count": 7800,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://hub.docker.com"
+      ]
+    },
+    "tools": [
+      "search",
+      "get_namespaces",
+      "list_repositories_by_namespace",
+      "get_repository_info",
+      "check_repository",
+      "create_repository",
+      "update_repository_info",
+      "list_repository_tags",
+      "read_repository_tag",
+      "check_repository_tag",
+      "docker_hardened_images"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "kubernetes",
+    "name": "Kubernetes MCP Server",
+    "description": "Kubernetes cluster management including pod, deployment, and service operations, Helm chart management, port forwarding, and diagnostics.",
+    "author": "Flux159",
+    "version": "1.6.0",
+    "homepage": "https://github.com/Flux159/mcp-server-kubernetes",
+    "verified": false,
+    "tools_count": 22,
+    "rating": 4.4,
+    "install_count": 11200,
+    "permissions": {
+      "filesystem": [
+        "read:~/.kube/config"
+      ],
+      "network": true,
+      "processes": true
+    },
+    "tools": [
+      "kubectl_get",
+      "kubectl_describe",
+      "kubectl_create",
+      "kubectl_apply",
+      "kubectl_delete",
+      "kubectl_logs",
+      "kubectl_patch",
+      "kubectl_scale",
+      "kubectl_rollout",
+      "kubectl_context",
+      "kubectl_generic",
+      "explain_resource",
+      "list_api_resources",
+      "ping",
+      "port_forward",
+      "stop_port_forward",
+      "install_helm_chart",
+      "upgrade_helm_chart",
+      "helm_template_apply",
+      "helm_template_uninstall",
+      "cleanup_pods",
+      "node_management"
+    ],
+    "scan_summary": "FLAGGED: Unrestricted network access (network: true) combined with process execution and cluster control is a critical security risk. Recommend scoping network to specific cluster API servers."
+  },
+  {
+    "id": "brave-search-official",
+    "name": "Brave Search MCP Server (Official)",
+    "description": "Official Brave MCP server with web search, local search, video search, image search, news search, and AI-powered summarization.",
+    "author": "Brave Software",
+    "version": "1.0.0",
+    "homepage": "https://github.com/brave/brave-search-mcp-server",
+    "verified": false,
+    "tools_count": 6,
+    "rating": 4.7,
+    "install_count": 24300,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://api.search.brave.com"
+      ]
+    },
+    "tools": [
+      "brave_web_search",
+      "brave_local_search",
+      "brave_video_search",
+      "brave_image_search",
+      "brave_news_search",
+      "brave_summarizer"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "vercel",
+    "name": "Vercel MCP Server",
+    "description": "Official Vercel MCP server for documentation search, project management, deployments, domain management, and CLI operations.",
+    "author": "Vercel",
+    "version": "1.0.0",
+    "homepage": "https://vercel.com/docs/agent-resources/vercel-mcp",
+    "verified": false,
+    "tools_count": 12,
+    "rating": 4.5,
+    "install_count": 13400,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://vercel.com",
+        "https://api.vercel.com"
+      ]
+    },
+    "tools": [
+      "search_documentation",
+      "list_teams",
+      "list_projects",
+      "get_project",
+      "list_deployments",
+      "get_deployment",
+      "get_deployment_build_logs",
+      "check_domain_availability_and_price",
+      "buy_domain",
+      "get_access_to_vercel_url",
+      "use_vercel_cli",
+      "deploy_to_vercel"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "heroku",
+    "name": "Heroku MCP Server",
+    "description": "Official Heroku MCP server for managing apps, dynos, pipelines, add-ons, and PostgreSQL databases through the Heroku CLI.",
+    "author": "Heroku",
+    "version": "0.1.0",
+    "homepage": "https://github.com/heroku/heroku-mcp-server",
+    "verified": false,
+    "tools_count": 30,
+    "rating": 4.3,
+    "install_count": 6800,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://api.heroku.com"
+      ],
+      "processes": true
+    },
+    "tools": [
+      "list_apps",
+      "get_app_info",
+      "create_app",
+      "rename_app",
+      "deploy_to_heroku",
+      "ps_list",
+      "ps_scale",
+      "ps_restart",
+      "list_addons",
+      "create_addon",
+      "get_app_logs",
+      "pipelines_create",
+      "pipelines_promote",
+      "pipelines_list",
+      "pg_psql",
+      "pg_info",
+      "pg_backups"
+    ],
+    "scan_summary": "REVIEW: Process execution enabled for Heroku CLI operations. Network scoped to api.heroku.com. Official Heroku product."
+  },
+  {
+    "id": "render",
+    "name": "Render MCP Server",
+    "description": "Official Render MCP server for managing web services, static sites, cron jobs, databases, monitoring logs, and performance metrics.",
+    "author": "Render",
+    "version": "0.1.0",
+    "homepage": "https://github.com/render-oss/render-mcp-server",
+    "verified": false,
+    "tools_count": 20,
+    "rating": 4.2,
+    "install_count": 4200,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://api.render.com"
+      ]
+    },
+    "tools": [
+      "list_workspaces",
+      "select_workspace",
+      "list_services",
+      "get_service",
+      "create_web_service",
+      "create_static_site",
+      "create_cron_job",
+      "list_deploys",
+      "get_deploy",
+      "list_logs",
+      "get_metrics",
+      "list_postgres_instances",
+      "create_postgres",
+      "query_render_postgres",
+      "list_key_value",
+      "create_key_value"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "gitlab",
+    "name": "GitLab MCP Server",
+    "description": "Comprehensive GitLab MCP server with 107+ tools across merge requests, issues, repos, branches, pipelines, labels, releases, wikis, and milestones.",
+    "author": "zereight",
+    "version": "1.0.0",
+    "homepage": "https://github.com/zereight/gitlab-mcp",
+    "verified": false,
+    "tools_count": 107,
+    "rating": 4.5,
+    "install_count": 18700,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://*.gitlab.com",
+        "https://*.gitlab.io"
+      ]
+    },
+    "tools": [
+      "create_issue",
+      "get_issue",
+      "list_issues",
+      "update_issue",
+      "create_merge_request",
+      "get_merge_request",
+      "list_merge_requests",
+      "merge_merge_request",
+      "search_code",
+      "get_file_contents",
+      "create_branch",
+      "list_branches",
+      "list_pipelines",
+      "get_pipeline",
+      "list_labels",
+      "create_release",
+      "list_wiki_pages"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "atlassian",
+    "name": "Atlassian MCP Server (Jira + Confluence)",
+    "description": "Official Atlassian remote MCP server securely connecting Jira and Confluence with AI tools via OAuth 2.1 for issue management and content access.",
+    "author": "Atlassian",
+    "version": "0.1.0",
+    "homepage": "https://github.com/atlassian/atlassian-mcp-server",
+    "verified": false,
+    "tools_count": 15,
+    "rating": 4.3,
+    "install_count": 12300,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://*.atlassian.net",
+        "https://*.atlassian.com"
+      ]
+    },
+    "tools": [
+      "search_issues",
+      "create_issue",
+      "get_issue",
+      "update_issue",
+      "get_page",
+      "search_content",
+      "create_page",
+      "update_page",
+      "list_projects",
+      "list_boards",
+      "list_sprints",
+      "get_sprint",
+      "list_spaces",
+      "get_space",
+      "add_comment"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "pagerduty",
+    "name": "PagerDuty MCP Server",
+    "description": "Official PagerDuty MCP server with 60+ tools for managing incidents, services, schedules, escalation policies, teams, and status pages.",
+    "author": "PagerDuty",
+    "version": "0.1.0",
+    "homepage": "https://github.com/PagerDuty/pagerduty-mcp-server",
+    "verified": false,
+    "tools_count": 60,
+    "rating": 4.4,
+    "install_count": 5600,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://api.pagerduty.com"
+      ]
+    },
+    "tools": [
+      "create_incident",
+      "get_incident",
+      "list_incidents",
+      "manage_incidents",
+      "add_note_to_incident",
+      "create_service",
+      "get_service",
+      "list_services",
+      "list_schedules",
+      "get_schedule",
+      "list_escalation_policies",
+      "list_teams",
+      "create_team",
+      "list_oncalls",
+      "list_incident_workflows",
+      "list_status_pages"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "pinecone",
+    "name": "Pinecone MCP Server",
+    "description": "Official Pinecone MCP server for vector database index management, record upsert/search, documentation search, and reranking.",
+    "author": "Pinecone",
+    "version": "0.1.0",
+    "homepage": "https://github.com/pinecone-io/pinecone-mcp",
+    "verified": false,
+    "tools_count": 9,
+    "rating": 4.3,
+    "install_count": 7200,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://*.pinecone.io"
+      ]
+    },
+    "tools": [
+      "search-docs",
+      "list-indexes",
+      "describe-index",
+      "describe-index-stats",
+      "create-index-for-model",
+      "upsert-records",
+      "search-records",
+      "cascading-search",
+      "rerank-documents"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "qdrant",
+    "name": "Qdrant MCP Server",
+    "description": "Official Qdrant MCP server acting as a semantic memory layer for storing and retrieving information via vector-based semantic search.",
+    "author": "Qdrant",
+    "version": "0.1.0",
+    "homepage": "https://github.com/qdrant/mcp-server-qdrant",
+    "verified": false,
+    "tools_count": 2,
+    "rating": 4.2,
+    "install_count": 5100,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://*.qdrant.io",
+        "http://localhost:6333"
+      ]
+    },
+    "tools": [
+      "qdrant-store",
+      "qdrant-find"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "chromadb",
+    "name": "ChromaDB MCP Server",
+    "description": "Official Chroma MCP server for vector database collection management, document CRUD, semantic search, and metadata filtering.",
+    "author": "Chroma (chroma-core)",
+    "version": "0.1.0",
+    "homepage": "https://github.com/chroma-core/chroma-mcp",
+    "verified": false,
+    "tools_count": 12,
+    "rating": 4.2,
+    "install_count": 6400,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://*.trychroma.com",
+        "http://localhost:8000"
+      ]
+    },
+    "tools": [
+      "chroma_list_collections",
+      "chroma_create_collection",
+      "chroma_peek_collection",
+      "chroma_get_collection_info",
+      "chroma_get_collection_count",
+      "chroma_modify_collection",
+      "chroma_delete_collection",
+      "chroma_add_documents",
+      "chroma_query_documents",
+      "chroma_get_documents",
+      "chroma_update_documents",
+      "chroma_delete_documents"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "weaviate",
+    "name": "Weaviate MCP Server",
+    "description": "Official Weaviate MCP server for inserting objects and performing hybrid search queries against a Weaviate vector database.",
+    "author": "Weaviate",
+    "version": "0.1.0",
+    "homepage": "https://github.com/weaviate/mcp-server-weaviate",
+    "verified": false,
+    "tools_count": 2,
+    "rating": 4.1,
+    "install_count": 3200,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://*.weaviate.network",
+        "http://localhost:8080"
+      ]
+    },
+    "tools": [
+      "insert_one",
+      "query"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "elasticsearch",
+    "name": "Elasticsearch MCP Server",
+    "description": "Official Elastic MCP server for interacting with Elasticsearch through index listing, mapping inspection, search queries, and ES|QL.",
+    "author": "Elastic",
+    "version": "0.1.0",
+    "homepage": "https://github.com/elastic/mcp-server-elasticsearch",
+    "verified": false,
+    "tools_count": 5,
+    "rating": 4.2,
+    "install_count": 5800,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://*:9200",
+        "http://localhost:9200"
+      ]
+    },
+    "tools": [
+      "list_indices",
+      "get_mappings",
+      "search",
+      "esql",
+      "get_shards"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "mysql",
+    "name": "MySQL MCP Server",
+    "description": "MCP server for secure MySQL database interaction with schema inspection, table listing, and SQL query execution.",
+    "author": "designcomputer",
+    "version": "0.1.0",
+    "homepage": "https://github.com/designcomputer/mysql_mcp_server",
+    "verified": false,
+    "tools_count": 3,
+    "rating": 4.0,
+    "install_count": 4100,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "tcp://*:3306"
+      ]
+    },
+    "tools": [
+      "list_tables",
+      "read_table",
+      "execute_sql"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "prisma",
+    "name": "Prisma MCP Server",
+    "description": "Official Prisma MCP server for database migration workflows, schema management, Prisma Postgres provisioning, and SQL execution.",
+    "author": "Prisma",
+    "version": "0.5.0",
+    "homepage": "https://github.com/prisma/mcp",
+    "verified": false,
+    "tools_count": 17,
+    "rating": 4.4,
+    "install_count": 9800,
+    "permissions": {
+      "filesystem": [
+        "read:./prisma/",
+        "write:./prisma/"
+      ],
+      "network": [
+        "https://api.prisma.io"
+      ],
+      "processes": true
+    },
+    "tools": [
+      "migrate-status",
+      "migrate-dev",
+      "migrate-reset",
+      "Prisma-Postgres-account-status",
+      "Create-Prisma-Postgres-Database",
+      "Prisma-Login",
+      "Prisma-Studio",
+      "CreateBackupTool",
+      "CreateConnectionStringTool",
+      "DeleteDatabaseTool",
+      "ListDatabasesTool",
+      "ExecuteSqlQueryTool",
+      "IntrospectSchemaTool",
+      "ListBackupsTool",
+      "ListConnectionStringsTool",
+      "CreateRecoveryTool",
+      "DeleteConnectionStringTool"
+    ],
+    "scan_summary": "REVIEW: Process execution needed for prisma CLI migrations. Network scoped to api.prisma.io. Filesystem limited to ./prisma/ directory. Official Prisma product."
+  },
+  {
+    "id": "twilio",
+    "name": "Twilio MCP Server",
+    "description": "Official Twilio MCP server exposing all Twilio APIs to AI assistants with context-aware filtering for LLM token limits.",
+    "author": "Twilio",
+    "version": "0.1.0",
+    "homepage": "https://github.com/twilio-labs/mcp",
+    "verified": false,
+    "tools_count": 50,
+    "rating": 4.3,
+    "install_count": 6100,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://api.twilio.com"
+      ]
+    },
+    "tools": [
+      "send_sms",
+      "send_mms",
+      "make_call",
+      "list_messages",
+      "list_calls",
+      "get_recording",
+      "create_verify_service",
+      "check_verify",
+      "lookup_phone",
+      "list_conversations"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "aws-docs",
+    "name": "AWS Documentation MCP Server",
+    "description": "AWS MCP server for documentation search, API reference lookup, and architectural guidance across all AWS services.",
+    "author": "AWS Labs (Amazon)",
+    "version": "0.1.0",
+    "homepage": "https://github.com/awslabs/mcp",
+    "verified": false,
+    "tools_count": 5,
+    "rating": 4.4,
+    "install_count": 15600,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://docs.aws.amazon.com",
+        "https://*.amazonaws.com"
+      ]
+    },
+    "tools": [
+      "search_documentation",
+      "get_api_reference",
+      "get_best_practices",
+      "get_architecture_guidance",
+      "get_service_overview"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "google-calendar",
+    "name": "Google Calendar MCP Server",
+    "description": "Google Calendar MCP server with multi-account support, event management, free/busy queries, scheduling, and natural language understanding.",
+    "author": "nspady",
+    "version": "1.0.0",
+    "homepage": "https://github.com/nspady/google-calendar-mcp",
+    "verified": false,
+    "tools_count": 12,
+    "rating": 4.3,
+    "install_count": 8900,
+    "permissions": {
+      "filesystem": [
+        "read:~/.credentials/"
+      ],
+      "network": [
+        "https://www.googleapis.com/calendar/"
+      ]
+    },
+    "tools": [
+      "list-calendars",
+      "list-events",
+      "get-event",
+      "search-events",
+      "create-event",
+      "update-event",
+      "delete-event",
+      "respond-to-event",
+      "get-freebusy",
+      "get-current-time",
+      "list-colors",
+      "manage-accounts"
+    ],
+    "scan_summary": "No critical issues. Filesystem limited to credentials directory. Network scoped to Google Calendar API. Requires Google OAuth."
+  },
+  {
+    "id": "google-drive",
+    "name": "Google Drive MCP Server",
+    "description": "MCP server for searching and reading Google Drive files with automatic format conversion for Google Workspace documents.",
+    "author": "Anthropic (archived)",
+    "version": "0.6.0",
+    "homepage": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/gdrive",
+    "verified": false,
+    "tools_count": 1,
+    "rating": 4.1,
+    "install_count": 7200,
+    "permissions": {
+      "filesystem": [
+        "read:~/.credentials/"
+      ],
+      "network": [
+        "https://www.googleapis.com/drive/"
+      ]
+    },
+    "tools": [
+      "search"
+    ],
+    "scan_summary": "No critical issues. Filesystem limited to credentials directory. Network scoped to Google Drive API. Note: archived by Anthropic, may lack maintenance."
+  },
+  {
+    "id": "obsidian",
+    "name": "Obsidian MCP Server",
+    "description": "MCP server for Obsidian vault management enabling AI agents to read, write, search, and manage notes, tags, and frontmatter.",
+    "author": "cyanheads",
+    "version": "2.1.0",
+    "homepage": "https://github.com/cyanheads/obsidian-mcp-server",
+    "verified": false,
+    "tools_count": 8,
+    "rating": 4.3,
+    "install_count": 9400,
+    "permissions": {
+      "filesystem": [
+        "read:~/",
+        "write:~/"
+      ],
+      "network": [
+        "http://localhost:27123"
+      ]
+    },
+    "tools": [
+      "obsidian_read_note",
+      "obsidian_update_note",
+      "obsidian_search_replace",
+      "obsidian_global_search",
+      "obsidian_list_notes",
+      "obsidian_manage_frontmatter",
+      "obsidian_manage_tags",
+      "obsidian_delete_note"
+    ],
+    "scan_summary": "REVIEW: Filesystem scope (read/write ~/) is broader than needed. Should be restricted to vault directory only. Network limited to localhost (Obsidian REST API)."
+  },
+  {
+    "id": "asana",
+    "name": "Asana MCP Server",
+    "description": "Comprehensive Asana MCP server with 47 tools for managing workspaces, projects, tasks, subtasks, tags, stories, and dependencies.",
+    "author": "roychri",
+    "version": "1.0.0",
+    "homepage": "https://github.com/roychri/mcp-server-asana",
+    "verified": false,
+    "tools_count": 47,
+    "rating": 4.2,
+    "install_count": 5400,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://app.asana.com/api/"
+      ]
+    },
+    "tools": [
+      "asana_list_workspaces",
+      "asana_search_projects",
+      "asana_search_tasks",
+      "asana_get_task",
+      "asana_create_task",
+      "asana_update_task",
+      "asana_delete_task",
+      "asana_create_subtask",
+      "asana_add_task_dependencies",
+      "asana_get_project",
+      "asana_create_project",
+      "asana_get_project_sections"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "trello",
+    "name": "Trello MCP Server",
+    "description": "MCP server for Trello board interactions including card management, list operations, checklists, and activity tracking with rate limiting.",
+    "author": "delorenj",
+    "version": "0.1.0",
+    "homepage": "https://github.com/delorenj/mcp-server-trello",
+    "verified": false,
+    "tools_count": 20,
+    "rating": 4.0,
+    "install_count": 3200,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://api.trello.com"
+      ]
+    },
+    "tools": [
+      "list_boards",
+      "set_active_board",
+      "get_active_board_info",
+      "get_card",
+      "get_cards_by_list_id",
+      "add_card_to_list",
+      "get_lists",
+      "get_recent_activity",
+      "get_checklist_items",
+      "add_checklist_item"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "discord",
+    "name": "Discord MCP Server",
+    "description": "MCP server enabling LLMs to interact with Discord channels for sending and reading messages through Discord's API.",
+    "author": "v-3",
+    "version": "0.1.0",
+    "homepage": "https://github.com/v-3/discordmcp",
+    "verified": false,
+    "tools_count": 2,
+    "rating": 3.8,
+    "install_count": 2800,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://discord.com/api/"
+      ]
+    },
+    "tools": [
+      "send-message",
+      "read-messages"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "telegram",
+    "name": "Telegram MCP Server",
+    "description": "MCP server for Telegram using the MTProto protocol providing read access to dialogs, messages, and contacts.",
+    "author": "sparfenyuk",
+    "version": "0.1.0",
+    "homepage": "https://github.com/sparfenyuk/mcp-telegram",
+    "verified": false,
+    "tools_count": 7,
+    "rating": 3.7,
+    "install_count": 2100,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://api.telegram.org"
+      ]
+    },
+    "tools": [
+      "get_dialogs",
+      "get_messages",
+      "mark_as_read",
+      "retrieve_by_date",
+      "download_media",
+      "get_contacts",
+      "draft_message"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "whatsapp",
+    "name": "WhatsApp MCP Server",
+    "description": "MCP server for WhatsApp enabling AI assistants to search contacts, read messages, and send messages to individuals or groups.",
+    "author": "lharries",
+    "version": "0.1.0",
+    "homepage": "https://github.com/lharries/whatsapp-mcp",
+    "verified": false,
+    "tools_count": 12,
+    "rating": 3.9,
+    "install_count": 4600,
+    "permissions": {
+      "filesystem": [
+        "read:~/Library/Messages/"
+      ],
+      "network": true
+    },
+    "tools": [
+      "search_contacts",
+      "list_chats",
+      "get_chat",
+      "get_direct_chat_by_contact",
+      "list_messages",
+      "get_message_context",
+      "get_last_interaction",
+      "send_message",
+      "send_file",
+      "send_audio_message",
+      "download_media",
+      "get_contact_chats"
+    ],
+    "scan_summary": "FLAGGED: Unrestricted network access combined with read access to private messages creates significant exfiltration risk. Network should be restricted to specific domains."
+  },
+  {
+    "id": "sendgrid",
+    "name": "SendGrid MCP Server",
+    "description": "MCP server for SendGrid's Marketing API providing email marketing, contact management, template management, and analytics.",
+    "author": "Garoth",
+    "version": "0.1.0",
+    "homepage": "https://github.com/Garoth/sendgrid-mcp",
+    "verified": false,
+    "tools_count": 19,
+    "rating": 3.9,
+    "install_count": 2400,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://api.sendgrid.com"
+      ]
+    },
+    "tools": [
+      "list_contacts",
+      "add_contact",
+      "delete_contacts",
+      "list_contact_lists",
+      "create_contact_list",
+      "send_email",
+      "send_to_list",
+      "create_template",
+      "list_templates",
+      "get_template",
+      "delete_template",
+      "get_stats",
+      "validate_email",
+      "list_verified_senders"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "datadog",
+    "name": "Datadog MCP Server",
+    "description": "MCP server for Datadog monitoring providing CI pipeline visibility, metrics, service definitions, logs, monitors, SLOs, and team management.",
+    "author": "shelfio",
+    "version": "0.1.0",
+    "homepage": "https://github.com/shelfio/datadog-mcp",
+    "verified": false,
+    "tools_count": 12,
+    "rating": 4.0,
+    "install_count": 3800,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://api.datadoghq.com"
+      ]
+    },
+    "tools": [
+      "list_ci_pipelines",
+      "get_pipeline_fingerprints",
+      "list_metrics",
+      "get_metrics",
+      "list_service_definitions",
+      "get_service_definition",
+      "get_service_logs",
+      "list_monitors",
+      "list_slos",
+      "get_teams",
+      "get_metric_fields",
+      "get_metric_field_values"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "raygun",
+    "name": "Raygun MCP Server",
+    "description": "Official Raygun remote MCP server for crash reporting investigation, deployment tracking, performance analysis, and team management.",
+    "author": "MindscapeHQ (Raygun)",
+    "version": "0.1.0",
+    "homepage": "https://github.com/MindscapeHQ/mcp-server-raygun",
+    "verified": false,
+    "tools_count": 26,
+    "rating": 4.1,
+    "install_count": 2100,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://api.raygun.com"
+      ]
+    },
+    "tools": [
+      "applications_list",
+      "applications_search",
+      "error_groups_list",
+      "error_group_investigate",
+      "error_group_update_status",
+      "error_instances_browse",
+      "deployments_list",
+      "deployment_create",
+      "deployment_investigate",
+      "customers_list",
+      "sessions_list",
+      "metrics_website_performance_analyze",
+      "metrics_error_trends_analyze",
+      "invitations_manage"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "bitbucket",
+    "name": "Bitbucket MCP Server",
+    "description": "MCP server for Bitbucket Cloud and Server providing repository management, pull request operations, and comment management.",
+    "author": "MatanYemini",
+    "version": "0.1.0",
+    "homepage": "https://github.com/MatanYemini/bitbucket-mcp",
+    "verified": false,
+    "tools_count": 17,
+    "rating": 3.9,
+    "install_count": 2800,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://api.bitbucket.org"
+      ]
+    },
+    "tools": [
+      "listRepositories",
+      "getRepository",
+      "getPullRequests",
+      "createPullRequest",
+      "getPullRequest",
+      "updatePullRequest",
+      "approvePullRequest",
+      "declinePullRequest",
+      "mergePullRequest",
+      "createDraftPullRequest",
+      "publishDraftPullRequest",
+      "getPullRequestComments",
+      "getPullRequestActivity",
+      "requestChanges",
+      "removeChangeRequest",
+      "unapprovePullRequest",
+      "convertTodraft"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "turbopuffer",
+    "name": "Turbopuffer MCP Server",
+    "description": "Official Turbopuffer MCP server for exploring the API, searching SDK documentation, and executing TypeScript code in a sandbox.",
+    "author": "Turbopuffer",
+    "version": "0.1.0",
+    "homepage": "https://github.com/turbopuffer/turbopuffer-typescript",
+    "verified": false,
+    "tools_count": 2,
+    "rating": 4.0,
+    "install_count": 1800,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "https://*.turbopuffer.com"
+      ]
+    },
+    "tools": [
+      "docs_search",
+      "code_execute"
+    ],
+    "scan_summary": "Awaiting full review. Notes: Network-only access."
+  }
+]

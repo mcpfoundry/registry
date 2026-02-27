@@ -1,0 +1,159 @@
+name: Tool Submission Review
+
+on:
+  pull_request:
+    paths:
+      - 'submissions/**'
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Detect submission
+        id: detect
+        run: |
+          CHANGED=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }} -- submissions/)
+          if [ -z "$CHANGED" ]; then
+            echo "No submission files changed"
+            exit 0
+          fi
+          TOOL_DIR=$(echo "$CHANGED" | head -1 | cut -d'/' -f2)
+          echo "tool_dir=submissions/$TOOL_DIR" >> "$GITHUB_OUTPUT"
+          echo "tool_id=$TOOL_DIR" >> "$GITHUB_OUTPUT"
+          echo "Detected submission: $TOOL_DIR"
+
+      # Validate manifest structure - catches bad submissions before maintainer review
+      - name: Validate manifest
+        if: steps.detect.outputs.tool_dir
+        id: validate
+        run: |
+          MANIFEST="${{ steps.detect.outputs.tool_dir }}/toolbox.toml"
+          ERRORS=""
+
+          if [ ! -f "$MANIFEST" ]; then
+            echo "::error::No toolbox.toml found in ${{ steps.detect.outputs.tool_dir }}"
+            exit 1
+          fi
+
+          # Required sections
+          for section in "tool" "binary" "permissions"; do
+            if ! grep -q "^\[$section\]" "$MANIFEST"; then
+              ERRORS="${ERRORS}Missing [$section] section\n"
+            fi
+          done
+
+          # Required fields
+          if ! grep -q '^name' "$MANIFEST"; then
+            ERRORS="${ERRORS}Missing tool name\n"
+          fi
+          if ! grep -q '^version' "$MANIFEST"; then
+            ERRORS="${ERRORS}Missing tool version\n"
+          fi
+          if ! grep -q '^entry' "$MANIFEST"; then
+            ERRORS="${ERRORS}Missing binary entry\n"
+          fi
+
+          # Quick red-flag check (obvious attacks only - real scan is done locally)
+          BLOCKED=false
+          if grep -qiE '(<IMPORTANT>|<SYSTEM>|\{\{SYSTEM:|exfiltrate|\[HIDDEN\])' "$MANIFEST"; then
+            ERRORS="${ERRORS}CRITICAL: Suspicious patterns detected in manifest\n"
+            BLOCKED=true
+          fi
+          if grep -qoE '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}' "$MANIFEST"; then
+            ERRORS="${ERRORS}CRITICAL: Email address found in manifest\n"
+            BLOCKED=true
+          fi
+
+          # Permission flags (informational, not blocking)
+          WARNINGS=""
+          if grep -q 'network = true' "$MANIFEST"; then
+            WARNINGS="${WARNINGS}- Unrestricted network access requested\n"
+          fi
+          if grep -q 'allow_exec = true' "$MANIFEST"; then
+            WARNINGS="${WARNINGS}- Child process execution enabled\n"
+          fi
+
+          echo "blocked=$BLOCKED" >> "$GITHUB_OUTPUT"
+
+          if [ -n "$ERRORS" ]; then
+            echo -e "errors<<EOF\n${ERRORS}EOF" >> "$GITHUB_OUTPUT"
+          fi
+          if [ -n "$WARNINGS" ]; then
+            echo -e "warnings<<EOF\n${WARNINGS}EOF" >> "$GITHUB_OUTPUT"
+          fi
+
+          if [ "$BLOCKED" = true ]; then
+            echo "::error::Submission contains critical red flags"
+          fi
+
+      # Post validation results
+      - name: Post results
+        if: steps.detect.outputs.tool_dir
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const toolId = '${{ steps.detect.outputs.tool_id }}';
+            const blocked = '${{ steps.validate.outputs.blocked }}' === 'true';
+            const errors = `${{ steps.validate.outputs.errors }}`.trim();
+            const warnings = `${{ steps.validate.outputs.warnings }}`.trim();
+
+            let body = `## Tool Submission: ${toolId}\n\n`;
+
+            if (blocked) {
+              body += `**Status**: 🚫 BLOCKED - critical red flags detected\n\n`;
+              body += `**Issues**:\n${errors}\n\n`;
+              body += `This submission has been automatically blocked.\n`;
+            } else if (errors) {
+              body += `**Status**: ⚠️ VALIDATION FAILED\n\n`;
+              body += `**Issues**:\n${errors}\n\n`;
+              body += `Please fix the above issues and update the PR.\n`;
+            } else {
+              body += `**Status**: ✅ VALIDATION PASSED\n\n`;
+              body += `Manifest structure is valid. Awaiting maintainer review.\n\n`;
+              body += `**Maintainer**: Run the local review pipeline:\n`;
+              body += `\`\`\`bash\n./scripts/review-tool.sh submissions/${toolId}/\n\`\`\`\n`;
+            }
+
+            if (warnings) {
+              body += `\n**Permission notes**:\n${warnings}\n`;
+            }
+
+            body += `\n---\n*Automated validation by MCP Foundry CI. Full security scan is performed locally by maintainers.*`;
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: body
+            });
+
+      - name: Label submission
+        if: steps.detect.outputs.tool_dir
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const blocked = '${{ steps.validate.outputs.blocked }}' === 'true';
+            const errors = `${{ steps.validate.outputs.errors }}`.trim();
+            let label = 'needs-review';
+            if (blocked) label = 'blocked';
+            else if (errors) label = 'needs-fix';
+
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: [label]
+            });
+
+      - name: Fail on blocked
+        if: steps.validate.outputs.blocked == 'true'
+        run: exit 1
