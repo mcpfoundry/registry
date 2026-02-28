@@ -364,7 +364,13 @@
       "brave_news_search",
       "brave_summarizer"
     ],
-    "scan_summary": "Awaiting full review. Notes: Network-only access."
+    "scan_summary": "Awaiting full review. Notes: Network-only access.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/brave-search-official/1.0.0/brave-search-official-1.0.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/brave-search-official/1.0.0/toolbox.toml",
+      "sha512": "82ed034726480fb630f556f17c158c0eea9226f3828feffd59c457bf0f1937bb25df4e4003d8b7e08a7e9cce6a8fbffbb4c35e8408eca64bf440c4daf5377d69",
+      "size_bytes": 70073
+    }
   },
   {
     "id": "vercel",
@@ -474,7 +480,13 @@
       "list_key_value",
       "create_key_value"
     ],
-    "scan_summary": "Awaiting full review. Notes: Network-only access."
+    "scan_summary": "Awaiting full review. Notes: Network-only access.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/render/0.1.0/render-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/render/0.1.0/toolbox.toml",
+      "sha512": "e1d45675786a4741817286f582a216f21c720db9f39a9ad2a2354c0c4375a8213521aa488e49bcf2ccc8f11455fb328b51330a33b1d0d8a57efd8af596eeab8d",
+      "size_bytes": 132848
+    }
   },
   {
     "id": "gitlab",
@@ -885,7 +897,13 @@
       "list-colors",
       "manage-accounts"
     ],
-    "scan_summary": "No critical issues. Filesystem limited to credentials directory. Network scoped to Google Calendar API. Requires Google OAuth."
+    "scan_summary": "No critical issues. Filesystem limited to credentials directory. Network scoped to Google Calendar API. Requires Google OAuth.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/google-calendar/1.0.0/google-calendar-1.0.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/google-calendar/1.0.0/toolbox.toml",
+      "sha512": "85d72e3cde3d7a74e4ad201505eadd14be1553045331bd471b7f0ff7502e33b12c5720a23043e2f3321d5d6774c086d37d0940378fe32f6bf4ad40a39e01852a",
+      "size_bytes": 331326
+    }
   },
   {
     "id": "google-drive",
@@ -909,7 +927,13 @@
     "tools": [
       "search"
     ],
-    "scan_summary": "No critical issues. Filesystem limited to credentials directory. Network scoped to Google Drive API. Note: archived by Anthropic, may lack maintenance."
+    "scan_summary": "No critical issues. Filesystem limited to credentials directory. Network scoped to Google Drive API. Note: archived by Anthropic, may lack maintenance.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/google-drive/0.6.0/google-drive-0.6.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/google-drive/0.6.0/toolbox.toml",
+      "sha512": "341363bcc8b34d3568780f9dc169abcd21f5581f06714bae0ffecb98a2db0a60a31b6435e9bf039f34486ed5aaf6889ccc35e0c27161dd2e5ebbd6ce3a04c5db",
+      "size_bytes": 18627994
+    }
   },
   {
     "id": "obsidian",
@@ -974,7 +998,13 @@
       "asana_create_project",
       "asana_get_project_sections"
     ],
-    "scan_summary": "Awaiting full review. Notes: Network-only access."
+    "scan_summary": "Awaiting full review. Notes: Network-only access.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/asana/1.0.0/asana-1.0.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/asana/1.0.0/toolbox.toml",
+      "sha512": "d29e86ee00518f2b75dbd9a1462848a1530a2b4b237ccfc3da4e1561d491bc0840a64ebbdb0c87150a67163339cd7dd5edf92eeec8ed03d259af421556aa9cc7",
+      "size_bytes": 350078
+    }
   },
   {
     "id": "trello",
@@ -1005,7 +1035,13 @@
       "get_checklist_items",
       "add_checklist_item"
     ],
-    "scan_summary": "Awaiting full review. Notes: Network-only access."
+    "scan_summary": "Awaiting full review. Notes: Network-only access.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/trello/0.1.0/trello-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/trello/0.1.0/toolbox.toml",
+      "sha512": "ef86c301abe1e6c92b7410880c2f20867fe37cb5468588d2d4b5c68cfbbe7ce9033f6a66f7c46e1cb96147941b0dc27499344c81b05cf080c34f31b11729263e",
+      "size_bytes": 193617
+    }
   },
   {
     "id": "discord",
@@ -1230,7 +1266,13 @@
       "unapprovePullRequest",
       "convertTodraft"
     ],
-    "scan_summary": "Awaiting full review. Notes: Network-only access."
+    "scan_summary": "Awaiting full review. Notes: Network-only access.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/bitbucket/0.1.0/bitbucket-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/bitbucket/0.1.0/toolbox.toml",
+      "sha512": "08aeee6b46f7b0ec1baed758f922aa80c939bdb6cf2b4bb3be18c7e2b9face74d9916e53da0d2baa0f458051a162e213e506d1c8af3e44942095d8738f451a04",
+      "size_bytes": 178865
+    }
   },
   {
     "id": "turbopuffer",
@@ -1254,5 +1296,572 @@
       "code_execute"
     ],
     "scan_summary": "Awaiting full review. Notes: Network-only access."
+  },
+  {
+    "id": "airtable",
+    "name": "airtable MCP Server",
+    "description": "Read and write access to Airtable databases",
+    "author": "domdomegg",
+    "version": "1.12.0",
+    "homepage": "https://github.com/domdomegg/airtable-mcp-server",
+    "verified": false,
+    "tools_count": 15,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "list_records",
+      "search_records",
+      "list_bases",
+      "list_tables",
+      "describe_table",
+      "get_record",
+      "create_record",
+      "update_records",
+      "delete_records",
+      "create_table",
+      "update_table",
+      "create_field",
+      "update_field",
+      "create_comment",
+      "list_comments"
+    ],
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/airtable/1.12.0/airtable-1.12.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/airtable/1.12.0/toolbox.toml",
+      "sha512": "d8bbb23f5f106145239509f4c248ea2581dba0654547d75b0d9261988ee7c429e8434c3e0efc0045e7ee8c5d0fab6daf0afb9824bc46563747e1ab04740212d7",
+      "size_bytes": 84253
+    }
+  },
+  {
+    "id": "blender",
+    "name": "blender MCP Server",
+    "description": "3D modeling and scene creation via Blender integration",
+    "author": "ahujasid",
+    "version": "1.5.5",
+    "homepage": "https://github.com/ahujasid/blender-mcp",
+    "verified": false,
+    "tools_count": 10,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": [
+        "read:~/Documents",
+        "write:~/Documents",
+        "read:~/Downloads",
+        "write:~/Downloads",
+        "readwrite:/tmp"
+      ],
+      "network": true
+    },
+    "tools": [
+      "get_scene_info",
+      "create_object",
+      "modify_object",
+      "delete_object",
+      "apply_material",
+      "execute_blender_code",
+      "get_polyhaven_asset",
+      "generate_3d_model",
+      "search_sketchfab",
+      "capture_viewport"
+    ],
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/blender/1.5.5/blender-1.5.5.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/blender/1.5.5/toolbox.toml",
+      "sha512": "7ce7ef2ff3305139647042d7a6fa6557fdc2e241561d980d70f2f6e8aac44949d408c50a96ebb5aa34891d06cc16fde9dae0bb207a51d2aaba8de4e4b343b02a",
+      "size_bytes": 529157
+    }
+  },
+  {
+    "id": "circleci",
+    "name": "circleci MCP Server",
+    "description": "CircleCI CI/CD pipeline management and debugging MCP server",
+    "author": "CircleCI-Public",
+    "version": "0.1.0",
+    "homepage": "https://github.com/CircleCI-Public/mcp-server-circleci",
+    "verified": false,
+    "tools_count": 15,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "get_build_failure_logs",
+      "find_flaky_tests",
+      "get_latest_pipeline_status",
+      "get_job_test_results",
+      "config_helper",
+      "create_prompt_template",
+      "recommend_prompt_template_tests",
+      "list_followed_projects",
+      "run_pipeline",
+      "run_rollback_pipeline",
+      "rerun_workflow",
+      "analyze_diff",
+      "list_component_versions",
+      "download_usage_api_data",
+      "find_underused_resource_classes"
+    ],
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/circleci/0.1.0/circleci-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/circleci/0.1.0/toolbox.toml",
+      "sha512": "31544def435cd3c6eac81504641d9ceafb119d57f1cdcfdf91a74df9ccd990a7b6244a6931da977a20ee6446607f782961d70b8c87eda103bead3537a6710143",
+      "size_bytes": 130240
+    }
+  },
+  {
+    "id": "discord-community",
+    "name": "discord-community MCP Server",
+    "description": "Discord bot integration with messaging, roles, and event streaming",
+    "author": "tolgasumer",
+    "version": "1.0.0",
+    "homepage": "https://github.com/tolgasumer/discord-mcp",
+    "verified": false,
+    "tools_count": 16,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "ping",
+      "get_guild_info",
+      "list_guild_members",
+      "list_channels",
+      "get_channel_info",
+      "send_message",
+      "get_channel_messages",
+      "edit_message",
+      "delete_message",
+      "add_reaction",
+      "list_roles",
+      "get_role_info",
+      "create_role",
+      "delete_role",
+      "assign_role",
+      "unassign_role"
+    ],
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/discord-community/1.0.0/discord-community-1.0.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/discord-community/1.0.0/toolbox.toml",
+      "sha512": "5ffd41c492ed4fd6841fac0914f17dd410aff7d6930e80338f196f914071b579483340c9f3e1b837aae38539052f6eb0a1e5988547264db6f9520c29dde52790",
+      "size_bytes": 32421
+    }
+  },
+  {
+    "id": "docker-community",
+    "name": "docker-community MCP Server",
+    "description": "Docker container and compose stack management",
+    "author": "QuantGeekDev",
+    "version": "1.0.0",
+    "homepage": "https://github.com/QuantGeekDev/docker-mcp",
+    "verified": false,
+    "tools_count": 4,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": [
+        "read:/var/run/docker.sock"
+      ],
+      "network": true
+    },
+    "tools": [
+      "create-container",
+      "deploy-compose",
+      "get-logs",
+      "list-containers"
+    ],
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/docker-community/1.0.0/docker-community-1.0.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/docker-community/1.0.0/toolbox.toml",
+      "sha512": "f5cc007ee6270a9d850d80a44647f3e169a460175deba6c0b6f176f4d2639c761d362e13715e6de1b3dd9ba333e6c2561fd5b26892fb8d59f7039adcd53bf230",
+      "size_bytes": 16666
+    }
+  },
+  {
+    "id": "elasticsearch-community",
+    "name": "elasticsearch-community MCP Server",
+    "description": "Elasticsearch cluster interaction, search, and index management",
+    "author": "elastic",
+    "version": "0.4.6",
+    "homepage": "https://github.com/elastic/mcp-server-elasticsearch",
+    "verified": false,
+    "tools_count": 5,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "list_indices",
+      "get_mappings",
+      "search",
+      "esql",
+      "get_shards"
+    ],
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/elasticsearch-community/0.4.6/elasticsearch-community-0.4.6.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/elasticsearch-community/0.4.6/toolbox.toml",
+      "sha512": "06496cce5c7b7921ac4b1fba2d1cc36d41651e7647d011a760af04a69ddd3bff483a89b8ff7ccf2eb6f5b24ce193d9d4b3116001059256b0c00cb1d2c10ec27a",
+      "size_bytes": 47165
+    }
+  },
+  {
+    "id": "home-assistant",
+    "name": "home-assistant MCP Server",
+    "description": "Smart home automation control via Home Assistant",
+    "author": "tevonsb",
+    "version": "1.0.0",
+    "homepage": "https://github.com/tevonsb/homeassistant-mcp",
+    "verified": false,
+    "tools_count": 4,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "control",
+      "addon",
+      "package",
+      "automation_config"
+    ],
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/home-assistant/1.0.0/home-assistant-1.0.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/home-assistant/1.0.0/toolbox.toml",
+      "sha512": "f7912395cc80820c867cad574a57518ba2b2ba7c29346810be7c0fb56efeeebdaa5dd3d73f7e0f55dd427c36e798c3634725d0a3b1117feefea2adf0c228197e",
+      "size_bytes": 75463
+    }
+  },
+  {
+    "id": "kubernetes-community",
+    "name": "kubernetes-community MCP Server",
+    "description": "Kubernetes and OpenShift cluster management via native Go MCP server",
+    "author": "manusa",
+    "version": "1.0.0",
+    "homepage": "https://github.com/manusa/kubernetes-mcp-server",
+    "verified": false,
+    "tools_count": 18,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": [
+        "read:~/.kube"
+      ],
+      "network": true
+    },
+    "tools": [
+      "pods_list",
+      "pods_get",
+      "pods_delete",
+      "pods_log",
+      "pods_exec",
+      "pods_run",
+      "resources_list",
+      "resources_get",
+      "resources_create_or_update",
+      "resources_delete",
+      "namespaces_list",
+      "events_list",
+      "nodes_list",
+      "helm_install",
+      "helm_list",
+      "helm_uninstall",
+      "config_view",
+      "config_list_contexts"
+    ],
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/kubernetes-community/1.0.0/kubernetes-community-1.0.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/kubernetes-community/1.0.0/toolbox.toml",
+      "sha512": "deb85718d4ba66267c551bc5ad72a0a2362c7e546fd54be6bfd92d97d0c0389436eb38356e067d7f1df83b52b4072f20c92be698d7fa35b43cfd76e18cbef7b6",
+      "size_bytes": 1952230
+    }
+  },
+  {
+    "id": "mysql-community",
+    "name": "mysql-community MCP Server",
+    "description": "Secure MySQL database interaction and schema exploration",
+    "author": "designcomputer",
+    "version": "0.2.2",
+    "homepage": "https://github.com/designcomputer/mysql_mcp_server",
+    "verified": false,
+    "tools_count": 5,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "list_tables",
+      "describe_table",
+      "read_query",
+      "write_query",
+      "list_databases"
+    ],
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/mysql-community/0.2.2/mysql-community-0.2.2.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/mysql-community/0.2.2/toolbox.toml",
+      "sha512": "825a6f957adf55809e2a29b32db88cd8497bb9ba901e1ae6e3d527c5d8ce69d7fbbfb45ac903bd0a0910fa568d219f045869e1a7e3474d5321aeff039b1d6e62",
+      "size_bytes": 9561
+    }
+  },
+  {
+    "id": "obsidian-community",
+    "name": "obsidian-community MCP Server",
+    "description": "AI-powered interaction with Obsidian vaults via Local REST API",
+    "author": "cyanheads",
+    "version": "2.0.7",
+    "homepage": "https://github.com/cyanheads/obsidian-mcp-server",
+    "verified": false,
+    "tools_count": 8,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": [
+        "read:~/Documents",
+        "write:~/Documents"
+      ],
+      "network": true
+    },
+    "tools": [
+      "obsidian_read_note",
+      "obsidian_update_note",
+      "obsidian_search_replace",
+      "obsidian_global_search",
+      "obsidian_list_notes",
+      "obsidian_manage_frontmatter",
+      "obsidian_manage_tags",
+      "obsidian_delete_note"
+    ],
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/obsidian-community/2.0.7/obsidian-community-2.0.7.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/obsidian-community/2.0.7/toolbox.toml",
+      "sha512": "72f7aa4386832a53e4519eb0544783f7ff74b1cd1407c2b6067ebb8bcd27dfa873d328fe0573fc4ade732c18059e2a8461e0d275fc801ab619b6810adb69c515",
+      "size_bytes": 201439
+    }
+  },
+  {
+    "id": "ollama",
+    "name": "ollama MCP Server",
+    "description": "Ollama local LLM model management and inference MCP server",
+    "author": "rawveg",
+    "version": "0.1.0",
+    "homepage": "https://github.com/rawveg/ollama-mcp",
+    "verified": false,
+    "tools_count": 13,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "localhost",
+        "127.0.0.1"
+      ]
+    },
+    "tools": [
+      "ollama_list",
+      "ollama_show",
+      "ollama_pull",
+      "ollama_push",
+      "ollama_copy",
+      "ollama_delete",
+      "ollama_create",
+      "ollama_ps",
+      "ollama_generate",
+      "ollama_chat",
+      "ollama_embed",
+      "ollama_web_search",
+      "ollama_web_fetch"
+    ],
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/ollama/0.1.0/ollama-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/ollama/0.1.0/toolbox.toml",
+      "sha512": "7bacac2b79d6ce8ef426017b68b0a43e1f3a76b8883fc9dfdd370a4075f0b6e8f894c366ae9f97d5d8c6634b787e05ec0c9660de0f45aa39105a4c6b839b5c25",
+      "size_bytes": 68474
+    }
+  },
+  {
+    "id": "pinecone-community",
+    "name": "pinecone-community MCP Server",
+    "description": "Pinecone vector database search, document management, and RAG operations",
+    "author": "sirmews",
+    "version": "1.0.0",
+    "homepage": "https://github.com/sirmews/mcp-pinecone",
+    "verified": false,
+    "tools_count": 5,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "semantic-search",
+      "read-document",
+      "list-documents",
+      "pinecone-stats",
+      "process-document"
+    ],
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/pinecone-community/1.0.0/pinecone-community-1.0.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/pinecone-community/1.0.0/toolbox.toml",
+      "sha512": "00428b18c0cc3505088de43057617de17dc3fe119d1068a9052cccdd0732a47f2d175e5e3cb1a6dfd73b52d8c4848767be7c2c27054d0be46e8b6d81e5596734",
+      "size_bytes": 36816
+    }
+  },
+  {
+    "id": "prisma-community",
+    "name": "prisma-community MCP Server",
+    "description": "Prisma ORM database migrations, management, and Prisma Postgres operations",
+    "author": "prisma",
+    "version": "1.0.0",
+    "homepage": "https://github.com/prisma/mcp",
+    "verified": false,
+    "tools_count": 7,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": [
+        "read:~/Projects",
+        "write:~/Projects",
+        "readwrite:/tmp"
+      ],
+      "network": true
+    },
+    "tools": [
+      "migrate-status",
+      "migrate-dev",
+      "migrate-reset",
+      "Prisma-Postgres-account-status",
+      "Create-Prisma-Postgres-Database",
+      "Prisma-Login",
+      "Prisma-Studio"
+    ],
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/prisma-community/1.0.0/prisma-community-1.0.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/prisma-community/1.0.0/toolbox.toml",
+      "sha512": "23dcea3b131be0ac6a35b64405e1e4f92d4b9fbd0af9279eca611316a41feeea4304f01cbabd5618939f2c3bbf961c7caf5989c18f173c932f0b5b44726865d3",
+      "size_bytes": 27874
+    }
+  },
+  {
+    "id": "telegram-community",
+    "name": "telegram-community MCP Server",
+    "description": "Full-featured Telegram integration with messaging, groups, contacts, and media",
+    "author": "chigwell",
+    "version": "1.0.0",
+    "homepage": "https://github.com/chigwell/telegram-mcp",
+    "verified": false,
+    "tools_count": 20,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": [
+        "read:~/Downloads",
+        "write:~/Downloads",
+        "readwrite:/tmp"
+      ],
+      "network": true
+    },
+    "tools": [
+      "get_chats",
+      "list_chats",
+      "get_chat",
+      "send_message",
+      "reply_to_message",
+      "edit_message",
+      "delete_message",
+      "forward_message",
+      "get_messages",
+      "search_messages",
+      "create_group",
+      "invite_to_group",
+      "get_participants",
+      "list_contacts",
+      "search_contacts",
+      "send_file",
+      "download_media",
+      "pin_message",
+      "get_me",
+      "resolve_username"
+    ],
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/telegram-community/1.0.0/telegram-community-1.0.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/telegram-community/1.0.0/toolbox.toml",
+      "sha512": "693fddd176c90db3da6857d002d2b0924a74f5fef96080d7b8b49d566ee619ca792c320c1c504c864e78b894fa46a4ef4e4ff14568e2008b2b4d7b92d5fcd82c",
+      "size_bytes": 946375
+    }
+  },
+  {
+    "id": "vercel-community",
+    "name": "vercel-community MCP Server",
+    "description": "Vercel deployment, project, and environment management",
+    "author": "nganiet",
+    "version": "1.0.0",
+    "homepage": "https://github.com/nganiet/mcp-vercel",
+    "verified": false,
+    "tools_count": 13,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "vercel-list-all-deployments",
+      "vercel-get-deployment",
+      "vercel-list-deployment-files",
+      "vercel-create-deployment",
+      "vercel-create-project",
+      "vercel-list-projects",
+      "vercel-find-project",
+      "vercel-create-environment-variables",
+      "vercel-get-project-domain",
+      "vercel-get-environments",
+      "vercel-create-custom-environment",
+      "vercel-list-all-teams",
+      "vercel-create-team"
+    ],
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/vercel-community/1.0.0/vercel-community-1.0.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/vercel-community/1.0.0/toolbox.toml",
+      "sha512": "5f86b9c985fdb5b5dd64eb2aff829b60b212c17f2370fcbd08f5bc8041e835d4a4c68b5e9e1d1c9f701f1a663c4bb67e7b391bbbae4faa750ac767029d1b729b",
+      "size_bytes": 25108
+    }
+  },
+  {
+    "id": "youtube-transcript",
+    "name": "youtube-transcript MCP Server",
+    "description": "Retrieve transcripts and captions from YouTube videos",
+    "author": "kimtaeyoon83",
+    "version": "1.0.0",
+    "homepage": "https://github.com/kimtaeyoon83/mcp-server-youtube-transcript",
+    "verified": false,
+    "tools_count": 1,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "get_transcript"
+    ],
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/youtube-transcript/1.0.0/youtube-transcript-1.0.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/youtube-transcript/1.0.0/toolbox.toml",
+      "sha512": "94e26e35398fda50417059bfa8077ba3c9d10e45f5cccd60d6ca515dfc9c181d067f5bf876a5e78bb37158d4a355a51833348a25a9084519f129f0857ab1b3fa",
+      "size_bytes": 38163
+    }
   }
 ]

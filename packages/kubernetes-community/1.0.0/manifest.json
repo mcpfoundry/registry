@@ -1,0 +1,19 @@
+{
+  "tool_id": "kubernetes-community",
+  "version": "1.0.0",
+  "author": "manusa",
+  "pinned_at": "2026-02-28T02:45:30Z",
+  "source": {
+    "type": "github",
+    "owner": "manusa",
+    "repo": "kubernetes-mcp-server",
+    "homepage": "https://github.com/manusa/kubernetes-mcp-server",
+    "archive_url": "https://github.com/manusa/kubernetes-mcp-server/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "kubernetes-community-1.0.0.tar.gz",
+    "size_bytes": 1952230,
+    "sha512": "deb85718d4ba66267c551bc5ad72a0a2362c7e546fd54be6bfd92d97d0c0389436eb38356e067d7f1df83b52b4072f20c92be698d7fa35b43cfd76e18cbef7b6",
+    "sha256": "67906e7b6d8a78fa36f07a7c31f03ef40fb259cd15380fbd67d7470db1454cb7"
+  }
+}

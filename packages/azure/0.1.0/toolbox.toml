@@ -1,0 +1,92 @@
+[tool]
+name = "azure"
+version = "0.1.0"
+description = "Azure services MCP server providing access to 40+ Azure services"
+author = "microsoft"
+homepage = "https://github.com/microsoft/mcp"
+license = "MIT"
+
+[binary]
+entry = "azure-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = ["read:~/.azure"]
+network = true
+max_memory_mb = 512
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "azure_cli_generate"
+description = "Generate Azure CLI commands for resource management"
+
+[[mcp.tools]]
+name = "azure_resource_management"
+description = "Manage Azure resources including create, update, delete operations"
+
+[[mcp.tools]]
+name = "azure_cosmos_db"
+description = "Interact with Azure Cosmos DB databases and containers"
+
+[[mcp.tools]]
+name = "azure_storage"
+description = "Manage Azure Storage accounts, blobs, and file shares"
+
+[[mcp.tools]]
+name = "azure_key_vault"
+description = "Manage secrets, keys, and certificates in Azure Key Vault"
+
+[[mcp.tools]]
+name = "azure_sql_database"
+description = "Query and manage Azure SQL Database instances"
+
+[[mcp.tools]]
+name = "azure_app_service"
+description = "Manage Azure App Service web apps and configurations"
+
+[[mcp.tools]]
+name = "azure_container_apps"
+description = "Deploy and manage Azure Container Apps"
+
+[[mcp.tools]]
+name = "azure_kubernetes_service"
+description = "Manage Azure Kubernetes Service clusters"
+
+[[mcp.tools]]
+name = "azure_monitor"
+description = "Access Azure Monitor metrics, logs, and alerts"
+
+[[mcp.tools]]
+name = "azure_ai_search"
+description = "Manage Azure AI Search indexes and queries"
+
+[[mcp.tools]]
+name = "azure_compute"
+description = "Manage Azure virtual machines and compute resources"
+
+[[mcp.tools]]
+name = "azure_container_registry"
+description = "Manage Azure Container Registry images and repositories"
+
+[[mcp.tools]]
+name = "azure_event_grid"
+description = "Manage Azure Event Grid topics and subscriptions"
+
+[[mcp.tools]]
+name = "azure_data_explorer"
+description = "Query and manage Azure Data Explorer clusters"
+
+[[mcp.tools]]
+name = "azure_advisor"
+description = "Access Azure Advisor recommendations for best practices"
+
+[[mcp.tools]]
+name = "azure_communication_services"
+description = "Manage Azure Communication Services resources"
+
+[[mcp.tools]]
+name = "azure_app_configuration"
+description = "Manage Azure App Configuration settings and feature flags"

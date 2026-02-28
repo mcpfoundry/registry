@@ -1,0 +1,112 @@
+[tool]
+name = "meilisearch"
+version = "0.1.0"
+description = "Meilisearch search engine management including indexing, search, settings, and monitoring"
+author = "meilisearch"
+homepage = "https://github.com/meilisearch/meilisearch-mcp"
+license = "MIT"
+
+[binary]
+entry = "meilisearch-mcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "get-connection-settings"
+description = "View current Meilisearch connection URL and API key status"
+
+[[mcp.tools]]
+name = "update-connection-settings"
+description = "Update URL and/or API key to connect to a different instance"
+
+[[mcp.tools]]
+name = "create-index"
+description = "Create a new index with optional primary key"
+
+[[mcp.tools]]
+name = "list-indexes"
+description = "List all available indexes"
+
+[[mcp.tools]]
+name = "delete-index"
+description = "Delete an existing index and all its documents"
+
+[[mcp.tools]]
+name = "get-index-metrics"
+description = "Get detailed metrics for a specific index"
+
+[[mcp.tools]]
+name = "get-documents"
+description = "Retrieve documents from an index with pagination"
+
+[[mcp.tools]]
+name = "add-documents"
+description = "Add or update documents in an index"
+
+[[mcp.tools]]
+name = "search"
+description = "Flexible search across single or multiple indices with filtering and sorting"
+
+[[mcp.tools]]
+name = "get-settings"
+description = "View current settings for an index"
+
+[[mcp.tools]]
+name = "update-settings"
+description = "Update index settings including ranking, faceting, and more"
+
+[[mcp.tools]]
+name = "get-keys"
+description = "List all API keys"
+
+[[mcp.tools]]
+name = "create-key"
+description = "Create a new API key with specific permissions"
+
+[[mcp.tools]]
+name = "delete-key"
+description = "Delete an existing API key"
+
+[[mcp.tools]]
+name = "get-task"
+description = "Get information about a specific task"
+
+[[mcp.tools]]
+name = "get-tasks"
+description = "List tasks with optional filters"
+
+[[mcp.tools]]
+name = "cancel-tasks"
+description = "Cancel pending or enqueued tasks"
+
+[[mcp.tools]]
+name = "delete-tasks"
+description = "Delete completed tasks"
+
+[[mcp.tools]]
+name = "health-check"
+description = "Basic health check for the Meilisearch instance"
+
+[[mcp.tools]]
+name = "get-health-status"
+description = "Comprehensive health status of the instance"
+
+[[mcp.tools]]
+name = "get-version"
+description = "Get Meilisearch version information"
+
+[[mcp.tools]]
+name = "get-stats"
+description = "Get database statistics"
+
+[[mcp.tools]]
+name = "get-system-info"
+description = "Get system-level information"

@@ -1,0 +1,19 @@
+{
+  "tool_id": "composio",
+  "version": "1.0.0",
+  "author": "composiohq",
+  "pinned_at": "2026-02-28T02:43:59Z",
+  "source": {
+    "type": "github",
+    "owner": "ComposioHQ",
+    "repo": "composio",
+    "homepage": "https://github.com/ComposioHQ/composio",
+    "archive_url": "https://github.com/ComposioHQ/composio/archive/refs/heads/master.tar.gz"
+  },
+  "artifact": {
+    "filename": "composio-1.0.0.tar.gz",
+    "size_bytes": 20851812,
+    "sha512": "d83353389d12d8d902280373604723d8b8d0aa7079615ac0a4122f249f8c17d0ddb4d7e91cf6cdea6e2ae184ea8e68fb65e4e5cc039b3958cf91512ac692640b",
+    "sha256": "9d6e23749dbf546835a2904cca397a2c2bf5936ae2ade20063d22314c4fbc32b"
+  }
+}

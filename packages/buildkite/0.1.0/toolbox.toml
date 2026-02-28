@@ -1,0 +1,56 @@
+[tool]
+name = "buildkite"
+version = "0.1.0"
+description = "Buildkite CI/CD pipeline and build management MCP server"
+author = "buildkite"
+homepage = "https://github.com/buildkite/buildkite-mcp-server"
+license = "MIT"
+
+[binary]
+entry = "buildkite-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "list_toolsets"
+description = "Browse available tool categories"
+
+[[mcp.tools]]
+name = "search_tools"
+description = "Discover specific tools within the Buildkite MCP server"
+
+[[mcp.tools]]
+name = "list_pipelines"
+description = "List Buildkite pipelines for an organization"
+
+[[mcp.tools]]
+name = "get_pipeline"
+description = "Get details about a specific Buildkite pipeline"
+
+[[mcp.tools]]
+name = "list_builds"
+description = "List builds for a pipeline with filtering options"
+
+[[mcp.tools]]
+name = "get_build"
+description = "Get details about a specific build"
+
+[[mcp.tools]]
+name = "get_job_log"
+description = "Retrieve logs from a specific build job"
+
+[[mcp.tools]]
+name = "list_tests"
+description = "List test results from Buildkite Test Analytics"
+
+[[mcp.tools]]
+name = "get_test_run"
+description = "Get details about a specific test run"

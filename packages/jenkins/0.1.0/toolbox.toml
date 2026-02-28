@@ -1,0 +1,76 @@
+[tool]
+name = "jenkins"
+version = "0.1.0"
+description = "Jenkins CI/CD server management and build automation MCP server"
+author = "jenkinsci"
+homepage = "https://github.com/jenkinsci/mcp-server-plugin"
+license = "MIT"
+
+[binary]
+entry = "jenkins-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "getJob"
+description = "Retrieve a Jenkins job by full path"
+
+[[mcp.tools]]
+name = "getJobs"
+description = "Get paginated list of Jenkins jobs sorted by name"
+
+[[mcp.tools]]
+name = "triggerBuild"
+description = "Initiate a build with optional parameters"
+
+[[mcp.tools]]
+name = "getBuild"
+description = "Fetch specific or latest build from a job"
+
+[[mcp.tools]]
+name = "updateBuild"
+description = "Modify build display name and description"
+
+[[mcp.tools]]
+name = "getBuildLog"
+description = "Retrieve paginated build log lines"
+
+[[mcp.tools]]
+name = "searchBuildLog"
+description = "Find log lines matching patterns"
+
+[[mcp.tools]]
+name = "getQueueItem"
+description = "Get information about queued items by ID"
+
+[[mcp.tools]]
+name = "getJobScm"
+description = "Retrieve job source control configuration"
+
+[[mcp.tools]]
+name = "getBuildScm"
+description = "Get build-specific SCM details"
+
+[[mcp.tools]]
+name = "getBuildChangeSets"
+description = "Fetch change log sets from builds"
+
+[[mcp.tools]]
+name = "findJobsWithScmUrl"
+description = "Locate jobs using a specific repository URL"
+
+[[mcp.tools]]
+name = "whoAmI"
+description = "Retrieve current user information"
+
+[[mcp.tools]]
+name = "getStatus"
+description = "Check Jenkins instance health and readiness status"

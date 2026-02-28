@@ -1,0 +1,55 @@
+[tool]
+name = "slack-official"
+version = "1.0.0"
+description = "Slack workspace interaction with messaging, channels, and user management"
+author = "zencoderai"
+homepage = "https://github.com/zencoderai/slack-mcp-server"
+license = "Apache-2.0"
+
+[binary]
+entry = "slack-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+runtime = "node"
+min_version = "18"
+
+[permissions]
+filesystem = false
+network = true
+env_vars = ["HOME", "PATH", "SLACK_BOT_TOKEN", "SLACK_TEAM_ID"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "slack_list_channels"
+description = "List public and predefined channels with pagination"
+
+[[mcp.tools]]
+name = "slack_post_message"
+description = "Send messages to channels"
+
+[[mcp.tools]]
+name = "slack_reply_to_thread"
+description = "Reply within message threads"
+
+[[mcp.tools]]
+name = "slack_add_reaction"
+description = "Add emoji reactions to messages"
+
+[[mcp.tools]]
+name = "slack_get_channel_history"
+description = "Retrieve recent channel messages"
+
+[[mcp.tools]]
+name = "slack_get_thread_replies"
+description = "Fetch all thread responses"
+
+[[mcp.tools]]
+name = "slack_get_users"
+description = "List workspace users with profiles"
+
+[[mcp.tools]]
+name = "slack_get_user_profile"
+description = "Get detailed user profile information"

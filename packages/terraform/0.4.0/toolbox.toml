@@ -1,0 +1,80 @@
+[tool]
+name = "terraform"
+version = "0.4.0"
+description = "Terraform Registry and HCP Terraform workspace management MCP server"
+author = "hashicorp"
+homepage = "https://github.com/hashicorp/terraform-mcp-server"
+license = "MPL-2.0"
+
+[binary]
+entry = "terraform-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "resolveProviderDocID"
+description = "Query the Terraform Registry to find and list available documentation for a specific provider"
+
+[[mcp.tools]]
+name = "getProviderDocs"
+description = "Fetch complete documentation content for a provider resource, data source, or function"
+
+[[mcp.tools]]
+name = "searchModules"
+description = "Search the Terraform Registry for modules with pagination"
+
+[[mcp.tools]]
+name = "moduleDetails"
+description = "Retrieve detailed documentation for a module including inputs, outputs, and examples"
+
+[[mcp.tools]]
+name = "searchProviders"
+description = "Search for Terraform providers in the registry"
+
+[[mcp.tools]]
+name = "listWorkspaces"
+description = "List workspaces in an HCP Terraform organization"
+
+[[mcp.tools]]
+name = "workspaceDetails"
+description = "Get details about a specific workspace"
+
+[[mcp.tools]]
+name = "listWorkspaceResources"
+description = "List resources in a workspace"
+
+[[mcp.tools]]
+name = "lockWorkspace"
+description = "Lock a workspace to prevent runs"
+
+[[mcp.tools]]
+name = "unlockWorkspace"
+description = "Unlock a previously locked workspace"
+
+[[mcp.tools]]
+name = "listRuns"
+description = "List runs for a workspace"
+
+[[mcp.tools]]
+name = "runDetails"
+description = "Get details about a specific run"
+
+[[mcp.tools]]
+name = "createRun"
+description = "Trigger a new Terraform plan and apply run"
+
+[[mcp.tools]]
+name = "applyRun"
+description = "Apply a planned Terraform run"
+
+[[mcp.tools]]
+name = "cancelRun"
+description = "Cancel a pending or in-progress run"

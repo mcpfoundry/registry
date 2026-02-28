@@ -1,0 +1,104 @@
+[tool]
+name = "auth0"
+version = "0.1.0"
+description = "Auth0 identity and access management MCP server"
+author = "auth0"
+homepage = "https://github.com/auth0/auth0-mcp-server"
+license = "MIT"
+
+[binary]
+entry = "auth0-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "auth0_list_applications"
+description = "List all applications or search by name in the Auth0 tenant"
+
+[[mcp.tools]]
+name = "auth0_get_application"
+description = "Get details about a specific Auth0 application"
+
+[[mcp.tools]]
+name = "auth0_create_application"
+description = "Create a new Auth0 application"
+
+[[mcp.tools]]
+name = "auth0_update_application"
+description = "Update an existing Auth0 application"
+
+[[mcp.tools]]
+name = "auth0_list_resource_servers"
+description = "List all APIs (resource servers) in the tenant"
+
+[[mcp.tools]]
+name = "auth0_get_resource_server"
+description = "Get details about a specific API"
+
+[[mcp.tools]]
+name = "auth0_create_resource_server"
+description = "Create a new API (resource server)"
+
+[[mcp.tools]]
+name = "auth0_update_resource_server"
+description = "Update an existing API (resource server)"
+
+[[mcp.tools]]
+name = "auth0_create_application_grant"
+description = "Create a client grant authorizing an application to access a specific API"
+
+[[mcp.tools]]
+name = "auth0_list_actions"
+description = "List all actions in the Auth0 tenant"
+
+[[mcp.tools]]
+name = "auth0_get_action"
+description = "Get details about a specific action"
+
+[[mcp.tools]]
+name = "auth0_create_action"
+description = "Create a new action"
+
+[[mcp.tools]]
+name = "auth0_update_action"
+description = "Update an existing action"
+
+[[mcp.tools]]
+name = "auth0_deploy_action"
+description = "Deploy an action to production"
+
+[[mcp.tools]]
+name = "auth0_list_logs"
+description = "List logs from the Auth0 tenant"
+
+[[mcp.tools]]
+name = "auth0_get_log"
+description = "Get a specific log entry by ID"
+
+[[mcp.tools]]
+name = "auth0_list_forms"
+description = "List all forms in the tenant"
+
+[[mcp.tools]]
+name = "auth0_get_form"
+description = "Get details about a specific form"
+
+[[mcp.tools]]
+name = "auth0_create_form"
+description = "Create a new form"
+
+[[mcp.tools]]
+name = "auth0_update_form"
+description = "Update an existing form"
+
+[[mcp.tools]]
+name = "auth0_publish_form"
+description = "Publish a form to production"

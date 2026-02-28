@@ -1,0 +1,19 @@
+{
+  "tool_id": "netlify",
+  "version": "0.1.0",
+  "author": "netlify",
+  "pinned_at": "2026-02-28T02:45:57Z",
+  "source": {
+    "type": "github",
+    "owner": "netlify",
+    "repo": "netlify-mcp",
+    "homepage": "https://github.com/netlify/netlify-mcp",
+    "archive_url": "https://github.com/netlify/netlify-mcp/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "netlify-0.1.0.tar.gz",
+    "size_bytes": 96222,
+    "sha512": "c5ff240b9acabf05ed2d1d3c49a6c25fef72934352b7b6ed6cedffd2fa9824b21e35cc9bc1c292a8ac9c69901972cb431f74be39625870c9b3edb41a110bacc2",
+    "sha256": "f273682ecc3d2128c349553a3035c83f1bfcba6ca63d1ff72c740dc3ff761573"
+  }
+}

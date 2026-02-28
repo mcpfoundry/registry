@@ -1,0 +1,19 @@
+{
+  "tool_id": "redis-official",
+  "version": "0.1.0",
+  "author": "redis",
+  "pinned_at": "2026-02-28T02:46:21Z",
+  "source": {
+    "type": "github",
+    "owner": "redis",
+    "repo": "mcp-redis",
+    "homepage": "https://github.com/redis/mcp-redis",
+    "archive_url": "https://github.com/redis/mcp-redis/archive/refs/tags/0.1.0.tar.gz"
+  },
+  "artifact": {
+    "filename": "redis-official-0.1.0.tar.gz",
+    "size_bytes": 22133,
+    "sha512": "60be40139d73320e5b4c1c5f2ab7e51c95bfe21571ba0ae5db48ce0b3582ee4e0e2ebd5f60a2a805bc2f4323f6c359bee995c7247a05462494ae7397b87b84a7",
+    "sha256": "2f68bf95bddbb15ca29021b3516dad90abc7c6ab5852769aeddc781bbe0bc098"
+  }
+}

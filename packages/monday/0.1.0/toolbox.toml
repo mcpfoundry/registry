@@ -1,0 +1,88 @@
+[tool]
+name = "monday"
+version = "0.1.0"
+description = "Monday.com work management platform MCP server"
+author = "mondaycom"
+homepage = "https://github.com/mondaycom/mcp"
+license = "MIT"
+
+[binary]
+entry = "monday-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "create_item"
+description = "Create new items in Monday.com boards"
+
+[[mcp.tools]]
+name = "delete_item"
+description = "Remove items permanently from boards"
+
+[[mcp.tools]]
+name = "get_board_items_by_name"
+description = "Search items by name or term within a board"
+
+[[mcp.tools]]
+name = "create_update"
+description = "Add comments or updates to items"
+
+[[mcp.tools]]
+name = "change_item_column_values"
+description = "Modify item column data"
+
+[[mcp.tools]]
+name = "move_item_to_group"
+description = "Relocate items between groups within a board"
+
+[[mcp.tools]]
+name = "create_board"
+description = "Establish new boards with columns"
+
+[[mcp.tools]]
+name = "get_board_schema"
+description = "Retrieve board structure and metadata"
+
+[[mcp.tools]]
+name = "create_group"
+description = "Add groups within boards"
+
+[[mcp.tools]]
+name = "create_column"
+description = "Add columns to existing boards"
+
+[[mcp.tools]]
+name = "delete_column"
+description = "Remove columns from boards"
+
+[[mcp.tools]]
+name = "list_users_and_teams"
+description = "Retrieve user or team details by ID, name, or search"
+
+[[mcp.tools]]
+name = "create_form"
+description = "Generate new Monday.com WorkForms"
+
+[[mcp.tools]]
+name = "get_form"
+description = "Retrieve forms by token"
+
+[[mcp.tools]]
+name = "all_monday_api"
+description = "Execute custom GraphQL queries and mutations against Monday.com API"
+
+[[mcp.tools]]
+name = "get_graphql_schema"
+description = "Access the Monday.com GraphQL schema"
+
+[[mcp.tools]]
+name = "get_type_details"
+description = "Retrieve specific GraphQL type information"

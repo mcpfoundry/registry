@@ -1,0 +1,55 @@
+[tool]
+name = "exa-official"
+version = "1.0.0"
+description = "Exa AI-powered web search, code search, and company research"
+author = "exa-labs"
+homepage = "https://github.com/exa-labs/exa-mcp-server"
+license = "MIT"
+
+[binary]
+entry = "exa-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+runtime = "node"
+min_version = "18"
+
+[permissions]
+filesystem = false
+network = true
+env_vars = ["HOME", "PATH", "EXA_API_KEY"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "web_search_exa"
+description = "Search the web for any topic and get clean, ready-to-use content"
+
+[[mcp.tools]]
+name = "get_code_context_exa"
+description = "Find code examples, documentation, and programming solutions from GitHub, Stack Overflow, and docs"
+
+[[mcp.tools]]
+name = "company_research_exa"
+description = "Research any company to get business information, news, and insights"
+
+[[mcp.tools]]
+name = "web_search_advanced_exa"
+description = "Advanced web search with comprehensive filtering options"
+
+[[mcp.tools]]
+name = "crawling_exa"
+description = "Get the full content of a specific webpage from a known URL"
+
+[[mcp.tools]]
+name = "people_search_exa"
+description = "Find people and their professional profiles"
+
+[[mcp.tools]]
+name = "deep_researcher_start"
+description = "Start an AI research agent that searches, reads, and writes a detailed report"
+
+[[mcp.tools]]
+name = "deep_researcher_check"
+description = "Check status and get results from a deep research task"

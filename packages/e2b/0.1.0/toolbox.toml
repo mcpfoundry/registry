@@ -1,0 +1,24 @@
+[tool]
+name = "e2b"
+version = "0.1.0"
+description = "Secure cloud code execution sandbox for running Python code via E2B"
+author = "e2b-dev"
+homepage = "https://github.com/e2b-dev/mcp-server"
+license = "Apache-2.0"
+
+[binary]
+entry = "e2b-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = ["api.e2b.dev"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "run_code"
+description = "Execute Python code in a secure E2B sandbox using Jupyter Notebook syntax"

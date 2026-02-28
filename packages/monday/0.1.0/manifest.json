@@ -1,0 +1,19 @@
+{
+  "tool_id": "monday",
+  "version": "0.1.0",
+  "author": "mondaycom",
+  "pinned_at": "2026-02-28T02:45:44Z",
+  "source": {
+    "type": "github",
+    "owner": "mondaycom",
+    "repo": "mcp",
+    "homepage": "https://github.com/mondaycom/mcp",
+    "archive_url": "https://github.com/mondaycom/mcp/archive/refs/heads/master.tar.gz"
+  },
+  "artifact": {
+    "filename": "monday-0.1.0.tar.gz",
+    "size_bytes": 686865,
+    "sha512": "a584b4d2fd6a58ca5b1c81084436eb8324cebf90e0f2fd227829e13bdf5e48581451ca56e4a11f97955c0202e6fb285e37acd77c0e040a715a6e0f60eca899f4",
+    "sha256": "1c571187d78596ae22e2fa4088d5983d195d4d21d953c523de811ce43785632e"
+  }
+}

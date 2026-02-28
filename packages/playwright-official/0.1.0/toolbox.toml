@@ -1,0 +1,156 @@
+[tool]
+name = "playwright-official"
+version = "0.1.0"
+description = "Playwright browser automation MCP server with accessibility-first approach"
+author = "microsoft"
+homepage = "https://github.com/microsoft/playwright-mcp"
+license = "Apache-2.0"
+
+[binary]
+entry = "@playwright/mcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = ["read:~/"]
+network = true
+max_memory_mb = 1024
+max_cpu_percent = 90
+
+[[mcp.tools]]
+name = "browser_navigate"
+description = "Navigate to a URL in the browser"
+
+[[mcp.tools]]
+name = "browser_navigate_back"
+description = "Navigate back in browser history"
+
+[[mcp.tools]]
+name = "browser_click"
+description = "Click on an element identified by accessibility snapshot"
+
+[[mcp.tools]]
+name = "browser_hover"
+description = "Hover over an element"
+
+[[mcp.tools]]
+name = "browser_type"
+description = "Type text into an element"
+
+[[mcp.tools]]
+name = "browser_fill_form"
+description = "Fill a form field with a value"
+
+[[mcp.tools]]
+name = "browser_select_option"
+description = "Select an option from a dropdown"
+
+[[mcp.tools]]
+name = "browser_press_key"
+description = "Press a keyboard key"
+
+[[mcp.tools]]
+name = "browser_snapshot"
+description = "Take an accessibility snapshot of the page"
+
+[[mcp.tools]]
+name = "browser_take_screenshot"
+description = "Take a screenshot of the page"
+
+[[mcp.tools]]
+name = "browser_evaluate"
+description = "Execute JavaScript in the browser context"
+
+[[mcp.tools]]
+name = "browser_run_code"
+description = "Run a Playwright code snippet in the browser"
+
+[[mcp.tools]]
+name = "browser_console_messages"
+description = "Retrieve browser console messages"
+
+[[mcp.tools]]
+name = "browser_network_requests"
+description = "Retrieve browser network requests"
+
+[[mcp.tools]]
+name = "browser_file_upload"
+description = "Upload a file to a file input element"
+
+[[mcp.tools]]
+name = "browser_handle_dialog"
+description = "Handle browser dialogs (alerts, confirms, prompts)"
+
+[[mcp.tools]]
+name = "browser_drag"
+description = "Drag an element to a target location"
+
+[[mcp.tools]]
+name = "browser_resize"
+description = "Resize the browser window"
+
+[[mcp.tools]]
+name = "browser_wait_for"
+description = "Wait for a condition to be met on the page"
+
+[[mcp.tools]]
+name = "browser_close"
+description = "Close the browser"
+
+[[mcp.tools]]
+name = "browser_tabs"
+description = "List and manage browser tabs"
+
+[[mcp.tools]]
+name = "browser_install"
+description = "Install a browser for Playwright"
+
+[[mcp.tools]]
+name = "browser_mouse_click_xy"
+description = "Click at specific x,y coordinates (vision mode)"
+
+[[mcp.tools]]
+name = "browser_mouse_down"
+description = "Press mouse button down"
+
+[[mcp.tools]]
+name = "browser_mouse_drag_xy"
+description = "Drag from one coordinate to another"
+
+[[mcp.tools]]
+name = "browser_mouse_move_xy"
+description = "Move mouse to specific coordinates"
+
+[[mcp.tools]]
+name = "browser_mouse_up"
+description = "Release mouse button"
+
+[[mcp.tools]]
+name = "browser_mouse_wheel"
+description = "Scroll the mouse wheel"
+
+[[mcp.tools]]
+name = "browser_pdf_save"
+description = "Save the current page as a PDF"
+
+[[mcp.tools]]
+name = "browser_generate_locator"
+description = "Generate a Playwright locator for an element"
+
+[[mcp.tools]]
+name = "browser_verify_element_visible"
+description = "Assert that an element is visible on the page"
+
+[[mcp.tools]]
+name = "browser_verify_list_visible"
+description = "Assert that a list of elements is visible"
+
+[[mcp.tools]]
+name = "browser_verify_text_visible"
+description = "Assert that text is visible on the page"
+
+[[mcp.tools]]
+name = "browser_verify_value"
+description = "Assert an element has a specific value"

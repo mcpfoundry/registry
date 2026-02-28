@@ -1,0 +1,96 @@
+[tool]
+name = "launchdarkly"
+version = "0.1.0"
+description = "LaunchDarkly feature flag and AI Config management via MCP"
+author = "launchdarkly"
+homepage = "https://github.com/launchdarkly/mcp-server"
+license = "Apache-2.0"
+
+[binary]
+entry = "launchdarkly-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = ["app.launchdarkly.com", "sdk.launchdarkly.com"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "getTargeting"
+description = "Show an AI Config's targeting rules"
+
+[[mcp.tools]]
+name = "updateTargeting"
+description = "Update AI Config targeting rules"
+
+[[mcp.tools]]
+name = "list"
+description = "List AI Configs"
+
+[[mcp.tools]]
+name = "create"
+description = "Create a new AI Config"
+
+[[mcp.tools]]
+name = "delete"
+description = "Delete an AI Config"
+
+[[mcp.tools]]
+name = "get"
+description = "Get AI Config details"
+
+[[mcp.tools]]
+name = "update"
+description = "Update an AI Config"
+
+[[mcp.tools]]
+name = "createVariation"
+description = "Create an AI Config variation"
+
+[[mcp.tools]]
+name = "deleteVariation"
+description = "Delete an AI Config variation"
+
+[[mcp.tools]]
+name = "getVariation"
+description = "Get an AI Config variation"
+
+[[mcp.tools]]
+name = "updateVariation"
+description = "Update an AI Config variation"
+
+[[mcp.tools]]
+name = "listRepositories"
+description = "List code reference repositories"
+
+[[mcp.tools]]
+name = "listByProject"
+description = "List environments within a project"
+
+[[mcp.tools]]
+name = "getStatus"
+description = "Get feature flag status across environments"
+
+[[mcp.tools]]
+name = "featureFlags.list"
+description = "List feature flags"
+
+[[mcp.tools]]
+name = "featureFlags.create"
+description = "Create a feature flag"
+
+[[mcp.tools]]
+name = "featureFlags.get"
+description = "Get feature flag details"
+
+[[mcp.tools]]
+name = "featureFlags.patch"
+description = "Update a feature flag"
+
+[[mcp.tools]]
+name = "featureFlags.delete"
+description = "Delete a feature flag"

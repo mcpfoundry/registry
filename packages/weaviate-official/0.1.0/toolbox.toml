@@ -1,0 +1,28 @@
+[tool]
+name = "weaviate-official"
+version = "0.1.0"
+description = "Weaviate vector database for inserting objects and performing hybrid search queries"
+author = "weaviate"
+homepage = "https://github.com/weaviate/mcp-server-weaviate"
+license = "BSD-3-Clause"
+
+[binary]
+entry = "mcp-server-weaviate"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+max_memory_mb = 512
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "insert_one"
+description = "Insert an object into a Weaviate collection"
+
+[[mcp.tools]]
+name = "query"
+description = "Retrieve objects from Weaviate using hybrid search"

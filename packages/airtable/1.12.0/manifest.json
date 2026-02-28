@@ -1,0 +1,19 @@
+{
+  "tool_id": "airtable",
+  "version": "1.12.0",
+  "author": "domdomegg",
+  "pinned_at": "2026-02-28T02:42:52Z",
+  "source": {
+    "type": "github",
+    "owner": "domdomegg",
+    "repo": "airtable-mcp-server",
+    "homepage": "https://github.com/domdomegg/airtable-mcp-server",
+    "archive_url": "https://github.com/domdomegg/airtable-mcp-server/archive/refs/tags/v1.12.0.tar.gz"
+  },
+  "artifact": {
+    "filename": "airtable-1.12.0.tar.gz",
+    "size_bytes": 84253,
+    "sha512": "d8bbb23f5f106145239509f4c248ea2581dba0654547d75b0d9261988ee7c429e8434c3e0efc0045e7ee8c5d0fab6daf0afb9824bc46563747e1ab04740212d7",
+    "sha256": "65050170d3914dde001b474e7f3f5e6961bc438381fe3ac1878f88003d7c5174"
+  }
+}

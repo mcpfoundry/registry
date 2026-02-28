@@ -1,0 +1,69 @@
+[tool]
+name = "blender"
+version = "1.5.5"
+description = "3D modeling and scene creation via Blender integration"
+author = "ahujasid"
+homepage = "https://github.com/ahujasid/blender-mcp"
+license = "MIT"
+
+[binary]
+entry = "blender-mcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+runtime = "python"
+min_version = "3.10"
+
+[permissions]
+filesystem = [
+    "read:~/Documents",
+    "write:~/Documents",
+    "read:~/Downloads",
+    "write:~/Downloads",
+    "readwrite:/tmp"
+]
+network = true
+env_vars = ["HOME", "PATH", "TMPDIR"]
+max_memory_mb = 512
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "get_scene_info"
+description = "Get information about the current Blender scene and objects"
+
+[[mcp.tools]]
+name = "create_object"
+description = "Create a 3D object in the Blender scene"
+
+[[mcp.tools]]
+name = "modify_object"
+description = "Modify properties of an existing object in the scene"
+
+[[mcp.tools]]
+name = "delete_object"
+description = "Delete an object from the Blender scene"
+
+[[mcp.tools]]
+name = "apply_material"
+description = "Apply a material or color to an object"
+
+[[mcp.tools]]
+name = "execute_blender_code"
+description = "Execute arbitrary Python code within Blender"
+
+[[mcp.tools]]
+name = "get_polyhaven_asset"
+description = "Download assets (models, textures, HDRIs) from Poly Haven"
+
+[[mcp.tools]]
+name = "generate_3d_model"
+description = "Generate an AI-created 3D model via Hyper3D Rodin"
+
+[[mcp.tools]]
+name = "search_sketchfab"
+description = "Search and download 3D models from Sketchfab"
+
+[[mcp.tools]]
+name = "capture_viewport"
+description = "Capture a screenshot of the current Blender viewport"

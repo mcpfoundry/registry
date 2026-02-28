@@ -1,0 +1,19 @@
+{
+  "tool_id": "docker-community",
+  "version": "1.0.0",
+  "author": "QuantGeekDev",
+  "pinned_at": "2026-02-28T02:44:35Z",
+  "source": {
+    "type": "github",
+    "owner": "QuantGeekDev",
+    "repo": "docker-mcp",
+    "homepage": "https://github.com/QuantGeekDev/docker-mcp",
+    "archive_url": "https://github.com/QuantGeekDev/docker-mcp/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "docker-community-1.0.0.tar.gz",
+    "size_bytes": 16666,
+    "sha512": "f5cc007ee6270a9d850d80a44647f3e169a460175deba6c0b6f176f4d2639c761d362e13715e6de1b3dd9ba333e6c2561fd5b26892fb8d59f7039adcd53bf230",
+    "sha256": "4dd226ca481252b3a5cbdf7c05de59cb115e133f40ddc967115b31d69dcf42f9"
+  }
+}

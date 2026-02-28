@@ -1,0 +1,19 @@
+{
+  "tool_id": "clickhouse",
+  "version": "0.1.0",
+  "author": "ClickHouse",
+  "pinned_at": "2026-02-28T02:43:48Z",
+  "source": {
+    "type": "github",
+    "owner": "ClickHouse",
+    "repo": "mcp-clickhouse",
+    "homepage": "https://github.com/ClickHouse/mcp-clickhouse",
+    "archive_url": "https://github.com/ClickHouse/mcp-clickhouse/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "clickhouse-0.1.0.tar.gz",
+    "size_bytes": 159106,
+    "sha512": "652c0c39addc5e1909b9324d0330b6a9386b045008e8f4659a560d4fc0a46052bf828b4b204a16cc72a906d5af4dfc4db352a8907f575ccc147a50ebe8ed94ee",
+    "sha256": "dd0f4c65f411e89b2a8c349c2a240bf8dfe1b65a38fa388ebdb74ca64a2fa631"
+  }
+}

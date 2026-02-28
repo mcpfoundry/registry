@@ -1,0 +1,19 @@
+{
+  "tool_id": "telegram-community",
+  "version": "1.0.0",
+  "author": "chigwell",
+  "pinned_at": "2026-02-28T02:46:44Z",
+  "source": {
+    "type": "github",
+    "owner": "chigwell",
+    "repo": "telegram-mcp",
+    "homepage": "https://github.com/chigwell/telegram-mcp",
+    "archive_url": "https://github.com/chigwell/telegram-mcp/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "telegram-community-1.0.0.tar.gz",
+    "size_bytes": 946375,
+    "sha512": "693fddd176c90db3da6857d002d2b0924a74f5fef96080d7b8b49d566ee619ca792c320c1c504c864e78b894fa46a4ef4e4ff14568e2008b2b4d7b92d5fcd82c",
+    "sha256": "e9f224566ae9092d9b674110455465af4087511a3f3e2f381db8f98c65f30386"
+  }
+}

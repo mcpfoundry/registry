@@ -1,0 +1,19 @@
+{
+  "tool_id": "home-assistant",
+  "version": "1.0.0",
+  "author": "tevonsb",
+  "pinned_at": "2026-02-28T02:45:16Z",
+  "source": {
+    "type": "github",
+    "owner": "tevonsb",
+    "repo": "homeassistant-mcp",
+    "homepage": "https://github.com/tevonsb/homeassistant-mcp",
+    "archive_url": "https://github.com/tevonsb/homeassistant-mcp/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "home-assistant-1.0.0.tar.gz",
+    "size_bytes": 75463,
+    "sha512": "f7912395cc80820c867cad574a57518ba2b2ba7c29346810be7c0fb56efeeebdaa5dd3d73f7e0f55dd427c36e798c3634725d0a3b1117feefea2adf0c228197e",
+    "sha256": "e4cc86788302d74ea4c00e8089bc021c9ee1e12eb76446d330370765f873d24a"
+  }
+}

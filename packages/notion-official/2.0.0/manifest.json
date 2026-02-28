@@ -1,0 +1,19 @@
+{
+  "tool_id": "notion-official",
+  "version": "2.0.0",
+  "author": "makenotion",
+  "pinned_at": "2026-02-28T02:45:59Z",
+  "source": {
+    "type": "github",
+    "owner": "makenotion",
+    "repo": "notion-mcp-server",
+    "homepage": "https://github.com/makenotion/notion-mcp-server",
+    "archive_url": "https://github.com/makenotion/notion-mcp-server/archive/refs/tags/v2.0.0.tar.gz"
+  },
+  "artifact": {
+    "filename": "notion-official-2.0.0.tar.gz",
+    "size_bytes": 1226852,
+    "sha512": "0809f693ad92d05b569cb1561fca743938d5b42b85158390a6ff6ca8a7c5b32d3dd6f75f6f85379d6001e436e35e87c904792b323973467841ff1ef504d1c09e",
+    "sha256": "583bae7ca4e1cedd74b7e1cf02190f364d36f12b0e3f8e81e16cf4d824a3dbda"
+  }
+}

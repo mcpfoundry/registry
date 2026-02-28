@@ -1,0 +1,19 @@
+{
+  "tool_id": "brave-search-official",
+  "version": "0.6.0",
+  "author": "brave",
+  "pinned_at": "2026-02-28T02:43:32Z",
+  "source": {
+    "type": "github",
+    "owner": "brave",
+    "repo": "brave-search-mcp-server",
+    "homepage": "https://github.com/brave/brave-search-mcp-server",
+    "archive_url": "https://github.com/brave/brave-search-mcp-server/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "brave-search-official-0.6.0.tar.gz",
+    "size_bytes": 70073,
+    "sha512": "82ed034726480fb630f556f17c158c0eea9226f3828feffd59c457bf0f1937bb25df4e4003d8b7e08a7e9cce6a8fbffbb4c35e8408eca64bf440c4daf5377d69",
+    "sha256": "04ab10c0ffe27b4929c7e86b8f051899de87a78a3d636d9de11a795348cf5522"
+  }
+}

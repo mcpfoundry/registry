@@ -1,0 +1,44 @@
+[tool]
+name = "brave-search-official"
+version = "0.6.0"
+description = "Web, local, video, image, and news search via the Brave Search API"
+author = "brave"
+homepage = "https://github.com/brave/brave-search-mcp-server"
+license = "MIT"
+
+[binary]
+entry = "brave-search-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = ["api.search.brave.com"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "brave_web_search"
+description = "Performs comprehensive web searches with rich result types and advanced filtering options"
+
+[[mcp.tools]]
+name = "brave_local_search"
+description = "Searches for local businesses and places with ratings, hours, and AI-generated descriptions"
+
+[[mcp.tools]]
+name = "brave_video_search"
+description = "Searches for videos with comprehensive metadata and thumbnail information"
+
+[[mcp.tools]]
+name = "brave_image_search"
+description = "Searches for images with automatic fetching and base64 encoding for direct display"
+
+[[mcp.tools]]
+name = "brave_news_search"
+description = "Searches for current news articles with freshness controls and breaking news indicators"
+
+[[mcp.tools]]
+name = "brave_summarizer"
+description = "Generates AI-powered summaries from web search results using Brave's summarization API"

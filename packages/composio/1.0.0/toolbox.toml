@@ -1,0 +1,36 @@
+[tool]
+name = "composio"
+version = "1.0.0"
+description = "Universal MCP server connecting AI agents to 500+ apps via Composio toolkits"
+author = "composiohq"
+homepage = "https://github.com/ComposioHQ/composio"
+license = "MIT"
+
+[binary]
+entry = "composio-mcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+max_memory_mb = 512
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "RUBE_SEARCH_TOOLS"
+description = "Search available Composio tools that can perform a given task"
+
+[[mcp.tools]]
+name = "COMPOSIO_CREATE_PLAN"
+description = "Create a step-by-step execution plan for a multi-app workflow"
+
+[[mcp.tools]]
+name = "RUBE_REMOTE_WORKBENCH"
+description = "Execute tasks stepwise in a remote sandboxed workbench"
+
+[[mcp.tools]]
+name = "proxy_execute"
+description = "Call APIs via proxy when no Composio tool exists for that API"

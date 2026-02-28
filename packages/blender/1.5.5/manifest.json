@@ -1,0 +1,19 @@
+{
+  "tool_id": "blender",
+  "version": "1.5.5",
+  "author": "ahujasid",
+  "pinned_at": "2026-02-28T02:43:29Z",
+  "source": {
+    "type": "github",
+    "owner": "ahujasid",
+    "repo": "blender-mcp",
+    "homepage": "https://github.com/ahujasid/blender-mcp",
+    "archive_url": "https://github.com/ahujasid/blender-mcp/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "blender-1.5.5.tar.gz",
+    "size_bytes": 529157,
+    "sha512": "7ce7ef2ff3305139647042d7a6fa6557fdc2e241561d980d70f2f6e8aac44949d408c50a96ebb5aa34891d06cc16fde9dae0bb207a51d2aaba8de4e4b343b02a",
+    "sha256": "17ffe527fe7d232fe1768cae07a0d67b2d75e6495c7b30439534228e79c36738"
+  }
+}

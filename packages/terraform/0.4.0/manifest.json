@@ -1,0 +1,19 @@
+{
+  "tool_id": "terraform",
+  "version": "0.4.0",
+  "author": "hashicorp",
+  "pinned_at": "2026-02-28T02:40:29Z",
+  "source": {
+    "type": "github",
+    "owner": "hashicorp",
+    "repo": "terraform-mcp-server",
+    "homepage": "https://github.com/hashicorp/terraform-mcp-server",
+    "archive_url": "https://github.com/hashicorp/terraform-mcp-server/archive/refs/tags/v0.4.0.tar.gz"
+  },
+  "artifact": {
+    "filename": "terraform-0.4.0.tar.gz",
+    "size_bytes": 125119,
+    "sha512": "2f42dd4023aab6eebba5f361744c5042b196272656d7577fd21ceb90f3dab170d0b32ecf0eb45314590f149ad4a9e20c97cce4bda34af2aa107f520fc2777ac1",
+    "sha256": "acc6ec39559bd8e4cb1d3eba29ce04a448f3c06501eebe086363848ee41ab7a5"
+  }
+}

@@ -1,0 +1,103 @@
+[tool]
+name = "asana"
+version = "1.0.0"
+description = "Asana project management with full task, project, and tag operations"
+author = "roychri"
+homepage = "https://github.com/roychri/mcp-server-asana"
+license = "MIT"
+
+[binary]
+entry = "mcp-server-asana"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+runtime = "node"
+min_version = "18"
+
+[permissions]
+filesystem = false
+network = true
+env_vars = ["HOME", "PATH", "ASANA_ACCESS_TOKEN"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "asana_list_workspaces"
+description = "List available Asana workspaces"
+
+[[mcp.tools]]
+name = "asana_search_projects"
+description = "Search projects by name pattern"
+
+[[mcp.tools]]
+name = "asana_get_project"
+description = "Retrieve specific project details"
+
+[[mcp.tools]]
+name = "asana_get_project_task_counts"
+description = "Get task count statistics for a project"
+
+[[mcp.tools]]
+name = "asana_get_project_sections"
+description = "List project sections"
+
+[[mcp.tools]]
+name = "asana_create_project"
+description = "Create a new project"
+
+[[mcp.tools]]
+name = "asana_search_tasks"
+description = "Advanced task search with filtering"
+
+[[mcp.tools]]
+name = "asana_get_task"
+description = "Retrieve task details"
+
+[[mcp.tools]]
+name = "asana_create_task"
+description = "Create a new task"
+
+[[mcp.tools]]
+name = "asana_update_task"
+description = "Modify an existing task"
+
+[[mcp.tools]]
+name = "asana_delete_task"
+description = "Permanently remove a task"
+
+[[mcp.tools]]
+name = "asana_get_task_stories"
+description = "Fetch comments and activity for a task"
+
+[[mcp.tools]]
+name = "asana_create_task_story"
+description = "Add a comment to a task"
+
+[[mcp.tools]]
+name = "asana_add_task_dependencies"
+description = "Set task dependencies"
+
+[[mcp.tools]]
+name = "asana_create_subtask"
+description = "Create a subtask under a parent task"
+
+[[mcp.tools]]
+name = "asana_get_tag"
+description = "Retrieve tag details"
+
+[[mcp.tools]]
+name = "asana_get_tags_for_workspace"
+description = "List all tags in a workspace"
+
+[[mcp.tools]]
+name = "asana_create_tag_for_workspace"
+description = "Create a new tag"
+
+[[mcp.tools]]
+name = "asana_get_project_statuses"
+description = "List all status updates for a project"
+
+[[mcp.tools]]
+name = "asana_create_project_status"
+description = "Post a status update to a project"

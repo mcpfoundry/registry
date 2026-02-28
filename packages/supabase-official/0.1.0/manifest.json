@@ -1,0 +1,19 @@
+{
+  "tool_id": "supabase-official",
+  "version": "0.1.0",
+  "author": "supabase-community",
+  "pinned_at": "2026-02-28T02:46:40Z",
+  "source": {
+    "type": "github",
+    "owner": "supabase-community",
+    "repo": "supabase-mcp",
+    "homepage": "https://github.com/supabase-community/supabase-mcp",
+    "archive_url": "https://github.com/supabase-community/supabase-mcp/archive/refs/tags/v0.1.0.tar.gz"
+  },
+  "artifact": {
+    "filename": "supabase-official-0.1.0.tar.gz",
+    "size_bytes": 118391,
+    "sha512": "0a0e627d70b0399f3b71587ac0819dfd98f04caba959cb60839f22814147b017a768ad0bab47a635d3526c7862285f4c4e72c94be2aa4862851a7a8ebf3290a0",
+    "sha256": "d4acba7d82cfaba8e58b507486ffa410c6640f07a55f0022043325de9120bc5c"
+  }
+}

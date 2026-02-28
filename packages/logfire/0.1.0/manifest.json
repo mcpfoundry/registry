@@ -1,0 +1,19 @@
+{
+  "tool_id": "logfire",
+  "version": "0.1.0",
+  "author": "pydantic",
+  "pinned_at": "2026-02-28T02:45:37Z",
+  "source": {
+    "type": "github",
+    "owner": "pydantic",
+    "repo": "logfire-mcp",
+    "homepage": "https://github.com/pydantic/logfire-mcp",
+    "archive_url": "https://github.com/pydantic/logfire-mcp/archive/refs/tags/v0.1.0.tar.gz"
+  },
+  "artifact": {
+    "filename": "logfire-0.1.0.tar.gz",
+    "size_bytes": 27651,
+    "sha512": "079d095e638ce6e9dfbdf116561d188a6bf7baa146234bd2f6f3af66c08c73184b9b71b7b4469da4a87a9ef93757d32f612e97a3775eef1aa13f6372d6686e23",
+    "sha256": "18857c9135b30af587e7d0cb1077449d694a882c3cda79f9a660b902e72ea943"
+  }
+}

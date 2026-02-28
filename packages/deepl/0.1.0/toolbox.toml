@@ -1,0 +1,60 @@
+[tool]
+name = "deepl"
+version = "0.1.0"
+description = "DeepL translation, rephrasing, and glossary management MCP server"
+author = "DeepLcom"
+homepage = "https://github.com/DeepLcom/deepl-mcp-server"
+license = "MIT"
+
+[binary]
+entry = "deepl-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "translate-text"
+description = "Translate text between languages using DeepL"
+
+[[mcp.tools]]
+name = "translate-document"
+description = "Translate document files between languages"
+
+[[mcp.tools]]
+name = "rephrase-text"
+description = "Rephrase text with configurable style and tone options"
+
+[[mcp.tools]]
+name = "get-source-languages"
+description = "List available source languages for translation"
+
+[[mcp.tools]]
+name = "get-target-languages"
+description = "List available target languages for translation"
+
+[[mcp.tools]]
+name = "get-writing-styles"
+description = "List available writing styles for rephrasing"
+
+[[mcp.tools]]
+name = "get-writing-tones"
+description = "List available writing tones for rephrasing"
+
+[[mcp.tools]]
+name = "list-glossaries"
+description = "Retrieve all glossaries with metadata"
+
+[[mcp.tools]]
+name = "get-glossary-info"
+description = "Get metadata for a specific glossary"
+
+[[mcp.tools]]
+name = "get-glossary-dictionary-entries"
+description = "Retrieve term entries from a glossary dictionary"

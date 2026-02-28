@@ -1,0 +1,79 @@
+[tool]
+name = "stripe-official"
+version = "1.0.0"
+description = "Stripe payments API integration for AI-powered financial operations"
+author = "stripe"
+homepage = "https://github.com/stripe/agent-toolkit"
+license = "MIT"
+
+[binary]
+entry = "stripe-mcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+runtime = "node"
+min_version = "18"
+
+[permissions]
+filesystem = false
+network = true
+env_vars = ["HOME", "PATH", "STRIPE_SECRET_KEY"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "create_customer"
+description = "Create a new Stripe customer"
+
+[[mcp.tools]]
+name = "list_customers"
+description = "List Stripe customers with filtering"
+
+[[mcp.tools]]
+name = "create_product"
+description = "Create a new product in the catalog"
+
+[[mcp.tools]]
+name = "list_products"
+description = "List products with optional filtering"
+
+[[mcp.tools]]
+name = "create_price"
+description = "Create a new price for a product"
+
+[[mcp.tools]]
+name = "list_prices"
+description = "List prices with optional filtering"
+
+[[mcp.tools]]
+name = "create_payment_link"
+description = "Create a payment link for checkout"
+
+[[mcp.tools]]
+name = "create_invoice"
+description = "Create a new invoice for a customer"
+
+[[mcp.tools]]
+name = "list_invoices"
+description = "List invoices with optional filtering"
+
+[[mcp.tools]]
+name = "create_subscription"
+description = "Create a new subscription for a customer"
+
+[[mcp.tools]]
+name = "list_subscriptions"
+description = "List subscriptions with optional filtering"
+
+[[mcp.tools]]
+name = "create_refund"
+description = "Create a refund for a payment"
+
+[[mcp.tools]]
+name = "list_balance_transactions"
+description = "List balance transactions for the account"
+
+[[mcp.tools]]
+name = "retrieve_balance"
+description = "Retrieve the current account balance"

@@ -1,0 +1,58 @@
+[tool]
+name = "obsidian-community"
+version = "2.0.7"
+description = "AI-powered interaction with Obsidian vaults via Local REST API"
+author = "cyanheads"
+homepage = "https://github.com/cyanheads/obsidian-mcp-server"
+license = "Apache-2.0"
+
+[binary]
+entry = "obsidian-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+runtime = "node"
+min_version = "18"
+
+[permissions]
+filesystem = [
+    "read:~/Documents",
+    "write:~/Documents"
+]
+network = true
+env_vars = ["HOME", "PATH", "OBSIDIAN_API_KEY", "OBSIDIAN_API_URL"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "obsidian_read_note"
+description = "Retrieve the content and metadata of a specified note"
+
+[[mcp.tools]]
+name = "obsidian_update_note"
+description = "Modify notes using whole-file operations"
+
+[[mcp.tools]]
+name = "obsidian_search_replace"
+description = "Perform search-and-replace operations within a target note"
+
+[[mcp.tools]]
+name = "obsidian_global_search"
+description = "Search across the entire vault"
+
+[[mcp.tools]]
+name = "obsidian_list_notes"
+description = "List notes and subdirectories within a specified vault folder"
+
+[[mcp.tools]]
+name = "obsidian_manage_frontmatter"
+description = "Atomically manage a note's YAML frontmatter"
+
+[[mcp.tools]]
+name = "obsidian_manage_tags"
+description = "Add, remove, or list tags for a note"
+
+[[mcp.tools]]
+name = "obsidian_delete_note"
+description = "Permanently delete a specified note from the vault"

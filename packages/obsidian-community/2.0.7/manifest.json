@@ -1,0 +1,19 @@
+{
+  "tool_id": "obsidian-community",
+  "version": "2.0.7",
+  "author": "cyanheads",
+  "pinned_at": "2026-02-28T02:46:01Z",
+  "source": {
+    "type": "github",
+    "owner": "cyanheads",
+    "repo": "obsidian-mcp-server",
+    "homepage": "https://github.com/cyanheads/obsidian-mcp-server",
+    "archive_url": "https://github.com/cyanheads/obsidian-mcp-server/archive/refs/tags/v2.0.7.tar.gz"
+  },
+  "artifact": {
+    "filename": "obsidian-community-2.0.7.tar.gz",
+    "size_bytes": 201439,
+    "sha512": "72f7aa4386832a53e4519eb0544783f7ff74b1cd1407c2b6067ebb8bcd27dfa873d328fe0573fc4ade732c18059e2a8461e0d275fc801ab619b6810adb69c515",
+    "sha256": "0b9f7ad7135d3439770423375d47bf7e6b9acde492fea0899b053f4530f1f199"
+  }
+}

@@ -1,0 +1,68 @@
+[tool]
+name = "firebase"
+version = "0.1.0"
+description = "Firebase Firestore, Storage, and Authentication MCP server"
+author = "gannonh"
+homepage = "https://github.com/gannonh/firebase-mcp"
+license = "MIT"
+
+[binary]
+entry = "firebase-mcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = ["read:~/"]
+network = true
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "firestore_add_document"
+description = "Add a new document to a Firestore collection"
+
+[[mcp.tools]]
+name = "firestore_list_documents"
+description = "List documents in a Firestore collection"
+
+[[mcp.tools]]
+name = "firestore_get_document"
+description = "Get a specific document from Firestore"
+
+[[mcp.tools]]
+name = "firestore_update_document"
+description = "Update an existing Firestore document"
+
+[[mcp.tools]]
+name = "firestore_delete_document"
+description = "Delete a document from Firestore"
+
+[[mcp.tools]]
+name = "firestore_list_collections"
+description = "List all collections in Firestore"
+
+[[mcp.tools]]
+name = "firestore_query_collection_group"
+description = "Query across all collections with the same name"
+
+[[mcp.tools]]
+name = "storage_list_files"
+description = "List files in Firebase Cloud Storage"
+
+[[mcp.tools]]
+name = "storage_get_file_info"
+description = "Get metadata about a specific file in Storage"
+
+[[mcp.tools]]
+name = "storage_upload"
+description = "Upload a file to Firebase Cloud Storage"
+
+[[mcp.tools]]
+name = "storage_upload_from_url"
+description = "Upload a file to Storage from a URL"
+
+[[mcp.tools]]
+name = "auth_get_user"
+description = "Get user details from Firebase Authentication"

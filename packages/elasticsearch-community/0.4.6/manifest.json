@@ -1,0 +1,19 @@
+{
+  "tool_id": "elasticsearch-community",
+  "version": "0.4.6",
+  "author": "elastic",
+  "pinned_at": "2026-02-28T02:44:40Z",
+  "source": {
+    "type": "github",
+    "owner": "elastic",
+    "repo": "mcp-server-elasticsearch",
+    "homepage": "https://github.com/elastic/mcp-server-elasticsearch",
+    "archive_url": "https://github.com/elastic/mcp-server-elasticsearch/archive/refs/tags/v0.4.6.tar.gz"
+  },
+  "artifact": {
+    "filename": "elasticsearch-community-0.4.6.tar.gz",
+    "size_bytes": 47165,
+    "sha512": "06496cce5c7b7921ac4b1fba2d1cc36d41651e7647d011a760af04a69ddd3bff483a89b8ff7ccf2eb6f5b24ce193d9d4b3116001059256b0c00cb1d2c10ec27a",
+    "sha256": "92a54b6a82e900a346d909c1c95f5b1575dd60759130af82b939c20fbb821d15"
+  }
+}

@@ -1,0 +1,32 @@
+[tool]
+name = "browserbase"
+version = "0.1.0"
+description = "Cloud browser automation MCP server powered by Stagehand"
+author = "browserbase"
+homepage = "https://github.com/browserbase/mcp-server-browserbase"
+license = "MIT"
+
+[binary]
+entry = "mcp-server-browserbase"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+max_memory_mb = 512
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "act"
+description = "Perform automated actions on web pages such as clicks, form fills, and navigation"
+
+[[mcp.tools]]
+name = "extract"
+description = "Retrieve structured data from webpages using schemas"
+
+[[mcp.tools]]
+name = "observe"
+description = "Capture and analyze page state with visual annotations"

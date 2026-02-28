@@ -1,0 +1,68 @@
+[tool]
+name = "chroma"
+version = "0.1.0"
+description = "Vector database operations for Chroma including collection and document management"
+author = "chroma-core"
+homepage = "https://github.com/chroma-core/chroma-mcp"
+license = "Apache-2.0"
+
+[binary]
+entry = "chroma-mcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+max_memory_mb = 512
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "chroma_list_collections"
+description = "List all collections with pagination support"
+
+[[mcp.tools]]
+name = "chroma_create_collection"
+description = "Create a new collection with optional HNSW configuration"
+
+[[mcp.tools]]
+name = "chroma_peek_collection"
+description = "View a sample of documents in a collection"
+
+[[mcp.tools]]
+name = "chroma_get_collection_info"
+description = "Get detailed information about a collection"
+
+[[mcp.tools]]
+name = "chroma_get_collection_count"
+description = "Get the number of documents in a collection"
+
+[[mcp.tools]]
+name = "chroma_modify_collection"
+description = "Update a collection's name or metadata"
+
+[[mcp.tools]]
+name = "chroma_delete_collection"
+description = "Delete a collection"
+
+[[mcp.tools]]
+name = "chroma_add_documents"
+description = "Add documents with optional metadata and custom IDs"
+
+[[mcp.tools]]
+name = "chroma_query_documents"
+description = "Query documents using semantic search with advanced filtering"
+
+[[mcp.tools]]
+name = "chroma_get_documents"
+description = "Retrieve documents by IDs or filters with pagination"
+
+[[mcp.tools]]
+name = "chroma_update_documents"
+description = "Update existing documents' content, metadata, or embeddings"
+
+[[mcp.tools]]
+name = "chroma_delete_documents"
+description = "Delete specific documents from a collection"

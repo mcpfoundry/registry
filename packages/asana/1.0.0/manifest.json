@@ -1,0 +1,19 @@
+{
+  "tool_id": "asana",
+  "version": "1.0.0",
+  "author": "roychri",
+  "pinned_at": "2026-02-28T02:42:59Z",
+  "source": {
+    "type": "github",
+    "owner": "roychri",
+    "repo": "mcp-server-asana",
+    "homepage": "https://github.com/roychri/mcp-server-asana",
+    "archive_url": "https://github.com/roychri/mcp-server-asana/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "asana-1.0.0.tar.gz",
+    "size_bytes": 350078,
+    "sha512": "d29e86ee00518f2b75dbd9a1462848a1530a2b4b237ccfc3da4e1561d491bc0840a64ebbdb0c87150a67163339cd7dd5edf92eeec8ed03d259af421556aa9cc7",
+    "sha256": "4c945c84fc02ce832641adaff6a0259efba35261be1f75359d2937cbe53c6381"
+  }
+}

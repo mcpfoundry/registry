@@ -1,0 +1,104 @@
+[tool]
+name = "confluent"
+version = "0.1.0"
+description = "Confluent Cloud and Apache Kafka management MCP server"
+author = "confluentinc"
+homepage = "https://github.com/confluentinc/mcp-confluent"
+license = "Apache-2.0"
+
+[binary]
+entry = "mcp-confluent"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "list-topics"
+description = "Retrieve available Kafka topics"
+
+[[mcp.tools]]
+name = "create-topic"
+description = "Create new Kafka topics"
+
+[[mcp.tools]]
+name = "delete-topic"
+description = "Remove Kafka topics"
+
+[[mcp.tools]]
+name = "describe-topic"
+description = "Get detailed topic information including partitions and config"
+
+[[mcp.tools]]
+name = "list-connectors"
+description = "View configured Kafka connectors"
+
+[[mcp.tools]]
+name = "create-connector"
+description = "Set up new Kafka connectors"
+
+[[mcp.tools]]
+name = "delete-connector"
+description = "Remove Kafka connectors"
+
+[[mcp.tools]]
+name = "list-schemas"
+description = "Display available schemas in Schema Registry"
+
+[[mcp.tools]]
+name = "create-schema"
+description = "Register new schemas in Schema Registry"
+
+[[mcp.tools]]
+name = "get-schema"
+description = "Retrieve specific schema details"
+
+[[mcp.tools]]
+name = "delete-schema"
+description = "Remove schemas from Schema Registry"
+
+[[mcp.tools]]
+name = "execute-flink-statement"
+description = "Run Flink SQL statements"
+
+[[mcp.tools]]
+name = "list-flink-statements"
+description = "View Flink SQL statement history"
+
+[[mcp.tools]]
+name = "get-statement-status"
+description = "Check Flink SQL execution status"
+
+[[mcp.tools]]
+name = "describe-flink-catalog"
+description = "Explore Flink catalog structure"
+
+[[mcp.tools]]
+name = "list-environments"
+description = "View Confluent Cloud environments"
+
+[[mcp.tools]]
+name = "describe-cluster"
+description = "Get cluster configuration details"
+
+[[mcp.tools]]
+name = "list-api-keys"
+description = "Manage and list API credentials"
+
+[[mcp.tools]]
+name = "create-tableflow"
+description = "Provision Tableflow resources"
+
+[[mcp.tools]]
+name = "list-tableflows"
+description = "View active Tableflow instances"
+
+[[mcp.tools]]
+name = "manage-tableflow-storage"
+description = "Configure Tableflow data storage"

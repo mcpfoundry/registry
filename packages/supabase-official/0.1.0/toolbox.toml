@@ -1,0 +1,148 @@
+[tool]
+name = "supabase-official"
+version = "0.1.0"
+description = "Supabase platform management including database, auth, storage, edge functions, and branching"
+author = "supabase-community"
+homepage = "https://github.com/supabase-community/supabase-mcp"
+license = "MIT"
+
+[binary]
+entry = "supabase-mcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = ["supabase.com", "api.supabase.com", "supabase.co"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "list_projects"
+description = "List all Supabase projects for the user"
+
+[[mcp.tools]]
+name = "get_project"
+description = "Get details for a specific project"
+
+[[mcp.tools]]
+name = "create_project"
+description = "Create a new Supabase project"
+
+[[mcp.tools]]
+name = "pause_project"
+description = "Pause a project"
+
+[[mcp.tools]]
+name = "restore_project"
+description = "Restore a paused project"
+
+[[mcp.tools]]
+name = "list_organizations"
+description = "List all organizations the user is a member of"
+
+[[mcp.tools]]
+name = "get_organization"
+description = "Get details for an organization"
+
+[[mcp.tools]]
+name = "get_cost"
+description = "Get the cost of a new project or branch"
+
+[[mcp.tools]]
+name = "confirm_cost"
+description = "Confirm understanding of new project or branch costs"
+
+[[mcp.tools]]
+name = "search_docs"
+description = "Search the Supabase documentation for up-to-date information"
+
+[[mcp.tools]]
+name = "list_tables"
+description = "List all tables within specified schemas"
+
+[[mcp.tools]]
+name = "list_extensions"
+description = "List all extensions in the database"
+
+[[mcp.tools]]
+name = "list_migrations"
+description = "List all migrations in the database"
+
+[[mcp.tools]]
+name = "apply_migration"
+description = "Apply a SQL migration to the database"
+
+[[mcp.tools]]
+name = "execute_sql"
+description = "Execute raw SQL in the database"
+
+[[mcp.tools]]
+name = "get_logs"
+description = "Get logs by service type (api, postgres, edge functions, auth, storage, realtime)"
+
+[[mcp.tools]]
+name = "get_advisors"
+description = "Get advisory notices for a Supabase project"
+
+[[mcp.tools]]
+name = "get_project_url"
+description = "Get the API URL for a project"
+
+[[mcp.tools]]
+name = "get_publishable_keys"
+description = "Get anonymous API keys for a project"
+
+[[mcp.tools]]
+name = "generate_typescript_types"
+description = "Generate TypeScript types based on database schema"
+
+[[mcp.tools]]
+name = "list_edge_functions"
+description = "List all Edge Functions in a project"
+
+[[mcp.tools]]
+name = "get_edge_function"
+description = "Retrieve file contents for an Edge Function"
+
+[[mcp.tools]]
+name = "deploy_edge_function"
+description = "Deploy a new Edge Function to a project"
+
+[[mcp.tools]]
+name = "create_branch"
+description = "Create a development branch with migrations from production"
+
+[[mcp.tools]]
+name = "list_branches"
+description = "List all development branches"
+
+[[mcp.tools]]
+name = "delete_branch"
+description = "Delete a development branch"
+
+[[mcp.tools]]
+name = "merge_branch"
+description = "Merge migrations and edge functions to production"
+
+[[mcp.tools]]
+name = "reset_branch"
+description = "Reset migrations of a development branch"
+
+[[mcp.tools]]
+name = "rebase_branch"
+description = "Rebase development branch on production"
+
+[[mcp.tools]]
+name = "list_storage_buckets"
+description = "List all storage buckets in a project"
+
+[[mcp.tools]]
+name = "get_storage_config"
+description = "Get the storage configuration for a project"
+
+[[mcp.tools]]
+name = "update_storage_config"
+description = "Update the storage configuration for a project"

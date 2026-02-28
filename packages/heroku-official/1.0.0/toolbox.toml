@@ -1,0 +1,148 @@
+[tool]
+name = "heroku-official"
+version = "1.0.0"
+description = "Heroku platform management including app lifecycle, deployments, Postgres, and add-ons"
+author = "heroku"
+homepage = "https://github.com/heroku/heroku-mcp-server"
+license = "ISC"
+
+[binary]
+entry = "heroku-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = ["api.heroku.com"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "list_apps"
+description = "List all Heroku apps with filtering by personal, collaborator, team, or space"
+
+[[mcp.tools]]
+name = "get_app_info"
+description = "Get detailed information about an app including configuration, dynos, and add-ons"
+
+[[mcp.tools]]
+name = "create_app"
+description = "Create a new app with customizable settings for region, team, and space"
+
+[[mcp.tools]]
+name = "rename_app"
+description = "Change an existing app's name"
+
+[[mcp.tools]]
+name = "transfer_app"
+description = "Move app ownership to another user or team"
+
+[[mcp.tools]]
+name = "deploy_to_heroku"
+description = "Deploy projects using app.json configuration with team and space support"
+
+[[mcp.tools]]
+name = "deploy_one_off_dyno"
+description = "Execute code in a sandboxed environment on a Heroku one-off dyno"
+
+[[mcp.tools]]
+name = "ps_list"
+description = "View all dynos for a specified app"
+
+[[mcp.tools]]
+name = "ps_scale"
+description = "Adjust dyno quantity or resize dyno types"
+
+[[mcp.tools]]
+name = "ps_restart"
+description = "Reboot specific dynos, process types, or all dynos"
+
+[[mcp.tools]]
+name = "list_addons"
+description = "Display add-ons across all apps or for specific apps"
+
+[[mcp.tools]]
+name = "get_addon_info"
+description = "Access detailed add-on specifications"
+
+[[mcp.tools]]
+name = "create_addon"
+description = "Provision new add-ons for apps"
+
+[[mcp.tools]]
+name = "maintenance_on"
+description = "Enable maintenance mode for an app"
+
+[[mcp.tools]]
+name = "maintenance_off"
+description = "Disable maintenance mode for an app"
+
+[[mcp.tools]]
+name = "get_app_logs"
+description = "Access application log streams"
+
+[[mcp.tools]]
+name = "pipelines_create"
+description = "Create a new deployment pipeline"
+
+[[mcp.tools]]
+name = "pipelines_promote"
+description = "Promote an app through the pipeline"
+
+[[mcp.tools]]
+name = "pipelines_list"
+description = "List all pipelines"
+
+[[mcp.tools]]
+name = "pipelines_info"
+description = "Get pipeline details"
+
+[[mcp.tools]]
+name = "list_teams"
+description = "List all teams"
+
+[[mcp.tools]]
+name = "list_private_spaces"
+description = "List all private spaces"
+
+[[mcp.tools]]
+name = "pg_psql"
+description = "Execute SQL against Heroku Postgres"
+
+[[mcp.tools]]
+name = "pg_info"
+description = "Get Postgres database information"
+
+[[mcp.tools]]
+name = "pg_ps"
+description = "View active Postgres queries"
+
+[[mcp.tools]]
+name = "pg_locks"
+description = "Display Postgres lock information"
+
+[[mcp.tools]]
+name = "pg_outliers"
+description = "Identify slow or expensive Postgres queries"
+
+[[mcp.tools]]
+name = "pg_credentials"
+description = "Manage Postgres credentials"
+
+[[mcp.tools]]
+name = "pg_kill"
+description = "Terminate a Postgres query"
+
+[[mcp.tools]]
+name = "pg_maintenance"
+description = "View Postgres maintenance information"
+
+[[mcp.tools]]
+name = "pg_backups"
+description = "Manage Postgres backups"
+
+[[mcp.tools]]
+name = "pg_upgrade"
+description = "Upgrade Postgres version"

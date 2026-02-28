@@ -1,0 +1,19 @@
+{
+  "tool_id": "github-official",
+  "version": "1.0.0",
+  "author": "github",
+  "pinned_at": "2026-02-28T02:44:56Z",
+  "source": {
+    "type": "github",
+    "owner": "github",
+    "repo": "github-mcp-server",
+    "homepage": "https://github.com/github/github-mcp-server",
+    "archive_url": "https://github.com/github/github-mcp-server/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "github-official-1.0.0.tar.gz",
+    "size_bytes": 538003,
+    "sha512": "2bb49312c709c0561bbda9cadfcb78b1d5e1f7e914b23c7c9a7846388d44fd7e845ef405ebdb94718f6fc2a842614d0e8df179037ba5716bdc59e51de7bf5c7a",
+    "sha256": "ec39cbace12a4699d2023a276e06fa16f41c57ce37ea6cd9cb1df9790e3ed1cb"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "tool_id": "gitguardian",
+  "version": "0.1.0",
+  "author": "GitGuardian",
+  "pinned_at": "2026-02-28T02:44:52Z",
+  "source": {
+    "type": "github",
+    "owner": "GitGuardian",
+    "repo": "ggmcp",
+    "homepage": "https://github.com/GitGuardian/ggmcp",
+    "archive_url": "https://github.com/GitGuardian/ggmcp/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "gitguardian-0.1.0.tar.gz",
+    "size_bytes": 564503,
+    "sha512": "7420972f7903813a695b1db558882fb7018e54f01e6fce2921505016cbd6b01318891fbc29b9136702a8622413c51c06c363aaff68af842c7850843d6b781290",
+    "sha256": "97e83a6f7bb5dde0dc69f59ffa4f248d8b405ce778a39f89137fe60194ecb655"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "tool_id": "render",
+  "version": "0.3.0",
+  "author": "render-oss",
+  "pinned_at": "2026-02-28T02:46:23Z",
+  "source": {
+    "type": "github",
+    "owner": "render-oss",
+    "repo": "render-mcp-server",
+    "homepage": "https://github.com/render-oss/render-mcp-server",
+    "archive_url": "https://github.com/render-oss/render-mcp-server/archive/refs/tags/v0.3.0.tar.gz"
+  },
+  "artifact": {
+    "filename": "render-0.3.0.tar.gz",
+    "size_bytes": 132848,
+    "sha512": "e1d45675786a4741817286f582a216f21c720db9f39a9ad2a2354c0c4375a8213521aa488e49bcf2ccc8f11455fb328b51330a33b1d0d8a57efd8af596eeab8d",
+    "sha256": "6dd6784d362dacc4dd336f30e4f9b86c4d6053cbf4d86deeeae695315bf929db"
+  }
+}

@@ -1,0 +1,72 @@
+[tool]
+name = "ollama"
+version = "0.1.0"
+description = "Ollama local LLM model management and inference MCP server"
+author = "rawveg"
+homepage = "https://github.com/rawveg/ollama-mcp"
+license = "MIT"
+
+[binary]
+entry = "ollama-mcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = ["localhost", "127.0.0.1"]
+max_memory_mb = 512
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "ollama_list"
+description = "List all available local Ollama models"
+
+[[mcp.tools]]
+name = "ollama_show"
+description = "Get detailed information about a specific model"
+
+[[mcp.tools]]
+name = "ollama_pull"
+description = "Download models from the Ollama library"
+
+[[mcp.tools]]
+name = "ollama_push"
+description = "Push models to the Ollama library"
+
+[[mcp.tools]]
+name = "ollama_copy"
+description = "Create a copy of an existing model"
+
+[[mcp.tools]]
+name = "ollama_delete"
+description = "Remove models from local storage"
+
+[[mcp.tools]]
+name = "ollama_create"
+description = "Create custom models from a Modelfile"
+
+[[mcp.tools]]
+name = "ollama_ps"
+description = "List currently running models"
+
+[[mcp.tools]]
+name = "ollama_generate"
+description = "Generate text completions using a model"
+
+[[mcp.tools]]
+name = "ollama_chat"
+description = "Interactive chat with models including tool/function support"
+
+[[mcp.tools]]
+name = "ollama_embed"
+description = "Generate embeddings for text"
+
+[[mcp.tools]]
+name = "ollama_web_search"
+description = "Search the web with customizable result limits"
+
+[[mcp.tools]]
+name = "ollama_web_fetch"
+description = "Fetch and parse web page content"

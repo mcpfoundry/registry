@@ -1,0 +1,36 @@
+[tool]
+name = "clickhouse"
+version = "0.1.0"
+description = "ClickHouse database query and management MCP server"
+author = "ClickHouse"
+homepage = "https://github.com/ClickHouse/mcp-clickhouse"
+license = "Apache-2.0"
+
+[binary]
+entry = "mcp-clickhouse"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "run_query"
+description = "Execute SQL queries on your ClickHouse cluster"
+
+[[mcp.tools]]
+name = "list_databases"
+description = "List all databases on your ClickHouse cluster"
+
+[[mcp.tools]]
+name = "list_tables"
+description = "List tables in a database with pagination and optional column metadata"
+
+[[mcp.tools]]
+name = "run_chdb_select_query"
+description = "Execute SQL queries using chDB embedded ClickHouse engine"

@@ -1,0 +1,19 @@
+{
+  "tool_id": "bitbucket",
+  "version": "2.0.0",
+  "author": "aashari",
+  "pinned_at": "2026-02-28T02:43:26Z",
+  "source": {
+    "type": "github",
+    "owner": "aashari",
+    "repo": "mcp-server-atlassian-bitbucket",
+    "homepage": "https://github.com/aashari/mcp-server-atlassian-bitbucket",
+    "archive_url": "https://github.com/aashari/mcp-server-atlassian-bitbucket/archive/refs/tags/v2.0.0.tar.gz"
+  },
+  "artifact": {
+    "filename": "bitbucket-2.0.0.tar.gz",
+    "size_bytes": 178865,
+    "sha512": "08aeee6b46f7b0ec1baed758f922aa80c939bdb6cf2b4bb3be18c7e2b9face74d9916e53da0d2baa0f458051a162e213e506d1c8af3e44942095d8738f451a04",
+    "sha256": "0a737acb8b7e0ea01504575b28906d494d546b60835e55704faf617fa57a6957"
+  }
+}

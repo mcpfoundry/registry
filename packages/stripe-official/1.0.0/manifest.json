@@ -1,0 +1,19 @@
+{
+  "tool_id": "stripe-official",
+  "version": "1.0.0",
+  "author": "stripe",
+  "pinned_at": "2026-02-28T02:46:38Z",
+  "source": {
+    "type": "github",
+    "owner": "stripe",
+    "repo": "agent-toolkit",
+    "homepage": "https://github.com/stripe/agent-toolkit",
+    "archive_url": "https://github.com/stripe/agent-toolkit/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "stripe-official-1.0.0.tar.gz",
+    "size_bytes": 457717,
+    "sha512": "e8e6408fdc459d65fe5c36926fb24119ec25a64e134e9668f0858aff7fd7804add42bb5f44d971afe5127e51204c4e955b362f18ffc7b5cf5f14fd4107f2dab0",
+    "sha256": "71b68e8ac7383a5e17798043dcaccdcab93057532f1e7b49181c5b802a67892b"
+  }
+}

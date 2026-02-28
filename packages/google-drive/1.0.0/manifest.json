@@ -1,0 +1,19 @@
+{
+  "tool_id": "google-drive",
+  "version": "1.0.0",
+  "author": "isaacphi",
+  "pinned_at": "2026-02-28T02:45:10Z",
+  "source": {
+    "type": "github",
+    "owner": "isaacphi",
+    "repo": "mcp-gdrive",
+    "homepage": "https://github.com/isaacphi/mcp-gdrive",
+    "archive_url": "https://github.com/isaacphi/mcp-gdrive/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "google-drive-1.0.0.tar.gz",
+    "size_bytes": 18627994,
+    "sha512": "341363bcc8b34d3568780f9dc169abcd21f5581f06714bae0ffecb98a2db0a60a31b6435e9bf039f34486ed5aaf6889ccc35e0c27161dd2e5ebbd6ce3a04c5db",
+    "sha256": "4d8f6038a811efd909e3bf3400281a4859b3c9e5f7a3466a5a1c9ada66d6a7ec"
+  }
+}

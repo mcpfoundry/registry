@@ -1,0 +1,105 @@
+[tool]
+name = "render"
+version = "0.3.0"
+description = "Render cloud platform service, deployment, and database management"
+author = "render-oss"
+homepage = "https://github.com/render-oss/render-mcp-server"
+license = "Apache-2.0"
+
+[binary]
+entry = "render-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+env_vars = ["HOME", "PATH", "RENDER_API_KEY"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "list_workspaces"
+description = "List the workspaces that you have access to"
+
+[[mcp.tools]]
+name = "select_workspace"
+description = "Select the active workspace for subsequent operations"
+
+[[mcp.tools]]
+name = "get_selected_workspace"
+description = "Get the currently selected workspace"
+
+[[mcp.tools]]
+name = "list_services"
+description = "List all services in the workspace"
+
+[[mcp.tools]]
+name = "get_service"
+description = "Get detailed information about a specific service"
+
+[[mcp.tools]]
+name = "create_web_service"
+description = "Create a new web service on Render"
+
+[[mcp.tools]]
+name = "create_static_site"
+description = "Create a new static site on Render"
+
+[[mcp.tools]]
+name = "create_cron_job"
+description = "Create a new cron job on Render"
+
+[[mcp.tools]]
+name = "update_environment_variables"
+description = "Update environment variables for a service"
+
+[[mcp.tools]]
+name = "list_deploys"
+description = "List deployments for a service"
+
+[[mcp.tools]]
+name = "get_deploy"
+description = "Get details of a specific deployment"
+
+[[mcp.tools]]
+name = "list_logs"
+description = "View logs for a service"
+
+[[mcp.tools]]
+name = "list_log_label_values"
+description = "List all values for a given log label"
+
+[[mcp.tools]]
+name = "get_metrics"
+description = "Get performance metrics for a service"
+
+[[mcp.tools]]
+name = "query_render_postgres"
+description = "Execute a SQL query on a Render Postgres database"
+
+[[mcp.tools]]
+name = "list_postgres_instances"
+description = "List all Postgres database instances"
+
+[[mcp.tools]]
+name = "get_postgres"
+description = "Get details of a specific Postgres instance"
+
+[[mcp.tools]]
+name = "create_postgres"
+description = "Create a new Postgres database"
+
+[[mcp.tools]]
+name = "list_key_value"
+description = "List all key-value store instances"
+
+[[mcp.tools]]
+name = "get_key_value"
+description = "Get details of a specific key-value store"
+
+[[mcp.tools]]
+name = "create_key_value"
+description = "Create a new key-value store"

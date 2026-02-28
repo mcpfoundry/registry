@@ -1,0 +1,19 @@
+{
+  "tool_id": "courier",
+  "version": "1.0.0",
+  "author": "trycourier",
+  "pinned_at": "2026-02-28T02:44:22Z",
+  "source": {
+    "type": "github",
+    "owner": "trycourier",
+    "repo": "courier-mcp",
+    "homepage": "https://github.com/trycourier/courier-mcp",
+    "archive_url": "https://github.com/trycourier/courier-mcp/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "courier-1.0.0.tar.gz",
+    "size_bytes": 79937,
+    "sha512": "65520c993ae38c86fe6dfffb2dfcd06ea9781c3bb6d845ae8ba2f8030e0a97cb7d682fff6ed257d952f1b637d1447c4d844bbcfd2cb2de24addaf2cdb39c198f",
+    "sha256": "b854e19795a831a642bb44b4f45f747c38f81fd4f6305bbe54dbfe1a92da5b2a"
+  }
+}

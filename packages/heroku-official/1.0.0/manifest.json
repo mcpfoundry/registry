@@ -1,0 +1,19 @@
+{
+  "tool_id": "heroku-official",
+  "version": "1.0.0",
+  "author": "heroku",
+  "pinned_at": "2026-02-28T02:45:14Z",
+  "source": {
+    "type": "github",
+    "owner": "heroku",
+    "repo": "heroku-mcp-server",
+    "homepage": "https://github.com/heroku/heroku-mcp-server",
+    "archive_url": "https://github.com/heroku/heroku-mcp-server/archive/refs/tags/v1.0.0.tar.gz"
+  },
+  "artifact": {
+    "filename": "heroku-official-1.0.0.tar.gz",
+    "size_bytes": 231094,
+    "sha512": "04142d17b4fcfe84f9b35d60927a1bf14034f8da5c549db8d26fc6b6b58a3d3b46885b38dd76bc208af165ea39001b1c4dbf60639cd7b750fff03bb4df5a16d5",
+    "sha256": "c18b0b528e1f66b7f879eaf88fd08cec33c4d2b9523eed86dea5fa8b8ce0c433"
+  }
+}

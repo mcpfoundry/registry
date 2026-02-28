@@ -1,0 +1,19 @@
+{
+  "tool_id": "qdrant-official",
+  "version": "0.3.0",
+  "author": "qdrant",
+  "pinned_at": "2026-02-28T02:46:18Z",
+  "source": {
+    "type": "github",
+    "owner": "qdrant",
+    "repo": "mcp-server-qdrant",
+    "homepage": "https://github.com/qdrant/mcp-server-qdrant",
+    "archive_url": "https://github.com/qdrant/mcp-server-qdrant/archive/refs/heads/master.tar.gz"
+  },
+  "artifact": {
+    "filename": "qdrant-official-0.3.0.tar.gz",
+    "size_bytes": 161488,
+    "sha512": "fd6e36a9ee2beb98649586f607c0bc99133aa11735e6847dbc7d9c8517666f052ad91991e752d47629ab463c27b77235acbc6eea5573ad404f4e27af0b532dfe",
+    "sha256": "db60e3afdccecc1a3ae49d4294677188f6e71ea587be4642dfcfd4d7b5aff0b3"
+  }
+}

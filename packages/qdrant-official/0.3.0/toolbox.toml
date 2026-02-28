@@ -1,0 +1,28 @@
+[tool]
+name = "qdrant-official"
+version = "0.3.0"
+description = "Qdrant vector search database for storing and retrieving information via semantic search"
+author = "qdrant"
+homepage = "https://github.com/qdrant/mcp-server-qdrant"
+license = "Apache-2.0"
+
+[binary]
+entry = "mcp-server-qdrant"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+max_memory_mb = 512
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "qdrant-store"
+description = "Store information in the Qdrant database with optional metadata and collection name"
+
+[[mcp.tools]]
+name = "qdrant-find"
+description = "Retrieve relevant information from the Qdrant database using semantic search"

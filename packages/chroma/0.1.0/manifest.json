@@ -1,0 +1,19 @@
+{
+  "tool_id": "chroma",
+  "version": "0.1.0",
+  "author": "chroma-core",
+  "pinned_at": "2026-02-28T02:43:42Z",
+  "source": {
+    "type": "github",
+    "owner": "chroma-core",
+    "repo": "chroma-mcp",
+    "homepage": "https://github.com/chroma-core/chroma-mcp",
+    "archive_url": "https://github.com/chroma-core/chroma-mcp/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "chroma-0.1.0.tar.gz",
+    "size_bytes": 207410,
+    "sha512": "2127fb3039f00c5c81a13665645724c4c39bbfe6edaa4d600db7c8e4049a52088ab929829e267b6766273e0116ffc7bd0fe9f28b7b5704468d343bf658bab2da",
+    "sha256": "650afabbcbef69cc459abe732171c08e951eaf6ccec7033316aad800a649f813"
+  }
+}

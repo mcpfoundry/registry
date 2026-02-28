@@ -1,0 +1,19 @@
+{
+  "tool_id": "crowdstrike",
+  "version": "0.1.0",
+  "author": "CrowdStrike",
+  "pinned_at": "2026-02-28T02:44:23Z",
+  "source": {
+    "type": "github",
+    "owner": "CrowdStrike",
+    "repo": "falcon-mcp",
+    "homepage": "https://github.com/CrowdStrike/falcon-mcp",
+    "archive_url": "https://github.com/CrowdStrike/falcon-mcp/archive/refs/tags/v0.1.0.tar.gz"
+  },
+  "artifact": {
+    "filename": "crowdstrike-0.1.0.tar.gz",
+    "size_bytes": 222202,
+    "sha512": "923b18df0f20b03b701fbbe30e02bc57a90641216b29b8193a09ee55dbe0ceaa8ce5af5dfa351a84a8a103c5d15806936bc95f05f2dada062907397a2994ef8e",
+    "sha256": "41676a6a989be4db0401a4d02a415fc7aa33f4e69a2f3573f45740b34bb96a32"
+  }
+}

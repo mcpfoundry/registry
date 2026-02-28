@@ -1,0 +1,19 @@
+{
+  "tool_id": "confluent",
+  "version": "0.1.0",
+  "author": "confluentinc",
+  "pinned_at": "2026-02-28T02:44:19Z",
+  "source": {
+    "type": "github",
+    "owner": "confluentinc",
+    "repo": "mcp-confluent",
+    "homepage": "https://github.com/confluentinc/mcp-confluent",
+    "archive_url": "https://github.com/confluentinc/mcp-confluent/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "confluent-0.1.0.tar.gz",
+    "size_bytes": 53818291,
+    "sha512": "d1baa8f7a1c7a8a3ddecb98902c2a5e9b538248c94248b683a833801d81c3111a78b5151f99c15e3ffb4d532934ec2cea0776dd521a32caaf74e31859cbe74c6",
+    "sha256": "9c76fe8895d5fdce6b550bff013288501f48c1df2f1c637c0b333ce7e260366e"
+  }
+}

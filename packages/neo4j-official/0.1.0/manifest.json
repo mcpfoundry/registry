@@ -1,0 +1,19 @@
+{
+  "tool_id": "neo4j-official",
+  "version": "0.1.0",
+  "author": "neo4j-contrib",
+  "pinned_at": "2026-02-28T02:45:52Z",
+  "source": {
+    "type": "github",
+    "owner": "neo4j-contrib",
+    "repo": "mcp-neo4j",
+    "homepage": "https://github.com/neo4j-contrib/mcp-neo4j",
+    "archive_url": "https://github.com/neo4j-contrib/mcp-neo4j/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "neo4j-official-0.1.0.tar.gz",
+    "size_bytes": 4565919,
+    "sha512": "83223e5b550a94ee7beffebffdaf4a4f5d2596a5c2f1506ed991102b21dc5887e3d1014f09a281dda2f7be9b565284ef05ab56701c02e33d9e0e6e1caa6051d9",
+    "sha256": "79437eaab079d35a5fbee207d5c335c79fbe7c601de76855cd4d3e8b2914ba83"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "tool_id": "weaviate-official",
+  "version": "0.1.0",
+  "author": "weaviate",
+  "pinned_at": "2026-02-28T02:46:52Z",
+  "source": {
+    "type": "github",
+    "owner": "weaviate",
+    "repo": "mcp-server-weaviate",
+    "homepage": "https://github.com/weaviate/mcp-server-weaviate",
+    "archive_url": "https://github.com/weaviate/mcp-server-weaviate/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "weaviate-official-0.1.0.tar.gz",
+    "size_bytes": 11929,
+    "sha512": "f037292b0e15ae2c51645f96917809385635aa1e7a15febef5098c8cb5926d34d2e24a8dcd48964a39f07592a74cdf5c9cfed781c24b7f960d805a961d810749",
+    "sha256": "d7061424c05c2edabf20de1c0d7f96e6911c33e4afcb808259c88f49e10b4fc5"
+  }
+}

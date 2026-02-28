@@ -1,0 +1,19 @@
+{
+  "tool_id": "firebase",
+  "version": "0.1.0",
+  "author": "gannonh",
+  "pinned_at": "2026-02-28T02:44:49Z",
+  "source": {
+    "type": "github",
+    "owner": "gannonh",
+    "repo": "firebase-mcp",
+    "homepage": "https://github.com/gannonh/firebase-mcp",
+    "archive_url": "https://github.com/gannonh/firebase-mcp/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "firebase-0.1.0.tar.gz",
+    "size_bytes": 275160,
+    "sha512": "d5c0c760925a81de87ca703ec3fd349b26b02f3ce8c984572d3ac68e3d1e32b997b2cad4d145cf9428f48a0221e1a91342432fb85f0be272b6280c5b0053c931",
+    "sha256": "134ea9e7be8407279a72ca1d697c9c4f60aa5ef37d34ede19fc76902a05fb815"
+  }
+}

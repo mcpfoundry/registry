@@ -1,0 +1,72 @@
+[tool]
+name = "figma"
+version = "0.1.0"
+description = "Figma design platform MCP server for code generation and design system integration"
+author = "figma"
+homepage = "https://github.com/figma/mcp-server-guide"
+license = "Proprietary"
+
+[binary]
+entry = "figma-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+max_memory_mb = 512
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "get_design_context"
+description = "Generate code from selected Figma frames and retrieve structured design information"
+
+[[mcp.tools]]
+name = "generate_figma_design"
+description = "Capture, import, or convert a web page into a Figma design"
+
+[[mcp.tools]]
+name = "get_variable_defs"
+description = "Extract variables and styles (colors, spacing, typography) from selections"
+
+[[mcp.tools]]
+name = "get_code_connect_map"
+description = "Retrieve mappings between Figma node IDs and code components"
+
+[[mcp.tools]]
+name = "add_code_connect_map"
+description = "Create mappings between design elements and code implementations"
+
+[[mcp.tools]]
+name = "get_code_connect_suggestions"
+description = "Detect and suggest Code Connect mappings between Figma and code"
+
+[[mcp.tools]]
+name = "send_code_connect_mappings"
+description = "Confirm and finalize Code Connect mappings"
+
+[[mcp.tools]]
+name = "get_screenshot"
+description = "Take screenshots of Figma selections to preserve layout fidelity"
+
+[[mcp.tools]]
+name = "create_design_system_rules"
+description = "Create a rule file giving agents context for generating code"
+
+[[mcp.tools]]
+name = "get_metadata"
+description = "Return XML representation of selection containing basic properties"
+
+[[mcp.tools]]
+name = "get_figjam"
+description = "Return metadata for FigJam diagrams with screenshots"
+
+[[mcp.tools]]
+name = "generate_diagram"
+description = "Generate FigJam diagrams from Mermaid syntax"
+
+[[mcp.tools]]
+name = "whoami"
+description = "Return authenticated user identity and plan information"

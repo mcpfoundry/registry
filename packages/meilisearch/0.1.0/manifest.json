@@ -1,0 +1,19 @@
+{
+  "tool_id": "meilisearch",
+  "version": "0.1.0",
+  "author": "meilisearch",
+  "pinned_at": "2026-02-28T02:45:40Z",
+  "source": {
+    "type": "github",
+    "owner": "meilisearch",
+    "repo": "meilisearch-mcp",
+    "homepage": "https://github.com/meilisearch/meilisearch-mcp",
+    "archive_url": "https://github.com/meilisearch/meilisearch-mcp/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "meilisearch-0.1.0.tar.gz",
+    "size_bytes": 86392,
+    "sha512": "5094b29418b14e689d3308c56dd3237836a8c336145b55d869d1829dc68492a3751e32bc745142b02b8cecc64bfe8da69f72d7ea904439ecbceba6597cada784",
+    "sha256": "a64d5f9d10219ef659944aaac494e78aabc1dd7a6b12da59932eed90799aa720"
+  }
+}

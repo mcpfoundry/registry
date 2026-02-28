@@ -1,0 +1,55 @@
+[tool]
+name = "prisma-community"
+version = "1.0.0"
+description = "Prisma ORM database migrations, management, and Prisma Postgres operations"
+author = "prisma"
+homepage = "https://github.com/prisma/mcp"
+license = "Apache-2.0"
+
+[binary]
+entry = "prisma-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+runtime = "node"
+min_version = "18"
+
+[permissions]
+filesystem = [
+    "read:~/Projects",
+    "write:~/Projects",
+    "readwrite:/tmp"
+]
+network = true
+env_vars = ["HOME", "PATH", "DATABASE_URL", "PRISMA_TOKEN"]
+max_memory_mb = 512
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "migrate-status"
+description = "Check migration status via prisma migrate status"
+
+[[mcp.tools]]
+name = "migrate-dev"
+description = "Create and execute a migration via prisma migrate dev"
+
+[[mcp.tools]]
+name = "migrate-reset"
+description = "Reset the database via prisma migrate reset"
+
+[[mcp.tools]]
+name = "Prisma-Postgres-account-status"
+description = "Check authentication status with Prisma Console"
+
+[[mcp.tools]]
+name = "Create-Prisma-Postgres-Database"
+description = "Create a new Prisma Postgres database with specified name and region"
+
+[[mcp.tools]]
+name = "Prisma-Login"
+description = "Authenticate with Prisma Console"
+
+[[mcp.tools]]
+name = "Prisma-Studio"
+description = "Open Prisma Studio for visual database browsing"

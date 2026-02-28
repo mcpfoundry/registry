@@ -1,0 +1,79 @@
+[tool]
+name = "trello"
+version = "1.5.0"
+description = "Trello board management with cards, lists, checklists, and workspaces"
+author = "delorenj"
+homepage = "https://github.com/delorenj/mcp-server-trello"
+license = "MIT"
+
+[binary]
+entry = "mcp-server-trello"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+runtime = "node"
+min_version = "18"
+
+[permissions]
+filesystem = false
+network = true
+env_vars = ["HOME", "PATH", "TRELLO_API_KEY", "TRELLO_TOKEN"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "list_boards"
+description = "Display available Trello boards"
+
+[[mcp.tools]]
+name = "set_active_board"
+description = "Switch between boards dynamically"
+
+[[mcp.tools]]
+name = "get_active_board_info"
+description = "Display current board context"
+
+[[mcp.tools]]
+name = "get_lists"
+description = "Retrieve all lists from a board"
+
+[[mcp.tools]]
+name = "get_card"
+description = "Fetch comprehensive details of a specific Trello card"
+
+[[mcp.tools]]
+name = "get_cards_by_list_id"
+description = "Retrieve all cards from a specific list"
+
+[[mcp.tools]]
+name = "add_card_to_list"
+description = "Create new cards with optional metadata"
+
+[[mcp.tools]]
+name = "get_checklist_items"
+description = "Retrieve all items from a named checklist"
+
+[[mcp.tools]]
+name = "add_checklist_item"
+description = "Add new items to an existing checklist"
+
+[[mcp.tools]]
+name = "find_checklist_items_by_description"
+description = "Search checklist items by text content"
+
+[[mcp.tools]]
+name = "get_acceptance_criteria"
+description = "Fetch items from the Acceptance Criteria checklist"
+
+[[mcp.tools]]
+name = "get_recent_activity"
+description = "Access recent board activity with configurable limits"
+
+[[mcp.tools]]
+name = "list_workspaces"
+description = "List available Trello workspaces"
+
+[[mcp.tools]]
+name = "set_active_workspace"
+description = "Change the active workspace"

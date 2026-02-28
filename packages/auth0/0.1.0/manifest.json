@@ -1,0 +1,19 @@
+{
+  "tool_id": "auth0",
+  "version": "0.1.0",
+  "author": "auth0",
+  "pinned_at": "2026-02-28T02:43:02Z",
+  "source": {
+    "type": "github",
+    "owner": "auth0",
+    "repo": "auth0-mcp-server",
+    "homepage": "https://github.com/auth0/auth0-mcp-server",
+    "archive_url": "https://github.com/auth0/auth0-mcp-server/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "auth0-0.1.0.tar.gz",
+    "size_bytes": 5928414,
+    "sha512": "d004eb7d6ae6f6d9eb872dcbadc0f8ee80b6ec564392c2c437546376cb6714080f72e0e660d4f544d78bcb9374ca357c8aa66edbd10ce1eeb0e7be0f1de7a813",
+    "sha256": "0b81270ac752585f9fddb785145f831874c41c6142e2861c324f03c638da5d8b"
+  }
+}

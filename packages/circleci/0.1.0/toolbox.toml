@@ -1,0 +1,80 @@
+[tool]
+name = "circleci"
+version = "0.1.0"
+description = "CircleCI CI/CD pipeline management and debugging MCP server"
+author = "CircleCI-Public"
+homepage = "https://github.com/CircleCI-Public/mcp-server-circleci"
+license = "MIT"
+
+[binary]
+entry = "mcp-server-circleci"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "get_build_failure_logs"
+description = "Retrieve detailed failure logs from CircleCI builds"
+
+[[mcp.tools]]
+name = "find_flaky_tests"
+description = "Identify flaky tests by analyzing test execution history"
+
+[[mcp.tools]]
+name = "get_latest_pipeline_status"
+description = "Get the status of the latest pipeline for a branch"
+
+[[mcp.tools]]
+name = "get_job_test_results"
+description = "Retrieve test metadata and results for CircleCI jobs"
+
+[[mcp.tools]]
+name = "config_helper"
+description = "Validate and get guidance for your CircleCI configuration"
+
+[[mcp.tools]]
+name = "create_prompt_template"
+description = "Generate structured prompt templates for AI applications"
+
+[[mcp.tools]]
+name = "recommend_prompt_template_tests"
+description = "Generate test cases for prompt templates"
+
+[[mcp.tools]]
+name = "list_followed_projects"
+description = "List all CircleCI projects you are following"
+
+[[mcp.tools]]
+name = "run_pipeline"
+description = "Trigger a pipeline to run"
+
+[[mcp.tools]]
+name = "run_rollback_pipeline"
+description = "Trigger a rollback for a project"
+
+[[mcp.tools]]
+name = "rerun_workflow"
+description = "Rerun a workflow from start or from the failed job"
+
+[[mcp.tools]]
+name = "analyze_diff"
+description = "Analyze git diffs against cursor rules for violations"
+
+[[mcp.tools]]
+name = "list_component_versions"
+description = "List all versions for a CircleCI component"
+
+[[mcp.tools]]
+name = "download_usage_api_data"
+description = "Download usage data from the CircleCI Usage API"
+
+[[mcp.tools]]
+name = "find_underused_resource_classes"
+description = "Find jobs with underused compute resources"

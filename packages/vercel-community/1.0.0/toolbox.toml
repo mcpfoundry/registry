@@ -1,0 +1,75 @@
+[tool]
+name = "vercel-community"
+version = "1.0.0"
+description = "Vercel deployment, project, and environment management"
+author = "nganiet"
+homepage = "https://github.com/nganiet/mcp-vercel"
+license = "MIT"
+
+[binary]
+entry = "mcp-vercel"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+runtime = "node"
+min_version = "18"
+
+[permissions]
+filesystem = false
+network = true
+env_vars = ["HOME", "PATH", "VERCEL_API_TOKEN"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "vercel-list-all-deployments"
+description = "Retrieve deployments with filtering options"
+
+[[mcp.tools]]
+name = "vercel-get-deployment"
+description = "Fetch specific deployment information"
+
+[[mcp.tools]]
+name = "vercel-list-deployment-files"
+description = "View files within a deployment"
+
+[[mcp.tools]]
+name = "vercel-create-deployment"
+description = "Initiate a new deployment"
+
+[[mcp.tools]]
+name = "vercel-create-project"
+description = "Create a new Vercel project"
+
+[[mcp.tools]]
+name = "vercel-list-projects"
+description = "List projects with pagination"
+
+[[mcp.tools]]
+name = "vercel-find-project"
+description = "Locate a project by identifier or name"
+
+[[mcp.tools]]
+name = "vercel-create-environment-variables"
+description = "Configure multiple environment variables"
+
+[[mcp.tools]]
+name = "vercel-get-project-domain"
+description = "Retrieve domain information for a project"
+
+[[mcp.tools]]
+name = "vercel-get-environments"
+description = "Access project environment variables"
+
+[[mcp.tools]]
+name = "vercel-create-custom-environment"
+description = "Establish custom deployment environments"
+
+[[mcp.tools]]
+name = "vercel-list-all-teams"
+description = "Display accessible teams"
+
+[[mcp.tools]]
+name = "vercel-create-team"
+description = "Create a new team with custom identifiers"

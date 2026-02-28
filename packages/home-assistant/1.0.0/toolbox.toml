@@ -1,0 +1,39 @@
+[tool]
+name = "home-assistant"
+version = "1.0.0"
+description = "Smart home automation control via Home Assistant"
+author = "tevonsb"
+homepage = "https://github.com/tevonsb/homeassistant-mcp"
+license = "Apache-2.0"
+
+[binary]
+entry = "homeassistant-mcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+runtime = "node"
+min_version = "20.10"
+
+[permissions]
+filesystem = false
+network = true
+env_vars = ["HOME", "PATH", "HOMEASSISTANT_URL", "HOMEASSISTANT_TOKEN"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "control"
+description = "Control any Home Assistant device including lights, climate, switches, sensors, media players, fans, locks, and more"
+
+[[mcp.tools]]
+name = "addon"
+description = "Manage Home Assistant add-ons with install, start, stop, restart, and list actions"
+
+[[mcp.tools]]
+name = "package"
+description = "Manage HACS packages including integrations, plugins, themes, and scripts"
+
+[[mcp.tools]]
+name = "automation_config"
+description = "Create, edit, and manage Home Assistant automations with triggers, conditions, and actions"

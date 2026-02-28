@@ -1,0 +1,19 @@
+{
+  "tool_id": "azure",
+  "version": "0.1.0",
+  "author": "microsoft",
+  "pinned_at": "2026-02-28T02:43:24Z",
+  "source": {
+    "type": "github",
+    "owner": "microsoft",
+    "repo": "mcp",
+    "homepage": "https://github.com/microsoft/mcp",
+    "archive_url": "https://github.com/microsoft/mcp/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "azure-0.1.0.tar.gz",
+    "size_bytes": 35889025,
+    "sha512": "b41b5f9fa72342c16632a5602a009cf1852a60ab808f5d72030132a8dbcd9afb0a3f7b646805a6b78b86508db6c1a8e407a07b2c802de45ec83aa2a5da232832",
+    "sha256": "15c9e1428bdaacc4e2cc70bb2cef0aca72054cf0f09c939655f72b34383d7b7a"
+  }
+}

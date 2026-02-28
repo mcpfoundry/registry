@@ -1,0 +1,60 @@
+[tool]
+name = "honeycomb"
+version = "0.1.0"
+description = "Honeycomb observability platform for querying datasets, SLOs, triggers, and traces"
+author = "honeycombio"
+homepage = "https://github.com/honeycombio/honeycomb-mcp"
+license = "Apache-2.0"
+
+[binary]
+entry = "honeycomb-mcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = ["api.honeycomb.io"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "list_datasets"
+description = "List all datasets in an environment"
+
+[[mcp.tools]]
+name = "get_columns"
+description = "Get column information for a dataset"
+
+[[mcp.tools]]
+name = "run_query"
+description = "Run analytics queries with rich options including calculations, breakdowns, and time ranges"
+
+[[mcp.tools]]
+name = "analyze_columns"
+description = "Analyze specific columns by executing statistical queries and providing computed metrics"
+
+[[mcp.tools]]
+name = "list_slos"
+description = "List all SLOs for a dataset"
+
+[[mcp.tools]]
+name = "get_slo"
+description = "Get detailed SLO information"
+
+[[mcp.tools]]
+name = "list_triggers"
+description = "List all triggers for a dataset"
+
+[[mcp.tools]]
+name = "get_trigger"
+description = "Get detailed trigger information"
+
+[[mcp.tools]]
+name = "get_trace_link"
+description = "Generate a deep link to a specific trace in the Honeycomb UI"
+
+[[mcp.tools]]
+name = "get_instrumentation_help"
+description = "Provide OpenTelemetry instrumentation guidance"

@@ -1,0 +1,42 @@
+[tool]
+name = "google-drive"
+version = "1.0.0"
+description = "Google Drive file access, search, and Sheets editing"
+author = "isaacphi"
+homepage = "https://github.com/isaacphi/mcp-gdrive"
+license = "MIT"
+
+[binary]
+entry = "mcp-gdrive"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+runtime = "node"
+min_version = "18"
+
+[permissions]
+filesystem = [
+    "read:~/Downloads",
+    "write:~/Downloads"
+]
+network = true
+env_vars = ["HOME", "PATH", "GOOGLE_CLIENT_ID", "GOOGLE_CLIENT_SECRET"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "gdrive_search"
+description = "Search for files in Google Drive"
+
+[[mcp.tools]]
+name = "gdrive_read_file"
+description = "Read contents of a file from Google Drive"
+
+[[mcp.tools]]
+name = "gsheets_read"
+description = "Read data from a Google Spreadsheet with flexible options for ranges and formatting"
+
+[[mcp.tools]]
+name = "gsheets_update_cell"
+description = "Update a cell value in a Google Spreadsheet"

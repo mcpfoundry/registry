@@ -12,10 +12,25 @@
     "rating": 4.8,
     "install_count": 45200,
     "permissions": {
-      "filesystem": ["read:~/", "write:~/"],
+      "filesystem": [
+        "read:~/",
+        "write:~/"
+      ],
       "network": false
     },
-    "tools": ["read_file", "read_multiple_files", "write_file", "edit_file", "create_directory", "list_directory", "directory_tree", "move_file", "search_files", "get_file_info", "list_allowed_directories"],
+    "tools": [
+      "read_file",
+      "read_multiple_files",
+      "write_file",
+      "edit_file",
+      "create_directory",
+      "list_directory",
+      "directory_tree",
+      "move_file",
+      "search_files",
+      "get_file_info",
+      "list_allowed_directories"
+    ],
     "scan_summary": "No issues found. Local filesystem access only within configured allowed directories."
   },
   {
@@ -32,9 +47,14 @@
     "install_count": 38100,
     "permissions": {
       "filesystem": false,
-      "network": ["https://*", "http://*"]
+      "network": [
+        "https://*",
+        "http://*"
+      ]
     },
-    "tools": ["fetch"],
+    "tools": [
+      "fetch"
+    ],
     "scan_summary": "No issues found. Outbound network access only. Converts fetched content to markdown."
   },
   {
@@ -50,10 +70,29 @@
     "rating": 4.9,
     "install_count": 41500,
     "permissions": {
-      "filesystem": ["read:~/", "write:~/"],
-      "network": ["https://*.github.com", "ssh://*.github.com"]
+      "filesystem": [
+        "read:~/",
+        "write:~/"
+      ],
+      "network": [
+        "https://*.github.com",
+        "ssh://*.github.com"
+      ]
     },
-    "tools": ["git_status", "git_diff_unstaged", "git_diff_staged", "git_commit", "git_add", "git_reset", "git_log", "git_create_branch", "git_checkout", "git_show", "git_init", "git_clone"],
+    "tools": [
+      "git_status",
+      "git_diff_unstaged",
+      "git_diff_staged",
+      "git_commit",
+      "git_add",
+      "git_reset",
+      "git_log",
+      "git_create_branch",
+      "git_checkout",
+      "git_show",
+      "git_init",
+      "git_clone"
+    ],
     "scan_summary": "No issues found. Requires filesystem and network access for remote operations."
   },
   {
@@ -70,9 +109,36 @@
     "install_count": 52300,
     "permissions": {
       "filesystem": false,
-      "network": ["https://api.github.com"]
+      "network": [
+        "https://api.github.com"
+      ]
     },
-    "tools": ["create_or_update_file", "search_repositories", "create_repository", "get_file_contents", "push_files", "create_issue", "create_pull_request", "fork_repository", "create_branch", "list_commits", "list_issues", "update_issue", "add_issue_comment", "search_code", "search_issues", "search_users", "get_issue", "get_pull_request", "list_pull_requests", "create_pull_request_review", "merge_pull_request", "get_pull_request_files", "get_pull_request_status", "update_pull_request_branch"],
+    "tools": [
+      "create_or_update_file",
+      "search_repositories",
+      "create_repository",
+      "get_file_contents",
+      "push_files",
+      "create_issue",
+      "create_pull_request",
+      "fork_repository",
+      "create_branch",
+      "list_commits",
+      "list_issues",
+      "update_issue",
+      "add_issue_comment",
+      "search_code",
+      "search_issues",
+      "search_users",
+      "get_issue",
+      "get_pull_request",
+      "list_pull_requests",
+      "create_pull_request_review",
+      "merge_pull_request",
+      "get_pull_request_files",
+      "get_pull_request_status",
+      "update_pull_request_branch"
+    ],
     "scan_summary": "No issues found. Personal access token required. Network access limited to GitHub API."
   },
   {
@@ -89,9 +155,22 @@
     "install_count": 18900,
     "permissions": {
       "filesystem": false,
-      "network": ["https://slack.com/api/*"]
+      "network": [
+        "https://slack.com/api/*"
+      ]
     },
-    "tools": ["slack_list_channels", "slack_post_message", "slack_reply_to_thread", "slack_add_reaction", "slack_get_channel_history", "slack_get_thread_replies", "slack_search_messages", "slack_get_users", "slack_get_user_profile", "slack_list_members"],
+    "tools": [
+      "slack_list_channels",
+      "slack_post_message",
+      "slack_reply_to_thread",
+      "slack_add_reaction",
+      "slack_get_channel_history",
+      "slack_get_thread_replies",
+      "slack_search_messages",
+      "slack_get_users",
+      "slack_get_user_profile",
+      "slack_list_members"
+    ],
     "scan_summary": "No issues found. Bot token required. Network access limited to Slack API."
   },
   {
@@ -107,10 +186,19 @@
     "rating": 4.7,
     "install_count": 24300,
     "permissions": {
-      "filesystem": ["read:~/", "write:~/"],
+      "filesystem": [
+        "read:~/",
+        "write:~/"
+      ],
       "network": false
     },
-    "tools": ["read_query", "write_query", "create_table", "list_tables", "describe_table"],
+    "tools": [
+      "read_query",
+      "write_query",
+      "create_table",
+      "list_tables",
+      "describe_table"
+    ],
     "scan_summary": "No issues found. Local database access only."
   },
   {
@@ -127,9 +215,13 @@
     "install_count": 21800,
     "permissions": {
       "filesystem": false,
-      "network": ["tcp://*:5432"]
+      "network": [
+        "tcp://*:5432"
+      ]
     },
-    "tools": ["query"],
+    "tools": [
+      "query"
+    ],
     "scan_summary": "No issues found. Network access limited to PostgreSQL wire protocol."
   },
   {
@@ -145,11 +237,24 @@
     "rating": 4.6,
     "install_count": 19400,
     "permissions": {
-      "filesystem": ["write:/tmp/screenshots"],
-      "network": ["https://*", "http://*"],
+      "filesystem": [
+        "write:/tmp/screenshots"
+      ],
+      "network": [
+        "https://*",
+        "http://*"
+      ],
       "processes": true
     },
-    "tools": ["puppeteer_navigate", "puppeteer_screenshot", "puppeteer_click", "puppeteer_fill", "puppeteer_select", "puppeteer_hover", "puppeteer_evaluate"],
+    "tools": [
+      "puppeteer_navigate",
+      "puppeteer_screenshot",
+      "puppeteer_click",
+      "puppeteer_fill",
+      "puppeteer_select",
+      "puppeteer_hover",
+      "puppeteer_evaluate"
+    ],
     "scan_summary": "No issues found. Launches headless Chrome subprocess. Network access for page navigation."
   },
   {
@@ -166,9 +271,14 @@
     "install_count": 31200,
     "permissions": {
       "filesystem": false,
-      "network": ["https://api.search.brave.com"]
+      "network": [
+        "https://api.search.brave.com"
+      ]
     },
-    "tools": ["brave_web_search", "brave_local_search"],
+    "tools": [
+      "brave_web_search",
+      "brave_local_search"
+    ],
     "scan_summary": "No issues found. API key required. Network access limited to Brave Search API."
   },
   {
@@ -185,9 +295,18 @@
     "install_count": 12100,
     "permissions": {
       "filesystem": false,
-      "network": ["https://maps.googleapis.com"]
+      "network": [
+        "https://maps.googleapis.com"
+      ]
     },
-    "tools": ["maps_geocode", "maps_reverse_geocode", "maps_search_places", "maps_place_details", "maps_distance_matrix", "maps_directions"],
+    "tools": [
+      "maps_geocode",
+      "maps_reverse_geocode",
+      "maps_search_places",
+      "maps_place_details",
+      "maps_distance_matrix",
+      "maps_directions"
+    ],
     "scan_summary": "No issues found. Google Maps API key required. Network access limited to Google Maps API."
   },
   {
@@ -203,10 +322,21 @@
     "rating": 4.8,
     "install_count": 28700,
     "permissions": {
-      "filesystem": ["read:~/", "write:~/"],
+      "filesystem": [
+        "read:~/",
+        "write:~/"
+      ],
       "network": false
     },
-    "tools": ["create_entities", "create_relations", "add_observations", "delete_entities", "delete_observations", "delete_relations", "search_nodes"],
+    "tools": [
+      "create_entities",
+      "create_relations",
+      "add_observations",
+      "delete_entities",
+      "delete_observations",
+      "delete_relations",
+      "search_nodes"
+    ],
     "scan_summary": "No issues found. Local file-based knowledge graph. No network access."
   },
   {
@@ -225,7 +355,9 @@
       "filesystem": false,
       "network": false
     },
-    "tools": ["sequentialthinking"],
+    "tools": [
+      "sequentialthinking"
+    ],
     "scan_summary": "No issues found. Pure computation, no filesystem or network access."
   },
   {
@@ -244,7 +376,10 @@
       "filesystem": false,
       "network": false
     },
-    "tools": ["get_current_time", "convert_time"],
+    "tools": [
+      "get_current_time",
+      "convert_time"
+    ],
     "scan_summary": "No issues found. Pure computation, no filesystem or network access."
   },
   {
@@ -260,11 +395,33 @@
     "rating": 4.8,
     "install_count": 47200,
     "permissions": {
-      "filesystem": ["write:/tmp/screenshots"],
-      "network": ["https://*", "http://*"],
+      "filesystem": [
+        "write:/tmp/screenshots"
+      ],
+      "network": [
+        "https://*",
+        "http://*"
+      ],
       "processes": true
     },
-    "tools": ["browser_navigate", "browser_screenshot", "browser_click", "browser_hover", "browser_type", "browser_select_option", "browser_tab_list", "browser_tab_new", "browser_tab_select", "browser_tab_close", "browser_press_key", "browser_console_messages", "browser_file_upload", "browser_handle_dialog", "browser_resize", "browser_snapshot"],
+    "tools": [
+      "browser_navigate",
+      "browser_screenshot",
+      "browser_click",
+      "browser_hover",
+      "browser_type",
+      "browser_select_option",
+      "browser_tab_list",
+      "browser_tab_new",
+      "browser_tab_select",
+      "browser_tab_close",
+      "browser_press_key",
+      "browser_console_messages",
+      "browser_file_upload",
+      "browser_handle_dialog",
+      "browser_resize",
+      "browser_snapshot"
+    ],
     "scan_summary": "No issues found. Official Microsoft project. Launches browser subprocess. Network for page navigation."
   },
   {
@@ -281,9 +438,32 @@
     "install_count": 18400,
     "permissions": {
       "filesystem": false,
-      "network": ["https://mcp.stripe.com"]
+      "network": [
+        "https://mcp.stripe.com"
+      ]
     },
-    "tools": ["create_customer", "list_customers", "create_product", "list_products", "create_price", "list_prices", "create_payment_link", "create_invoice", "list_invoices", "create_invoice_item", "finalize_invoice", "create_subscription", "list_subscriptions", "update_subscription", "cancel_subscription", "create_refund", "list_payment_intents", "list_balance_transactions", "create_checkout_session", "search_documentation"],
+    "tools": [
+      "create_customer",
+      "list_customers",
+      "create_product",
+      "list_products",
+      "create_price",
+      "list_prices",
+      "create_payment_link",
+      "create_invoice",
+      "list_invoices",
+      "create_invoice_item",
+      "finalize_invoice",
+      "create_subscription",
+      "list_subscriptions",
+      "update_subscription",
+      "cancel_subscription",
+      "create_refund",
+      "list_payment_intents",
+      "list_balance_transactions",
+      "create_checkout_session",
+      "search_documentation"
+    ],
     "scan_summary": "No issues found. Official Stripe product. Remote MCP proxy to mcp.stripe.com. API key required."
   },
   {
@@ -300,9 +480,20 @@
     "install_count": 11200,
     "permissions": {
       "filesystem": false,
-      "network": ["https://sentry.io/api/"]
+      "network": [
+        "https://sentry.io/api/"
+      ]
     },
-    "tools": ["list_organizations", "list_projects", "list_issues", "get_issue_details", "list_issue_events", "get_event_details", "list_releases", "create_release"],
+    "tools": [
+      "list_organizations",
+      "list_projects",
+      "list_issues",
+      "get_issue_details",
+      "list_issue_events",
+      "get_event_details",
+      "list_releases",
+      "create_release"
+    ],
     "scan_summary": "No issues found. Official Sentry product. Auth token required. Network limited to Sentry API."
   },
   {
@@ -319,9 +510,22 @@
     "install_count": 8700,
     "permissions": {
       "filesystem": false,
-      "network": ["https://*grafana*"]
+      "network": [
+        "https://*grafana*"
+      ]
     },
-    "tools": ["search_dashboards", "get_dashboard_by_uid", "list_datasources", "get_datasource_by_uid", "query_prometheus", "query_loki", "list_alert_rules", "get_alert_rule_by_uid", "list_incidents", "list_contact_points"],
+    "tools": [
+      "search_dashboards",
+      "get_dashboard_by_uid",
+      "list_datasources",
+      "get_datasource_by_uid",
+      "query_prometheus",
+      "query_loki",
+      "list_alert_rules",
+      "get_alert_rule_by_uid",
+      "list_incidents",
+      "list_contact_points"
+    ],
     "scan_summary": "No issues found. Official Grafana product. API key required. Network limited to Grafana instance."
   },
   {
@@ -338,9 +542,18 @@
     "install_count": 5400,
     "permissions": {
       "filesystem": false,
-      "network": ["bolt://*:7687", "neo4j://*:7687"]
+      "network": [
+        "bolt://*:7687",
+        "neo4j://*:7687"
+      ]
     },
-    "tools": ["read_neo4j_cypher", "write_neo4j_cypher", "get_neo4j_schema", "get_neo4j_labels", "get_neo4j_relationship_types"],
+    "tools": [
+      "read_neo4j_cypher",
+      "write_neo4j_cypher",
+      "get_neo4j_schema",
+      "get_neo4j_labels",
+      "get_neo4j_relationship_types"
+    ],
     "scan_summary": "No issues found. Official Neo4j project. Network limited to Neo4j bolt protocol."
   },
   {
@@ -357,9 +570,25 @@
     "install_count": 14200,
     "permissions": {
       "filesystem": false,
-      "network": ["https://*.supabase.co", "https://api.supabase.com"]
+      "network": [
+        "https://*.supabase.co",
+        "https://api.supabase.com"
+      ]
     },
-    "tools": ["list_projects", "get_project", "execute_sql", "list_tables", "list_extensions", "list_migrations", "apply_migration", "list_edge_functions", "deploy_edge_function", "list_storage_buckets", "get_logs", "get_project_url"],
+    "tools": [
+      "list_projects",
+      "get_project",
+      "execute_sql",
+      "list_tables",
+      "list_extensions",
+      "list_migrations",
+      "apply_migration",
+      "list_edge_functions",
+      "deploy_edge_function",
+      "list_storage_buckets",
+      "get_logs",
+      "get_project_url"
+    ],
     "scan_summary": "No issues found. Official Supabase community project. Access token required. Network limited to Supabase API."
   },
   {
@@ -376,9 +605,27 @@
     "install_count": 9800,
     "permissions": {
       "filesystem": false,
-      "network": ["https://console.neon.tech/api/", "https://*.neon.tech"]
+      "network": [
+        "https://console.neon.tech/api/",
+        "https://*.neon.tech"
+      ]
     },
-    "tools": ["list_projects", "create_project", "delete_project", "describe_project", "run_sql", "run_sql_transaction", "get_connection_string", "list_branches", "create_branch", "delete_branch", "describe_branch", "list_databases", "create_database", "describe_table_schema"],
+    "tools": [
+      "list_projects",
+      "create_project",
+      "delete_project",
+      "describe_project",
+      "run_sql",
+      "run_sql_transaction",
+      "get_connection_string",
+      "list_branches",
+      "create_branch",
+      "delete_branch",
+      "describe_branch",
+      "list_databases",
+      "create_database",
+      "describe_table_schema"
+    ],
     "scan_summary": "No issues found. Official Neon product. API key required. Network limited to Neon API."
   },
   {
@@ -395,9 +642,30 @@
     "install_count": 16300,
     "permissions": {
       "filesystem": false,
-      "network": ["https://api.cloudflare.com"]
+      "network": [
+        "https://api.cloudflare.com"
+      ]
     },
-    "tools": ["workers_list", "workers_get", "workers_deploy", "workers_delete", "kv_list_namespaces", "kv_get", "kv_put", "kv_delete", "r2_list_buckets", "r2_get_object", "r2_put_object", "d1_list_databases", "d1_query", "dns_list_records", "dns_create_record", "dns_update_record", "dns_delete_record", "analytics_get"],
+    "tools": [
+      "workers_list",
+      "workers_get",
+      "workers_deploy",
+      "workers_delete",
+      "kv_list_namespaces",
+      "kv_get",
+      "kv_put",
+      "kv_delete",
+      "r2_list_buckets",
+      "r2_get_object",
+      "r2_put_object",
+      "d1_list_databases",
+      "d1_query",
+      "dns_list_records",
+      "dns_create_record",
+      "dns_update_record",
+      "dns_delete_record",
+      "analytics_get"
+    ],
     "scan_summary": "No issues found. Official Cloudflare product. API token required. Network limited to Cloudflare API."
   },
   {
@@ -414,9 +682,23 @@
     "install_count": 6100,
     "permissions": {
       "filesystem": false,
-      "network": ["https://*.upstash.io", "https://qstash.upstash.io"]
+      "network": [
+        "https://*.upstash.io",
+        "https://qstash.upstash.io"
+      ]
     },
-    "tools": ["redis_get", "redis_set", "redis_del", "redis_list_databases", "redis_create_database", "redis_execute", "qstash_publish", "qstash_list_queues", "qstash_create_queue", "vector_query"],
+    "tools": [
+      "redis_get",
+      "redis_set",
+      "redis_del",
+      "redis_list_databases",
+      "redis_create_database",
+      "redis_execute",
+      "qstash_publish",
+      "qstash_list_queues",
+      "qstash_create_queue",
+      "vector_query"
+    ],
     "scan_summary": "No issues found. Official Upstash product. API key required. Network limited to Upstash services."
   },
   {
@@ -435,7 +717,2183 @@
       "filesystem": false,
       "network": false
     },
-    "tools": ["echo", "get_sum", "get_env", "get_annotated_message", "get_resource_links", "get_resource_reference", "get_roots_list", "get_structured_content", "get_tiny_image", "gzip_file_as_resource", "simulate_research_query", "toggle_simulated_logging", "toggle_subscriber_updates", "trigger_elicitation_request", "trigger_elicitation_request_async", "trigger_long_running_operation", "trigger_sampling_request", "trigger_sampling_request_async"],
+    "tools": [
+      "echo",
+      "get_sum",
+      "get_env",
+      "get_annotated_message",
+      "get_resource_links",
+      "get_resource_reference",
+      "get_roots_list",
+      "get_structured_content",
+      "get_tiny_image",
+      "gzip_file_as_resource",
+      "simulate_research_query",
+      "toggle_simulated_logging",
+      "toggle_subscriber_updates",
+      "trigger_elicitation_request",
+      "trigger_elicitation_request_async",
+      "trigger_long_running_operation",
+      "trigger_sampling_request",
+      "trigger_sampling_request_async"
+    ],
     "scan_summary": "No issues found. Test/demo server for MCP protocol features. No filesystem or network access."
+  },
+  {
+    "id": "apify",
+    "name": "apify MCP Server",
+    "description": "Web scraping, automation, and data extraction via Apify Actors platform",
+    "author": "apify",
+    "version": "1.0.0",
+    "homepage": "https://github.com/apify/apify-mcp-server",
+    "verified": true,
+    "tools_count": 19,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "search-actors",
+      "fetch-actor-details",
+      "call-actor",
+      "add-actor",
+      "get-actor-run",
+      "get-actor-run-list",
+      "get-actor-log",
+      "get-dataset",
+      "get-dataset-items",
+      "get-dataset-schema",
+      "get-dataset-list",
+      "get-key-value-store",
+      "get-key-value-store-keys",
+      "get-key-value-store-record",
+      "get-key-value-store-list",
+      "search-apify-docs",
+      "fetch-apify-docs",
+      "get-actor-output",
+      "apify-slash-rag-web-browser"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/apify/1.0.0/apify-1.0.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/apify/1.0.0/toolbox.toml",
+      "sha512": "d082229093a7789c935c23bd61d6e79b6660b25695740ed0ce3e688876e468f97e2a64ef8dbf9527cdb13f96b7e532e567f28dadffc61bc28099f35b76efc7d6",
+      "size_bytes": 871566
+    }
+  },
+  {
+    "id": "auth0",
+    "name": "auth0 MCP Server",
+    "description": "Auth0 identity and access management MCP server",
+    "author": "auth0",
+    "version": "0.1.0",
+    "homepage": "https://github.com/auth0/auth0-mcp-server",
+    "verified": true,
+    "tools_count": 21,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "auth0_list_applications",
+      "auth0_get_application",
+      "auth0_create_application",
+      "auth0_update_application",
+      "auth0_list_resource_servers",
+      "auth0_get_resource_server",
+      "auth0_create_resource_server",
+      "auth0_update_resource_server",
+      "auth0_create_application_grant",
+      "auth0_list_actions",
+      "auth0_get_action",
+      "auth0_create_action",
+      "auth0_update_action",
+      "auth0_deploy_action",
+      "auth0_list_logs",
+      "auth0_get_log",
+      "auth0_list_forms",
+      "auth0_get_form",
+      "auth0_create_form",
+      "auth0_update_form",
+      "auth0_publish_form"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/auth0/0.1.0/auth0-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/auth0/0.1.0/toolbox.toml",
+      "sha512": "d004eb7d6ae6f6d9eb872dcbadc0f8ee80b6ec564392c2c437546376cb6714080f72e0e660d4f544d78bcb9374ca357c8aa66edbd10ce1eeb0e7be0f1de7a813",
+      "size_bytes": 5928414
+    }
+  },
+  {
+    "id": "aws",
+    "name": "aws MCP Server",
+    "description": "AWS service integration MCP server with documentation, IaC, and resource management",
+    "author": "awslabs",
+    "version": "0.1.0",
+    "homepage": "https://github.com/awslabs/mcp",
+    "verified": true,
+    "tools_count": 15,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": [
+        "read:~/.aws"
+      ],
+      "network": true
+    },
+    "tools": [
+      "search_documentation",
+      "read_documentation",
+      "search_whats_new",
+      "create_iac_project",
+      "validate_template",
+      "scan_security",
+      "manage_resource",
+      "describe_resource",
+      "list_resources",
+      "deploy_serverless",
+      "manage_eks_cluster",
+      "manage_ecs_service",
+      "invoke_lambda",
+      "create_support_case",
+      "run_terraform"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/aws/0.1.0/aws-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/aws/0.1.0/toolbox.toml",
+      "sha512": "592057e9117c0627e50b93b592c03f5a0e8c8962b9e93150e7070892445f68bacc52816366440ad9826774ff379aa411de1937caea97e2ce086abe0a5dec4ba8",
+      "size_bytes": 19518849
+    }
+  },
+  {
+    "id": "azure",
+    "name": "azure MCP Server",
+    "description": "Azure services MCP server providing access to 40+ Azure services",
+    "author": "microsoft",
+    "version": "0.1.0",
+    "homepage": "https://github.com/microsoft/mcp",
+    "verified": true,
+    "tools_count": 18,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": [
+        "read:~/.azure"
+      ],
+      "network": true
+    },
+    "tools": [
+      "azure_cli_generate",
+      "azure_resource_management",
+      "azure_cosmos_db",
+      "azure_storage",
+      "azure_key_vault",
+      "azure_sql_database",
+      "azure_app_service",
+      "azure_container_apps",
+      "azure_kubernetes_service",
+      "azure_monitor",
+      "azure_ai_search",
+      "azure_compute",
+      "azure_container_registry",
+      "azure_event_grid",
+      "azure_data_explorer",
+      "azure_advisor",
+      "azure_communication_services",
+      "azure_app_configuration"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/azure/0.1.0/azure-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/azure/0.1.0/toolbox.toml",
+      "sha512": "b41b5f9fa72342c16632a5602a009cf1852a60ab808f5d72030132a8dbcd9afb0a3f7b646805a6b78b86508db6c1a8e407a07b2c802de45ec83aa2a5da232832",
+      "size_bytes": 35889025
+    }
+  },
+  {
+    "id": "browserbase",
+    "name": "browserbase MCP Server",
+    "description": "Cloud browser automation MCP server powered by Stagehand",
+    "author": "browserbase",
+    "version": "0.1.0",
+    "homepage": "https://github.com/browserbase/mcp-server-browserbase",
+    "verified": true,
+    "tools_count": 3,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "act",
+      "extract",
+      "observe"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/browserbase/0.1.0/browserbase-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/browserbase/0.1.0/toolbox.toml",
+      "sha512": "ab89e8223452d39822a04f3058846f5ba7a732a00ae5f084ab1851f72f9fa0cc699dcf646db0415e7859f3e4663739049a9a64aa9ba61d3f4c757330cc62c657",
+      "size_bytes": 1460842
+    }
+  },
+  {
+    "id": "buildkite",
+    "name": "buildkite MCP Server",
+    "description": "Buildkite CI/CD pipeline and build management MCP server",
+    "author": "buildkite",
+    "version": "0.1.0",
+    "homepage": "https://github.com/buildkite/buildkite-mcp-server",
+    "verified": true,
+    "tools_count": 9,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "list_toolsets",
+      "search_tools",
+      "list_pipelines",
+      "get_pipeline",
+      "list_builds",
+      "get_build",
+      "get_job_log",
+      "list_tests",
+      "get_test_run"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/buildkite/0.1.0/buildkite-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/buildkite/0.1.0/toolbox.toml",
+      "sha512": "973bb347159671f01f7816b9baf1ac51e6f50e44bedeace8fa832719a373bc18f484801ffd3e6426f098e0ff7cd1e98c5d49a7a89b297464466321a10a705774",
+      "size_bytes": 104066
+    }
+  },
+  {
+    "id": "chroma",
+    "name": "chroma MCP Server",
+    "description": "Vector database operations for Chroma including collection and document management",
+    "author": "chroma-core",
+    "version": "0.1.0",
+    "homepage": "https://github.com/chroma-core/chroma-mcp",
+    "verified": true,
+    "tools_count": 12,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "chroma_list_collections",
+      "chroma_create_collection",
+      "chroma_peek_collection",
+      "chroma_get_collection_info",
+      "chroma_get_collection_count",
+      "chroma_modify_collection",
+      "chroma_delete_collection",
+      "chroma_add_documents",
+      "chroma_query_documents",
+      "chroma_get_documents",
+      "chroma_update_documents",
+      "chroma_delete_documents"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/chroma/0.1.0/chroma-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/chroma/0.1.0/toolbox.toml",
+      "sha512": "2127fb3039f00c5c81a13665645724c4c39bbfe6edaa4d600db7c8e4049a52088ab929829e267b6766273e0116ffc7bd0fe9f28b7b5704468d343bf658bab2da",
+      "size_bytes": 207410
+    }
+  },
+  {
+    "id": "clickhouse",
+    "name": "clickhouse MCP Server",
+    "description": "ClickHouse database query and management MCP server",
+    "author": "ClickHouse",
+    "version": "0.1.0",
+    "homepage": "https://github.com/ClickHouse/mcp-clickhouse",
+    "verified": true,
+    "tools_count": 4,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "run_query",
+      "list_databases",
+      "list_tables",
+      "run_chdb_select_query"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/clickhouse/0.1.0/clickhouse-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/clickhouse/0.1.0/toolbox.toml",
+      "sha512": "652c0c39addc5e1909b9324d0330b6a9386b045008e8f4659a560d4fc0a46052bf828b4b204a16cc72a906d5af4dfc4db352a8907f575ccc147a50ebe8ed94ee",
+      "size_bytes": 159106
+    }
+  },
+  {
+    "id": "cloudinary",
+    "name": "cloudinary MCP Server",
+    "description": "Cloudinary media asset management and AI analysis MCP server",
+    "author": "cloudinary",
+    "version": "0.1.0",
+    "homepage": "https://github.com/cloudinary/mcp-servers",
+    "verified": true,
+    "tools_count": 16,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": [
+        "read:~/"
+      ],
+      "network": true
+    },
+    "tools": [
+      "upload_asset",
+      "search_assets",
+      "get_asset",
+      "delete_asset",
+      "transform_asset",
+      "list_folders",
+      "manage_tags",
+      "generate_archive",
+      "list_metadata_fields",
+      "get_metadata_field",
+      "create_metadata_field",
+      "analyze_content",
+      "moderate_asset",
+      "auto_tag",
+      "manage_upload_presets",
+      "manage_transformations"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/cloudinary/0.1.0/cloudinary-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/cloudinary/0.1.0/toolbox.toml",
+      "sha512": "a50e3bb0661b23b3b477126d2eb51174c0fefe4b2d6f68f6f4790a782a35ddd4befcbb3b13b46aa3fc017cbe410d5fb29738ff0c842fa9cb45c1513378179945",
+      "size_bytes": 5488
+    }
+  },
+  {
+    "id": "composio",
+    "name": "composio MCP Server",
+    "description": "Universal MCP server connecting AI agents to 500+ apps via Composio toolkits",
+    "author": "composiohq",
+    "version": "1.0.0",
+    "homepage": "https://github.com/ComposioHQ/composio",
+    "verified": true,
+    "tools_count": 4,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "RUBE_SEARCH_TOOLS",
+      "COMPOSIO_CREATE_PLAN",
+      "RUBE_REMOTE_WORKBENCH",
+      "proxy_execute"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/composio/1.0.0/composio-1.0.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/composio/1.0.0/toolbox.toml",
+      "sha512": "d83353389d12d8d902280373604723d8b8d0aa7079615ac0a4122f249f8c17d0ddb4d7e91cf6cdea6e2ae184ea8e68fb65e4e5cc039b3958cf91512ac692640b",
+      "size_bytes": 20851812
+    }
+  },
+  {
+    "id": "confluent",
+    "name": "confluent MCP Server",
+    "description": "Confluent Cloud and Apache Kafka management MCP server",
+    "author": "confluentinc",
+    "version": "0.1.0",
+    "homepage": "https://github.com/confluentinc/mcp-confluent",
+    "verified": true,
+    "tools_count": 21,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "list-topics",
+      "create-topic",
+      "delete-topic",
+      "describe-topic",
+      "list-connectors",
+      "create-connector",
+      "delete-connector",
+      "list-schemas",
+      "create-schema",
+      "get-schema",
+      "delete-schema",
+      "execute-flink-statement",
+      "list-flink-statements",
+      "get-statement-status",
+      "describe-flink-catalog",
+      "list-environments",
+      "describe-cluster",
+      "list-api-keys",
+      "create-tableflow",
+      "list-tableflows",
+      "manage-tableflow-storage"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/confluent/0.1.0/confluent-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/confluent/0.1.0/toolbox.toml",
+      "sha512": "d1baa8f7a1c7a8a3ddecb98902c2a5e9b538248c94248b683a833801d81c3111a78b5151f99c15e3ffb4d532934ec2cea0776dd521a32caaf74e31859cbe74c6",
+      "size_bytes": 53818291
+    }
+  },
+  {
+    "id": "courier",
+    "name": "courier MCP Server",
+    "description": "Multi-channel notification delivery via Courier (email, push, SMS, chat)",
+    "author": "trycourier",
+    "version": "1.0.0",
+    "homepage": "https://github.com/trycourier/courier-mcp",
+    "verified": true,
+    "tools_count": 5,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "api.courier.com",
+        "mcp.courier.com"
+      ]
+    },
+    "tools": [
+      "send_message",
+      "create_or_merge_user",
+      "invoke_automation_template",
+      "get_message_status",
+      "list_templates"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/courier/1.0.0/courier-1.0.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/courier/1.0.0/toolbox.toml",
+      "sha512": "65520c993ae38c86fe6dfffb2dfcd06ea9781c3bb6d845ae8ba2f8030e0a97cb7d682fff6ed257d952f1b637d1447c4d844bbcfd2cb2de24addaf2cdb39c198f",
+      "size_bytes": 79937
+    }
+  },
+  {
+    "id": "crowdstrike",
+    "name": "crowdstrike MCP Server",
+    "description": "CrowdStrike Falcon security platform integration for threat hunting and security analysis",
+    "author": "CrowdStrike",
+    "version": "0.1.0",
+    "homepage": "https://github.com/CrowdStrike/falcon-mcp",
+    "verified": true,
+    "tools_count": 33,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "api.crowdstrike.com"
+      ]
+    },
+    "tools": [
+      "falcon_check_connectivity",
+      "falcon_list_enabled_modules",
+      "falcon_list_modules",
+      "falcon_search_detections",
+      "falcon_get_detection_details",
+      "falcon_search_hosts",
+      "falcon_get_host_details",
+      "falcon_show_crowd_score",
+      "falcon_search_incidents",
+      "falcon_get_incident_details",
+      "falcon_search_behaviors",
+      "falcon_get_behavior_details",
+      "falcon_search_actors",
+      "falcon_search_indicators",
+      "falcon_search_reports",
+      "falcon_get_mitre_report",
+      "falcon_search_vulnerabilities",
+      "falcon_search_iocs",
+      "falcon_add_ioc",
+      "falcon_remove_iocs",
+      "falcon_search_applications",
+      "falcon_search_unmanaged_assets",
+      "idp_investigate_entity",
+      "search_ngsiem",
+      "falcon_search_kubernetes_containers",
+      "falcon_count_kubernetes_containers",
+      "falcon_search_images_vulnerabilities",
+      "falcon_search_sensor_usage",
+      "falcon_search_scheduled_reports",
+      "falcon_launch_scheduled_report",
+      "falcon_search_report_executions",
+      "falcon_download_report_execution",
+      "falcon_search_serverless_vulnerabilities"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/crowdstrike/0.1.0/crowdstrike-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/crowdstrike/0.1.0/toolbox.toml",
+      "sha512": "923b18df0f20b03b701fbbe30e02bc57a90641216b29b8193a09ee55dbe0ceaa8ce5af5dfa351a84a8a103c5d15806936bc95f05f2dada062907397a2994ef8e",
+      "size_bytes": 222202
+    }
+  },
+  {
+    "id": "databricks",
+    "name": "databricks MCP Server",
+    "description": "Databricks data platform MCP server with Unity Catalog and SQL support",
+    "author": "databricks",
+    "version": "0.1.0",
+    "homepage": "https://docs.databricks.com/en/generative-ai/mcp/",
+    "verified": true,
+    "tools_count": 13,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": [
+        "read:~/.databrickscfg"
+      ],
+      "network": true
+    },
+    "tools": [
+      "run_sql_query",
+      "list_catalogs",
+      "list_schemas",
+      "list_tables",
+      "describe_table",
+      "list_jobs",
+      "get_job_status",
+      "get_job_details",
+      "list_clusters",
+      "get_cluster_details",
+      "list_notebooks",
+      "vector_search",
+      "genie_query"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings."
+  },
+  {
+    "id": "dbt",
+    "name": "dbt MCP Server",
+    "description": "Data build tool integration for SQL execution, semantic layer, discovery, and dbt CLI operations",
+    "author": "dbt-labs",
+    "version": "0.4.0",
+    "homepage": "https://github.com/dbt-labs/dbt-mcp",
+    "verified": true,
+    "tools_count": 54,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": [
+        "read:~/.dbt"
+      ],
+      "network": true
+    },
+    "tools": [
+      "execute_sql",
+      "text_to_sql",
+      "get_dimensions",
+      "get_entities",
+      "get_metrics_compiled_sql",
+      "list_metrics",
+      "list_saved_queries",
+      "query_metrics",
+      "get_all_macros",
+      "get_all_models",
+      "get_all_sources",
+      "get_exposure_details",
+      "get_exposures",
+      "get_lineage",
+      "get_macro_details",
+      "get_mart_models",
+      "get_model_children",
+      "get_model_details",
+      "get_model_health",
+      "get_model_parents",
+      "get_model_performance",
+      "get_related_models",
+      "get_seed_details",
+      "get_semantic_model_details",
+      "get_snapshot_details",
+      "get_source_details",
+      "get_test_details",
+      "search",
+      "build",
+      "compile",
+      "docs",
+      "get_lineage_dev",
+      "get_node_details_dev",
+      "list",
+      "parse",
+      "run",
+      "show",
+      "test",
+      "cancel_job_run",
+      "get_job_details",
+      "get_job_run_artifact",
+      "get_job_run_details",
+      "get_job_run_error",
+      "get_project_details",
+      "list_job_run_artifacts",
+      "list_jobs",
+      "list_jobs_runs",
+      "retry_job_run",
+      "trigger_job_run",
+      "generate_model_yaml",
+      "generate_source",
+      "generate_staging_model",
+      "get_mcp_server_version",
+      "get_mcp_server_branch"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/dbt/0.4.0/dbt-0.4.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/dbt/0.4.0/toolbox.toml",
+      "sha512": "33ca4cd62f25e218ee471e2fc1bd5698624a0064297840f614920d5bdc33c054e95fdf81205ff5f9bdecc51423dec3fff391d9fba4d5fdb89cea30f027703a49",
+      "size_bytes": 381228
+    }
+  },
+  {
+    "id": "deepl",
+    "name": "deepl MCP Server",
+    "description": "DeepL translation, rephrasing, and glossary management MCP server",
+    "author": "DeepLcom",
+    "version": "0.1.0",
+    "homepage": "https://github.com/DeepLcom/deepl-mcp-server",
+    "verified": true,
+    "tools_count": 10,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "translate-text",
+      "translate-document",
+      "rephrase-text",
+      "get-source-languages",
+      "get-target-languages",
+      "get-writing-styles",
+      "get-writing-tones",
+      "list-glossaries",
+      "get-glossary-info",
+      "get-glossary-dictionary-entries"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/deepl/0.1.0/deepl-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/deepl/0.1.0/toolbox.toml",
+      "sha512": "1e23bb7e75280476bdce2886cd013b903d2e57f1c1cfd229474ad667bb344c1871b180ffa8d6b6c1bdacdf46784c616d523e26bb19e541800970e9f59ad7f319",
+      "size_bytes": 57799
+    }
+  },
+  {
+    "id": "e2b",
+    "name": "e2b MCP Server",
+    "description": "Secure cloud code execution sandbox for running Python code via E2B",
+    "author": "e2b-dev",
+    "version": "0.1.0",
+    "homepage": "https://github.com/e2b-dev/mcp-server",
+    "verified": true,
+    "tools_count": 1,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "api.e2b.dev"
+      ]
+    },
+    "tools": [
+      "run_code"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/e2b/0.1.0/e2b-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/e2b/0.1.0/toolbox.toml",
+      "sha512": "db1e51be5a9cfe26983b9422f7f0d79299894297edf0adba7df69d47181503eb9cac18954d77f946dea14029c2fd817938a65b2d856d1ea378e6fe9fbfa7539e",
+      "size_bytes": 213285
+    }
+  },
+  {
+    "id": "exa-official",
+    "name": "exa-official MCP Server",
+    "description": "Exa AI-powered web search, code search, and company research",
+    "author": "exa-labs",
+    "version": "1.0.0",
+    "homepage": "https://github.com/exa-labs/exa-mcp-server",
+    "verified": true,
+    "tools_count": 8,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "web_search_exa",
+      "get_code_context_exa",
+      "company_research_exa",
+      "web_search_advanced_exa",
+      "crawling_exa",
+      "people_search_exa",
+      "deep_researcher_start",
+      "deep_researcher_check"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/exa-official/1.0.0/exa-official-1.0.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/exa-official/1.0.0/toolbox.toml",
+      "sha512": "c02144a3e78a6f7b2ccb59521b6acb6758376e2fd2ee730b4d47d30e4a449a0ad48883e1a6f33cc3f1127f340f1a599ee9a74943129d0735ec629ce1d15ed4b6",
+      "size_bytes": 181311
+    }
+  },
+  {
+    "id": "figma",
+    "name": "figma MCP Server",
+    "description": "Figma design platform MCP server for code generation and design system integration",
+    "author": "figma",
+    "version": "0.1.0",
+    "homepage": "https://github.com/figma/mcp-server-guide",
+    "verified": true,
+    "tools_count": 13,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "get_design_context",
+      "generate_figma_design",
+      "get_variable_defs",
+      "get_code_connect_map",
+      "add_code_connect_map",
+      "get_code_connect_suggestions",
+      "send_code_connect_mappings",
+      "get_screenshot",
+      "create_design_system_rules",
+      "get_metadata",
+      "get_figjam",
+      "generate_diagram",
+      "whoami"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/figma/0.1.0/figma-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/figma/0.1.0/toolbox.toml",
+      "sha512": "c117fafaa9c112b0a83e2a1ff75591b10f7b76c0fb9b4455b95bb16016ef0c21f71ef3c9048966dd4988aa130e4ed1ed9aacbd9a76ebca6a381271f8f2db4117",
+      "size_bytes": 35185
+    }
+  },
+  {
+    "id": "firebase",
+    "name": "firebase MCP Server",
+    "description": "Firebase Firestore, Storage, and Authentication MCP server",
+    "author": "gannonh",
+    "version": "0.1.0",
+    "homepage": "https://github.com/gannonh/firebase-mcp",
+    "verified": true,
+    "tools_count": 12,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": [
+        "read:~/"
+      ],
+      "network": true
+    },
+    "tools": [
+      "firestore_add_document",
+      "firestore_list_documents",
+      "firestore_get_document",
+      "firestore_update_document",
+      "firestore_delete_document",
+      "firestore_list_collections",
+      "firestore_query_collection_group",
+      "storage_list_files",
+      "storage_get_file_info",
+      "storage_upload",
+      "storage_upload_from_url",
+      "auth_get_user"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/firebase/0.1.0/firebase-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/firebase/0.1.0/toolbox.toml",
+      "sha512": "d5c0c760925a81de87ca703ec3fd349b26b02f3ce8c984572d3ac68e3d1e32b997b2cad4d145cf9428f48a0221e1a91342432fb85f0be272b6280c5b0053c931",
+      "size_bytes": 275160
+    }
+  },
+  {
+    "id": "gitguardian",
+    "name": "gitguardian MCP Server",
+    "description": "Secret scanning and remediation using GitGuardian API, detecting 500+ secret types",
+    "author": "GitGuardian",
+    "version": "0.1.0",
+    "homepage": "https://github.com/GitGuardian/ggmcp",
+    "verified": true,
+    "tools_count": 6,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": [
+        "read:."
+      ],
+      "network": [
+        "api.gitguardian.com"
+      ]
+    },
+    "tools": [
+      "scan",
+      "get_incidents",
+      "create_honeytoken",
+      "get_honeytokens",
+      "get_authenticated_user_info",
+      "revoke_token"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/gitguardian/0.1.0/gitguardian-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/gitguardian/0.1.0/toolbox.toml",
+      "sha512": "7420972f7903813a695b1db558882fb7018e54f01e6fce2921505016cbd6b01318891fbc29b9136702a8622413c51c06c363aaff68af842c7850843d6b781290",
+      "size_bytes": 564503
+    }
+  },
+  {
+    "id": "github-official",
+    "name": "github-official MCP Server",
+    "description": "GitHub's official MCP server for repositories, issues, PRs, actions, and code security",
+    "author": "github",
+    "version": "1.0.0",
+    "homepage": "https://github.com/github/github-mcp-server",
+    "verified": true,
+    "tools_count": 23,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "get_file_contents",
+      "search_code",
+      "search_repositories",
+      "create_repository",
+      "list_commits",
+      "get_issue",
+      "list_issues",
+      "create_issue",
+      "update_issue",
+      "add_issue_comment",
+      "get_pull_request",
+      "list_pull_requests",
+      "create_pull_request",
+      "merge_pull_request",
+      "get_pull_request_diff",
+      "create_or_update_file",
+      "push_files",
+      "create_branch",
+      "list_branches",
+      "list_workflow_runs",
+      "get_workflow_run",
+      "list_code_scanning_alerts",
+      "list_dependabot_alerts"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/github-official/1.0.0/github-official-1.0.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/github-official/1.0.0/toolbox.toml",
+      "sha512": "2bb49312c709c0561bbda9cadfcb78b1d5e1f7e914b23c7c9a7846388d44fd7e845ef405ebdb94718f6fc2a842614d0e8df179037ba5716bdc59e51de7bf5c7a",
+      "size_bytes": 538003
+    }
+  },
+  {
+    "id": "gitlab-official",
+    "name": "gitlab-official MCP Server",
+    "description": "GitLab's official MCP server for issues, merge requests, and code search",
+    "author": "gitlab",
+    "version": "1.0.0",
+    "homepage": "https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server/",
+    "verified": true,
+    "tools_count": 18,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "create_issue",
+      "list_issues",
+      "get_issue",
+      "update_issue",
+      "add_issue_comment",
+      "create_merge_request",
+      "list_merge_requests",
+      "get_merge_request",
+      "update_merge_request",
+      "add_merge_request_comment",
+      "search_code",
+      "get_file_contents",
+      "list_projects",
+      "get_project",
+      "list_branches",
+      "create_branch",
+      "list_pipelines",
+      "get_pipeline"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings."
+  },
+  {
+    "id": "grafana-official",
+    "name": "grafana-official MCP Server",
+    "description": "Grafana dashboards, alerting, and observability data access via official MCP server",
+    "author": "grafana",
+    "version": "0.1.0",
+    "homepage": "https://github.com/grafana/mcp-grafana",
+    "verified": true,
+    "tools_count": 27,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "search_dashboards",
+      "get_dashboard_by_uid",
+      "get_dashboard_summary",
+      "get_dashboard_property",
+      "update_dashboard",
+      "patch_dashboard",
+      "get_dashboard_panel_queries",
+      "list_datasources",
+      "get_datasource",
+      "run_panel_query",
+      "query_prometheus",
+      "list_prometheus_metric_names",
+      "list_prometheus_label_names",
+      "list_prometheus_label_values",
+      "query_loki_logs",
+      "list_loki_label_names",
+      "query_clickhouse",
+      "query_cloudwatch",
+      "query_elasticsearch",
+      "list_alert_rules",
+      "create_alert_rule",
+      "list_incidents",
+      "create_incident",
+      "generate_deeplinks",
+      "list_teams",
+      "list_users_by_org",
+      "list_all_roles"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/grafana-official/0.1.0/grafana-official-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/grafana-official/0.1.0/toolbox.toml",
+      "sha512": "a4e91f7c45bf304aeb4930238198f29e6ddf9c510c00f1f9a1d745021014e770efe56084acb6e98ddb1cf1b5fda616fd3dcc80229872f701dc268ce6956edc73",
+      "size_bytes": 32350
+    }
+  },
+  {
+    "id": "heroku-official",
+    "name": "heroku-official MCP Server",
+    "description": "Heroku platform management including app lifecycle, deployments, Postgres, and add-ons",
+    "author": "heroku",
+    "version": "1.0.0",
+    "homepage": "https://github.com/heroku/heroku-mcp-server",
+    "verified": true,
+    "tools_count": 32,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "api.heroku.com"
+      ]
+    },
+    "tools": [
+      "list_apps",
+      "get_app_info",
+      "create_app",
+      "rename_app",
+      "transfer_app",
+      "deploy_to_heroku",
+      "deploy_one_off_dyno",
+      "ps_list",
+      "ps_scale",
+      "ps_restart",
+      "list_addons",
+      "get_addon_info",
+      "create_addon",
+      "maintenance_on",
+      "maintenance_off",
+      "get_app_logs",
+      "pipelines_create",
+      "pipelines_promote",
+      "pipelines_list",
+      "pipelines_info",
+      "list_teams",
+      "list_private_spaces",
+      "pg_psql",
+      "pg_info",
+      "pg_ps",
+      "pg_locks",
+      "pg_outliers",
+      "pg_credentials",
+      "pg_kill",
+      "pg_maintenance",
+      "pg_backups",
+      "pg_upgrade"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/heroku-official/1.0.0/heroku-official-1.0.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/heroku-official/1.0.0/toolbox.toml",
+      "sha512": "04142d17b4fcfe84f9b35d60927a1bf14034f8da5c549db8d26fc6b6b58a3d3b46885b38dd76bc208af165ea39001b1c4dbf60639cd7b750fff03bb4df5a16d5",
+      "size_bytes": 231094
+    }
+  },
+  {
+    "id": "honeycomb",
+    "name": "honeycomb MCP Server",
+    "description": "Honeycomb observability platform for querying datasets, SLOs, triggers, and traces",
+    "author": "honeycombio",
+    "version": "0.1.0",
+    "homepage": "https://github.com/honeycombio/honeycomb-mcp",
+    "verified": true,
+    "tools_count": 10,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "api.honeycomb.io"
+      ]
+    },
+    "tools": [
+      "list_datasets",
+      "get_columns",
+      "run_query",
+      "analyze_columns",
+      "list_slos",
+      "get_slo",
+      "list_triggers",
+      "get_trigger",
+      "get_trace_link",
+      "get_instrumentation_help"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/honeycomb/0.1.0/honeycomb-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/honeycomb/0.1.0/toolbox.toml",
+      "sha512": "c27c7bfb25f0b9dd23899d56021583383b860b23feaba8aa3fd02b5a4c46d5ff4edb99da420c8a20dc142a1375c7e040e81cba730994cb55d0a2455fb307dde4",
+      "size_bytes": 1833118
+    }
+  },
+  {
+    "id": "hubspot",
+    "name": "hubspot MCP Server",
+    "description": "HubSpot CRM data access and management MCP server",
+    "author": "hubspot",
+    "version": "0.1.0",
+    "homepage": "https://developers.hubspot.com/mcp",
+    "verified": true,
+    "tools_count": 14,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "list_contacts",
+      "get_contact",
+      "list_companies",
+      "get_company",
+      "list_deals",
+      "get_deal",
+      "list_tickets",
+      "get_ticket",
+      "list_products",
+      "list_invoices",
+      "list_quotes",
+      "list_orders",
+      "list_users",
+      "search_crm"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings."
+  },
+  {
+    "id": "jenkins",
+    "name": "jenkins MCP Server",
+    "description": "Jenkins CI/CD server management and build automation MCP server",
+    "author": "jenkinsci",
+    "version": "0.1.0",
+    "homepage": "https://github.com/jenkinsci/mcp-server-plugin",
+    "verified": true,
+    "tools_count": 14,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "getJob",
+      "getJobs",
+      "triggerBuild",
+      "getBuild",
+      "updateBuild",
+      "getBuildLog",
+      "searchBuildLog",
+      "getQueueItem",
+      "getJobScm",
+      "getBuildScm",
+      "getBuildChangeSets",
+      "findJobsWithScmUrl",
+      "whoAmI",
+      "getStatus"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/jenkins/0.1.0/jenkins-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/jenkins/0.1.0/toolbox.toml",
+      "sha512": "ecdd1fd2143583ad6f52699d3e714f8c009a0738762ec1da408e655b02a8966515e1007f39bc6ed805293d2d268be80dd93f0ad14b0220481958e64530ce366e",
+      "size_bytes": 137035
+    }
+  },
+  {
+    "id": "kagi",
+    "name": "kagi MCP Server",
+    "description": "Kagi premium search and web content summarization via MCP",
+    "author": "kagisearch",
+    "version": "0.1.0",
+    "homepage": "https://github.com/kagisearch/kagimcp",
+    "verified": true,
+    "tools_count": 2,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "kagi.com",
+        "api.kagi.com"
+      ]
+    },
+    "tools": [
+      "search",
+      "summarize"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/kagi/0.1.0/kagi-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/kagi/0.1.0/toolbox.toml",
+      "sha512": "69aac47dc54af521aedafa3c59830da5e8a8c0d507aedf8275a169456f75f64579dc78cea4e0c70a83bd8d2b0f245c2e20aad1e6951dc40c5c9edccc27f229bc",
+      "size_bytes": 24818
+    }
+  },
+  {
+    "id": "launchdarkly",
+    "name": "launchdarkly MCP Server",
+    "description": "LaunchDarkly feature flag and AI Config management via MCP",
+    "author": "launchdarkly",
+    "version": "0.1.0",
+    "homepage": "https://github.com/launchdarkly/mcp-server",
+    "verified": true,
+    "tools_count": 19,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "app.launchdarkly.com",
+        "sdk.launchdarkly.com"
+      ]
+    },
+    "tools": [
+      "getTargeting",
+      "updateTargeting",
+      "list",
+      "create",
+      "delete",
+      "get",
+      "update",
+      "createVariation",
+      "deleteVariation",
+      "getVariation",
+      "updateVariation",
+      "listRepositories",
+      "listByProject",
+      "getStatus",
+      "featureFlags.list",
+      "featureFlags.create",
+      "featureFlags.get",
+      "featureFlags.patch",
+      "featureFlags.delete"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/launchdarkly/0.1.0/launchdarkly-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/launchdarkly/0.1.0/toolbox.toml",
+      "sha512": "e8738212e2d939e2522e7e6f002bf29f8d1aa727a6b1cd4fb9e18c331b04bc7acf0f97576115ca0278bd4b5207bdd4ea4ba9be188b27a4f3813c850a935e2c17",
+      "size_bytes": 663637
+    }
+  },
+  {
+    "id": "linear-official",
+    "name": "linear-official MCP Server",
+    "description": "Linear issue tracking and project management MCP server",
+    "author": "linear",
+    "version": "0.1.0",
+    "homepage": "https://github.com/linear/linear-mcp",
+    "verified": true,
+    "tools_count": 12,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "list_issues",
+      "get_issue",
+      "create_issue",
+      "update_issue",
+      "search_issues",
+      "list_teams",
+      "list_projects",
+      "get_project",
+      "list_cycles",
+      "list_labels",
+      "create_comment",
+      "list_workflow_states"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings."
+  },
+  {
+    "id": "logfire",
+    "name": "logfire MCP Server",
+    "description": "Pydantic Logfire observability for querying OpenTelemetry traces and metrics",
+    "author": "pydantic",
+    "version": "0.1.0",
+    "homepage": "https://github.com/pydantic/logfire-mcp",
+    "verified": true,
+    "tools_count": 3,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "logfire-api.pydantic.dev"
+      ]
+    },
+    "tools": [
+      "find_exceptions_in_file",
+      "arbitrary_query",
+      "logfire_link"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/logfire/0.1.0/logfire-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/logfire/0.1.0/toolbox.toml",
+      "sha512": "079d095e638ce6e9dfbdf116561d188a6bf7baa146234bd2f6f3af66c08c73184b9b71b7b4469da4a87a9ef93757d32f612e97a3775eef1aa13f6372d6686e23",
+      "size_bytes": 27651
+    }
+  },
+  {
+    "id": "meilisearch",
+    "name": "meilisearch MCP Server",
+    "description": "Meilisearch search engine management including indexing, search, settings, and monitoring",
+    "author": "meilisearch",
+    "version": "0.1.0",
+    "homepage": "https://github.com/meilisearch/meilisearch-mcp",
+    "verified": true,
+    "tools_count": 23,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "get-connection-settings",
+      "update-connection-settings",
+      "create-index",
+      "list-indexes",
+      "delete-index",
+      "get-index-metrics",
+      "get-documents",
+      "add-documents",
+      "search",
+      "get-settings",
+      "update-settings",
+      "get-keys",
+      "create-key",
+      "delete-key",
+      "get-task",
+      "get-tasks",
+      "cancel-tasks",
+      "delete-tasks",
+      "health-check",
+      "get-health-status",
+      "get-version",
+      "get-stats",
+      "get-system-info"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/meilisearch/0.1.0/meilisearch-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/meilisearch/0.1.0/toolbox.toml",
+      "sha512": "5094b29418b14e689d3308c56dd3237836a8c336145b55d869d1829dc68492a3751e32bc745142b02b8cecc64bfe8da69f72d7ea904439ecbceba6597cada784",
+      "size_bytes": 86392
+    }
+  },
+  {
+    "id": "mixpanel",
+    "name": "mixpanel MCP Server",
+    "description": "Mixpanel product analytics for querying events, funnels, retention, and user data",
+    "author": "mixpanel",
+    "version": "0.1.0",
+    "homepage": "https://docs.mixpanel.com/docs/features/mcp",
+    "verified": true,
+    "tools_count": 8,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "mixpanel.com",
+        "api.mixpanel.com",
+        "data.mixpanel.com"
+      ]
+    },
+    "tools": [
+      "run_segmentation_query",
+      "run_funnels_query",
+      "run_retention_query",
+      "run_frequency_query",
+      "get_projects",
+      "get_project_info",
+      "get_events",
+      "get_event_properties"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings."
+  },
+  {
+    "id": "monday",
+    "name": "monday MCP Server",
+    "description": "Monday.com work management platform MCP server",
+    "author": "mondaycom",
+    "version": "0.1.0",
+    "homepage": "https://github.com/mondaycom/mcp",
+    "verified": true,
+    "tools_count": 17,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "create_item",
+      "delete_item",
+      "get_board_items_by_name",
+      "create_update",
+      "change_item_column_values",
+      "move_item_to_group",
+      "create_board",
+      "get_board_schema",
+      "create_group",
+      "create_column",
+      "delete_column",
+      "list_users_and_teams",
+      "create_form",
+      "get_form",
+      "all_monday_api",
+      "get_graphql_schema",
+      "get_type_details"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/monday/0.1.0/monday-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/monday/0.1.0/toolbox.toml",
+      "sha512": "a584b4d2fd6a58ca5b1c81084436eb8324cebf90e0f2fd227829e13bdf5e48581451ca56e4a11f97955c0202e6fb285e37acd77c0e040a715a6e0f60eca899f4",
+      "size_bytes": 686865
+    }
+  },
+  {
+    "id": "mongodb-official",
+    "name": "mongodb-official MCP Server",
+    "description": "MongoDB database and Atlas cloud management MCP server",
+    "author": "mongodb",
+    "version": "0.1.0",
+    "homepage": "https://github.com/mongodb-js/mongodb-mcp-server",
+    "verified": true,
+    "tools_count": 42,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "connect",
+      "switch-connection",
+      "list-databases",
+      "list-collections",
+      "collection-schema",
+      "collection-indexes",
+      "collection-storage-size",
+      "db-stats",
+      "find",
+      "aggregate",
+      "count",
+      "explain",
+      "insert-many",
+      "update-many",
+      "delete-many",
+      "create-collection",
+      "drop-collection",
+      "rename-collection",
+      "drop-database",
+      "create-index",
+      "drop-index",
+      "export",
+      "mongodb-logs",
+      "atlas-connect-cluster",
+      "atlas-list-clusters",
+      "atlas-inspect-cluster",
+      "atlas-create-free-cluster",
+      "atlas-list-orgs",
+      "atlas-list-projects",
+      "atlas-create-project",
+      "atlas-list-db-users",
+      "atlas-create-db-user",
+      "atlas-inspect-access-list",
+      "atlas-create-access-list",
+      "atlas-list-alerts",
+      "atlas-get-performance-advisor",
+      "atlas-local-list-deployments",
+      "atlas-local-create-deployment",
+      "atlas-local-delete-deployment",
+      "atlas-local-connect-deployment",
+      "list-knowledge-sources",
+      "search-knowledge"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/mongodb-official/0.1.0/mongodb-official-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/mongodb-official/0.1.0/toolbox.toml",
+      "sha512": "f14bbea9e66e0f1d8556431339e69eb645ebb27da9277e60b195aef69d84a8af9d2367687230613c7018582eafc907264df540e6a60feb65ec51279414689b0a",
+      "size_bytes": 242425
+    }
+  },
+  {
+    "id": "neo4j-official",
+    "name": "neo4j-official MCP Server",
+    "description": "Neo4j graph database operations including Cypher queries, schema inspection, and knowledge graphs",
+    "author": "neo4j-contrib",
+    "version": "0.1.0",
+    "homepage": "https://github.com/neo4j-contrib/mcp-neo4j",
+    "verified": true,
+    "tools_count": 3,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "read_neo4j_cypher",
+      "write_neo4j_cypher",
+      "get_neo4j_schema"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/neo4j-official/0.1.0/neo4j-official-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/neo4j-official/0.1.0/toolbox.toml",
+      "sha512": "83223e5b550a94ee7beffebffdaf4a4f5d2596a5c2f1506ed991102b21dc5887e3d1014f09a281dda2f7be9b565284ef05ab56701c02e33d9e0e6e1caa6051d9",
+      "size_bytes": 4565919
+    }
+  },
+  {
+    "id": "neon-official",
+    "name": "neon-official MCP Server",
+    "description": "Neon serverless Postgres management including projects, branches, SQL, and migrations",
+    "author": "neondatabase",
+    "version": "1.0.0",
+    "homepage": "https://github.com/neondatabase/mcp-server-neon",
+    "verified": true,
+    "tools_count": 29,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "console.neon.tech",
+        "api.neon.tech"
+      ]
+    },
+    "tools": [
+      "list_projects",
+      "list_shared_projects",
+      "describe_project",
+      "create_project",
+      "delete_project",
+      "list_organizations",
+      "create_branch",
+      "delete_branch",
+      "describe_branch",
+      "list_branch_computes",
+      "compare_database_schema",
+      "reset_from_parent",
+      "get_connection_string",
+      "run_sql",
+      "run_sql_transaction",
+      "get_database_tables",
+      "describe_table_schema",
+      "prepare_database_migration",
+      "complete_database_migration",
+      "list_slow_queries",
+      "explain_sql_statement",
+      "prepare_query_tuning",
+      "complete_query_tuning",
+      "provision_neon_auth",
+      "provision_neon_data_api",
+      "search",
+      "fetch",
+      "list_docs_resources",
+      "get_doc_resource"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/neon-official/1.0.0/neon-official-1.0.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/neon-official/1.0.0/toolbox.toml",
+      "sha512": "74a6e9314aa46bb78b1ccd33c9fd6f4228ce417844c16d53a4bd7be4132e782be0b04736c0e538705ef776b9aef955692b2d2f8fbf0528dd1582cb904665d703",
+      "size_bytes": 205769
+    }
+  },
+  {
+    "id": "netlify",
+    "name": "netlify MCP Server",
+    "description": "Netlify web platform deployment and management MCP server",
+    "author": "netlify",
+    "version": "0.1.0",
+    "homepage": "https://github.com/netlify/netlify-mcp",
+    "verified": true,
+    "tools_count": 17,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": [
+        "read:~/"
+      ],
+      "network": true
+    },
+    "tools": [
+      "create_project",
+      "list_sites",
+      "get_site",
+      "deploy_site",
+      "delete_site",
+      "list_deploys",
+      "get_deploy",
+      "rollback_deploy",
+      "manage_env_vars",
+      "manage_access",
+      "install_extension",
+      "uninstall_extension",
+      "get_user_info",
+      "manage_forms",
+      "manage_blobs",
+      "start_dev_server",
+      "get_analytics"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/netlify/0.1.0/netlify-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/netlify/0.1.0/toolbox.toml",
+      "sha512": "c5ff240b9acabf05ed2d1d3c49a6c25fef72934352b7b6ed6cedffd2fa9824b21e35cc9bc1c292a8ac9c69901972cb431f74be39625870c9b3edb41a110bacc2",
+      "size_bytes": 96222
+    }
+  },
+  {
+    "id": "notion-official",
+    "name": "notion-official MCP Server",
+    "description": "Official Notion workspace MCP server with data source, page, and database management",
+    "author": "makenotion",
+    "version": "2.0.0",
+    "homepage": "https://github.com/makenotion/notion-mcp-server",
+    "verified": true,
+    "tools_count": 14,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "search",
+      "query-data-source",
+      "retrieve-a-data-source",
+      "update-a-data-source",
+      "create-a-data-source",
+      "list-data-source-templates",
+      "retrieve-a-page",
+      "update-a-page",
+      "create-a-page",
+      "move-page",
+      "retrieve-a-database",
+      "append-block-children",
+      "retrieve-block-children",
+      "create-a-comment"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/notion-official/2.0.0/notion-official-2.0.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/notion-official/2.0.0/toolbox.toml",
+      "sha512": "0809f693ad92d05b569cb1561fca743938d5b42b85158390a6ff6ca8a7c5b32d3dd6f75f6f85379d6001e436e35e87c904792b323973467841ff1ef504d1c09e",
+      "size_bytes": 1226852
+    }
+  },
+  {
+    "id": "playwright-official",
+    "name": "playwright-official MCP Server",
+    "description": "Playwright browser automation MCP server with accessibility-first approach",
+    "author": "microsoft",
+    "version": "0.1.0",
+    "homepage": "https://github.com/microsoft/playwright-mcp",
+    "verified": true,
+    "tools_count": 34,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": [
+        "read:~/"
+      ],
+      "network": true
+    },
+    "tools": [
+      "browser_navigate",
+      "browser_navigate_back",
+      "browser_click",
+      "browser_hover",
+      "browser_type",
+      "browser_fill_form",
+      "browser_select_option",
+      "browser_press_key",
+      "browser_snapshot",
+      "browser_take_screenshot",
+      "browser_evaluate",
+      "browser_run_code",
+      "browser_console_messages",
+      "browser_network_requests",
+      "browser_file_upload",
+      "browser_handle_dialog",
+      "browser_drag",
+      "browser_resize",
+      "browser_wait_for",
+      "browser_close",
+      "browser_tabs",
+      "browser_install",
+      "browser_mouse_click_xy",
+      "browser_mouse_down",
+      "browser_mouse_drag_xy",
+      "browser_mouse_move_xy",
+      "browser_mouse_up",
+      "browser_mouse_wheel",
+      "browser_pdf_save",
+      "browser_generate_locator",
+      "browser_verify_element_visible",
+      "browser_verify_list_visible",
+      "browser_verify_text_visible",
+      "browser_verify_value"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/playwright-official/0.1.0/playwright-official-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/playwright-official/0.1.0/toolbox.toml",
+      "sha512": "039cbaad3822c14cf70ad96d70803afad2a4095b095f459799afd45ce397ac977c7843fabae1322121b0de2fd2a1cd7827633bd8be8ae1d02b04c721fba418db",
+      "size_bytes": 106106
+    }
+  },
+  {
+    "id": "pulumi",
+    "name": "pulumi MCP Server",
+    "description": "Infrastructure as code via Pulumi with stack management, deployments, and registry access",
+    "author": "pulumi",
+    "version": "0.1.0",
+    "homepage": "https://github.com/pulumi/pulumi-mcp-server",
+    "verified": true,
+    "tools_count": 11,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": [
+        "read:~/.pulumi"
+      ],
+      "network": [
+        "api.pulumi.com"
+      ]
+    },
+    "tools": [
+      "get-stacks",
+      "resource-search",
+      "get-policy-violations",
+      "preview",
+      "up",
+      "stack-output",
+      "get-type",
+      "get-resource",
+      "list-resources",
+      "list-functions",
+      "neo-bridge"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings."
+  },
+  {
+    "id": "qdrant-official",
+    "name": "qdrant-official MCP Server",
+    "description": "Qdrant vector search database for storing and retrieving information via semantic search",
+    "author": "qdrant",
+    "version": "0.3.0",
+    "homepage": "https://github.com/qdrant/mcp-server-qdrant",
+    "verified": true,
+    "tools_count": 2,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "qdrant-store",
+      "qdrant-find"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/qdrant-official/0.3.0/qdrant-official-0.3.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/qdrant-official/0.3.0/toolbox.toml",
+      "sha512": "fd6e36a9ee2beb98649586f607c0bc99133aa11735e6847dbc7d9c8517666f052ad91991e752d47629ab463c27b77235acbc6eea5573ad404f4e27af0b532dfe",
+      "size_bytes": 161488
+    }
+  },
+  {
+    "id": "redis-official",
+    "name": "redis-official MCP Server",
+    "description": "Redis data structure operations, pub/sub, vector search, and documentation access",
+    "author": "redis",
+    "version": "0.1.0",
+    "homepage": "https://github.com/redis/mcp-redis",
+    "verified": true,
+    "tools_count": 11,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "string",
+      "hash",
+      "list",
+      "set",
+      "sorted_set",
+      "streams",
+      "json",
+      "pub_sub",
+      "docs",
+      "query_engine",
+      "server_management"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/redis-official/0.1.0/redis-official-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/redis-official/0.1.0/toolbox.toml",
+      "sha512": "60be40139d73320e5b4c1c5f2ab7e51c95bfe21571ba0ae5db48ce0b3582ee4e0e2ebd5f60a2a805bc2f4323f6c359bee995c7247a05462494ae7397b87b84a7",
+      "size_bytes": 22133
+    }
+  },
+  {
+    "id": "sentry-official",
+    "name": "sentry-official MCP Server",
+    "description": "Sentry error tracking and performance monitoring for issue analysis and debugging",
+    "author": "getsentry",
+    "version": "0.1.0",
+    "homepage": "https://github.com/getsentry/sentry-mcp",
+    "verified": true,
+    "tools_count": 11,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "sentry.io",
+        "us.sentry.io"
+      ]
+    },
+    "tools": [
+      "list_projects",
+      "resolve_short_id",
+      "get_sentry_event",
+      "list_error_events_in_project",
+      "create_project",
+      "list_project_issues",
+      "list_issue_events",
+      "get_sentry_issue",
+      "list_organization_replays",
+      "search_events",
+      "search_issues"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/sentry-official/0.1.0/sentry-official-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/sentry-official/0.1.0/toolbox.toml",
+      "sha512": "a5fce7ede65b3f72f6ab93e1a7e2f289a7e680688819ebcbe31c8d36d41f9ec5718b6f77d3ad6a388810985bbb84ddd893291f4c396c09cde78a459a4a886af4",
+      "size_bytes": 11430979
+    }
+  },
+  {
+    "id": "shopify",
+    "name": "shopify MCP Server",
+    "description": "Shopify developer platform MCP server for docs, schema, and code validation",
+    "author": "Shopify",
+    "version": "0.1.0",
+    "homepage": "https://shopify.dev/docs/apps/build/devmcp",
+    "verified": true,
+    "tools_count": 9,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": [
+        "read:~/"
+      ],
+      "network": true
+    },
+    "tools": [
+      "learn_shopify_api",
+      "search_dev_docs",
+      "search_docs_chunks",
+      "fetch_full_docs",
+      "introspect_admin_schema",
+      "introspect_graphql_schema",
+      "validate_graphql_codeblocks",
+      "validate_theme_codeblocks",
+      "validate_theme"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings."
+  },
+  {
+    "id": "slack-official",
+    "name": "slack-official MCP Server",
+    "description": "Slack workspace interaction with messaging, channels, and user management",
+    "author": "zencoderai",
+    "version": "1.0.0",
+    "homepage": "https://github.com/zencoderai/slack-mcp-server",
+    "verified": true,
+    "tools_count": 8,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "slack_list_channels",
+      "slack_post_message",
+      "slack_reply_to_thread",
+      "slack_add_reaction",
+      "slack_get_channel_history",
+      "slack_get_thread_replies",
+      "slack_get_users",
+      "slack_get_user_profile"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/slack-official/1.0.0/slack-official-1.0.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/slack-official/1.0.0/toolbox.toml",
+      "sha512": "75a415d74319c081abed1cf3ead221985a113155cff77546852db9b155dc736682d79a70a19f34a69ab8e9f7b8ed402c8823dbb757e66f1d91abe889e8340a88",
+      "size_bytes": 66509
+    }
+  },
+  {
+    "id": "snowflake",
+    "name": "snowflake MCP Server",
+    "description": "Snowflake data platform MCP server with Cortex AI and query management",
+    "author": "Snowflake-Labs",
+    "version": "0.1.0",
+    "homepage": "https://github.com/Snowflake-Labs/mcp",
+    "verified": true,
+    "tools_count": 13,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": [
+        "read:~/.snowflake"
+      ],
+      "network": true
+    },
+    "tools": [
+      "cortex_search",
+      "cortex_analyst",
+      "cortex_agent",
+      "run_query",
+      "list_databases",
+      "list_schemas",
+      "list_tables",
+      "describe_table",
+      "create_object",
+      "drop_object",
+      "alter_object",
+      "query_semantic_view",
+      "list_semantic_views"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/snowflake/0.1.0/snowflake-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/snowflake/0.1.0/toolbox.toml",
+      "sha512": "e05625ab0c38e333552e8dbe9d66a935f6c4d19bc56b253fca094672ef5cb5a8671920c49c06446edccc3305a177f8524d5cd205c31415c7e54e0fe4dfd2e822",
+      "size_bytes": 157504
+    }
+  },
+  {
+    "id": "stripe-official",
+    "name": "stripe-official MCP Server",
+    "description": "Stripe payments API integration for AI-powered financial operations",
+    "author": "stripe",
+    "version": "1.0.0",
+    "homepage": "https://github.com/stripe/agent-toolkit",
+    "verified": true,
+    "tools_count": 14,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "create_customer",
+      "list_customers",
+      "create_product",
+      "list_products",
+      "create_price",
+      "list_prices",
+      "create_payment_link",
+      "create_invoice",
+      "list_invoices",
+      "create_subscription",
+      "list_subscriptions",
+      "create_refund",
+      "list_balance_transactions",
+      "retrieve_balance"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/stripe-official/1.0.0/stripe-official-1.0.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/stripe-official/1.0.0/toolbox.toml",
+      "sha512": "e8e6408fdc459d65fe5c36926fb24119ec25a64e134e9668f0858aff7fd7804add42bb5f44d971afe5127e51204c4e955b362f18ffc7b5cf5f14fd4107f2dab0",
+      "size_bytes": 457717
+    }
+  },
+  {
+    "id": "supabase-official",
+    "name": "supabase-official MCP Server",
+    "description": "Supabase platform management including database, auth, storage, edge functions, and branching",
+    "author": "supabase-community",
+    "version": "0.1.0",
+    "homepage": "https://github.com/supabase-community/supabase-mcp",
+    "verified": true,
+    "tools_count": 32,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": [
+        "supabase.com",
+        "api.supabase.com",
+        "supabase.co"
+      ]
+    },
+    "tools": [
+      "list_projects",
+      "get_project",
+      "create_project",
+      "pause_project",
+      "restore_project",
+      "list_organizations",
+      "get_organization",
+      "get_cost",
+      "confirm_cost",
+      "search_docs",
+      "list_tables",
+      "list_extensions",
+      "list_migrations",
+      "apply_migration",
+      "execute_sql",
+      "get_logs",
+      "get_advisors",
+      "get_project_url",
+      "get_publishable_keys",
+      "generate_typescript_types",
+      "list_edge_functions",
+      "get_edge_function",
+      "deploy_edge_function",
+      "create_branch",
+      "list_branches",
+      "delete_branch",
+      "merge_branch",
+      "reset_branch",
+      "rebase_branch",
+      "list_storage_buckets",
+      "get_storage_config",
+      "update_storage_config"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/supabase-official/0.1.0/supabase-official-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/supabase-official/0.1.0/toolbox.toml",
+      "sha512": "0a0e627d70b0399f3b71587ac0819dfd98f04caba959cb60839f22814147b017a768ad0bab47a635d3526c7862285f4c4e72c94be2aa4862851a7a8ebf3290a0",
+      "size_bytes": 118391
+    }
+  },
+  {
+    "id": "terraform",
+    "name": "terraform MCP Server",
+    "description": "Terraform Registry and HCP Terraform workspace management MCP server",
+    "author": "hashicorp",
+    "version": "0.4.0",
+    "homepage": "https://github.com/hashicorp/terraform-mcp-server",
+    "verified": true,
+    "tools_count": 15,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "resolveProviderDocID",
+      "getProviderDocs",
+      "searchModules",
+      "moduleDetails",
+      "searchProviders",
+      "listWorkspaces",
+      "workspaceDetails",
+      "listWorkspaceResources",
+      "lockWorkspace",
+      "unlockWorkspace",
+      "listRuns",
+      "runDetails",
+      "createRun",
+      "applyRun",
+      "cancelRun"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/terraform/0.4.0/terraform-0.4.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/terraform/0.4.0/toolbox.toml",
+      "sha512": "2f42dd4023aab6eebba5f361744c5042b196272656d7577fd21ceb90f3dab170d0b32ecf0eb45314590f149ad4a9e20c97cce4bda34af2aa107f520fc2777ac1",
+      "size_bytes": 125119
+    }
+  },
+  {
+    "id": "weaviate-official",
+    "name": "weaviate-official MCP Server",
+    "description": "Weaviate vector database for inserting objects and performing hybrid search queries",
+    "author": "weaviate",
+    "version": "0.1.0",
+    "homepage": "https://github.com/weaviate/mcp-server-weaviate",
+    "verified": true,
+    "tools_count": 2,
+    "rating": 0.0,
+    "install_count": 0,
+    "permissions": {
+      "filesystem": false,
+      "network": true
+    },
+    "tools": [
+      "insert_one",
+      "query"
+    ],
+    "verified_at": "2026-02-27",
+    "scan_summary": "Automated scan passed. No critical or high findings.",
+    "package": {
+      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/weaviate-official/0.1.0/weaviate-official-0.1.0.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/weaviate-official/0.1.0/toolbox.toml",
+      "sha512": "f037292b0e15ae2c51645f96917809385635aa1e7a15febef5098c8cb5926d34d2e24a8dcd48964a39f07592a74cdf5c9cfed781c24b7f960d805a961d810749",
+      "size_bytes": 11929
+    }
   }
 ]

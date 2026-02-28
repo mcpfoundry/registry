@@ -1,0 +1,43 @@
+[tool]
+name = "mysql-community"
+version = "0.2.2"
+description = "Secure MySQL database interaction and schema exploration"
+author = "designcomputer"
+homepage = "https://github.com/designcomputer/mysql_mcp_server"
+license = "MIT"
+
+[binary]
+entry = "mysql-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+runtime = "python"
+min_version = "3.10"
+
+[permissions]
+filesystem = false
+network = true
+env_vars = ["HOME", "PATH", "MYSQL_HOST", "MYSQL_PORT", "MYSQL_USER", "MYSQL_PASSWORD", "MYSQL_DATABASE"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "list_tables"
+description = "List all available MySQL tables in the database"
+
+[[mcp.tools]]
+name = "describe_table"
+description = "Get the schema and column details of a specific table"
+
+[[mcp.tools]]
+name = "read_query"
+description = "Execute a read-only SQL query and return results"
+
+[[mcp.tools]]
+name = "write_query"
+description = "Execute a write SQL query (INSERT, UPDATE, DELETE)"
+
+[[mcp.tools]]
+name = "list_databases"
+description = "List all available MySQL databases on the server"

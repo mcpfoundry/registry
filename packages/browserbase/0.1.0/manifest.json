@@ -1,0 +1,19 @@
+{
+  "tool_id": "browserbase",
+  "version": "0.1.0",
+  "author": "browserbase",
+  "pinned_at": "2026-02-28T02:43:36Z",
+  "source": {
+    "type": "github",
+    "owner": "browserbase",
+    "repo": "mcp-server-browserbase",
+    "homepage": "https://github.com/browserbase/mcp-server-browserbase",
+    "archive_url": "https://github.com/browserbase/mcp-server-browserbase/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "browserbase-0.1.0.tar.gz",
+    "size_bytes": 1460842,
+    "sha512": "ab89e8223452d39822a04f3058846f5ba7a732a00ae5f084ab1851f72f9fa0cc699dcf646db0415e7859f3e4663739049a9a64aa9ba61d3f4c757330cc62c657",
+    "sha256": "3d44a0322c8729d3cbd16c25eb064abeee7e2e6b84174455edb3614a1ab4ce2d"
+  }
+}

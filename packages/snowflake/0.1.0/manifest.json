@@ -1,0 +1,19 @@
+{
+  "tool_id": "snowflake",
+  "version": "0.1.0",
+  "author": "Snowflake-Labs",
+  "pinned_at": "2026-02-28T02:46:35Z",
+  "source": {
+    "type": "github",
+    "owner": "Snowflake-Labs",
+    "repo": "mcp",
+    "homepage": "https://github.com/Snowflake-Labs/mcp",
+    "archive_url": "https://github.com/Snowflake-Labs/mcp/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "snowflake-0.1.0.tar.gz",
+    "size_bytes": 157504,
+    "sha512": "e05625ab0c38e333552e8dbe9d66a935f6c4d19bc56b253fca094672ef5cb5a8671920c49c06446edccc3305a177f8524d5cd205c31415c7e54e0fe4dfd2e822",
+    "sha256": "2c2d5475268f5214fb8d3f7cbe1e0fa2fa3335191ef739be70621b7495da2681"
+  }
+}

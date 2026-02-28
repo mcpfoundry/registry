@@ -1,0 +1,19 @@
+{
+  "tool_id": "pinecone-community",
+  "version": "1.0.0",
+  "author": "sirmews",
+  "pinned_at": "2026-02-28T02:46:07Z",
+  "source": {
+    "type": "github",
+    "owner": "sirmews",
+    "repo": "mcp-pinecone",
+    "homepage": "https://github.com/sirmews/mcp-pinecone",
+    "archive_url": "https://github.com/sirmews/mcp-pinecone/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "pinecone-community-1.0.0.tar.gz",
+    "size_bytes": 36816,
+    "sha512": "00428b18c0cc3505088de43057617de17dc3fe119d1068a9052cccdd0732a47f2d175e5e3cb1a6dfd73b52d8c4848767be7c2c27054d0be46e8b6d81e5596734",
+    "sha256": "7547d1a6de0e83a3c73c29016b072707a291a928635e14eab6354ad1515ea8cf"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "tool_id": "youtube-transcript",
+  "version": "1.0.0",
+  "author": "kimtaeyoon83",
+  "pinned_at": "2026-02-28T02:46:55Z",
+  "source": {
+    "type": "github",
+    "owner": "kimtaeyoon83",
+    "repo": "mcp-server-youtube-transcript",
+    "homepage": "https://github.com/kimtaeyoon83/mcp-server-youtube-transcript",
+    "archive_url": "https://github.com/kimtaeyoon83/mcp-server-youtube-transcript/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "youtube-transcript-1.0.0.tar.gz",
+    "size_bytes": 38163,
+    "sha512": "94e26e35398fda50417059bfa8077ba3c9d10e45f5cccd60d6ca515dfc9c181d067f5bf876a5e78bb37158d4a355a51833348a25a9084519f129f0857ab1b3fa",
+    "sha256": "0215734162ae69932330c083687ff6b26d97f626552e495058fb07b3edc1bc65"
+  }
+}

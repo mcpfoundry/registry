@@ -1,0 +1,19 @@
+{
+  "tool_id": "mongodb-official",
+  "version": "0.1.0",
+  "author": "mongodb",
+  "pinned_at": "2026-02-28T02:45:46Z",
+  "source": {
+    "type": "github",
+    "owner": "mongodb-js",
+    "repo": "mongodb-mcp-server",
+    "homepage": "https://github.com/mongodb-js/mongodb-mcp-server",
+    "archive_url": "https://github.com/mongodb-js/mongodb-mcp-server/archive/refs/tags/v0.1.0.tar.gz"
+  },
+  "artifact": {
+    "filename": "mongodb-official-0.1.0.tar.gz",
+    "size_bytes": 242425,
+    "sha512": "f14bbea9e66e0f1d8556431339e69eb645ebb27da9277e60b195aef69d84a8af9d2367687230613c7018582eafc907264df540e6a60feb65ec51279414689b0a",
+    "sha256": "556cbc5e203fd458c810e93993670ac24e0495172f1b09e831c930fa94d0b96d"
+  }
+}

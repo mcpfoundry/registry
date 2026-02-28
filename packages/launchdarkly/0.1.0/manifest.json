@@ -1,0 +1,19 @@
+{
+  "tool_id": "launchdarkly",
+  "version": "0.1.0",
+  "author": "launchdarkly",
+  "pinned_at": "2026-02-28T02:45:33Z",
+  "source": {
+    "type": "github",
+    "owner": "launchdarkly",
+    "repo": "mcp-server",
+    "homepage": "https://github.com/launchdarkly/mcp-server",
+    "archive_url": "https://github.com/launchdarkly/mcp-server/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "launchdarkly-0.1.0.tar.gz",
+    "size_bytes": 663637,
+    "sha512": "e8738212e2d939e2522e7e6f002bf29f8d1aa727a6b1cd4fb9e18c331b04bc7acf0f97576115ca0278bd4b5207bdd4ea4ba9be188b27a4f3813c850a935e2c17",
+    "sha256": "525d661c424989db009e5117f9f8b6dc97b9230cef6cf8513b1548e859c4391e"
+  }
+}

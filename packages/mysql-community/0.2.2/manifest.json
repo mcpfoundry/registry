@@ -1,0 +1,19 @@
+{
+  "tool_id": "mysql-community",
+  "version": "0.2.2",
+  "author": "designcomputer",
+  "pinned_at": "2026-02-28T02:45:48Z",
+  "source": {
+    "type": "github",
+    "owner": "designcomputer",
+    "repo": "mysql_mcp_server",
+    "homepage": "https://github.com/designcomputer/mysql_mcp_server",
+    "archive_url": "https://github.com/designcomputer/mysql_mcp_server/archive/refs/tags/v0.2.2.tar.gz"
+  },
+  "artifact": {
+    "filename": "mysql-community-0.2.2.tar.gz",
+    "size_bytes": 9561,
+    "sha512": "825a6f957adf55809e2a29b32db88cd8497bb9ba901e1ae6e3d527c5d8ce69d7fbbfb45ac903bd0a0910fa568d219f045869e1a7e3474d5321aeff039b1d6e62",
+    "sha256": "28c4caf87474f9d7a7bc02fe9299324c1c279e2649a9de92ab5b15ac4d0fadda"
+  }
+}

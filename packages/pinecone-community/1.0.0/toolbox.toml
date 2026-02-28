@@ -1,0 +1,43 @@
+[tool]
+name = "pinecone-community"
+version = "1.0.0"
+description = "Pinecone vector database search, document management, and RAG operations"
+author = "sirmews"
+homepage = "https://github.com/sirmews/mcp-pinecone"
+license = "MIT"
+
+[binary]
+entry = "mcp-pinecone"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+runtime = "python"
+min_version = "3.10"
+
+[permissions]
+filesystem = false
+network = true
+env_vars = ["HOME", "PATH", "PINECONE_API_KEY", "PINECONE_INDEX_NAME"]
+max_memory_mb = 512
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "semantic-search"
+description = "Query records in the Pinecone index using semantic search"
+
+[[mcp.tools]]
+name = "read-document"
+description = "Retrieve a specific document from the index"
+
+[[mcp.tools]]
+name = "list-documents"
+description = "View all documents in the index"
+
+[[mcp.tools]]
+name = "pinecone-stats"
+description = "Obtain index statistics including record count, dimensions, and namespaces"
+
+[[mcp.tools]]
+name = "process-document"
+description = "Chunk, embed, and upsert documents into the index"

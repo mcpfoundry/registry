@@ -1,0 +1,19 @@
+{
+  "tool_id": "prisma-community",
+  "version": "1.0.0",
+  "author": "prisma",
+  "pinned_at": "2026-02-28T02:46:12Z",
+  "source": {
+    "type": "github",
+    "owner": "prisma",
+    "repo": "mcp",
+    "homepage": "https://github.com/prisma/mcp",
+    "archive_url": "https://github.com/prisma/mcp/archive/refs/tags/v1.0.0.tar.gz"
+  },
+  "artifact": {
+    "filename": "prisma-community-1.0.0.tar.gz",
+    "size_bytes": 27874,
+    "sha512": "23dcea3b131be0ac6a35b64405e1e4f92d4b9fbd0af9279eca611316a41feeea4304f01cbabd5618939f2c3bbf961c7caf5989c18f173c932f0b5b44726865d3",
+    "sha256": "2c107dacee11030f58ce29bf307b36e85795f510acb7b4579568d06d73a807ba"
+  }
+}

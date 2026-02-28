@@ -1,0 +1,136 @@
+[tool]
+name = "neon-official"
+version = "1.0.0"
+description = "Neon serverless Postgres management including projects, branches, SQL, and migrations"
+author = "neondatabase"
+homepage = "https://github.com/neondatabase/mcp-server-neon"
+license = "MIT"
+
+[binary]
+entry = "mcp-server-neon"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = ["console.neon.tech", "api.neon.tech"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "list_projects"
+description = "List the first 10 Neon projects in your account"
+
+[[mcp.tools]]
+name = "list_shared_projects"
+description = "List projects shared with the current user"
+
+[[mcp.tools]]
+name = "describe_project"
+description = "Fetch detailed information about a specific project"
+
+[[mcp.tools]]
+name = "create_project"
+description = "Create a new Neon project"
+
+[[mcp.tools]]
+name = "delete_project"
+description = "Delete an existing project and its resources"
+
+[[mcp.tools]]
+name = "list_organizations"
+description = "List organizations the user can access"
+
+[[mcp.tools]]
+name = "create_branch"
+description = "Create a new branch within a project"
+
+[[mcp.tools]]
+name = "delete_branch"
+description = "Delete an existing branch"
+
+[[mcp.tools]]
+name = "describe_branch"
+description = "Retrieve branch details"
+
+[[mcp.tools]]
+name = "list_branch_computes"
+description = "List compute endpoints for branches"
+
+[[mcp.tools]]
+name = "compare_database_schema"
+description = "Show schema differences between branches"
+
+[[mcp.tools]]
+name = "reset_from_parent"
+description = "Reset a branch to its parent's state"
+
+[[mcp.tools]]
+name = "get_connection_string"
+description = "Return the database connection string"
+
+[[mcp.tools]]
+name = "run_sql"
+description = "Execute a single SQL query"
+
+[[mcp.tools]]
+name = "run_sql_transaction"
+description = "Execute multiple queries in a transaction"
+
+[[mcp.tools]]
+name = "get_database_tables"
+description = "List tables in a database"
+
+[[mcp.tools]]
+name = "describe_table_schema"
+description = "Retrieve table schema definitions"
+
+[[mcp.tools]]
+name = "prepare_database_migration"
+description = "Initiate a migration on a temporary branch"
+
+[[mcp.tools]]
+name = "complete_database_migration"
+description = "Apply migration to the main branch"
+
+[[mcp.tools]]
+name = "list_slow_queries"
+description = "Identify performance bottlenecks via slow queries"
+
+[[mcp.tools]]
+name = "explain_sql_statement"
+description = "Provide SQL execution plans for analysis"
+
+[[mcp.tools]]
+name = "prepare_query_tuning"
+description = "Analyze and suggest query optimizations"
+
+[[mcp.tools]]
+name = "complete_query_tuning"
+description = "Finalize query optimizations"
+
+[[mcp.tools]]
+name = "provision_neon_auth"
+description = "Provision Neon Auth for a project"
+
+[[mcp.tools]]
+name = "provision_neon_data_api"
+description = "Provision HTTP-based database access"
+
+[[mcp.tools]]
+name = "search"
+description = "Search across organizations, projects, and branches"
+
+[[mcp.tools]]
+name = "fetch"
+description = "Retrieve detailed information by ID"
+
+[[mcp.tools]]
+name = "list_docs_resources"
+description = "List available Neon documentation pages"
+
+[[mcp.tools]]
+name = "get_doc_resource"
+description = "Fetch specific documentation as markdown"

@@ -1,0 +1,236 @@
+[tool]
+name = "dbt"
+version = "0.4.0"
+description = "Data build tool integration for SQL execution, semantic layer, discovery, and dbt CLI operations"
+author = "dbt-labs"
+homepage = "https://github.com/dbt-labs/dbt-mcp"
+license = "Apache-2.0"
+
+[binary]
+entry = "dbt-mcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = ["read:~/.dbt"]
+network = true
+max_memory_mb = 512
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "execute_sql"
+description = "Execute SQL on dbt Platform infrastructure with Semantic Layer support"
+
+[[mcp.tools]]
+name = "text_to_sql"
+description = "Generate SQL from natural language using project context"
+
+[[mcp.tools]]
+name = "get_dimensions"
+description = "Retrieve dimensions for specified metrics"
+
+[[mcp.tools]]
+name = "get_entities"
+description = "Retrieve entities for specified metrics"
+
+[[mcp.tools]]
+name = "get_metrics_compiled_sql"
+description = "Return compiled SQL for metrics without execution"
+
+[[mcp.tools]]
+name = "list_metrics"
+description = "Retrieve all defined metrics"
+
+[[mcp.tools]]
+name = "list_saved_queries"
+description = "Retrieve all saved queries"
+
+[[mcp.tools]]
+name = "query_metrics"
+description = "Execute metric queries with filtering and grouping options"
+
+[[mcp.tools]]
+name = "get_all_macros"
+description = "Retrieve macros with optional filtering"
+
+[[mcp.tools]]
+name = "get_all_models"
+description = "Retrieve name and description of all models"
+
+[[mcp.tools]]
+name = "get_all_sources"
+description = "Get all sources with freshness status"
+
+[[mcp.tools]]
+name = "get_exposure_details"
+description = "Get exposure details including owner and parents"
+
+[[mcp.tools]]
+name = "get_exposures"
+description = "Get all exposures (downstream dashboards, apps, or analyses)"
+
+[[mcp.tools]]
+name = "get_lineage"
+description = "Get full lineage graph with filtering options"
+
+[[mcp.tools]]
+name = "get_macro_details"
+description = "Get details for a specific macro"
+
+[[mcp.tools]]
+name = "get_mart_models"
+description = "Retrieve all mart models"
+
+[[mcp.tools]]
+name = "get_model_children"
+description = "Get downstream dependents of a model"
+
+[[mcp.tools]]
+name = "get_model_details"
+description = "Get model details including compiled SQL, columns, and schema"
+
+[[mcp.tools]]
+name = "get_model_health"
+description = "Get health signals including run status and test results"
+
+[[mcp.tools]]
+name = "get_model_parents"
+description = "Get upstream dependencies of a model"
+
+[[mcp.tools]]
+name = "get_model_performance"
+description = "Get execution history for a model"
+
+[[mcp.tools]]
+name = "get_related_models"
+description = "Find similar models using semantic search"
+
+[[mcp.tools]]
+name = "get_seed_details"
+description = "Get details for a specific seed"
+
+[[mcp.tools]]
+name = "get_semantic_model_details"
+description = "Get details for a specific semantic model"
+
+[[mcp.tools]]
+name = "get_snapshot_details"
+description = "Get details for a specific snapshot"
+
+[[mcp.tools]]
+name = "get_source_details"
+description = "Get source details including columns and freshness"
+
+[[mcp.tools]]
+name = "get_test_details"
+description = "Get details for a specific test"
+
+[[mcp.tools]]
+name = "search"
+description = "Search for resources across the dbt project"
+
+[[mcp.tools]]
+name = "build"
+description = "Execute models, tests, snapshots, and seeds in DAG order"
+
+[[mcp.tools]]
+name = "compile"
+description = "Generate executable SQL from models, tests, and analyses"
+
+[[mcp.tools]]
+name = "docs"
+description = "Generate documentation for the dbt project"
+
+[[mcp.tools]]
+name = "get_lineage_dev"
+description = "Retrieve lineage from local manifest.json"
+
+[[mcp.tools]]
+name = "get_node_details_dev"
+description = "Retrieve node details from local manifest.json"
+
+[[mcp.tools]]
+name = "list"
+description = "List resources in the dbt project by type"
+
+[[mcp.tools]]
+name = "parse"
+description = "Parse and validate project files for syntax correctness"
+
+[[mcp.tools]]
+name = "run"
+description = "Execute models to materialize them in the database"
+
+[[mcp.tools]]
+name = "show"
+description = "Execute SQL against the database and return results"
+
+[[mcp.tools]]
+name = "test"
+description = "Run tests to validate data and model integrity"
+
+[[mcp.tools]]
+name = "cancel_job_run"
+description = "Cancel a running job"
+
+[[mcp.tools]]
+name = "get_job_details"
+description = "Get job configuration including triggers and schedule"
+
+[[mcp.tools]]
+name = "get_job_run_artifact"
+description = "Download a specific artifact file from a job run"
+
+[[mcp.tools]]
+name = "get_job_run_details"
+description = "Get run details including status and timing"
+
+[[mcp.tools]]
+name = "get_job_run_error"
+description = "Get error and warning details for a job run"
+
+[[mcp.tools]]
+name = "get_project_details"
+description = "Get project information for a specific dbt project"
+
+[[mcp.tools]]
+name = "list_job_run_artifacts"
+description = "List available artifacts from a job run"
+
+[[mcp.tools]]
+name = "list_jobs"
+description = "List jobs in a dbt Platform account"
+
+[[mcp.tools]]
+name = "list_jobs_runs"
+description = "List job runs with filtering options"
+
+[[mcp.tools]]
+name = "retry_job_run"
+description = "Retry a failed job run"
+
+[[mcp.tools]]
+name = "trigger_job_run"
+description = "Trigger a job run with option to override git branch and schema"
+
+[[mcp.tools]]
+name = "generate_model_yaml"
+description = "Generate model YAML with columns"
+
+[[mcp.tools]]
+name = "generate_source"
+description = "Generate source YAML by introspecting database schemas"
+
+[[mcp.tools]]
+name = "generate_staging_model"
+description = "Generate staging model SQL from a source table"
+
+[[mcp.tools]]
+name = "get_mcp_server_version"
+description = "Return the current version of the MCP server"
+
+[[mcp.tools]]
+name = "get_mcp_server_branch"
+description = "Return the current git branch of the running server"

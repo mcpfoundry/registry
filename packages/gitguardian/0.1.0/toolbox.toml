@@ -1,0 +1,44 @@
+[tool]
+name = "gitguardian"
+version = "0.1.0"
+description = "Secret scanning and remediation using GitGuardian API, detecting 500+ secret types"
+author = "GitGuardian"
+homepage = "https://github.com/GitGuardian/ggmcp"
+license = "MIT"
+
+[binary]
+entry = "ggmcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = ["read:."]
+network = ["api.gitguardian.com"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "scan"
+description = "Scan code for leaked secrets, credentials, and API keys"
+
+[[mcp.tools]]
+name = "get_incidents"
+description = "View security incidents related to the current project"
+
+[[mcp.tools]]
+name = "create_honeytoken"
+description = "Create honeytokens to detect unauthorized access"
+
+[[mcp.tools]]
+name = "get_honeytokens"
+description = "List active honeytokens"
+
+[[mcp.tools]]
+name = "get_authenticated_user_info"
+description = "Get authenticated user information and token details"
+
+[[mcp.tools]]
+name = "revoke_token"
+description = "Revoke current API tokens"

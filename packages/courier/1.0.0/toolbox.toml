@@ -1,0 +1,40 @@
+[tool]
+name = "courier"
+version = "1.0.0"
+description = "Multi-channel notification delivery via Courier (email, push, SMS, chat)"
+author = "trycourier"
+homepage = "https://github.com/trycourier/courier-mcp"
+license = "MIT"
+
+[binary]
+entry = "courier-mcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = ["api.courier.com", "mcp.courier.com"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "send_message"
+description = "Send a notification via one or more channels (email, push, SMS, chat)"
+
+[[mcp.tools]]
+name = "create_or_merge_user"
+description = "Create or update a user profile with contact information"
+
+[[mcp.tools]]
+name = "invoke_automation_template"
+description = "Trigger an automation template to execute a notification workflow"
+
+[[mcp.tools]]
+name = "get_message_status"
+description = "Check the delivery status of a sent message"
+
+[[mcp.tools]]
+name = "list_templates"
+description = "List available notification templates in the workspace"

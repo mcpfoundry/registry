@@ -1,0 +1,27 @@
+[tool]
+name = "youtube-transcript"
+version = "1.0.0"
+description = "Retrieve transcripts and captions from YouTube videos"
+author = "kimtaeyoon83"
+homepage = "https://github.com/kimtaeyoon83/mcp-server-youtube-transcript"
+license = "MIT"
+
+[binary]
+entry = "mcp-server-youtube-transcript"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+runtime = "node"
+min_version = "18"
+
+[permissions]
+filesystem = false
+network = true
+env_vars = ["HOME", "PATH"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "get_transcript"
+description = "Extract transcripts from YouTube videos with optional language selection, timestamps, and ad filtering"

@@ -1,0 +1,72 @@
+[tool]
+name = "snowflake"
+version = "0.1.0"
+description = "Snowflake data platform MCP server with Cortex AI and query management"
+author = "Snowflake-Labs"
+homepage = "https://github.com/Snowflake-Labs/mcp"
+license = "Apache-2.0"
+
+[binary]
+entry = "snowflake-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = ["read:~/.snowflake"]
+network = true
+max_memory_mb = 512
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "cortex_search"
+description = "Query unstructured data in Snowflake for RAG applications"
+
+[[mcp.tools]]
+name = "cortex_analyst"
+description = "Query structured data in Snowflake via semantic modeling"
+
+[[mcp.tools]]
+name = "cortex_agent"
+description = "Agentic orchestrator across structured and unstructured data"
+
+[[mcp.tools]]
+name = "run_query"
+description = "Run LLM-generated SQL managed by user-configured permissions"
+
+[[mcp.tools]]
+name = "list_databases"
+description = "List available Snowflake databases"
+
+[[mcp.tools]]
+name = "list_schemas"
+description = "List schemas within a database"
+
+[[mcp.tools]]
+name = "list_tables"
+description = "List tables within a schema"
+
+[[mcp.tools]]
+name = "describe_table"
+description = "Get column metadata for a specific table"
+
+[[mcp.tools]]
+name = "create_object"
+description = "Create a Snowflake object (table, view, etc.)"
+
+[[mcp.tools]]
+name = "drop_object"
+description = "Drop a Snowflake object"
+
+[[mcp.tools]]
+name = "alter_object"
+description = "Alter properties of a Snowflake object"
+
+[[mcp.tools]]
+name = "query_semantic_view"
+description = "Discover and query Snowflake Semantic Views"
+
+[[mcp.tools]]
+name = "list_semantic_views"
+description = "List available Semantic Views and their components"

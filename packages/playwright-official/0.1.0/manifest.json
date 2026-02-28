@@ -1,0 +1,19 @@
+{
+  "tool_id": "playwright-official",
+  "version": "0.1.0",
+  "author": "microsoft",
+  "pinned_at": "2026-02-28T02:46:10Z",
+  "source": {
+    "type": "github",
+    "owner": "microsoft",
+    "repo": "playwright-mcp",
+    "homepage": "https://github.com/microsoft/playwright-mcp",
+    "archive_url": "https://github.com/microsoft/playwright-mcp/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "playwright-official-0.1.0.tar.gz",
+    "size_bytes": 106106,
+    "sha512": "039cbaad3822c14cf70ad96d70803afad2a4095b095f459799afd45ce397ac977c7843fabae1322121b0de2fd2a1cd7827633bd8be8ae1d02b04c721fba418db",
+    "sha256": "60db23049be9d410f5aa520ae9c53baaf7e68f07a1b2107a77a25fc6eb747061"
+  }
+}

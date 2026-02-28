@@ -1,0 +1,19 @@
+{
+  "tool_id": "neon-official",
+  "version": "1.0.0",
+  "author": "neondatabase",
+  "pinned_at": "2026-02-28T02:45:55Z",
+  "source": {
+    "type": "github",
+    "owner": "neondatabase",
+    "repo": "mcp-server-neon",
+    "homepage": "https://github.com/neondatabase/mcp-server-neon",
+    "archive_url": "https://github.com/neondatabase/mcp-server-neon/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "neon-official-1.0.0.tar.gz",
+    "size_bytes": 205769,
+    "sha512": "74a6e9314aa46bb78b1ccd33c9fd6f4228ce417844c16d53a4bd7be4132e782be0b04736c0e538705ef776b9aef955692b2d2f8fbf0528dd1582cb904665d703",
+    "sha256": "b48ff19ea3909b3f824c43fd6226f91bcb6f61f1680373c50c6e6715b23780b7"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "tool_id": "figma",
+  "version": "0.1.0",
+  "author": "figma",
+  "pinned_at": "2026-02-28T02:44:46Z",
+  "source": {
+    "type": "github",
+    "owner": "figma",
+    "repo": "mcp-server-guide",
+    "homepage": "https://github.com/figma/mcp-server-guide",
+    "archive_url": "https://github.com/figma/mcp-server-guide/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "figma-0.1.0.tar.gz",
+    "size_bytes": 35185,
+    "sha512": "c117fafaa9c112b0a83e2a1ff75591b10f7b76c0fb9b4455b95bb16016ef0c21f71ef3c9048966dd4988aa130e4ed1ed9aacbd9a76ebca6a381271f8f2db4117",
+    "sha256": "bcfa6021227c663a288afeec6b73deb8d3549aab6b3fdb86ec2ef1217446252e"
+  }
+}

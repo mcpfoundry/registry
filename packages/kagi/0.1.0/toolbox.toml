@@ -1,0 +1,28 @@
+[tool]
+name = "kagi"
+version = "0.1.0"
+description = "Kagi premium search and web content summarization via MCP"
+author = "kagisearch"
+homepage = "https://github.com/kagisearch/kagimcp"
+license = "MIT"
+
+[binary]
+entry = "kagimcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = ["kagi.com", "api.kagi.com"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "search"
+description = "Perform web searches using Kagi's Search API"
+
+[[mcp.tools]]
+name = "summarize"
+description = "Summarize web content from a URL using configurable summarizer engines"

@@ -1,0 +1,19 @@
+{
+  "tool_id": "trello",
+  "version": "1.5.0",
+  "author": "delorenj",
+  "pinned_at": "2026-02-28T02:46:47Z",
+  "source": {
+    "type": "github",
+    "owner": "delorenj",
+    "repo": "mcp-server-trello",
+    "homepage": "https://github.com/delorenj/mcp-server-trello",
+    "archive_url": "https://github.com/delorenj/mcp-server-trello/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "trello-1.5.0.tar.gz",
+    "size_bytes": 193617,
+    "sha512": "ef86c301abe1e6c92b7410880c2f20867fe37cb5468588d2d4b5c68cfbbe7ce9033f6a66f7c46e1cb96147941b0dc27499344c81b05cf080c34f31b11729263e",
+    "sha256": "919c37c6a29b95203a59a2013cf337bc71e0be9a74dda5abdd8d5f3eafc07e1b"
+  }
+}

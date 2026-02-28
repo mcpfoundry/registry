@@ -1,0 +1,19 @@
+{
+  "tool_id": "grafana-official",
+  "version": "0.1.0",
+  "author": "grafana",
+  "pinned_at": "2026-02-28T02:45:12Z",
+  "source": {
+    "type": "github",
+    "owner": "grafana",
+    "repo": "mcp-grafana",
+    "homepage": "https://github.com/grafana/mcp-grafana",
+    "archive_url": "https://github.com/grafana/mcp-grafana/archive/refs/tags/v0.1.0.tar.gz"
+  },
+  "artifact": {
+    "filename": "grafana-official-0.1.0.tar.gz",
+    "size_bytes": 32350,
+    "sha512": "a4e91f7c45bf304aeb4930238198f29e6ddf9c510c00f1f9a1d745021014e770efe56084acb6e98ddb1cf1b5fda616fd3dcc80229872f701dc268ce6956edc73",
+    "sha256": "f1b8bd19e4fb81182f1796e200b7aa726222642632a8858b49d31490e9d94d05"
+  }
+}

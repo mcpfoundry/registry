@@ -1,0 +1,113 @@
+[tool]
+name = "github-official"
+version = "1.0.0"
+description = "GitHub's official MCP server for repositories, issues, PRs, actions, and code security"
+author = "github"
+homepage = "https://github.com/github/github-mcp-server"
+license = "MIT"
+
+[binary]
+entry = "github-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+env_vars = ["HOME", "PATH", "GITHUB_PERSONAL_ACCESS_TOKEN"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "get_file_contents"
+description = "Get contents of a file or directory from a repository"
+
+[[mcp.tools]]
+name = "search_code"
+description = "Search for code across GitHub repositories"
+
+[[mcp.tools]]
+name = "search_repositories"
+description = "Search for GitHub repositories"
+
+[[mcp.tools]]
+name = "create_repository"
+description = "Create a new GitHub repository"
+
+[[mcp.tools]]
+name = "list_commits"
+description = "List commits in a repository"
+
+[[mcp.tools]]
+name = "get_issue"
+description = "Get details of a specific issue"
+
+[[mcp.tools]]
+name = "list_issues"
+description = "List issues in a repository with filtering"
+
+[[mcp.tools]]
+name = "create_issue"
+description = "Create a new issue in a repository"
+
+[[mcp.tools]]
+name = "update_issue"
+description = "Update an existing issue"
+
+[[mcp.tools]]
+name = "add_issue_comment"
+description = "Add a comment to an issue"
+
+[[mcp.tools]]
+name = "get_pull_request"
+description = "Get details of a specific pull request"
+
+[[mcp.tools]]
+name = "list_pull_requests"
+description = "List pull requests in a repository"
+
+[[mcp.tools]]
+name = "create_pull_request"
+description = "Create a new pull request"
+
+[[mcp.tools]]
+name = "merge_pull_request"
+description = "Merge a pull request"
+
+[[mcp.tools]]
+name = "get_pull_request_diff"
+description = "Get the diff of a pull request"
+
+[[mcp.tools]]
+name = "create_or_update_file"
+description = "Create or update a file in a repository"
+
+[[mcp.tools]]
+name = "push_files"
+description = "Push multiple files to a repository in a single commit"
+
+[[mcp.tools]]
+name = "create_branch"
+description = "Create a new branch in a repository"
+
+[[mcp.tools]]
+name = "list_branches"
+description = "List branches in a repository"
+
+[[mcp.tools]]
+name = "list_workflow_runs"
+description = "List GitHub Actions workflow runs"
+
+[[mcp.tools]]
+name = "get_workflow_run"
+description = "Get details of a specific workflow run"
+
+[[mcp.tools]]
+name = "list_code_scanning_alerts"
+description = "List code scanning security alerts"
+
+[[mcp.tools]]
+name = "list_dependabot_alerts"
+description = "List Dependabot security alerts"

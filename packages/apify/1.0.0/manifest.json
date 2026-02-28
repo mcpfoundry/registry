@@ -1,0 +1,19 @@
+{
+  "tool_id": "apify",
+  "version": "1.0.0",
+  "author": "apify",
+  "pinned_at": "2026-02-28T02:42:55Z",
+  "source": {
+    "type": "github",
+    "owner": "apify",
+    "repo": "apify-mcp-server",
+    "homepage": "https://github.com/apify/apify-mcp-server",
+    "archive_url": "https://github.com/apify/apify-mcp-server/archive/refs/heads/master.tar.gz"
+  },
+  "artifact": {
+    "filename": "apify-1.0.0.tar.gz",
+    "size_bytes": 871566,
+    "sha512": "d082229093a7789c935c23bd61d6e79b6660b25695740ed0ce3e688876e468f97e2a64ef8dbf9527cdb13f96b7e532e567f28dadffc61bc28099f35b76efc7d6",
+    "sha256": "2c89a94805761e3d039045faa01ab546f4b9366a79dcfb9d957f395abe8c7f33"
+  }
+}

@@ -1,0 +1,84 @@
+[tool]
+name = "cloudinary"
+version = "0.1.0"
+description = "Cloudinary media asset management and AI analysis MCP server"
+author = "cloudinary"
+homepage = "https://github.com/cloudinary/mcp-servers"
+license = "MIT"
+
+[binary]
+entry = "cloudinary-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = ["read:~/"]
+network = true
+max_memory_mb = 512
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "upload_asset"
+description = "Upload media assets to Cloudinary"
+
+[[mcp.tools]]
+name = "search_assets"
+description = "Search media assets with advanced filters and expressions"
+
+[[mcp.tools]]
+name = "get_asset"
+description = "Retrieve details about a specific media asset"
+
+[[mcp.tools]]
+name = "delete_asset"
+description = "Delete a media asset from Cloudinary"
+
+[[mcp.tools]]
+name = "transform_asset"
+description = "Apply transformations to images and videos"
+
+[[mcp.tools]]
+name = "list_folders"
+description = "List folders in the Cloudinary media library"
+
+[[mcp.tools]]
+name = "manage_tags"
+description = "Add, remove, or replace tags on assets"
+
+[[mcp.tools]]
+name = "generate_archive"
+description = "Generate downloadable archives of assets"
+
+[[mcp.tools]]
+name = "list_metadata_fields"
+description = "List structured metadata fields"
+
+[[mcp.tools]]
+name = "get_metadata_field"
+description = "Get details about a specific metadata field"
+
+[[mcp.tools]]
+name = "create_metadata_field"
+description = "Create a new structured metadata field"
+
+[[mcp.tools]]
+name = "analyze_content"
+description = "AI-powered content analysis of media assets"
+
+[[mcp.tools]]
+name = "moderate_asset"
+description = "Run moderation checks on media assets"
+
+[[mcp.tools]]
+name = "auto_tag"
+description = "Automatically tag media assets using AI"
+
+[[mcp.tools]]
+name = "manage_upload_presets"
+description = "Configure and manage upload presets"
+
+[[mcp.tools]]
+name = "manage_transformations"
+description = "Configure and manage named transformations"

@@ -1,0 +1,19 @@
+{
+  "tool_id": "buildkite",
+  "version": "0.1.0",
+  "author": "buildkite",
+  "pinned_at": "2026-02-28T02:43:38Z",
+  "source": {
+    "type": "github",
+    "owner": "buildkite",
+    "repo": "buildkite-mcp-server",
+    "homepage": "https://github.com/buildkite/buildkite-mcp-server",
+    "archive_url": "https://github.com/buildkite/buildkite-mcp-server/archive/refs/tags/v0.1.0.tar.gz"
+  },
+  "artifact": {
+    "filename": "buildkite-0.1.0.tar.gz",
+    "size_bytes": 104066,
+    "sha512": "973bb347159671f01f7816b9baf1ac51e6f50e44bedeace8fa832719a373bc18f484801ffd3e6426f098e0ff7cd1e98c5d49a7a89b297464466321a10a705774",
+    "sha256": "15f6561923dd5340fe973435301f04884742a1e9ebd8ecbe04a03cf2815e5ab2"
+  }
+}

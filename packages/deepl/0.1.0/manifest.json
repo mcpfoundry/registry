@@ -1,0 +1,19 @@
+{
+  "tool_id": "deepl",
+  "version": "0.1.0",
+  "author": "DeepLcom",
+  "pinned_at": "2026-02-28T02:44:29Z",
+  "source": {
+    "type": "github",
+    "owner": "DeepLcom",
+    "repo": "deepl-mcp-server",
+    "homepage": "https://github.com/DeepLcom/deepl-mcp-server",
+    "archive_url": "https://github.com/DeepLcom/deepl-mcp-server/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "deepl-0.1.0.tar.gz",
+    "size_bytes": 57799,
+    "sha512": "1e23bb7e75280476bdce2886cd013b903d2e57f1c1cfd229474ad667bb344c1871b180ffa8d6b6c1bdacdf46784c616d523e26bb19e541800970e9f59ad7f319",
+    "sha256": "6fb6236d332ffb54765a433bdca001375910bc2b35015782f535d22024e6d71b"
+  }
+}

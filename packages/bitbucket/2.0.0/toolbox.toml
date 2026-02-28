@@ -1,0 +1,49 @@
+[tool]
+name = "bitbucket"
+version = "2.0.0"
+description = "Atlassian Bitbucket Cloud repository and pull request management"
+author = "aashari"
+homepage = "https://github.com/aashari/mcp-server-atlassian-bitbucket"
+license = "MIT"
+
+[binary]
+entry = "mcp-server-atlassian-bitbucket"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+runtime = "node"
+min_version = "18"
+
+[permissions]
+filesystem = [
+    "readwrite:/tmp"
+]
+network = true
+env_vars = ["HOME", "PATH", "BITBUCKET_USERNAME", "BITBUCKET_APP_PASSWORD"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "bb_get"
+description = "GET any Bitbucket API endpoint to read data"
+
+[[mcp.tools]]
+name = "bb_post"
+description = "POST to any Bitbucket API endpoint to create resources"
+
+[[mcp.tools]]
+name = "bb_put"
+description = "PUT to any Bitbucket API endpoint to replace resources"
+
+[[mcp.tools]]
+name = "bb_patch"
+description = "PATCH any Bitbucket API endpoint for partial updates"
+
+[[mcp.tools]]
+name = "bb_delete"
+description = "DELETE any Bitbucket API endpoint to remove resources"
+
+[[mcp.tools]]
+name = "bb_clone"
+description = "Clone a Bitbucket repository locally"

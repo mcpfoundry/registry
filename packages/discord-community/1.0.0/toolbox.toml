@@ -1,0 +1,87 @@
+[tool]
+name = "discord-community"
+version = "1.0.0"
+description = "Discord bot integration with messaging, roles, and event streaming"
+author = "tolgasumer"
+homepage = "https://github.com/tolgasumer/discord-mcp"
+license = "MIT"
+
+[binary]
+entry = "discord-mcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+runtime = "go"
+min_version = "1.21"
+
+[permissions]
+filesystem = false
+network = true
+env_vars = ["HOME", "PATH", "DISCORD_BOT_TOKEN"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "ping"
+description = "Health check for server and Discord connection"
+
+[[mcp.tools]]
+name = "get_guild_info"
+description = "Retrieve information about a Discord server"
+
+[[mcp.tools]]
+name = "list_guild_members"
+description = "Enumerate all members in a server"
+
+[[mcp.tools]]
+name = "list_channels"
+description = "Display channels within a server"
+
+[[mcp.tools]]
+name = "get_channel_info"
+description = "Obtain details about a specific channel"
+
+[[mcp.tools]]
+name = "send_message"
+description = "Post messages with embed and reply support"
+
+[[mcp.tools]]
+name = "get_channel_messages"
+description = "Retrieve message history with pagination"
+
+[[mcp.tools]]
+name = "edit_message"
+description = "Modify message content or embeds"
+
+[[mcp.tools]]
+name = "delete_message"
+description = "Remove a message from a channel"
+
+[[mcp.tools]]
+name = "add_reaction"
+description = "Attach emoji reactions to messages"
+
+[[mcp.tools]]
+name = "list_roles"
+description = "Show all server roles"
+
+[[mcp.tools]]
+name = "get_role_info"
+description = "Get detailed information about a role"
+
+[[mcp.tools]]
+name = "create_role"
+description = "Create a new server role"
+
+[[mcp.tools]]
+name = "delete_role"
+description = "Remove a server role"
+
+[[mcp.tools]]
+name = "assign_role"
+description = "Grant a role to a user"
+
+[[mcp.tools]]
+name = "unassign_role"
+description = "Revoke a role from a user"

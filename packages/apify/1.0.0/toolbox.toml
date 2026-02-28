@@ -1,0 +1,96 @@
+[tool]
+name = "apify"
+version = "1.0.0"
+description = "Web scraping, automation, and data extraction via Apify Actors platform"
+author = "apify"
+homepage = "https://github.com/apify/apify-mcp-server"
+license = "Apache-2.0"
+
+[binary]
+entry = "apify-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+max_memory_mb = 512
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "search-actors"
+description = "Search for Actors in the Apify Store"
+
+[[mcp.tools]]
+name = "fetch-actor-details"
+description = "Retrieve detailed information about a specific Actor"
+
+[[mcp.tools]]
+name = "call-actor"
+description = "Call an Actor and get its run results"
+
+[[mcp.tools]]
+name = "add-actor"
+description = "Add an Actor as a new tool for the user to call"
+
+[[mcp.tools]]
+name = "get-actor-run"
+description = "Get detailed information about a specific Actor run"
+
+[[mcp.tools]]
+name = "get-actor-run-list"
+description = "Get a list of an Actor's runs, filterable by status"
+
+[[mcp.tools]]
+name = "get-actor-log"
+description = "Retrieve the logs for a specific Actor run"
+
+[[mcp.tools]]
+name = "get-dataset"
+description = "Get metadata about a specific dataset"
+
+[[mcp.tools]]
+name = "get-dataset-items"
+description = "Retrieve items from a dataset with filtering and pagination"
+
+[[mcp.tools]]
+name = "get-dataset-schema"
+description = "Generate a JSON schema from dataset items"
+
+[[mcp.tools]]
+name = "get-dataset-list"
+description = "List all available datasets"
+
+[[mcp.tools]]
+name = "get-key-value-store"
+description = "Get metadata about a key-value store"
+
+[[mcp.tools]]
+name = "get-key-value-store-keys"
+description = "List the keys within a key-value store"
+
+[[mcp.tools]]
+name = "get-key-value-store-record"
+description = "Get the value for a specific key in a key-value store"
+
+[[mcp.tools]]
+name = "get-key-value-store-list"
+description = "List all available key-value stores"
+
+[[mcp.tools]]
+name = "search-apify-docs"
+description = "Search the Apify documentation for relevant pages"
+
+[[mcp.tools]]
+name = "fetch-apify-docs"
+description = "Fetch the full content of an Apify documentation page"
+
+[[mcp.tools]]
+name = "get-actor-output"
+description = "Retrieve the output from an Actor call"
+
+[[mcp.tools]]
+name = "apify-slash-rag-web-browser"
+description = "An Actor tool to browse the web"

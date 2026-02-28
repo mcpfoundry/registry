@@ -1,0 +1,19 @@
+{
+  "tool_id": "e2b",
+  "version": "0.1.0",
+  "author": "e2b-dev",
+  "pinned_at": "2026-02-28T02:44:37Z",
+  "source": {
+    "type": "github",
+    "owner": "e2b-dev",
+    "repo": "mcp-server",
+    "homepage": "https://github.com/e2b-dev/mcp-server",
+    "archive_url": "https://github.com/e2b-dev/mcp-server/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "e2b-0.1.0.tar.gz",
+    "size_bytes": 213285,
+    "sha512": "db1e51be5a9cfe26983b9422f7f0d79299894297edf0adba7df69d47181503eb9cac18954d77f946dea14029c2fd817938a65b2d856d1ea378e6fe9fbfa7539e",
+    "sha256": "93dfa087e4a8a5a9ab89f47dd7b56ccaf91cd31e9733aa1d43f8c24566f94ea3"
+  }
+}

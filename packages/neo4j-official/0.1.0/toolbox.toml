@@ -1,0 +1,32 @@
+[tool]
+name = "neo4j-official"
+version = "0.1.0"
+description = "Neo4j graph database operations including Cypher queries, schema inspection, and knowledge graphs"
+author = "neo4j-contrib"
+homepage = "https://github.com/neo4j-contrib/mcp-neo4j"
+license = "Apache-2.0"
+
+[binary]
+entry = "mcp-neo4j-cypher"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+max_memory_mb = 512
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "read_neo4j_cypher"
+description = "Execute a read-only Cypher query on the Neo4j database"
+
+[[mcp.tools]]
+name = "write_neo4j_cypher"
+description = "Execute a write Cypher query on the Neo4j database"
+
+[[mcp.tools]]
+name = "get_neo4j_schema"
+description = "Retrieve the database schema including node labels, relationships, and properties"

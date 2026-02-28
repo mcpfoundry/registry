@@ -1,0 +1,95 @@
+[tool]
+name = "kubernetes-community"
+version = "1.0.0"
+description = "Kubernetes and OpenShift cluster management via native Go MCP server"
+author = "manusa"
+homepage = "https://github.com/manusa/kubernetes-mcp-server"
+license = "Apache-2.0"
+
+[binary]
+entry = "kubernetes-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = [
+    "read:~/.kube"
+]
+network = true
+env_vars = ["HOME", "PATH", "KUBECONFIG"]
+max_memory_mb = 512
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "pods_list"
+description = "List pods in a namespace or across all namespaces"
+
+[[mcp.tools]]
+name = "pods_get"
+description = "Get detailed information about a specific pod"
+
+[[mcp.tools]]
+name = "pods_delete"
+description = "Delete a pod"
+
+[[mcp.tools]]
+name = "pods_log"
+description = "Retrieve logs from a pod container"
+
+[[mcp.tools]]
+name = "pods_exec"
+description = "Execute a command inside a running pod"
+
+[[mcp.tools]]
+name = "pods_run"
+description = "Run a new pod with a specified image"
+
+[[mcp.tools]]
+name = "resources_list"
+description = "List any Kubernetes resource type"
+
+[[mcp.tools]]
+name = "resources_get"
+description = "Get a specific Kubernetes resource"
+
+[[mcp.tools]]
+name = "resources_create_or_update"
+description = "Create or update a Kubernetes resource from YAML/JSON"
+
+[[mcp.tools]]
+name = "resources_delete"
+description = "Delete a Kubernetes resource"
+
+[[mcp.tools]]
+name = "namespaces_list"
+description = "List all namespaces in the cluster"
+
+[[mcp.tools]]
+name = "events_list"
+description = "List Kubernetes events"
+
+[[mcp.tools]]
+name = "nodes_list"
+description = "List all cluster nodes with status and resource usage"
+
+[[mcp.tools]]
+name = "helm_install"
+description = "Install a Helm chart release"
+
+[[mcp.tools]]
+name = "helm_list"
+description = "List installed Helm releases"
+
+[[mcp.tools]]
+name = "helm_uninstall"
+description = "Uninstall a Helm release"
+
+[[mcp.tools]]
+name = "config_view"
+description = "View the current kubeconfig"
+
+[[mcp.tools]]
+name = "config_list_contexts"
+description = "List available kubeconfig contexts"

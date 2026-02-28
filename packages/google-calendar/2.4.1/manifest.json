@@ -1,0 +1,19 @@
+{
+  "tool_id": "google-calendar",
+  "version": "2.4.1",
+  "author": "nspady",
+  "pinned_at": "2026-02-28T02:45:00Z",
+  "source": {
+    "type": "github",
+    "owner": "nspady",
+    "repo": "google-calendar-mcp",
+    "homepage": "https://github.com/nspady/google-calendar-mcp",
+    "archive_url": "https://github.com/nspady/google-calendar-mcp/archive/refs/tags/v2.4.1.tar.gz"
+  },
+  "artifact": {
+    "filename": "google-calendar-2.4.1.tar.gz",
+    "size_bytes": 331326,
+    "sha512": "85d72e3cde3d7a74e4ad201505eadd14be1553045331bd471b7f0ff7502e33b12c5720a23043e2f3321d5d6774c086d37d0940378fe32f6bf4ad40a39e01852a",
+    "sha256": "9ed84e3f449b2c056e2dab313fe9b55ee3ecdc1205db2e9ca30737c01b553176"
+  }
+}

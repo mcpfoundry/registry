@@ -1,0 +1,64 @@
+[tool]
+name = "sentry-official"
+version = "0.1.0"
+description = "Sentry error tracking and performance monitoring for issue analysis and debugging"
+author = "getsentry"
+homepage = "https://github.com/getsentry/sentry-mcp"
+license = "Apache-2.0"
+
+[binary]
+entry = "sentry-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = ["sentry.io", "us.sentry.io"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "list_projects"
+description = "List all accessible Sentry projects for a given organization"
+
+[[mcp.tools]]
+name = "resolve_short_id"
+description = "Retrieve details about an issue using its short ID"
+
+[[mcp.tools]]
+name = "get_sentry_event"
+description = "Retrieve and analyze a specific Sentry event from an issue"
+
+[[mcp.tools]]
+name = "list_error_events_in_project"
+description = "List error events from a specific Sentry project"
+
+[[mcp.tools]]
+name = "create_project"
+description = "Create a new project in Sentry and retrieve its client keys"
+
+[[mcp.tools]]
+name = "list_project_issues"
+description = "List issues from a specific Sentry project"
+
+[[mcp.tools]]
+name = "list_issue_events"
+description = "List events for a specific Sentry issue"
+
+[[mcp.tools]]
+name = "get_sentry_issue"
+description = "Retrieve and analyze a Sentry issue"
+
+[[mcp.tools]]
+name = "list_organization_replays"
+description = "List session replays from a specific Sentry organization"
+
+[[mcp.tools]]
+name = "search_events"
+description = "AI-powered search translating natural language to Sentry query syntax for events"
+
+[[mcp.tools]]
+name = "search_issues"
+description = "AI-powered search translating natural language to Sentry query syntax for issues"

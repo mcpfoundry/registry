@@ -1,0 +1,152 @@
+[tool]
+name = "crowdstrike"
+version = "0.1.0"
+description = "CrowdStrike Falcon security platform integration for threat hunting and security analysis"
+author = "CrowdStrike"
+homepage = "https://github.com/CrowdStrike/falcon-mcp"
+license = "MIT"
+
+[binary]
+entry = "falcon-mcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = ["api.crowdstrike.com"]
+max_memory_mb = 512
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "falcon_check_connectivity"
+description = "Verify Falcon API connection"
+
+[[mcp.tools]]
+name = "falcon_list_enabled_modules"
+description = "Show active modules"
+
+[[mcp.tools]]
+name = "falcon_list_modules"
+description = "Display all available modules"
+
+[[mcp.tools]]
+name = "falcon_search_detections"
+description = "Find and analyze detections to understand malicious activity"
+
+[[mcp.tools]]
+name = "falcon_get_detection_details"
+description = "Retrieve comprehensive detection details for specific detection IDs"
+
+[[mcp.tools]]
+name = "falcon_search_hosts"
+description = "Query host and device information"
+
+[[mcp.tools]]
+name = "falcon_get_host_details"
+description = "Retrieve specific host details"
+
+[[mcp.tools]]
+name = "falcon_show_crowd_score"
+description = "View calculated CrowdScores and security posture metrics"
+
+[[mcp.tools]]
+name = "falcon_search_incidents"
+description = "Find coordinated security activities"
+
+[[mcp.tools]]
+name = "falcon_get_incident_details"
+description = "Examine attack patterns for a specific incident"
+
+[[mcp.tools]]
+name = "falcon_search_behaviors"
+description = "Locate suspicious activities"
+
+[[mcp.tools]]
+name = "falcon_get_behavior_details"
+description = "Analyze attack techniques for a specific behavior"
+
+[[mcp.tools]]
+name = "falcon_search_actors"
+description = "Research threat actors"
+
+[[mcp.tools]]
+name = "falcon_search_indicators"
+description = "Find indicators of compromise"
+
+[[mcp.tools]]
+name = "falcon_search_reports"
+description = "Access threat intelligence publications"
+
+[[mcp.tools]]
+name = "falcon_get_mitre_report"
+description = "Generate MITRE ATT&CK reports"
+
+[[mcp.tools]]
+name = "falcon_search_vulnerabilities"
+description = "Search vulnerability data via Spotlight"
+
+[[mcp.tools]]
+name = "falcon_search_iocs"
+description = "Search custom indicators of compromise"
+
+[[mcp.tools]]
+name = "falcon_add_ioc"
+description = "Create or submit indicators of compromise"
+
+[[mcp.tools]]
+name = "falcon_remove_iocs"
+description = "Delete indicators of compromise by ID or filter"
+
+[[mcp.tools]]
+name = "falcon_search_applications"
+description = "Query application inventory via Falcon Discover"
+
+[[mcp.tools]]
+name = "falcon_search_unmanaged_assets"
+description = "Locate systems without Falcon sensors"
+
+[[mcp.tools]]
+name = "idp_investigate_entity"
+description = "Analyze users and endpoints with timeline and relationship mapping"
+
+[[mcp.tools]]
+name = "search_ngsiem"
+description = "Execute CQL queries against Next-Gen SIEM"
+
+[[mcp.tools]]
+name = "falcon_search_kubernetes_containers"
+description = "Query container inventory in cloud security"
+
+[[mcp.tools]]
+name = "falcon_count_kubernetes_containers"
+description = "Count containers by filter"
+
+[[mcp.tools]]
+name = "falcon_search_images_vulnerabilities"
+description = "Find image vulnerabilities in cloud environments"
+
+[[mcp.tools]]
+name = "falcon_search_sensor_usage"
+description = "Query weekly sensor deployment data"
+
+[[mcp.tools]]
+name = "falcon_search_scheduled_reports"
+description = "Find reports in your environment"
+
+[[mcp.tools]]
+name = "falcon_launch_scheduled_report"
+description = "Execute a scheduled report on-demand"
+
+[[mcp.tools]]
+name = "falcon_search_report_executions"
+description = "Track report status and results"
+
+[[mcp.tools]]
+name = "falcon_download_report_execution"
+description = "Retrieve generated report files"
+
+[[mcp.tools]]
+name = "falcon_search_serverless_vulnerabilities"
+description = "Query serverless function vulnerabilities"

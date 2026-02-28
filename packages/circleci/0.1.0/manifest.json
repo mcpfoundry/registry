@@ -1,0 +1,19 @@
+{
+  "tool_id": "circleci",
+  "version": "0.1.0",
+  "author": "CircleCI-Public",
+  "pinned_at": "2026-02-28T02:43:45Z",
+  "source": {
+    "type": "github",
+    "owner": "CircleCI-Public",
+    "repo": "mcp-server-circleci",
+    "homepage": "https://github.com/CircleCI-Public/mcp-server-circleci",
+    "archive_url": "https://github.com/CircleCI-Public/mcp-server-circleci/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "circleci-0.1.0.tar.gz",
+    "size_bytes": 130240,
+    "sha512": "31544def435cd3c6eac81504641d9ceafb119d57f1cdcfdf91a74df9ccd990a7b6244a6931da977a20ee6446607f782961d70b8c87eda103bead3537a6710143",
+    "sha256": "6f84d89979ed5f81684a5b47421d019e2436f8f2c1ddebb40e47b8753f6e2789"
+  }
+}

@@ -1,0 +1,41 @@
+[tool]
+name = "docker-community"
+version = "1.0.0"
+description = "Docker container and compose stack management"
+author = "QuantGeekDev"
+homepage = "https://github.com/QuantGeekDev/docker-mcp"
+license = "MIT"
+
+[binary]
+entry = "docker-mcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+runtime = "python"
+min_version = "3.12"
+
+[permissions]
+filesystem = [
+    "read:/var/run/docker.sock"
+]
+network = true
+env_vars = ["HOME", "PATH", "DOCKER_HOST"]
+max_memory_mb = 512
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "create-container"
+description = "Create a standalone Docker container with image, name, ports, and environment variables"
+
+[[mcp.tools]]
+name = "deploy-compose"
+description = "Deploy a Docker Compose stack using project name and compose YAML configuration"
+
+[[mcp.tools]]
+name = "get-logs"
+description = "Retrieve logs from a specific container"
+
+[[mcp.tools]]
+name = "list-containers"
+description = "List all Docker containers"

@@ -1,0 +1,19 @@
+{
+  "tool_id": "ollama",
+  "version": "0.1.0",
+  "author": "rawveg",
+  "pinned_at": "2026-02-28T02:46:04Z",
+  "source": {
+    "type": "github",
+    "owner": "rawveg",
+    "repo": "ollama-mcp",
+    "homepage": "https://github.com/rawveg/ollama-mcp",
+    "archive_url": "https://github.com/rawveg/ollama-mcp/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "ollama-0.1.0.tar.gz",
+    "size_bytes": 68474,
+    "sha512": "7bacac2b79d6ce8ef426017b68b0a43e1f3a76b8883fc9dfdd370a4075f0b6e8f894c366ae9f97d5d8c6634b787e05ec0c9660de0f45aa39105a4c6b839b5c25",
+    "sha256": "a6202500a178528ba129a733f37af9521d2de93e98bd3365d759b49479d9dc9e"
+  }
+}

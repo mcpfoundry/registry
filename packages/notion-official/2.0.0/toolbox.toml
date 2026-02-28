@@ -1,0 +1,76 @@
+[tool]
+name = "notion-official"
+version = "2.0.0"
+description = "Official Notion workspace MCP server with data source, page, and database management"
+author = "makenotion"
+homepage = "https://github.com/makenotion/notion-mcp-server"
+license = "MIT"
+
+[binary]
+entry = "notion-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "search"
+description = "Find pages and data sources by name or ID"
+
+[[mcp.tools]]
+name = "query-data-source"
+description = "Query a data source with filters and sorts"
+
+[[mcp.tools]]
+name = "retrieve-a-data-source"
+description = "Get metadata and schema for a data source"
+
+[[mcp.tools]]
+name = "update-a-data-source"
+description = "Update data source properties"
+
+[[mcp.tools]]
+name = "create-a-data-source"
+description = "Create a new data source"
+
+[[mcp.tools]]
+name = "list-data-source-templates"
+description = "List available templates in a data source"
+
+[[mcp.tools]]
+name = "retrieve-a-page"
+description = "Get page content in Markdown"
+
+[[mcp.tools]]
+name = "update-a-page"
+description = "Modify page properties"
+
+[[mcp.tools]]
+name = "create-a-page"
+description = "Add new pages to a workspace"
+
+[[mcp.tools]]
+name = "move-page"
+description = "Relocate a page to a different parent"
+
+[[mcp.tools]]
+name = "retrieve-a-database"
+description = "Get database metadata including data source IDs"
+
+[[mcp.tools]]
+name = "append-block-children"
+description = "Add content blocks to pages"
+
+[[mcp.tools]]
+name = "retrieve-block-children"
+description = "Fetch block content from a page"
+
+[[mcp.tools]]
+name = "create-a-comment"
+description = "Add comments to pages"

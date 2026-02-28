@@ -1,0 +1,19 @@
+{
+  "tool_id": "cloudinary",
+  "version": "0.1.0",
+  "author": "cloudinary",
+  "pinned_at": "2026-02-28T02:43:51Z",
+  "source": {
+    "type": "github",
+    "owner": "cloudinary",
+    "repo": "mcp-servers",
+    "homepage": "https://github.com/cloudinary/mcp-servers",
+    "archive_url": "https://github.com/cloudinary/mcp-servers/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "cloudinary-0.1.0.tar.gz",
+    "size_bytes": 5488,
+    "sha512": "a50e3bb0661b23b3b477126d2eb51174c0fefe4b2d6f68f6f4790a782a35ddd4befcbb3b13b46aa3fc017cbe410d5fb29738ff0c842fa9cb45c1513378179945",
+    "sha256": "732aed24ce5079ee9b958508d6ce6c973de4ba84019d5be18b2cf7ed8e9cb46d"
+  }
+}

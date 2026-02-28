@@ -1,0 +1,88 @@
+[tool]
+name = "netlify"
+version = "0.1.0"
+description = "Netlify web platform deployment and management MCP server"
+author = "netlify"
+homepage = "https://github.com/netlify/netlify-mcp"
+license = "MIT"
+
+[binary]
+entry = "netlify-mcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = ["read:~/"]
+network = true
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "create_project"
+description = "Create a new Netlify project/site"
+
+[[mcp.tools]]
+name = "list_sites"
+description = "List all Netlify sites"
+
+[[mcp.tools]]
+name = "get_site"
+description = "Get details about a specific Netlify site"
+
+[[mcp.tools]]
+name = "deploy_site"
+description = "Deploy code to a Netlify site"
+
+[[mcp.tools]]
+name = "delete_site"
+description = "Delete a Netlify site"
+
+[[mcp.tools]]
+name = "list_deploys"
+description = "List deployments for a site"
+
+[[mcp.tools]]
+name = "get_deploy"
+description = "Get details about a specific deployment"
+
+[[mcp.tools]]
+name = "rollback_deploy"
+description = "Rollback to a previous deployment"
+
+[[mcp.tools]]
+name = "manage_env_vars"
+description = "Create and manage environment variables and secrets"
+
+[[mcp.tools]]
+name = "manage_access"
+description = "Modify access controls for project security"
+
+[[mcp.tools]]
+name = "install_extension"
+description = "Install a Netlify extension"
+
+[[mcp.tools]]
+name = "uninstall_extension"
+description = "Uninstall a Netlify extension"
+
+[[mcp.tools]]
+name = "get_user_info"
+description = "Fetch user and team information"
+
+[[mcp.tools]]
+name = "manage_forms"
+description = "Enable and manage form submissions"
+
+[[mcp.tools]]
+name = "manage_blobs"
+description = "Manage Netlify Blobs storage"
+
+[[mcp.tools]]
+name = "start_dev_server"
+description = "Start a local Netlify dev server"
+
+[[mcp.tools]]
+name = "get_analytics"
+description = "Fetch site analytics data"

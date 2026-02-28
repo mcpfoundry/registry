@@ -1,0 +1,19 @@
+{
+  "tool_id": "dbt",
+  "version": "0.4.0",
+  "author": "dbt-labs",
+  "pinned_at": "2026-02-28T02:44:26Z",
+  "source": {
+    "type": "github",
+    "owner": "dbt-labs",
+    "repo": "dbt-mcp",
+    "homepage": "https://github.com/dbt-labs/dbt-mcp",
+    "archive_url": "https://github.com/dbt-labs/dbt-mcp/archive/refs/tags/v0.4.0.tar.gz"
+  },
+  "artifact": {
+    "filename": "dbt-0.4.0.tar.gz",
+    "size_bytes": 381228,
+    "sha512": "33ca4cd62f25e218ee471e2fc1bd5698624a0064297840f614920d5bdc33c054e95fdf81205ff5f9bdecc51423dec3fff391d9fba4d5fdb89cea30f027703a49",
+    "sha256": "42208623dbec8411466ec523632c4e24443f631b5b86d6cbbe0ba871fa3fe0f5"
+  }
+}

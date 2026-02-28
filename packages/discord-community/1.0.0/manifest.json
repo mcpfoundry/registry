@@ -1,0 +1,19 @@
+{
+  "tool_id": "discord-community",
+  "version": "1.0.0",
+  "author": "tolgasumer",
+  "pinned_at": "2026-02-28T02:44:32Z",
+  "source": {
+    "type": "github",
+    "owner": "tolgasumer",
+    "repo": "discord-mcp",
+    "homepage": "https://github.com/tolgasumer/discord-mcp",
+    "archive_url": "https://github.com/tolgasumer/discord-mcp/archive/refs/heads/master.tar.gz"
+  },
+  "artifact": {
+    "filename": "discord-community-1.0.0.tar.gz",
+    "size_bytes": 32421,
+    "sha512": "5ffd41c492ed4fd6841fac0914f17dd410aff7d6930e80338f196f914071b579483340c9f3e1b837aae38539052f6eb0a1e5988547264db6f9520c29dde52790",
+    "sha256": "3bb87faa953713fb511b255ee4998cd1c2bd5a53cc6efc18e3d68f48d7ce807a"
+  }
+}

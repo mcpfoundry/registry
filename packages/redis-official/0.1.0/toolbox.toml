@@ -1,0 +1,64 @@
+[tool]
+name = "redis-official"
+version = "0.1.0"
+description = "Redis data structure operations, pub/sub, vector search, and documentation access"
+author = "redis"
+homepage = "https://github.com/redis/mcp-redis"
+license = "MIT"
+
+[binary]
+entry = "mcp-redis"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "string"
+description = "Set and get strings with expiration for caching and session data"
+
+[[mcp.tools]]
+name = "hash"
+description = "Store field-value pairs including vector embeddings for object representation"
+
+[[mcp.tools]]
+name = "list"
+description = "Append and pop items for queues and message brokers"
+
+[[mcp.tools]]
+name = "set"
+description = "Add, remove, and list members for unique value tracking"
+
+[[mcp.tools]]
+name = "sorted_set"
+description = "Manage score-based ordered data for leaderboards and priority queues"
+
+[[mcp.tools]]
+name = "streams"
+description = "Add, read, and delete from data streams with consumer group support"
+
+[[mcp.tools]]
+name = "json"
+description = "Store, retrieve, and manipulate JSON documents with path-based access"
+
+[[mcp.tools]]
+name = "pub_sub"
+description = "Publish messages to channels and subscribe for real-time notifications"
+
+[[mcp.tools]]
+name = "docs"
+description = "Search Redis documentation using natural language queries"
+
+[[mcp.tools]]
+name = "query_engine"
+description = "Manage vector indexes and perform vector search operations"
+
+[[mcp.tools]]
+name = "server_management"
+description = "Retrieve database information and server status"

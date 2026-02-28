@@ -1,0 +1,19 @@
+{
+  "tool_id": "sentry-official",
+  "version": "0.1.0",
+  "author": "getsentry",
+  "pinned_at": "2026-02-28T02:46:28Z",
+  "source": {
+    "type": "github",
+    "owner": "getsentry",
+    "repo": "sentry-mcp",
+    "homepage": "https://github.com/getsentry/sentry-mcp",
+    "archive_url": "https://github.com/getsentry/sentry-mcp/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "sentry-official-0.1.0.tar.gz",
+    "size_bytes": 11430979,
+    "sha512": "a5fce7ede65b3f72f6ab93e1a7e2f289a7e680688819ebcbe31c8d36d41f9ec5718b6f77d3ad6a388810985bbb84ddd893291f4c396c09cde78a459a4a886af4",
+    "sha256": "2b8b89b32b0ba110f4a0456d20615e2ffff4f2c1ea61b7950aa190058d70ef56"
+  }
+}

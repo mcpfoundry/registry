@@ -1,0 +1,41 @@
+[tool]
+name = "elasticsearch-community"
+version = "0.4.6"
+description = "Elasticsearch cluster interaction, search, and index management"
+author = "elastic"
+homepage = "https://github.com/elastic/mcp-server-elasticsearch"
+license = "Apache-2.0"
+
+[binary]
+entry = "mcp-server-elasticsearch"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+env_vars = ["HOME", "PATH", "ELASTICSEARCH_URL", "ELASTICSEARCH_API_KEY"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "list_indices"
+description = "List all available Elasticsearch indices"
+
+[[mcp.tools]]
+name = "get_mappings"
+description = "Get field mappings for a specific Elasticsearch index"
+
+[[mcp.tools]]
+name = "search"
+description = "Perform an Elasticsearch search with the provided query DSL"
+
+[[mcp.tools]]
+name = "esql"
+description = "Perform an ES|QL query"
+
+[[mcp.tools]]
+name = "get_shards"
+description = "Get shard information for all or specific indices"

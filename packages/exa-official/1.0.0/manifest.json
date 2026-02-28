@@ -1,0 +1,19 @@
+{
+  "tool_id": "exa-official",
+  "version": "1.0.0",
+  "author": "exa-labs",
+  "pinned_at": "2026-02-28T02:44:43Z",
+  "source": {
+    "type": "github",
+    "owner": "exa-labs",
+    "repo": "exa-mcp-server",
+    "homepage": "https://github.com/exa-labs/exa-mcp-server",
+    "archive_url": "https://github.com/exa-labs/exa-mcp-server/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "exa-official-1.0.0.tar.gz",
+    "size_bytes": 181311,
+    "sha512": "c02144a3e78a6f7b2ccb59521b6acb6758376e2fd2ee730b4d47d30e4a449a0ad48883e1a6f33cc3f1127f340f1a599ee9a74943129d0735ec629ce1d15ed4b6",
+    "sha256": "43e2feff3d58aae71e2667f0ff96fb965b53b79aaaab7c610203e7264633532e"
+  }
+}

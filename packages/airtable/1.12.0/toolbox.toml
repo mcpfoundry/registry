@@ -1,0 +1,83 @@
+[tool]
+name = "airtable"
+version = "1.12.0"
+description = "Read and write access to Airtable databases"
+author = "domdomegg"
+homepage = "https://github.com/domdomegg/airtable-mcp-server"
+license = "MIT"
+
+[binary]
+entry = "airtable-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+runtime = "node"
+min_version = "18"
+
+[permissions]
+filesystem = false
+network = true
+env_vars = ["HOME", "PATH", "AIRTABLE_API_KEY"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "list_records"
+description = "Retrieve records from a table with optional filtering"
+
+[[mcp.tools]]
+name = "search_records"
+description = "Search for records containing specific text"
+
+[[mcp.tools]]
+name = "list_bases"
+description = "View all accessible Airtable bases"
+
+[[mcp.tools]]
+name = "list_tables"
+description = "List tables within a specific base"
+
+[[mcp.tools]]
+name = "describe_table"
+description = "Get detailed information about a single table"
+
+[[mcp.tools]]
+name = "get_record"
+description = "Fetch a specific record by ID"
+
+[[mcp.tools]]
+name = "create_record"
+description = "Add new records to a table"
+
+[[mcp.tools]]
+name = "update_records"
+description = "Modify existing records"
+
+[[mcp.tools]]
+name = "delete_records"
+description = "Remove records from a table"
+
+[[mcp.tools]]
+name = "create_table"
+description = "Create new tables in a base"
+
+[[mcp.tools]]
+name = "update_table"
+description = "Modify table metadata"
+
+[[mcp.tools]]
+name = "create_field"
+description = "Add new fields to a table"
+
+[[mcp.tools]]
+name = "update_field"
+description = "Modify field properties"
+
+[[mcp.tools]]
+name = "create_comment"
+description = "Post comments on records"
+
+[[mcp.tools]]
+name = "list_comments"
+description = "Retrieve record comments"

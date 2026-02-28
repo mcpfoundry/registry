@@ -1,0 +1,128 @@
+[tool]
+name = "grafana-official"
+version = "0.1.0"
+description = "Grafana dashboards, alerting, and observability data access via official MCP server"
+author = "grafana"
+homepage = "https://github.com/grafana/mcp-grafana"
+license = "AGPL-3.0"
+
+[binary]
+entry = "mcp-grafana"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+max_memory_mb = 512
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "search_dashboards"
+description = "Find dashboards by title or metadata"
+
+[[mcp.tools]]
+name = "get_dashboard_by_uid"
+description = "Retrieve full dashboard details by UID"
+
+[[mcp.tools]]
+name = "get_dashboard_summary"
+description = "Get a compact dashboard overview"
+
+[[mcp.tools]]
+name = "get_dashboard_property"
+description = "Extract specific dashboard parts via JSONPath"
+
+[[mcp.tools]]
+name = "update_dashboard"
+description = "Create or modify a dashboard"
+
+[[mcp.tools]]
+name = "patch_dashboard"
+description = "Apply targeted changes to a dashboard"
+
+[[mcp.tools]]
+name = "get_dashboard_panel_queries"
+description = "Extract panel queries and datasource information"
+
+[[mcp.tools]]
+name = "list_datasources"
+description = "View configured datasources"
+
+[[mcp.tools]]
+name = "get_datasource"
+description = "Retrieve datasource details"
+
+[[mcp.tools]]
+name = "run_panel_query"
+description = "Execute a dashboard panel query"
+
+[[mcp.tools]]
+name = "query_prometheus"
+description = "Run PromQL queries"
+
+[[mcp.tools]]
+name = "list_prometheus_metric_names"
+description = "Discover available Prometheus metrics"
+
+[[mcp.tools]]
+name = "list_prometheus_label_names"
+description = "Query Prometheus label names"
+
+[[mcp.tools]]
+name = "list_prometheus_label_values"
+description = "Query Prometheus label values"
+
+[[mcp.tools]]
+name = "query_loki_logs"
+description = "Execute LogQL queries for log data"
+
+[[mcp.tools]]
+name = "list_loki_label_names"
+description = "Discover Loki log labels"
+
+[[mcp.tools]]
+name = "query_clickhouse"
+description = "Run SQL queries against ClickHouse"
+
+[[mcp.tools]]
+name = "query_cloudwatch"
+description = "Execute CloudWatch queries"
+
+[[mcp.tools]]
+name = "query_elasticsearch"
+description = "Search Elasticsearch via Grafana"
+
+[[mcp.tools]]
+name = "list_alert_rules"
+description = "View alert rules"
+
+[[mcp.tools]]
+name = "create_alert_rule"
+description = "Define new alert rules"
+
+[[mcp.tools]]
+name = "list_incidents"
+description = "View Grafana Incidents"
+
+[[mcp.tools]]
+name = "create_incident"
+description = "Create a new incident"
+
+[[mcp.tools]]
+name = "generate_deeplinks"
+description = "Create accurate resource URLs for Grafana navigation"
+
+[[mcp.tools]]
+name = "list_teams"
+description = "View teams in the organization"
+
+[[mcp.tools]]
+name = "list_users_by_org"
+description = "View organization users"
+
+[[mcp.tools]]
+name = "list_all_roles"
+description = "Display available roles"

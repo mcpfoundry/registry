@@ -1,0 +1,80 @@
+[tool]
+name = "aws"
+version = "0.1.0"
+description = "AWS service integration MCP server with documentation, IaC, and resource management"
+author = "awslabs"
+homepage = "https://github.com/awslabs/mcp"
+license = "Apache-2.0"
+
+[binary]
+entry = "awslabs-mcp-server"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = ["read:~/.aws"]
+network = true
+max_memory_mb = 512
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "search_documentation"
+description = "Search latest AWS documentation, API references, and getting started guides"
+
+[[mcp.tools]]
+name = "read_documentation"
+description = "Read specific AWS documentation pages"
+
+[[mcp.tools]]
+name = "search_whats_new"
+description = "Search AWS What's New posts for recent service updates"
+
+[[mcp.tools]]
+name = "create_iac_project"
+description = "Create a new Infrastructure as Code project using CloudFormation or CDK"
+
+[[mcp.tools]]
+name = "validate_template"
+description = "Validate CloudFormation templates for correctness and best practices"
+
+[[mcp.tools]]
+name = "scan_security"
+description = "Scan IaC templates for security issues and misconfigurations"
+
+[[mcp.tools]]
+name = "manage_resource"
+description = "Manage AWS resources via Cloud Control API"
+
+[[mcp.tools]]
+name = "describe_resource"
+description = "Describe an AWS resource and its current configuration"
+
+[[mcp.tools]]
+name = "list_resources"
+description = "List AWS resources of a given type"
+
+[[mcp.tools]]
+name = "deploy_serverless"
+description = "Deploy serverless applications using SAM CLI"
+
+[[mcp.tools]]
+name = "manage_eks_cluster"
+description = "Manage Amazon EKS Kubernetes clusters and deployments"
+
+[[mcp.tools]]
+name = "manage_ecs_service"
+description = "Manage Amazon ECS container services and task definitions"
+
+[[mcp.tools]]
+name = "invoke_lambda"
+description = "Execute Lambda functions as AI tools for private resource access"
+
+[[mcp.tools]]
+name = "create_support_case"
+description = "Create and manage AWS Support cases"
+
+[[mcp.tools]]
+name = "run_terraform"
+description = "Run Terraform workflows with integrated security scanning for AWS"

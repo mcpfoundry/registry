@@ -1,0 +1,107 @@
+[tool]
+name = "telegram-community"
+version = "1.0.0"
+description = "Full-featured Telegram integration with messaging, groups, contacts, and media"
+author = "chigwell"
+homepage = "https://github.com/chigwell/telegram-mcp"
+license = "Apache-2.0"
+
+[binary]
+entry = "telegram-mcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+runtime = "python"
+min_version = "3.10"
+
+[permissions]
+filesystem = [
+    "read:~/Downloads",
+    "write:~/Downloads",
+    "readwrite:/tmp"
+]
+network = true
+env_vars = ["HOME", "PATH", "TELEGRAM_API_ID", "TELEGRAM_API_HASH", "TELEGRAM_PHONE"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "get_chats"
+description = "Get a paginated list of chats"
+
+[[mcp.tools]]
+name = "list_chats"
+description = "List chats with metadata and filtering"
+
+[[mcp.tools]]
+name = "get_chat"
+description = "Get detailed info about a specific chat"
+
+[[mcp.tools]]
+name = "send_message"
+description = "Send a message to a chat"
+
+[[mcp.tools]]
+name = "reply_to_message"
+description = "Reply to a specific message"
+
+[[mcp.tools]]
+name = "edit_message"
+description = "Edit your own message"
+
+[[mcp.tools]]
+name = "delete_message"
+description = "Delete a message"
+
+[[mcp.tools]]
+name = "forward_message"
+description = "Forward a message between chats"
+
+[[mcp.tools]]
+name = "get_messages"
+description = "Retrieve messages with pagination"
+
+[[mcp.tools]]
+name = "search_messages"
+description = "Search messages within a chat"
+
+[[mcp.tools]]
+name = "create_group"
+description = "Create a new group"
+
+[[mcp.tools]]
+name = "invite_to_group"
+description = "Invite users to a group or channel"
+
+[[mcp.tools]]
+name = "get_participants"
+description = "List all participants in a chat"
+
+[[mcp.tools]]
+name = "list_contacts"
+description = "List all contacts"
+
+[[mcp.tools]]
+name = "search_contacts"
+description = "Search contacts by query"
+
+[[mcp.tools]]
+name = "send_file"
+description = "Send a local file from allowed paths"
+
+[[mcp.tools]]
+name = "download_media"
+description = "Download message media to allowed paths"
+
+[[mcp.tools]]
+name = "pin_message"
+description = "Pin a message in a chat"
+
+[[mcp.tools]]
+name = "get_me"
+description = "Get your own user information"
+
+[[mcp.tools]]
+name = "resolve_username"
+description = "Resolve a Telegram username to an ID"

@@ -1,0 +1,19 @@
+{
+  "tool_id": "vercel-community",
+  "version": "1.0.0",
+  "author": "nganiet",
+  "pinned_at": "2026-02-28T02:46:49Z",
+  "source": {
+    "type": "github",
+    "owner": "nganiet",
+    "repo": "mcp-vercel",
+    "homepage": "https://github.com/nganiet/mcp-vercel",
+    "archive_url": "https://github.com/nganiet/mcp-vercel/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "vercel-community-1.0.0.tar.gz",
+    "size_bytes": 25108,
+    "sha512": "5f86b9c985fdb5b5dd64eb2aff829b60b212c17f2370fcbd08f5bc8041e835d4a4c68b5e9e1d1c9f701f1a663c4bb67e7b391bbbae4faa750ac767029d1b729b",
+    "sha256": "8df04030b130c3d723b0937c80eacb15f742bf600f6c875df776098dccbbb478"
+  }
+}

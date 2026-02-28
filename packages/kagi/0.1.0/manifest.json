@@ -1,0 +1,19 @@
+{
+  "tool_id": "kagi",
+  "version": "0.1.0",
+  "author": "kagisearch",
+  "pinned_at": "2026-02-28T02:45:26Z",
+  "source": {
+    "type": "github",
+    "owner": "kagisearch",
+    "repo": "kagimcp",
+    "homepage": "https://github.com/kagisearch/kagimcp",
+    "archive_url": "https://github.com/kagisearch/kagimcp/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "kagi-0.1.0.tar.gz",
+    "size_bytes": 24818,
+    "sha512": "69aac47dc54af521aedafa3c59830da5e8a8c0d507aedf8275a169456f75f64579dc78cea4e0c70a83bd8d2b0f245c2e20aad1e6951dc40c5c9edccc27f229bc",
+    "sha256": "eeb1cde78b759ce8abd5067c80822bdfe8149e8759860015d081678ee9857d9c"
+  }
+}

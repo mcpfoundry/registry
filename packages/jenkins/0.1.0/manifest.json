@@ -1,0 +1,19 @@
+{
+  "tool_id": "jenkins",
+  "version": "0.1.0",
+  "author": "jenkinsci",
+  "pinned_at": "2026-02-28T02:45:23Z",
+  "source": {
+    "type": "github",
+    "owner": "jenkinsci",
+    "repo": "mcp-server-plugin",
+    "homepage": "https://github.com/jenkinsci/mcp-server-plugin",
+    "archive_url": "https://github.com/jenkinsci/mcp-server-plugin/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "jenkins-0.1.0.tar.gz",
+    "size_bytes": 137035,
+    "sha512": "ecdd1fd2143583ad6f52699d3e714f8c009a0738762ec1da408e655b02a8966515e1007f39bc6ed805293d2d268be80dd93f0ad14b0220481958e64530ce366e",
+    "sha256": "508e1514e73905cf82a4a2621f6f96ffd8d8fb6005521f533e2d571f85d599f0"
+  }
+}

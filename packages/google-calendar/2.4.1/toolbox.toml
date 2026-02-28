@@ -1,0 +1,71 @@
+[tool]
+name = "google-calendar"
+version = "2.4.1"
+description = "Google Calendar management with multi-account and scheduling support"
+author = "nspady"
+homepage = "https://github.com/nspady/google-calendar-mcp"
+license = "MIT"
+
+[binary]
+entry = "google-calendar-mcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+runtime = "node"
+min_version = "18"
+
+[permissions]
+filesystem = false
+network = true
+env_vars = ["HOME", "PATH", "GOOGLE_CLIENT_ID", "GOOGLE_CLIENT_SECRET", "GOOGLE_REDIRECT_URI"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "list-calendars"
+description = "Display all available calendars"
+
+[[mcp.tools]]
+name = "list-events"
+description = "Retrieve events with date filtering capabilities"
+
+[[mcp.tools]]
+name = "get-event"
+description = "Fetch details for a specific event by ID"
+
+[[mcp.tools]]
+name = "search-events"
+description = "Query events using text search"
+
+[[mcp.tools]]
+name = "create-event"
+description = "Add new calendar events"
+
+[[mcp.tools]]
+name = "update-event"
+description = "Modify existing events"
+
+[[mcp.tools]]
+name = "delete-event"
+description = "Remove events"
+
+[[mcp.tools]]
+name = "respond-to-event"
+description = "Accept, decline, or respond tentatively to invitations"
+
+[[mcp.tools]]
+name = "get-freebusy"
+description = "Check availability across calendars"
+
+[[mcp.tools]]
+name = "get-current-time"
+description = "Display current date and time in calendar timezone"
+
+[[mcp.tools]]
+name = "list-colors"
+description = "Show available event color options"
+
+[[mcp.tools]]
+name = "manage-accounts"
+description = "Add, list, or remove connected Google accounts"

@@ -1,0 +1,32 @@
+[tool]
+name = "logfire"
+version = "0.1.0"
+description = "Pydantic Logfire observability for querying OpenTelemetry traces and metrics"
+author = "pydantic"
+homepage = "https://github.com/pydantic/logfire-mcp"
+license = "MIT"
+
+[binary]
+entry = "logfire-mcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = ["logfire-api.pydantic.dev"]
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "find_exceptions_in_file"
+description = "Get details about the 10 most recent exceptions in a file with configurable lookback window"
+
+[[mcp.tools]]
+name = "arbitrary_query"
+description = "Run an arbitrary SQL query on the Pydantic Logfire database"
+
+[[mcp.tools]]
+name = "logfire_link"
+description = "Create a link to view a trace in the Logfire UI"

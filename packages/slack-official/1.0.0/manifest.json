@@ -1,0 +1,19 @@
+{
+  "tool_id": "slack-official",
+  "version": "1.0.0",
+  "author": "zencoderai",
+  "pinned_at": "2026-02-28T02:46:32Z",
+  "source": {
+    "type": "github",
+    "owner": "zencoderai",
+    "repo": "slack-mcp-server",
+    "homepage": "https://github.com/zencoderai/slack-mcp-server",
+    "archive_url": "https://github.com/zencoderai/slack-mcp-server/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "slack-official-1.0.0.tar.gz",
+    "size_bytes": 66509,
+    "sha512": "75a415d74319c081abed1cf3ead221985a113155cff77546852db9b155dc736682d79a70a19f34a69ab8e9f7b8ed402c8823dbb757e66f1d91abe889e8340a88",
+    "sha256": "711fd62d96967f0c9c111e3454de7fa96032d7c858f44288efd1c9e126051d4a"
+  }
+}

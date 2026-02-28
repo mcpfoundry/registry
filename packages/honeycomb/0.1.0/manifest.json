@@ -1,0 +1,19 @@
+{
+  "tool_id": "honeycomb",
+  "version": "0.1.0",
+  "author": "honeycombio",
+  "pinned_at": "2026-02-28T02:45:19Z",
+  "source": {
+    "type": "github",
+    "owner": "honeycombio",
+    "repo": "honeycomb-mcp",
+    "homepage": "https://github.com/honeycombio/honeycomb-mcp",
+    "archive_url": "https://github.com/honeycombio/honeycomb-mcp/archive/refs/heads/main.tar.gz"
+  },
+  "artifact": {
+    "filename": "honeycomb-0.1.0.tar.gz",
+    "size_bytes": 1833118,
+    "sha512": "c27c7bfb25f0b9dd23899d56021583383b860b23feaba8aa3fd02b5a4c46d5ff4edb99da420c8a20dc142a1375c7e040e81cba730994cb55d0a2455fb307dde4",
+    "sha256": "4926e80379418d9fe89442d812df52c6db404738da4de6c35bd98dca8b80891d"
+  }
+}
