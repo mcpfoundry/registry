@@ -96,7 +96,7 @@
     "scan_summary": "No issues found. Requires filesystem and network access for remote operations."
   },
   {
-    "id": "github",
+    "id": "github-official",
     "name": "GitHub Server",
     "description": "Interact with GitHub repositories, issues, pull requests, branches, and search via the GitHub API.",
     "author": "Anthropic",
@@ -142,7 +142,7 @@
     "scan_summary": "No issues found. Personal access token required. Network access limited to GitHub API."
   },
   {
-    "id": "slack",
+    "id": "slack-official",
     "name": "Slack Server",
     "description": "Interact with Slack workspaces to read messages, post updates, manage channels, and search conversations.",
     "author": "Anthropic",
@@ -258,7 +258,7 @@
     "scan_summary": "No issues found. Launches headless Chrome subprocess. Network access for page navigation."
   },
   {
-    "id": "brave-search",
+    "id": "brave-search-official",
     "name": "Brave Search Server",
     "description": "Perform web and local searches using the Brave Search API with support for pagination and filtering.",
     "author": "Anthropic",
@@ -383,7 +383,7 @@
     "scan_summary": "No issues found. Pure computation, no filesystem or network access."
   },
   {
-    "id": "playwright",
+    "id": "playwright-official",
     "name": "Playwright MCP Server",
     "description": "Browser automation using Playwright for web scraping, testing, and interaction. Supports Chrome, Firefox, and WebKit.",
     "author": "Microsoft",
@@ -425,7 +425,7 @@
     "scan_summary": "No issues found. Official Microsoft project. Launches browser subprocess. Network for page navigation."
   },
   {
-    "id": "stripe",
+    "id": "stripe-official",
     "name": "Stripe MCP Server",
     "description": "Integrate with Stripe for managing customers, products, payments, invoices, and subscriptions via the Stripe API.",
     "author": "Stripe",
@@ -467,7 +467,7 @@
     "scan_summary": "No issues found. Official Stripe product. Remote MCP proxy to mcp.stripe.com. API key required."
   },
   {
-    "id": "sentry",
+    "id": "sentry-official",
     "name": "Sentry MCP Server",
     "description": "Query and analyze Sentry error tracking data including issues, events, releases, and project configurations.",
     "author": "Sentry",
@@ -497,7 +497,7 @@
     "scan_summary": "No issues found. Official Sentry product. Auth token required. Network limited to Sentry API."
   },
   {
-    "id": "grafana",
+    "id": "grafana-official",
     "name": "Grafana MCP Server",
     "description": "Query Grafana dashboards, data sources, and alerts. Execute Prometheus, Loki, and other data source queries.",
     "author": "Grafana Labs",
@@ -529,7 +529,7 @@
     "scan_summary": "No issues found. Official Grafana product. API key required. Network limited to Grafana instance."
   },
   {
-    "id": "neo4j",
+    "id": "neo4j-official",
     "name": "Neo4j MCP Server",
     "description": "Query and manage Neo4j graph databases using Cypher. Browse nodes, relationships, and run graph analytics.",
     "author": "Neo4j",
@@ -557,7 +557,7 @@
     "scan_summary": "No issues found. Official Neo4j project. Network limited to Neo4j bolt protocol."
   },
   {
-    "id": "supabase",
+    "id": "supabase-official",
     "name": "Supabase MCP Server",
     "description": "Manage Supabase projects, databases, edge functions, and storage. Execute SQL and manage schemas.",
     "author": "Supabase",
@@ -592,7 +592,7 @@
     "scan_summary": "No issues found. Official Supabase community project. Access token required. Network limited to Supabase API."
   },
   {
-    "id": "neon",
+    "id": "neon-official",
     "name": "Neon MCP Server",
     "description": "Manage Neon serverless Postgres databases, branches, and run SQL queries with natural language support.",
     "author": "Neon",
@@ -741,7 +741,7 @@
   },
   {
     "id": "apify",
-    "name": "apify MCP Server",
+    "name": "Apify MCP Server",
     "description": "Web scraping, automation, and data extraction via Apify Actors platform",
     "author": "apify",
     "version": "1.0.0",
@@ -786,7 +786,7 @@
   },
   {
     "id": "auth0",
-    "name": "auth0 MCP Server",
+    "name": "Auth0 MCP Server",
     "description": "Auth0 identity and access management MCP server",
     "author": "auth0",
     "version": "0.1.0",
@@ -833,7 +833,7 @@
   },
   {
     "id": "aws",
-    "name": "aws MCP Server",
+    "name": "AWS MCP Server",
     "description": "AWS service integration MCP server with documentation, IaC, and resource management",
     "author": "awslabs",
     "version": "0.1.0",
@@ -876,7 +876,7 @@
   },
   {
     "id": "azure",
-    "name": "azure MCP Server",
+    "name": "Azure MCP Server",
     "description": "Azure services MCP server providing access to 40+ Azure services",
     "author": "microsoft",
     "version": "0.1.0",
@@ -922,7 +922,7 @@
   },
   {
     "id": "browserbase",
-    "name": "browserbase MCP Server",
+    "name": "Browserbase MCP Server",
     "description": "Cloud browser automation MCP server powered by Stagehand",
     "author": "browserbase",
     "version": "0.1.0",
@@ -951,7 +951,7 @@
   },
   {
     "id": "buildkite",
-    "name": "buildkite MCP Server",
+    "name": "Buildkite MCP Server",
     "description": "Buildkite CI/CD pipeline and build management MCP server",
     "author": "buildkite",
     "version": "0.1.0",
@@ -986,7 +986,7 @@
   },
   {
     "id": "chroma",
-    "name": "chroma MCP Server",
+    "name": "Chroma MCP Server",
     "description": "Vector database operations for Chroma including collection and document management",
     "author": "chroma-core",
     "version": "0.1.0",
@@ -1024,7 +1024,7 @@
   },
   {
     "id": "clickhouse",
-    "name": "clickhouse MCP Server",
+    "name": "ClickHouse MCP Server",
     "description": "ClickHouse database query and management MCP server",
     "author": "ClickHouse",
     "version": "0.1.0",
@@ -1054,7 +1054,7 @@
   },
   {
     "id": "cloudinary",
-    "name": "cloudinary MCP Server",
+    "name": "Cloudinary MCP Server",
     "description": "Cloudinary media asset management and AI analysis MCP server",
     "author": "cloudinary",
     "version": "0.1.0",
@@ -1098,7 +1098,7 @@
   },
   {
     "id": "composio",
-    "name": "composio MCP Server",
+    "name": "Composio MCP Server",
     "description": "Universal MCP server connecting AI agents to 500+ apps via Composio toolkits",
     "author": "composiohq",
     "version": "1.0.0",
@@ -1128,7 +1128,7 @@
   },
   {
     "id": "confluent",
-    "name": "confluent MCP Server",
+    "name": "Confluent MCP Server",
     "description": "Confluent Cloud and Apache Kafka management MCP server",
     "author": "confluentinc",
     "version": "0.1.0",
@@ -1175,7 +1175,7 @@
   },
   {
     "id": "courier",
-    "name": "courier MCP Server",
+    "name": "Courier MCP Server",
     "description": "Multi-channel notification delivery via Courier (email, push, SMS, chat)",
     "author": "trycourier",
     "version": "1.0.0",
@@ -1209,7 +1209,7 @@
   },
   {
     "id": "crowdstrike",
-    "name": "crowdstrike MCP Server",
+    "name": "CrowdStrike MCP Server",
     "description": "CrowdStrike Falcon security platform integration for threat hunting and security analysis",
     "author": "CrowdStrike",
     "version": "0.1.0",
@@ -1270,7 +1270,7 @@
   },
   {
     "id": "databricks",
-    "name": "databricks MCP Server",
+    "name": "Databricks MCP Server",
     "description": "Databricks data platform MCP server with Unity Catalog and SQL support",
     "author": "databricks",
     "version": "0.1.0",
@@ -1387,7 +1387,7 @@
   },
   {
     "id": "deepl",
-    "name": "deepl MCP Server",
+    "name": "DeepL MCP Server",
     "description": "DeepL translation, rephrasing, and glossary management MCP server",
     "author": "DeepLcom",
     "version": "0.1.0",
@@ -1423,7 +1423,7 @@
   },
   {
     "id": "e2b",
-    "name": "e2b MCP Server",
+    "name": "E2B MCP Server",
     "description": "Secure cloud code execution sandbox for running Python code via E2B",
     "author": "e2b-dev",
     "version": "0.1.0",
@@ -1452,7 +1452,7 @@
   },
   {
     "id": "exa-official",
-    "name": "exa-official MCP Server",
+    "name": "Exa Search",
     "description": "Exa AI-powered web search, code search, and company research",
     "author": "exa-labs",
     "version": "1.0.0",
@@ -1486,7 +1486,7 @@
   },
   {
     "id": "figma",
-    "name": "figma MCP Server",
+    "name": "Figma MCP Server",
     "description": "Figma design platform MCP server for code generation and design system integration",
     "author": "figma",
     "version": "0.1.0",
@@ -1525,7 +1525,7 @@
   },
   {
     "id": "firebase",
-    "name": "firebase MCP Server",
+    "name": "Firebase MCP Server",
     "description": "Firebase Firestore, Storage, and Authentication MCP server",
     "author": "gannonh",
     "version": "0.1.0",
@@ -1565,7 +1565,7 @@
   },
   {
     "id": "gitguardian",
-    "name": "gitguardian MCP Server",
+    "name": "GitGuardian MCP Server",
     "description": "Secret scanning and remediation using GitGuardian API, detecting 500+ secret types",
     "author": "GitGuardian",
     "version": "0.1.0",
@@ -1600,57 +1600,8 @@
     }
   },
   {
-    "id": "github-official",
-    "name": "github-official MCP Server",
-    "description": "GitHub's official MCP server for repositories, issues, PRs, actions, and code security",
-    "author": "github",
-    "version": "1.0.0",
-    "homepage": "https://github.com/github/github-mcp-server",
-    "verified": true,
-    "tools_count": 23,
-    "rating": 0.0,
-    "install_count": 0,
-    "permissions": {
-      "filesystem": false,
-      "network": true
-    },
-    "tools": [
-      "get_file_contents",
-      "search_code",
-      "search_repositories",
-      "create_repository",
-      "list_commits",
-      "get_issue",
-      "list_issues",
-      "create_issue",
-      "update_issue",
-      "add_issue_comment",
-      "get_pull_request",
-      "list_pull_requests",
-      "create_pull_request",
-      "merge_pull_request",
-      "get_pull_request_diff",
-      "create_or_update_file",
-      "push_files",
-      "create_branch",
-      "list_branches",
-      "list_workflow_runs",
-      "get_workflow_run",
-      "list_code_scanning_alerts",
-      "list_dependabot_alerts"
-    ],
-    "verified_at": "2026-02-27",
-    "scan_summary": "Automated scan passed. No critical or high findings.",
-    "package": {
-      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/github-official/1.0.0/github-official-1.0.0.tar.gz",
-      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/github-official/1.0.0/toolbox.toml",
-      "sha512": "2bb49312c709c0561bbda9cadfcb78b1d5e1f7e914b23c7c9a7846388d44fd7e845ef405ebdb94718f6fc2a842614d0e8df179037ba5716bdc59e51de7bf5c7a",
-      "size_bytes": 538003
-    }
-  },
-  {
     "id": "gitlab-official",
-    "name": "gitlab-official MCP Server",
+    "name": "GitLab Server",
     "description": "GitLab's official MCP server for issues, merge requests, and code search",
     "author": "gitlab",
     "version": "1.0.0",
@@ -1687,61 +1638,8 @@
     "scan_summary": "Automated scan passed. No critical or high findings."
   },
   {
-    "id": "grafana-official",
-    "name": "grafana-official MCP Server",
-    "description": "Grafana dashboards, alerting, and observability data access via official MCP server",
-    "author": "grafana",
-    "version": "0.1.0",
-    "homepage": "https://github.com/grafana/mcp-grafana",
-    "verified": true,
-    "tools_count": 27,
-    "rating": 0.0,
-    "install_count": 0,
-    "permissions": {
-      "filesystem": false,
-      "network": true
-    },
-    "tools": [
-      "search_dashboards",
-      "get_dashboard_by_uid",
-      "get_dashboard_summary",
-      "get_dashboard_property",
-      "update_dashboard",
-      "patch_dashboard",
-      "get_dashboard_panel_queries",
-      "list_datasources",
-      "get_datasource",
-      "run_panel_query",
-      "query_prometheus",
-      "list_prometheus_metric_names",
-      "list_prometheus_label_names",
-      "list_prometheus_label_values",
-      "query_loki_logs",
-      "list_loki_label_names",
-      "query_clickhouse",
-      "query_cloudwatch",
-      "query_elasticsearch",
-      "list_alert_rules",
-      "create_alert_rule",
-      "list_incidents",
-      "create_incident",
-      "generate_deeplinks",
-      "list_teams",
-      "list_users_by_org",
-      "list_all_roles"
-    ],
-    "verified_at": "2026-02-27",
-    "scan_summary": "Automated scan passed. No critical or high findings.",
-    "package": {
-      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/grafana-official/0.1.0/grafana-official-0.1.0.tar.gz",
-      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/grafana-official/0.1.0/toolbox.toml",
-      "sha512": "a4e91f7c45bf304aeb4930238198f29e6ddf9c510c00f1f9a1d745021014e770efe56084acb6e98ddb1cf1b5fda616fd3dcc80229872f701dc268ce6956edc73",
-      "size_bytes": 32350
-    }
-  },
-  {
     "id": "heroku-official",
-    "name": "heroku-official MCP Server",
+    "name": "Heroku Server",
     "description": "Heroku platform management including app lifecycle, deployments, Postgres, and add-ons",
     "author": "heroku",
     "version": "1.0.0",
@@ -1801,7 +1699,7 @@
   },
   {
     "id": "honeycomb",
-    "name": "honeycomb MCP Server",
+    "name": "Honeycomb MCP Server",
     "description": "Honeycomb observability platform for querying datasets, SLOs, triggers, and traces",
     "author": "honeycombio",
     "version": "0.1.0",
@@ -1839,7 +1737,7 @@
   },
   {
     "id": "hubspot",
-    "name": "hubspot MCP Server",
+    "name": "HubSpot MCP Server",
     "description": "HubSpot CRM data access and management MCP server",
     "author": "hubspot",
     "version": "0.1.0",
@@ -1873,7 +1771,7 @@
   },
   {
     "id": "jenkins",
-    "name": "jenkins MCP Server",
+    "name": "Jenkins MCP Server",
     "description": "Jenkins CI/CD server management and build automation MCP server",
     "author": "jenkinsci",
     "version": "0.1.0",
@@ -1913,7 +1811,7 @@
   },
   {
     "id": "kagi",
-    "name": "kagi MCP Server",
+    "name": "Kagi MCP Server",
     "description": "Kagi premium search and web content summarization via MCP",
     "author": "kagisearch",
     "version": "0.1.0",
@@ -1944,7 +1842,7 @@
   },
   {
     "id": "launchdarkly",
-    "name": "launchdarkly MCP Server",
+    "name": "LaunchDarkly MCP Server",
     "description": "LaunchDarkly feature flag and AI Config management via MCP",
     "author": "launchdarkly",
     "version": "0.1.0",
@@ -1992,7 +1890,7 @@
   },
   {
     "id": "linear-official",
-    "name": "linear-official MCP Server",
+    "name": "Linear Server",
     "description": "Linear issue tracking and project management MCP server",
     "author": "linear",
     "version": "0.1.0",
@@ -2024,7 +1922,7 @@
   },
   {
     "id": "logfire",
-    "name": "logfire MCP Server",
+    "name": "Logfire MCP Server",
     "description": "Pydantic Logfire observability for querying OpenTelemetry traces and metrics",
     "author": "pydantic",
     "version": "0.1.0",
@@ -2055,7 +1953,7 @@
   },
   {
     "id": "meilisearch",
-    "name": "meilisearch MCP Server",
+    "name": "Meilisearch MCP Server",
     "description": "Meilisearch search engine management including indexing, search, settings, and monitoring",
     "author": "meilisearch",
     "version": "0.1.0",
@@ -2104,7 +2002,7 @@
   },
   {
     "id": "mixpanel",
-    "name": "mixpanel MCP Server",
+    "name": "Mixpanel MCP Server",
     "description": "Mixpanel product analytics for querying events, funnels, retention, and user data",
     "author": "mixpanel",
     "version": "0.1.0",
@@ -2136,7 +2034,7 @@
   },
   {
     "id": "monday",
-    "name": "monday MCP Server",
+    "name": "Monday MCP Server",
     "description": "Monday.com work management platform MCP server",
     "author": "mondaycom",
     "version": "0.1.0",
@@ -2179,7 +2077,7 @@
   },
   {
     "id": "mongodb-official",
-    "name": "mongodb-official MCP Server",
+    "name": "MongoDB Server",
     "description": "MongoDB database and Atlas cloud management MCP server",
     "author": "mongodb",
     "version": "0.1.0",
@@ -2246,95 +2144,8 @@
     }
   },
   {
-    "id": "neo4j-official",
-    "name": "neo4j-official MCP Server",
-    "description": "Neo4j graph database operations including Cypher queries, schema inspection, and knowledge graphs",
-    "author": "neo4j-contrib",
-    "version": "0.1.0",
-    "homepage": "https://github.com/neo4j-contrib/mcp-neo4j",
-    "verified": true,
-    "tools_count": 3,
-    "rating": 0.0,
-    "install_count": 0,
-    "permissions": {
-      "filesystem": false,
-      "network": true
-    },
-    "tools": [
-      "read_neo4j_cypher",
-      "write_neo4j_cypher",
-      "get_neo4j_schema"
-    ],
-    "verified_at": "2026-02-27",
-    "scan_summary": "Automated scan passed. No critical or high findings.",
-    "package": {
-      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/neo4j-official/0.1.0/neo4j-official-0.1.0.tar.gz",
-      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/neo4j-official/0.1.0/toolbox.toml",
-      "sha512": "83223e5b550a94ee7beffebffdaf4a4f5d2596a5c2f1506ed991102b21dc5887e3d1014f09a281dda2f7be9b565284ef05ab56701c02e33d9e0e6e1caa6051d9",
-      "size_bytes": 4565919
-    }
-  },
-  {
-    "id": "neon-official",
-    "name": "neon-official MCP Server",
-    "description": "Neon serverless Postgres management including projects, branches, SQL, and migrations",
-    "author": "neondatabase",
-    "version": "1.0.0",
-    "homepage": "https://github.com/neondatabase/mcp-server-neon",
-    "verified": true,
-    "tools_count": 29,
-    "rating": 0.0,
-    "install_count": 0,
-    "permissions": {
-      "filesystem": false,
-      "network": [
-        "console.neon.tech",
-        "api.neon.tech"
-      ]
-    },
-    "tools": [
-      "list_projects",
-      "list_shared_projects",
-      "describe_project",
-      "create_project",
-      "delete_project",
-      "list_organizations",
-      "create_branch",
-      "delete_branch",
-      "describe_branch",
-      "list_branch_computes",
-      "compare_database_schema",
-      "reset_from_parent",
-      "get_connection_string",
-      "run_sql",
-      "run_sql_transaction",
-      "get_database_tables",
-      "describe_table_schema",
-      "prepare_database_migration",
-      "complete_database_migration",
-      "list_slow_queries",
-      "explain_sql_statement",
-      "prepare_query_tuning",
-      "complete_query_tuning",
-      "provision_neon_auth",
-      "provision_neon_data_api",
-      "search",
-      "fetch",
-      "list_docs_resources",
-      "get_doc_resource"
-    ],
-    "verified_at": "2026-02-27",
-    "scan_summary": "Automated scan passed. No critical or high findings.",
-    "package": {
-      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/neon-official/1.0.0/neon-official-1.0.0.tar.gz",
-      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/neon-official/1.0.0/toolbox.toml",
-      "sha512": "74a6e9314aa46bb78b1ccd33c9fd6f4228ce417844c16d53a4bd7be4132e782be0b04736c0e538705ef776b9aef955692b2d2f8fbf0528dd1582cb904665d703",
-      "size_bytes": 205769
-    }
-  },
-  {
     "id": "netlify",
-    "name": "netlify MCP Server",
+    "name": "Netlify MCP Server",
     "description": "Netlify web platform deployment and management MCP server",
     "author": "netlify",
     "version": "0.1.0",
@@ -2379,7 +2190,7 @@
   },
   {
     "id": "notion-official",
-    "name": "notion-official MCP Server",
+    "name": "Notion Server",
     "description": "Official Notion workspace MCP server with data source, page, and database management",
     "author": "makenotion",
     "version": "2.0.0",
@@ -2418,70 +2229,8 @@
     }
   },
   {
-    "id": "playwright-official",
-    "name": "playwright-official MCP Server",
-    "description": "Playwright browser automation MCP server with accessibility-first approach",
-    "author": "microsoft",
-    "version": "0.1.0",
-    "homepage": "https://github.com/microsoft/playwright-mcp",
-    "verified": true,
-    "tools_count": 34,
-    "rating": 0.0,
-    "install_count": 0,
-    "permissions": {
-      "filesystem": [
-        "read:~/"
-      ],
-      "network": true
-    },
-    "tools": [
-      "browser_navigate",
-      "browser_navigate_back",
-      "browser_click",
-      "browser_hover",
-      "browser_type",
-      "browser_fill_form",
-      "browser_select_option",
-      "browser_press_key",
-      "browser_snapshot",
-      "browser_take_screenshot",
-      "browser_evaluate",
-      "browser_run_code",
-      "browser_console_messages",
-      "browser_network_requests",
-      "browser_file_upload",
-      "browser_handle_dialog",
-      "browser_drag",
-      "browser_resize",
-      "browser_wait_for",
-      "browser_close",
-      "browser_tabs",
-      "browser_install",
-      "browser_mouse_click_xy",
-      "browser_mouse_down",
-      "browser_mouse_drag_xy",
-      "browser_mouse_move_xy",
-      "browser_mouse_up",
-      "browser_mouse_wheel",
-      "browser_pdf_save",
-      "browser_generate_locator",
-      "browser_verify_element_visible",
-      "browser_verify_list_visible",
-      "browser_verify_text_visible",
-      "browser_verify_value"
-    ],
-    "verified_at": "2026-02-27",
-    "scan_summary": "Automated scan passed. No critical or high findings.",
-    "package": {
-      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/playwright-official/0.1.0/playwright-official-0.1.0.tar.gz",
-      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/playwright-official/0.1.0/toolbox.toml",
-      "sha512": "039cbaad3822c14cf70ad96d70803afad2a4095b095f459799afd45ce397ac977c7843fabae1322121b0de2fd2a1cd7827633bd8be8ae1d02b04c721fba418db",
-      "size_bytes": 106106
-    }
-  },
-  {
     "id": "pulumi",
-    "name": "pulumi MCP Server",
+    "name": "Pulumi MCP Server",
     "description": "Infrastructure as code via Pulumi with stack management, deployments, and registry access",
     "author": "pulumi",
     "version": "0.1.0",
@@ -2516,7 +2265,7 @@
   },
   {
     "id": "qdrant-official",
-    "name": "qdrant-official MCP Server",
+    "name": "Qdrant Server",
     "description": "Qdrant vector search database for storing and retrieving information via semantic search",
     "author": "qdrant",
     "version": "0.3.0",
@@ -2544,7 +2293,7 @@
   },
   {
     "id": "redis-official",
-    "name": "redis-official MCP Server",
+    "name": "Redis Server",
     "description": "Redis data structure operations, pub/sub, vector search, and documentation access",
     "author": "redis",
     "version": "0.1.0",
@@ -2580,48 +2329,8 @@
     }
   },
   {
-    "id": "sentry-official",
-    "name": "sentry-official MCP Server",
-    "description": "Sentry error tracking and performance monitoring for issue analysis and debugging",
-    "author": "getsentry",
-    "version": "0.1.0",
-    "homepage": "https://github.com/getsentry/sentry-mcp",
-    "verified": true,
-    "tools_count": 11,
-    "rating": 0.0,
-    "install_count": 0,
-    "permissions": {
-      "filesystem": false,
-      "network": [
-        "sentry.io",
-        "us.sentry.io"
-      ]
-    },
-    "tools": [
-      "list_projects",
-      "resolve_short_id",
-      "get_sentry_event",
-      "list_error_events_in_project",
-      "create_project",
-      "list_project_issues",
-      "list_issue_events",
-      "get_sentry_issue",
-      "list_organization_replays",
-      "search_events",
-      "search_issues"
-    ],
-    "verified_at": "2026-02-27",
-    "scan_summary": "Automated scan passed. No critical or high findings.",
-    "package": {
-      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/sentry-official/0.1.0/sentry-official-0.1.0.tar.gz",
-      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/sentry-official/0.1.0/toolbox.toml",
-      "sha512": "a5fce7ede65b3f72f6ab93e1a7e2f289a7e680688819ebcbe31c8d36d41f9ec5718b6f77d3ad6a388810985bbb84ddd893291f4c396c09cde78a459a4a886af4",
-      "size_bytes": 11430979
-    }
-  },
-  {
     "id": "shopify",
-    "name": "shopify MCP Server",
+    "name": "Shopify MCP Server",
     "description": "Shopify developer platform MCP server for docs, schema, and code validation",
     "author": "Shopify",
     "version": "0.1.0",
@@ -2651,42 +2360,8 @@
     "scan_summary": "Automated scan passed. No critical or high findings."
   },
   {
-    "id": "slack-official",
-    "name": "slack-official MCP Server",
-    "description": "Slack workspace interaction with messaging, channels, and user management",
-    "author": "zencoderai",
-    "version": "1.0.0",
-    "homepage": "https://github.com/zencoderai/slack-mcp-server",
-    "verified": true,
-    "tools_count": 8,
-    "rating": 0.0,
-    "install_count": 0,
-    "permissions": {
-      "filesystem": false,
-      "network": true
-    },
-    "tools": [
-      "slack_list_channels",
-      "slack_post_message",
-      "slack_reply_to_thread",
-      "slack_add_reaction",
-      "slack_get_channel_history",
-      "slack_get_thread_replies",
-      "slack_get_users",
-      "slack_get_user_profile"
-    ],
-    "verified_at": "2026-02-27",
-    "scan_summary": "Automated scan passed. No critical or high findings.",
-    "package": {
-      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/slack-official/1.0.0/slack-official-1.0.0.tar.gz",
-      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/slack-official/1.0.0/toolbox.toml",
-      "sha512": "75a415d74319c081abed1cf3ead221985a113155cff77546852db9b155dc736682d79a70a19f34a69ab8e9f7b8ed402c8823dbb757e66f1d91abe889e8340a88",
-      "size_bytes": 66509
-    }
-  },
-  {
     "id": "snowflake",
-    "name": "snowflake MCP Server",
+    "name": "Snowflake MCP Server",
     "description": "Snowflake data platform MCP server with Cortex AI and query management",
     "author": "Snowflake-Labs",
     "version": "0.1.0",
@@ -2726,110 +2401,8 @@
     }
   },
   {
-    "id": "stripe-official",
-    "name": "stripe-official MCP Server",
-    "description": "Stripe payments API integration for AI-powered financial operations",
-    "author": "stripe",
-    "version": "1.0.0",
-    "homepage": "https://github.com/stripe/agent-toolkit",
-    "verified": true,
-    "tools_count": 14,
-    "rating": 0.0,
-    "install_count": 0,
-    "permissions": {
-      "filesystem": false,
-      "network": true
-    },
-    "tools": [
-      "create_customer",
-      "list_customers",
-      "create_product",
-      "list_products",
-      "create_price",
-      "list_prices",
-      "create_payment_link",
-      "create_invoice",
-      "list_invoices",
-      "create_subscription",
-      "list_subscriptions",
-      "create_refund",
-      "list_balance_transactions",
-      "retrieve_balance"
-    ],
-    "verified_at": "2026-02-27",
-    "scan_summary": "Automated scan passed. No critical or high findings.",
-    "package": {
-      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/stripe-official/1.0.0/stripe-official-1.0.0.tar.gz",
-      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/stripe-official/1.0.0/toolbox.toml",
-      "sha512": "e8e6408fdc459d65fe5c36926fb24119ec25a64e134e9668f0858aff7fd7804add42bb5f44d971afe5127e51204c4e955b362f18ffc7b5cf5f14fd4107f2dab0",
-      "size_bytes": 457717
-    }
-  },
-  {
-    "id": "supabase-official",
-    "name": "supabase-official MCP Server",
-    "description": "Supabase platform management including database, auth, storage, edge functions, and branching",
-    "author": "supabase-community",
-    "version": "0.1.0",
-    "homepage": "https://github.com/supabase-community/supabase-mcp",
-    "verified": true,
-    "tools_count": 32,
-    "rating": 0.0,
-    "install_count": 0,
-    "permissions": {
-      "filesystem": false,
-      "network": [
-        "supabase.com",
-        "api.supabase.com",
-        "supabase.co"
-      ]
-    },
-    "tools": [
-      "list_projects",
-      "get_project",
-      "create_project",
-      "pause_project",
-      "restore_project",
-      "list_organizations",
-      "get_organization",
-      "get_cost",
-      "confirm_cost",
-      "search_docs",
-      "list_tables",
-      "list_extensions",
-      "list_migrations",
-      "apply_migration",
-      "execute_sql",
-      "get_logs",
-      "get_advisors",
-      "get_project_url",
-      "get_publishable_keys",
-      "generate_typescript_types",
-      "list_edge_functions",
-      "get_edge_function",
-      "deploy_edge_function",
-      "create_branch",
-      "list_branches",
-      "delete_branch",
-      "merge_branch",
-      "reset_branch",
-      "rebase_branch",
-      "list_storage_buckets",
-      "get_storage_config",
-      "update_storage_config"
-    ],
-    "verified_at": "2026-02-27",
-    "scan_summary": "Automated scan passed. No critical or high findings.",
-    "package": {
-      "download_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/supabase-official/0.1.0/supabase-official-0.1.0.tar.gz",
-      "manifest_url": "https://raw.githubusercontent.com/mcpfoundry/registry/main/packages/supabase-official/0.1.0/toolbox.toml",
-      "sha512": "0a0e627d70b0399f3b71587ac0819dfd98f04caba959cb60839f22814147b017a768ad0bab47a635d3526c7862285f4c4e72c94be2aa4862851a7a8ebf3290a0",
-      "size_bytes": 118391
-    }
-  },
-  {
     "id": "terraform",
-    "name": "terraform MCP Server",
+    "name": "Terraform MCP Server",
     "description": "Terraform Registry and HCP Terraform workspace management MCP server",
     "author": "hashicorp",
     "version": "0.4.0",
@@ -2870,7 +2443,7 @@
   },
   {
     "id": "weaviate-official",
-    "name": "weaviate-official MCP Server",
+    "name": "Weaviate Server",
     "description": "Weaviate vector database for inserting objects and performing hybrid search queries",
     "author": "weaviate",
     "version": "0.1.0",
