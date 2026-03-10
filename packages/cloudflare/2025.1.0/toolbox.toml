@@ -1,0 +1,92 @@
+[tool]
+name = "cloudflare"
+version = "2025.1.0"
+description = "Manage Cloudflare Workers, KV, R2, D1 databases, DNS, and other Cloudflare services from your agent."
+author = "Cloudflare"
+homepage = "https://github.com/cloudflare/mcp-server-cloudflare"
+license = "MIT"
+
+[runtime]
+runner = "bun"
+package = "@cloudflare/mcp-server-cloudflare"
+args = []
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+env_vars = ["HOME", "PATH", "CLOUDFLARE_API_TOKEN"]
+max_memory_mb = 256
+max_cpu_percent = 50
+
+[[mcp.tools]]
+name = "workers_list"
+description = "List all Cloudflare Workers in the account"
+
+[[mcp.tools]]
+name = "workers_get"
+description = "Get details and source code of a specific Worker"
+
+[[mcp.tools]]
+name = "workers_deploy"
+description = "Deploy a new or updated Worker script"
+
+[[mcp.tools]]
+name = "workers_delete"
+description = "Delete a Worker from the account"
+
+[[mcp.tools]]
+name = "kv_list_namespaces"
+description = "List all KV namespaces in the account"
+
+[[mcp.tools]]
+name = "kv_get"
+description = "Get a value from a KV namespace by key"
+
+[[mcp.tools]]
+name = "kv_put"
+description = "Store a key-value pair in a KV namespace"
+
+[[mcp.tools]]
+name = "kv_delete"
+description = "Delete a key from a KV namespace"
+
+[[mcp.tools]]
+name = "r2_list_buckets"
+description = "List all R2 storage buckets in the account"
+
+[[mcp.tools]]
+name = "r2_get_object"
+description = "Retrieve an object from an R2 bucket"
+
+[[mcp.tools]]
+name = "r2_put_object"
+description = "Upload an object to an R2 bucket"
+
+[[mcp.tools]]
+name = "d1_list_databases"
+description = "List all D1 SQL databases in the account"
+
+[[mcp.tools]]
+name = "d1_query"
+description = "Execute a SQL query against a D1 database"
+
+[[mcp.tools]]
+name = "dns_list_records"
+description = "List DNS records for a zone"
+
+[[mcp.tools]]
+name = "dns_create_record"
+description = "Create a new DNS record in a zone"
+
+[[mcp.tools]]
+name = "dns_update_record"
+description = "Update an existing DNS record"
+
+[[mcp.tools]]
+name = "dns_delete_record"
+description = "Delete a DNS record from a zone"
+
+[[mcp.tools]]
+name = "analytics_get"
+description = "Retrieve analytics data for Workers or zones"

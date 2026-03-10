@@ -1,0 +1,64 @@
+[tool]
+name = "filesystem"
+version = "2025.1.0"
+description = "Read and write files with configurable access controls. Supports reading, writing, searching, and directory listing."
+author = "Anthropic"
+homepage = "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem"
+license = "MIT"
+
+[runtime]
+runner = "bun"
+package = "@modelcontextprotocol/server-filesystem"
+args = []
+transport = "stdio"
+
+[permissions]
+filesystem = ["read:~/", "write:~/"]
+network = false
+env_vars = ["HOME", "PATH", "USER", "TMPDIR"]
+max_memory_mb = 256
+max_cpu_percent = 50
+
+[[mcp.tools]]
+name = "read_file"
+description = "Read the complete contents of a file from the filesystem"
+
+[[mcp.tools]]
+name = "read_multiple_files"
+description = "Read the contents of multiple files simultaneously"
+
+[[mcp.tools]]
+name = "write_file"
+description = "Create a new file or overwrite an existing file with content"
+
+[[mcp.tools]]
+name = "edit_file"
+description = "Make line-based edits to a text file with search and replace"
+
+[[mcp.tools]]
+name = "create_directory"
+description = "Create a new directory or ensure a directory path exists"
+
+[[mcp.tools]]
+name = "list_directory"
+description = "List all files and directories in a given path"
+
+[[mcp.tools]]
+name = "directory_tree"
+description = "Get a recursive tree view of files and directories"
+
+[[mcp.tools]]
+name = "move_file"
+description = "Move or rename a file or directory"
+
+[[mcp.tools]]
+name = "search_files"
+description = "Search for files matching a pattern recursively"
+
+[[mcp.tools]]
+name = "get_file_info"
+description = "Get metadata about a file including size, timestamps, and permissions"
+
+[[mcp.tools]]
+name = "list_allowed_directories"
+description = "List the directories this server is allowed to access"

@@ -1,0 +1,40 @@
+[tool]
+name = "sqlite"
+version = "2025.1.0"
+description = "Query and manage SQLite databases with read/write support, schema introspection, and business intelligence memo generation."
+author = "Anthropic"
+homepage = "https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite"
+license = "MIT"
+
+[runtime]
+runner = "bun"
+package = "@modelcontextprotocol/server-sqlite"
+args = []
+transport = "stdio"
+
+[permissions]
+filesystem = ["read:~/", "write:~/"]
+network = false
+env_vars = ["HOME", "PATH", "TMPDIR"]
+max_memory_mb = 256
+max_cpu_percent = 50
+
+[[mcp.tools]]
+name = "read_query"
+description = "Execute a SELECT query on the SQLite database and return results"
+
+[[mcp.tools]]
+name = "write_query"
+description = "Execute an INSERT, UPDATE, or DELETE query on the SQLite database"
+
+[[mcp.tools]]
+name = "create_table"
+description = "Create a new table in the SQLite database"
+
+[[mcp.tools]]
+name = "list_tables"
+description = "List all tables in the SQLite database"
+
+[[mcp.tools]]
+name = "describe_table"
+description = "Show the schema and column details of a specific table"

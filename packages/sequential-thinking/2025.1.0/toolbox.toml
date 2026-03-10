@@ -1,0 +1,24 @@
+[tool]
+name = "sequential-thinking"
+version = "2025.1.0"
+description = "Dynamic problem-solving through sequential thought steps with branching, revision, and hypothesis tracking."
+author = "Anthropic"
+homepage = "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking"
+license = "MIT"
+
+[runtime]
+runner = "bun"
+package = "@modelcontextprotocol/server-sequential-thinking"
+args = []
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = false
+env_vars = ["HOME", "PATH"]
+max_memory_mb = 256
+max_cpu_percent = 50
+
+[[mcp.tools]]
+name = "sequentialthinking"
+description = "Process a thought step in a sequential thinking chain with support for branching and revision"

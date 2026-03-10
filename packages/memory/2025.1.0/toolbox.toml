@@ -1,0 +1,48 @@
+[tool]
+name = "memory"
+version = "2025.1.0"
+description = "Knowledge graph-based persistent memory system that stores entities, relations, and observations across conversations."
+author = "Anthropic"
+homepage = "https://github.com/modelcontextprotocol/servers/tree/main/src/memory"
+license = "MIT"
+
+[runtime]
+runner = "bun"
+package = "@modelcontextprotocol/server-memory"
+args = []
+transport = "stdio"
+
+[permissions]
+filesystem = ["read:~/", "write:~/"]
+network = false
+env_vars = ["HOME", "PATH", "TMPDIR"]
+max_memory_mb = 256
+max_cpu_percent = 50
+
+[[mcp.tools]]
+name = "create_entities"
+description = "Create new entities in the knowledge graph with names and types"
+
+[[mcp.tools]]
+name = "create_relations"
+description = "Create relationships between entities in the knowledge graph"
+
+[[mcp.tools]]
+name = "add_observations"
+description = "Add observation facts to existing entities"
+
+[[mcp.tools]]
+name = "delete_entities"
+description = "Remove entities and their associated relations from the knowledge graph"
+
+[[mcp.tools]]
+name = "delete_observations"
+description = "Remove specific observations from entities"
+
+[[mcp.tools]]
+name = "delete_relations"
+description = "Remove relationships between entities"
+
+[[mcp.tools]]
+name = "search_nodes"
+description = "Search the knowledge graph for entities matching a query"

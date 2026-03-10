@@ -1,0 +1,92 @@
+[tool]
+name = "everything"
+version = "2025.1.0"
+description = "MCP protocol test and demo server exercising all MCP features including tools, resources, prompts, and sampling."
+author = "Anthropic"
+homepage = "https://github.com/modelcontextprotocol/servers/tree/main/src/everything"
+license = "MIT"
+
+[runtime]
+runner = "bun"
+package = "@modelcontextprotocol/server-everything"
+args = []
+transport = "stdio"
+
+[permissions]
+filesystem = true
+network = true
+env_vars = ["HOME", "PATH", "TMPDIR"]
+max_memory_mb = 256
+max_cpu_percent = 50
+
+[[mcp.tools]]
+name = "echo"
+description = "Echo back the provided input message"
+
+[[mcp.tools]]
+name = "get_sum"
+description = "Calculate the sum of two numbers"
+
+[[mcp.tools]]
+name = "get_env"
+description = "Retrieve the value of an environment variable"
+
+[[mcp.tools]]
+name = "get_annotated_message"
+description = "Return a message with MCP annotations for priority and audience"
+
+[[mcp.tools]]
+name = "get_resource_links"
+description = "Return embedded resource links in the response"
+
+[[mcp.tools]]
+name = "get_resource_reference"
+description = "Return a reference to an MCP resource"
+
+[[mcp.tools]]
+name = "get_roots_list"
+description = "Request the list of root URIs from the client"
+
+[[mcp.tools]]
+name = "get_structured_content"
+description = "Return structured content with multiple content types"
+
+[[mcp.tools]]
+name = "get_tiny_image"
+description = "Return a small base64-encoded test image"
+
+[[mcp.tools]]
+name = "gzip_file_as_resource"
+description = "Compress a file with gzip and return it as an embedded resource"
+
+[[mcp.tools]]
+name = "simulate_research_query"
+description = "Simulate a long-running research query with progress notifications"
+
+[[mcp.tools]]
+name = "toggle_simulated_logging"
+description = "Toggle simulated log output on or off"
+
+[[mcp.tools]]
+name = "toggle_subscriber_updates"
+description = "Toggle simulated resource subscription updates"
+
+[[mcp.tools]]
+name = "trigger_elicitation_request"
+description = "Trigger an MCP elicitation request to gather input from the client"
+
+[[mcp.tools]]
+name = "trigger_elicitation_request_async"
+description = "Trigger an async MCP elicitation request"
+
+[[mcp.tools]]
+name = "trigger_long_running_operation"
+description = "Start a long-running operation with progress tracking"
+
+[[mcp.tools]]
+name = "trigger_sampling_request"
+description = "Trigger an MCP sampling request for LLM completion"
+
+[[mcp.tools]]
+name = "trigger_sampling_request_async"
+description = "Trigger an async MCP sampling request for LLM completion"

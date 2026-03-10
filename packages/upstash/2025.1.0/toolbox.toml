@@ -1,0 +1,60 @@
+[tool]
+name = "upstash"
+version = "2025.1.0"
+description = "Manage Upstash Redis and QStash message queues. Execute Redis commands and manage serverless data stores."
+author = "Upstash"
+homepage = "https://github.com/upstash/mcp-server"
+license = "MIT"
+
+[runtime]
+runner = "bun"
+package = "@upstash/mcp-server"
+args = []
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+env_vars = ["HOME", "PATH", "UPSTASH_REDIS_REST_URL", "UPSTASH_REDIS_REST_TOKEN"]
+max_memory_mb = 256
+max_cpu_percent = 50
+
+[[mcp.tools]]
+name = "redis_get"
+description = "Get the value of a key from an Upstash Redis database"
+
+[[mcp.tools]]
+name = "redis_set"
+description = "Set a key-value pair in an Upstash Redis database"
+
+[[mcp.tools]]
+name = "redis_del"
+description = "Delete one or more keys from an Upstash Redis database"
+
+[[mcp.tools]]
+name = "redis_list_databases"
+description = "List all Redis databases in the Upstash account"
+
+[[mcp.tools]]
+name = "redis_create_database"
+description = "Create a new Redis database in Upstash"
+
+[[mcp.tools]]
+name = "redis_execute"
+description = "Execute an arbitrary Redis command"
+
+[[mcp.tools]]
+name = "qstash_publish"
+description = "Publish a message to a QStash topic or endpoint"
+
+[[mcp.tools]]
+name = "qstash_list_queues"
+description = "List all QStash message queues"
+
+[[mcp.tools]]
+name = "qstash_create_queue"
+description = "Create a new QStash message queue"
+
+[[mcp.tools]]
+name = "vector_query"
+description = "Query the Upstash Vector database for similarity search"

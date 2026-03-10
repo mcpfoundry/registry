@@ -1,0 +1,24 @@
+[tool]
+name = "postgres"
+version = "2025.1.0"
+description = "Connect to PostgreSQL databases for querying, schema inspection, and data manipulation."
+author = "Anthropic"
+homepage = "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres"
+license = "MIT"
+
+[runtime]
+runner = "bun"
+package = "@modelcontextprotocol/server-postgres"
+args = []
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+env_vars = ["HOME", "PATH", "PGPASSWORD", "PGUSER", "PGHOST", "PGPORT", "PGDATABASE"]
+max_memory_mb = 256
+max_cpu_percent = 50
+
+[[mcp.tools]]
+name = "query"
+description = "Execute a SQL query against the connected PostgreSQL database and return results"

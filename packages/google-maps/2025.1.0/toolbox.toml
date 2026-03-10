@@ -1,0 +1,44 @@
+[tool]
+name = "google-maps"
+version = "2025.1.0"
+description = "Access Google Maps API for geocoding, directions, place search, and distance calculations."
+author = "Anthropic"
+homepage = "https://github.com/modelcontextprotocol/servers/tree/main/src/google-maps"
+license = "MIT"
+
+[runtime]
+runner = "bun"
+package = "@modelcontextprotocol/server-google-maps"
+args = []
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = ["maps.googleapis.com"]
+env_vars = ["HOME", "PATH", "GOOGLE_MAPS_API_KEY"]
+max_memory_mb = 256
+max_cpu_percent = 50
+
+[[mcp.tools]]
+name = "maps_geocode"
+description = "Convert an address into geographic coordinates (latitude and longitude)"
+
+[[mcp.tools]]
+name = "maps_reverse_geocode"
+description = "Convert geographic coordinates into a human-readable address"
+
+[[mcp.tools]]
+name = "maps_search_places"
+description = "Search for places and businesses near a location"
+
+[[mcp.tools]]
+name = "maps_place_details"
+description = "Get detailed information about a specific place"
+
+[[mcp.tools]]
+name = "maps_distance_matrix"
+description = "Calculate travel distance and time between multiple origins and destinations"
+
+[[mcp.tools]]
+name = "maps_directions"
+description = "Get turn-by-turn directions between two locations"

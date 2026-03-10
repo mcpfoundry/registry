@@ -1,0 +1,68 @@
+[tool]
+name = "git"
+version = "2025.1.0"
+description = "Interact with Git repositories including cloning, committing, branching, diffing, and viewing history."
+author = "Anthropic"
+homepage = "https://github.com/modelcontextprotocol/servers/tree/main/src/git"
+license = "MIT"
+
+[runtime]
+runner = "bun"
+package = "@modelcontextprotocol/server-git"
+args = []
+transport = "stdio"
+
+[permissions]
+filesystem = ["read:~/", "write:~/"]
+network = true
+env_vars = ["HOME", "PATH", "USER", "TMPDIR", "SSH_AUTH_SOCK"]
+max_memory_mb = 256
+max_cpu_percent = 50
+
+[[mcp.tools]]
+name = "git_status"
+description = "Show the working tree status of a Git repository"
+
+[[mcp.tools]]
+name = "git_diff_unstaged"
+description = "Show changes in the working directory that have not been staged"
+
+[[mcp.tools]]
+name = "git_diff_staged"
+description = "Show changes that have been staged for the next commit"
+
+[[mcp.tools]]
+name = "git_commit"
+description = "Create a new commit with staged changes and a message"
+
+[[mcp.tools]]
+name = "git_add"
+description = "Stage files for the next commit"
+
+[[mcp.tools]]
+name = "git_reset"
+description = "Unstage files or reset the repository to a previous state"
+
+[[mcp.tools]]
+name = "git_log"
+description = "View the commit history log"
+
+[[mcp.tools]]
+name = "git_create_branch"
+description = "Create a new branch from the current HEAD or a specified ref"
+
+[[mcp.tools]]
+name = "git_checkout"
+description = "Switch to a different branch or restore working tree files"
+
+[[mcp.tools]]
+name = "git_show"
+description = "Show the contents and metadata of a specific commit"
+
+[[mcp.tools]]
+name = "git_init"
+description = "Initialize a new Git repository in a directory"
+
+[[mcp.tools]]
+name = "git_clone"
+description = "Clone a remote repository to a local directory"

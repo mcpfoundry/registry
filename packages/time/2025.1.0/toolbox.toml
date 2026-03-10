@@ -1,0 +1,28 @@
+[tool]
+name = "time"
+version = "2025.1.0"
+description = "Get current time in various timezones and convert between timezones with IANA timezone support."
+author = "Anthropic"
+homepage = "https://github.com/modelcontextprotocol/servers/tree/main/src/time"
+license = "MIT"
+
+[runtime]
+runner = "bun"
+package = "@modelcontextprotocol/server-time"
+args = []
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = false
+env_vars = ["HOME", "PATH", "TZ"]
+max_memory_mb = 256
+max_cpu_percent = 50
+
+[[mcp.tools]]
+name = "get_current_time"
+description = "Get the current time in a specified IANA timezone"
+
+[[mcp.tools]]
+name = "convert_time"
+description = "Convert a time from one timezone to another"

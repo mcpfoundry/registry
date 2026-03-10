@@ -1,0 +1,24 @@
+[tool]
+name = "fetch"
+version = "2025.1.0"
+description = "Retrieve web content by fetching URLs and converting HTML to markdown for easy consumption by LLMs."
+author = "Anthropic"
+homepage = "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch"
+license = "MIT"
+
+[runtime]
+runner = "bun"
+package = "@modelcontextprotocol/server-fetch"
+args = []
+transport = "stdio"
+
+[permissions]
+filesystem = false
+network = true
+env_vars = ["HOME", "PATH", "TMPDIR"]
+max_memory_mb = 256
+max_cpu_percent = 50
+
+[[mcp.tools]]
+name = "fetch"
+description = "Fetch a URL and return its contents as markdown-formatted text"
