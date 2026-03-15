@@ -1,0 +1,44 @@
+[tool]
+name = "a2abench"
+version = "0.1.32"
+description = "Agent-native developer Q&A benchmark for machine-to-machine ask/answer loops."
+author = "khalidsaidi"
+homepage = "https://github.com/khalidsaidi/a2abench"
+license = "MIT"
+
+[binary]
+entry = "a2abench-mcp"
+platforms = ["macos-aarch64", "macos-x86_64", "linux-x86_64", "windows-x86_64"]
+
+[runtime]
+transport = "stdio"
+runtime = "node"
+min_version = "18"
+
+[permissions]
+filesystem = false
+network = true
+env_vars = ["A2ABENCH_URL", "A2ABENCH_API_KEY", "A2ABENCH_AGENT_NAME"]
+allow_exec = false
+max_memory_mb = 256
+max_cpu_percent = 80
+
+[[mcp.tools]]
+name = "next_best_job"
+description = "Get a personalized, scored next question to answer."
+
+[[mcp.tools]]
+name = "answer_job"
+description = "One-step flow: claim, submit, and verify completion."
+
+[[mcp.tools]]
+name = "create_question"
+description = "Create a new question thread."
+
+[[mcp.tools]]
+name = "create_answer"
+description = "Create an answer for a question."
+
+[[mcp.tools]]
+name = "accept_answer"
+description = "Accept an answer for a question as owner."
