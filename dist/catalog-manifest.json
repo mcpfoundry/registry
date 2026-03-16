@@ -1,0 +1,389 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-03-16T19:32:43.320260+00:00",
+  "total_count": 26460,
+  "chunk_size": 500,
+  "status_counts": {
+    "passed": 23186,
+    "caution": 2072,
+    "flagged": 1202
+  },
+  "index": {
+    "file": "catalog-index.json.gz",
+    "size_bytes": 3313652,
+    "checksum": "9ef03c30"
+  },
+  "chunks": [
+    {
+      "chunk": 0,
+      "file": "details/chunk-0.json.gz",
+      "tool_count": 500,
+      "size_bytes": 169895,
+      "checksum": "e1145a24"
+    },
+    {
+      "chunk": 1,
+      "file": "details/chunk-1.json.gz",
+      "tool_count": 500,
+      "size_bytes": 169621,
+      "checksum": "dcebe4d3"
+    },
+    {
+      "chunk": 2,
+      "file": "details/chunk-2.json.gz",
+      "tool_count": 500,
+      "size_bytes": 162660,
+      "checksum": "69ff39fe"
+    },
+    {
+      "chunk": 3,
+      "file": "details/chunk-3.json.gz",
+      "tool_count": 500,
+      "size_bytes": 168420,
+      "checksum": "b1cd88cd"
+    },
+    {
+      "chunk": 4,
+      "file": "details/chunk-4.json.gz",
+      "tool_count": 500,
+      "size_bytes": 162221,
+      "checksum": "375743f7"
+    },
+    {
+      "chunk": 5,
+      "file": "details/chunk-5.json.gz",
+      "tool_count": 500,
+      "size_bytes": 167295,
+      "checksum": "75506a92"
+    },
+    {
+      "chunk": 6,
+      "file": "details/chunk-6.json.gz",
+      "tool_count": 500,
+      "size_bytes": 170047,
+      "checksum": "3b3856ee"
+    },
+    {
+      "chunk": 7,
+      "file": "details/chunk-7.json.gz",
+      "tool_count": 500,
+      "size_bytes": 153172,
+      "checksum": "e4e3dbb5"
+    },
+    {
+      "chunk": 8,
+      "file": "details/chunk-8.json.gz",
+      "tool_count": 500,
+      "size_bytes": 183657,
+      "checksum": "07c2ac05"
+    },
+    {
+      "chunk": 9,
+      "file": "details/chunk-9.json.gz",
+      "tool_count": 500,
+      "size_bytes": 178056,
+      "checksum": "43e5beee"
+    },
+    {
+      "chunk": 10,
+      "file": "details/chunk-10.json.gz",
+      "tool_count": 500,
+      "size_bytes": 180819,
+      "checksum": "1426eccb"
+    },
+    {
+      "chunk": 11,
+      "file": "details/chunk-11.json.gz",
+      "tool_count": 500,
+      "size_bytes": 163009,
+      "checksum": "9779b0f6"
+    },
+    {
+      "chunk": 12,
+      "file": "details/chunk-12.json.gz",
+      "tool_count": 500,
+      "size_bytes": 201156,
+      "checksum": "2f172146"
+    },
+    {
+      "chunk": 13,
+      "file": "details/chunk-13.json.gz",
+      "tool_count": 500,
+      "size_bytes": 218421,
+      "checksum": "b99118cd"
+    },
+    {
+      "chunk": 14,
+      "file": "details/chunk-14.json.gz",
+      "tool_count": 500,
+      "size_bytes": 200145,
+      "checksum": "0cf5dc9a"
+    },
+    {
+      "chunk": 15,
+      "file": "details/chunk-15.json.gz",
+      "tool_count": 500,
+      "size_bytes": 199485,
+      "checksum": "a608df14"
+    },
+    {
+      "chunk": 16,
+      "file": "details/chunk-16.json.gz",
+      "tool_count": 500,
+      "size_bytes": 182009,
+      "checksum": "40a79ea0"
+    },
+    {
+      "chunk": 17,
+      "file": "details/chunk-17.json.gz",
+      "tool_count": 500,
+      "size_bytes": 200720,
+      "checksum": "dc151700"
+    },
+    {
+      "chunk": 18,
+      "file": "details/chunk-18.json.gz",
+      "tool_count": 500,
+      "size_bytes": 205807,
+      "checksum": "f4d562ad"
+    },
+    {
+      "chunk": 19,
+      "file": "details/chunk-19.json.gz",
+      "tool_count": 500,
+      "size_bytes": 193675,
+      "checksum": "e0c27da1"
+    },
+    {
+      "chunk": 20,
+      "file": "details/chunk-20.json.gz",
+      "tool_count": 500,
+      "size_bytes": 197800,
+      "checksum": "6fd4f553"
+    },
+    {
+      "chunk": 21,
+      "file": "details/chunk-21.json.gz",
+      "tool_count": 500,
+      "size_bytes": 196301,
+      "checksum": "bde5f701"
+    },
+    {
+      "chunk": 22,
+      "file": "details/chunk-22.json.gz",
+      "tool_count": 500,
+      "size_bytes": 199518,
+      "checksum": "159cb9df"
+    },
+    {
+      "chunk": 23,
+      "file": "details/chunk-23.json.gz",
+      "tool_count": 500,
+      "size_bytes": 211969,
+      "checksum": "1d9542b5"
+    },
+    {
+      "chunk": 24,
+      "file": "details/chunk-24.json.gz",
+      "tool_count": 500,
+      "size_bytes": 207768,
+      "checksum": "a61425da"
+    },
+    {
+      "chunk": 25,
+      "file": "details/chunk-25.json.gz",
+      "tool_count": 500,
+      "size_bytes": 209095,
+      "checksum": "d7c3ba38"
+    },
+    {
+      "chunk": 26,
+      "file": "details/chunk-26.json.gz",
+      "tool_count": 500,
+      "size_bytes": 230403,
+      "checksum": "9ae4b626"
+    },
+    {
+      "chunk": 27,
+      "file": "details/chunk-27.json.gz",
+      "tool_count": 500,
+      "size_bytes": 252714,
+      "checksum": "18e2f89a"
+    },
+    {
+      "chunk": 28,
+      "file": "details/chunk-28.json.gz",
+      "tool_count": 500,
+      "size_bytes": 263037,
+      "checksum": "0f36f34f"
+    },
+    {
+      "chunk": 29,
+      "file": "details/chunk-29.json.gz",
+      "tool_count": 500,
+      "size_bytes": 246282,
+      "checksum": "ee3ef8c9"
+    },
+    {
+      "chunk": 30,
+      "file": "details/chunk-30.json.gz",
+      "tool_count": 500,
+      "size_bytes": 242031,
+      "checksum": "f8227728"
+    },
+    {
+      "chunk": 31,
+      "file": "details/chunk-31.json.gz",
+      "tool_count": 500,
+      "size_bytes": 240090,
+      "checksum": "68696184"
+    },
+    {
+      "chunk": 32,
+      "file": "details/chunk-32.json.gz",
+      "tool_count": 500,
+      "size_bytes": 245878,
+      "checksum": "4cd2cb99"
+    },
+    {
+      "chunk": 33,
+      "file": "details/chunk-33.json.gz",
+      "tool_count": 500,
+      "size_bytes": 241393,
+      "checksum": "5fa830e6"
+    },
+    {
+      "chunk": 34,
+      "file": "details/chunk-34.json.gz",
+      "tool_count": 500,
+      "size_bytes": 240519,
+      "checksum": "fbb13933"
+    },
+    {
+      "chunk": 35,
+      "file": "details/chunk-35.json.gz",
+      "tool_count": 500,
+      "size_bytes": 246761,
+      "checksum": "273abec8"
+    },
+    {
+      "chunk": 36,
+      "file": "details/chunk-36.json.gz",
+      "tool_count": 500,
+      "size_bytes": 254602,
+      "checksum": "3d6a5cb7"
+    },
+    {
+      "chunk": 37,
+      "file": "details/chunk-37.json.gz",
+      "tool_count": 500,
+      "size_bytes": 247050,
+      "checksum": "dea5fb0b"
+    },
+    {
+      "chunk": 38,
+      "file": "details/chunk-38.json.gz",
+      "tool_count": 500,
+      "size_bytes": 254544,
+      "checksum": "aa8c3529"
+    },
+    {
+      "chunk": 39,
+      "file": "details/chunk-39.json.gz",
+      "tool_count": 500,
+      "size_bytes": 218747,
+      "checksum": "8a974db1"
+    },
+    {
+      "chunk": 40,
+      "file": "details/chunk-40.json.gz",
+      "tool_count": 500,
+      "size_bytes": 252301,
+      "checksum": "1aa3d59c"
+    },
+    {
+      "chunk": 41,
+      "file": "details/chunk-41.json.gz",
+      "tool_count": 500,
+      "size_bytes": 266165,
+      "checksum": "27e39b90"
+    },
+    {
+      "chunk": 42,
+      "file": "details/chunk-42.json.gz",
+      "tool_count": 500,
+      "size_bytes": 257687,
+      "checksum": "99b30b45"
+    },
+    {
+      "chunk": 43,
+      "file": "details/chunk-43.json.gz",
+      "tool_count": 500,
+      "size_bytes": 270475,
+      "checksum": "2d3e478c"
+    },
+    {
+      "chunk": 44,
+      "file": "details/chunk-44.json.gz",
+      "tool_count": 500,
+      "size_bytes": 246489,
+      "checksum": "5ca01ea0"
+    },
+    {
+      "chunk": 45,
+      "file": "details/chunk-45.json.gz",
+      "tool_count": 500,
+      "size_bytes": 316719,
+      "checksum": "e7e89648"
+    },
+    {
+      "chunk": 46,
+      "file": "details/chunk-46.json.gz",
+      "tool_count": 500,
+      "size_bytes": 319356,
+      "checksum": "24246972"
+    },
+    {
+      "chunk": 47,
+      "file": "details/chunk-47.json.gz",
+      "tool_count": 500,
+      "size_bytes": 303036,
+      "checksum": "b9236fe6"
+    },
+    {
+      "chunk": 48,
+      "file": "details/chunk-48.json.gz",
+      "tool_count": 500,
+      "size_bytes": 292590,
+      "checksum": "a830c9fb"
+    },
+    {
+      "chunk": 49,
+      "file": "details/chunk-49.json.gz",
+      "tool_count": 500,
+      "size_bytes": 293662,
+      "checksum": "4e9cd3da"
+    },
+    {
+      "chunk": 50,
+      "file": "details/chunk-50.json.gz",
+      "tool_count": 500,
+      "size_bytes": 266879,
+      "checksum": "56e6185a"
+    },
+    {
+      "chunk": 51,
+      "file": "details/chunk-51.json.gz",
+      "tool_count": 500,
+      "size_bytes": 236258,
+      "checksum": "154d0a5c"
+    },
+    {
+      "chunk": 52,
+      "file": "details/chunk-52.json.gz",
+      "tool_count": 460,
+      "size_bytes": 291127,
+      "checksum": "747df1b6"
+    }
+  ]
+}

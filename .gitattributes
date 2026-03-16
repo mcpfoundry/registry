@@ -1,0 +1,2 @@
+# Treat gzipped catalog files as binary
+dist/**/*.gz binary
