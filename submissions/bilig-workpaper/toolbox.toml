@@ -1,6 +1,6 @@
 [tool]
 name = "bilig-workpaper"
-version = "0.18.12"
+version = "0.23.0"
 description = "Formula WorkPaper MCP server for reading ranges, writing cells, recalculating formulas, and persisting workbook JSON for agent tools."
 author = "proompteng"
 homepage = "https://github.com/proompteng/bilig"
@@ -21,7 +21,7 @@ max_cpu_percent = 50
 [distribution]
 package = "@bilig/headless"
 package_manager = "npm"
-install = "npx -y @bilig/headless@0.18.12 bilig-workpaper-mcp --workpaper ./workpaper.json"
+install = "npx -y @bilig/headless@0.23.0 bilig-workpaper-mcp --workpaper ./workpaper.json"
 repository = "https://github.com/proompteng/bilig"
 
 [[mcp.tools]]
