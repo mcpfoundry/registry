@@ -1,0 +1,53 @@
+[tool]
+name = "bilig-workpaper"
+version = "0.24.2"
+description = "Formula WorkPaper MCP server for reading ranges, writing cells, recalculating formulas, and persisting workbook JSON for agent tools."
+author = "proompteng"
+homepage = "https://github.com/proompteng/bilig"
+license = "MIT"
+
+[binary]
+entry = "bilig-workpaper-mcp"
+platforms = ["darwin-arm64", "darwin-x64", "linux-x64"]
+
+[permissions]
+filesystem = ["read:~/", "write:~/"]
+network = false
+env_vars = ["HOME", "PATH", "TMPDIR"]
+allow_exec = false
+max_memory_mb = 256
+max_cpu_percent = 50
+
+[distribution]
+package = "@bilig/headless"
+package_manager = "npm"
+install = "npx -y @bilig/headless@0.24.2 bilig-workpaper-mcp --workpaper ./workpaper.json"
+repository = "https://github.com/proompteng/bilig"
+
+[[mcp.tools]]
+name = "list_sheets"
+description = "List workbook sheets available in the active WorkPaper document"
+
+[[mcp.tools]]
+name = "read_range"
+description = "Read a rectangular cell range with formulas, values, and display text"
+
+[[mcp.tools]]
+name = "read_cell"
+description = "Read one cell from a sheet with formula and computed display value"
+
+[[mcp.tools]]
+name = "set_cell_contents"
+description = "Write a cell input or formula and recalculate dependent workbook values"
+
+[[mcp.tools]]
+name = "get_cell_display_value"
+description = "Return the formatted display value for one calculated cell"
+
+[[mcp.tools]]
+name = "export_workpaper_document"
+description = "Export the current WorkPaper document as JSON for persistence or review"
+
+[[mcp.tools]]
+name = "validate_formula"
+description = "Validate a spreadsheet formula before writing it into a workbook"
